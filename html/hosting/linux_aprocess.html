@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html  lang="ko">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="IE=edge">	
+
+   <!-- favicon ================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!-- fonts	================================================== -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- slide	================================================== -->
+	<script src="http://all.bluebiz.kr/userData/test/blueweb_test/js/jquery-1.9.1.min.js"></script> 
+
+	<!-- css	    ================================================== -->
+	<link rel="stylesheet" href="http://all.bluebiz.kr/userData/test/blueweb_new/css/common.css">
+	<link rel="stylesheet" href="http://all.bluebiz.kr/userData/test/blueweb_new/css/hosting.css"> 
+
+</head>
+<body>
+
+
+
+<!--========== HEADER ==========-->
+<header class="header">
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/top.html");
+?>
+</header>
+<!--========== END HEADER ==========-->
+
+
+
+
+
+
+<script type="text/javascript">
+var nowSlideNo = 0;
+var maxSlideNo = 0;
+var sliderPause = false;
+var sliderHoverPause = false;
+var sliderPlayPause = false;
+var SlideWidth = 300;
+var SlideFull = 900;
+$(function () {
+	$(".hamSlid > div").append("<nav><p></p></nav>");
+	var styleAddHtml = "<style type=\"text/css\">";
+	$(".hamSlid > div > div > ul > li").each(function (index) {
+		$(".hamSlid > div > nav > p").append("<a>&nbsp;</a>");
+	});
+	maxSlideNo = $(".hamSlid > div > div > ul > li").length;
+	SlideFull = SlideWidth * maxSlideNo;
+	styleAddHtml += "</style>"
+	$("body").append(styleAddHtml);
+
+	$(".hamSlid > div > nav > p > a").first().addClass("navActive");
+	$(".hamSlid > div > div > ul > li").css("display","inline-block")
+	$(".hamSlid > div > div > ul").append($(".hamSlid > div > div > ul").html() + $(".hamSlid > div > div > ul").html())
+		.css({ "width": (SlideFull * 3) + "px", "left": "-" + SlideFull + "px" }).hover(function () { sliderHoverPause = true; }, function () { sliderHoverPause = false; });
+
+	$(".hamSlid > div > a").click(function () {
+		if (!sliderPause) {
+			sliderPause = true;
+			if ($(this).index() == 0) {
+				var beforeNo = nowSlideNo;
+				nowSlideNo--;
+				$(".hamSlid > div > div > ul").animate({ "marginLeft": -(SlideWidth * (beforeNo - 1)) + "px" }, {
+					"duration": 1000, "complete": function () {
+						if (nowSlideNo < 0) { nowSlideNo = maxSlideNo - 1; }
+						$(this).css("margin-left", -(SlideWidth * nowSlideNo) + "px");
+						$(".hamSlid > div > nav > p > a").eq(nowSlideNo).addClass("navActive").siblings().removeClass("navActive");
+						sliderPause = false;
+					}
+				});
+			} else if ($(this).index() == 1) {
+				var beforeNo = nowSlideNo;
+				$(".hamSlid > div > div > ul").css("margin-left", -(SlideWidth * beforeNo) + "px")
+					.animate({ "marginLeft": (-(SlideWidth * beforeNo) - SlideWidth) + "px" }, {
+						"duration": 1000, "complete": function () {
+							nowSlideNo++;
+							if (nowSlideNo >= maxSlideNo) { nowSlideNo = 0; }
+							$(this).css("margin-left", "-" + (SlideWidth * nowSlideNo) + "px");
+							$(".hamSlid > div > nav > p > a").eq(nowSlideNo).addClass("navActive").siblings().removeClass("navActive");
+							sliderPause = false;
+						}
+					});
+			}
+		}
+	});
+
+	$(".hamSlid > div > nav > p > a").click(function () {
+		var beforeNo = nowSlideNo;
+		nowSlideNo = $(this).index();
+		$(".hamSlid > div > div > ul").css("margin-left", -(SlideWidth * beforeNo) + "px")
+			.animate({ "marginLeft": -(SlideWidth * nowSlideNo) + "px" }, {
+				"duration": 1000, "complete": function () {
+					$(this).css("margin-left", -(SlideWidth * nowSlideNo) + "px");
+					$(".hamSlid > div > nav > p > a").eq(nowSlideNo).addClass("navActive").siblings().removeClass("navActive");
+				  sliderPause = false;
+			}
+		});
+	});
+
+	$(".hamSlid > div > span > a").click(function () {
+		if (sliderPlayPause) {
+			sliderPlayPause = false;
+			$(this).attr("class", "PauseActive");
+		} else {
+			sliderPlayPause = true;
+			$(this).attr("class","PlayActive");
+		}
+	});
+
+	st = window.setInterval('sliderPlay()',5000)
+});
+
+function sliderPlay() {
+	if (!sliderPlayPause) {
+		if (!sliderHoverPause) {
+			var beforeNo = nowSlideNo;
+			$(".hamSlid > div > div > ul").css("margin-left", -(SlideWidth * beforeNo) + "px")
+				.animate({ "marginLeft": (-(SlideWidth * beforeNo) - SlideWidth) + "px" }, {
+					"duration": 1000, "complete": function () {
+						nowSlideNo++;
+						if (nowSlideNo >= maxSlideNo) { nowSlideNo = 0; }
+						$(this).css("margin-left", "-" + (SlideWidth * nowSlideNo) + "px");
+						$(".hamSlid > div > nav > p > a").eq(nowSlideNo).addClass("navActive").siblings().removeClass("navActive");
+						sliderPause = false;
+					}
+				});
+		}
+	}
+}
+</script>
+
+
+
+<!--========== hosting ==========-->
+<section class="aprocess-warp">	
+		<div class="aprocess-box">
+					
+			<h2>리눅스 호스팅</h2>
+			<h5>원하는 호스팅 365일 언제나</h5>
+		
+			<div class="hamSlid">
+				<div>
+					<a><img src="http://cookingm.com/user/1/korchamblueweb/5108122946/img_new/btn_prev.png"></a>
+					<a><img src="http://cookingm.com/user/1/korchamblueweb/5108122946/img_new/btn_next.png"></a>
+					<span><a class="PauseActive"></a></span>
+					<div>
+						<ul>				
+							<li>
+								
+								<div>					
+									<h2>보급형</h2> 
+									<p>1년 선납  전용 요금</p>
+									<img src="https://www.hanacard.co.kr/hana/images/contents/ico_loan_main01.png">				
+									
+									<h3>19.500<span>원</span></h3>
+									<h5>월 기본요금</h5>
+
+									<ul>
+										<li><span>서비스사양</span><span>기본형</span></li>
+										<li><span>하드용량</span><span>3G</span></li>
+										<li><span>트래픽</span><span>180G/월</span></li>
+										<li><span>DB</span><span>무제한</span></li>
+										<li><span>아룻룩</span><span>10개</span></li>				
+									</ul>						
+									<a href="">신청하기</a>
+								</div>
+							</li>
+							<li>
+								<div>					
+									<h2>기본형</h2> 
+									<p>1년 선납  전용 요금</p>
+									<img src="https://www.hanacard.co.kr/hana/images/contents/ico_loan_main01.png">				
+									
+									<h3>19.500<span>원</span></h3>
+									<h5>월 기본요금</h5>
+
+									<ul>
+										<li><span>서비스사양</span><span>기본형</span></li>
+										<li><span>하드용량</span><span>3G</span></li>
+										<li><span>트래픽</span><span>180G/월</span></li>
+										<li><span>DB</span><span>무제한</span></li>
+										<li><span>아룻룩</span><span>10개</span></li>				
+									</ul>						
+									<a href="">신청하기</a>
+								</div>
+							</li>	
+							<li>
+								<div>					
+									<h2>프리미엄</h2> 
+									<p>1년 선납  전용 요금</p>
+									<img src="https://www.hanacard.co.kr/hana/images/contents/ico_loan_main01.png">				
+									
+									<h3>19.500<span>원</span></h3>
+									<h5>월 기본요금</h5>
+
+									<ul>
+										<li><span>서비스사양</span><span>기본형</span></li>
+										<li><span>하드용량</span><span>3G</span></li>
+										<li><span>트래픽</span><span>180G/월</span></li>
+										<li><span>DB</span><span>무제한</span></li>
+										<li><span>아룻룩</span><span>10개</span></li>				
+									</ul>						
+									<a href="">신청하기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+</section>
+<!--========== END hosting ==========-->
+
+
+
+
+
+
+
+
+<!--========== FOOTER ==========-->
+<footer class="footer">		
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/bottom.html");
+?>
+</footer>
+<!--========== END FOOTER ==========-->
+
+
+
+
+</body>
+</html>
+
