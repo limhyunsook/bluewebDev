@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html  lang="ko">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="IE=edge">	
+
+   <!-- favicon ================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!-- fonts	================================================== -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- slide	================================================== -->
+	<script src="http://all.bluebiz.kr/userData/test/blueweb_test/js/jquery-1.9.1.min.js"></script> 
+
+	<!-- css	    ================================================== -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/login.css"> 
+
+</head>
+<body>
+
+
+
+<!--========== header ==========-->
+<header class="header">
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/top.html");
+?>
+</header>
+<!--========== end header ==========-->
+
+
+
+
+<!--========== start  tab_effect  ==========-->
+<script type="text/javascript">
+$(function(){
+	$(".login-tab > ul > li > a").each(function(){
+		$(this).click(function(){
+			var index = $(this).parent().index();
+			$(this).parent().addClass("login-tab-active").siblings().removeClass("login-tab-active");
+			$(this).parent().parent().parent().parent().find(".login-box").hide(0).eq(index).show(0);
+		});
+	});
+});
+</script>
+<!--========== end tab_effect ==========-->
+
+
+
+<!--========== start phone/e-mail  ==========-->
+<script>
+$(function(){
+	$("input[name=idcheck1],input[name=idcheck2],input[name=idcheck3],input[name=idcheck4]").click(function(){
+		if($(this).index()==0){
+			$(this).parent().parent().find("div.id-input").last().find("input").attr("placeholder","이메일");
+		}else{
+			$(this).parent().parent().find("div.id-input").last().find("input").attr("placeholder","핸드폰");
+		};
+	});
+});
+</script>
+<!--========== end phone/e-mail   ==========-->
+
+
+
+
+
+<!--========== find_idpw ==========-->
+<section class="login-wrap">	
+	<div class="login-area">
+
+
+
+		<!--  find_id -->		
+		<div class="login-table login-right">
+
+			<h2>아이디 찾기</h2>
+
+			<!-- id tab -->
+			<div class="login-tab"> 
+				<ul>
+					<li class="login-tab-btn login-tab-active"><a href="#">개인</a></li>
+					<li class="login-tab-btn"><a href="#">기업</a></li>		
+				</ul>
+			</div>
+
+			<!-- find_id_individual -->
+			<div class="login-box">			
+				<div>				
+					<div class="id-input">
+						<input type="text" placeholder="이름">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="이메일">
+					</div>
+
+					<div class="id-radio">
+						<input type="radio" value="" name="idcheck1" checked="checked" id="aaa" ><label for="aaa">이메일</label>
+						<input type="radio" value="" name="idcheck1" id="bbb"><label for="bbb">핸드폰</label>
+					</div>
+				</div>	
+				<button class="id-ok" onclick="location.href='find_id_ok.html';">확인</button>
+			</div>
+
+			<!-- find_id_corporation -->
+			<div class="login-box">				
+				<div>				
+					<div class="id-input">
+						<input type="text" placeholder="기업명">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="사업자등록번호">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="이메일">
+					</div>
+
+					<div class="id-radio">
+						<input type="radio" value="" name="idcheck2" checked="checked" id="ccc"><label for="ccc"> 이메일</label>
+						<input type="radio" value="" name="idcheck2" id="ddd"><label for="ddd">핸드폰</label>
+					</div>
+				</div>	
+				<button class="id-ok id-line" onclick="location.href='find_id_ok.html';">확인</button>
+			</div>
+
+		</div>		
+
+
+
+		<!--  find_pw -->
+		<div class="login-table">
+
+			<h2>비밀번호 찾기</h2>
+		
+
+			<!-- pw tab -->
+			<div class="login-tab"> 
+				<ul>
+					<li class="login-tab-btn login-tab-active"><a href="#">개인</a></li>
+					<li class="login-tab-btn"><a href="#">기업</a></li>		
+				</ul>
+			</div>
+
+			<!-- find_pw_individual -->
+			<div class="login-box">					
+				<div>		
+					<div class="id-input">
+						<input type="text" placeholder="아이디">
+					</div>					
+
+					<div class="id-input">
+						<input type="text" placeholder="이름">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="이메일">
+					</div>
+
+					<div class="id-radio">
+						<input type="radio" value="" name="idcheck3" checked="checked" id="eee"><label for="eee">이메일</label>
+						<input type="radio" value="" name="idcheck3" id="fff"><label for="fff">핸드폰</label>
+					</div>	
+				</div>						
+				<button class="id-ok" onclick="location.href='find_pw_ok.html';">본인인증확인</button>
+			</div>
+
+			<!-- find_pw_corporation -->
+			<div class="login-box">			
+				<div>
+					<div class="id-input">
+						<input type="text" placeholder="아이디">
+					</div>			
+				
+					<div class="id-input">
+						<input type="text" placeholder="기업명">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="사업자등록번호">
+					</div>
+					
+					<div class="id-input">
+						<input type="text" placeholder="이메일">
+					</div>
+
+					<div class="id-radio">
+						<input type="radio" value="" name="idcheck4" checked="checked" id="ggg"><label for="ggg">이메일</label>
+						<input type="radio" value="" name="idcheck4" id="hhh"><label for="hhh">핸드폰</label>
+					</div>
+				</div>						
+				<button class="id-ok" onclick="location.href='find_pw_ok.html';">확인</button>
+			</div>
+
+		</div>
+
+
+	</div>
+</section>
+<!--========== end find_idpw ==========-->
+
+
+
+
+
+
+
+
+<!--========== footer ==========-->
+<footer class="footer">		
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/bottom.html");
+?>
+</footer>
+<!--========== end footer ==========-->
+
+
+
+
+</body>
+</html>
+

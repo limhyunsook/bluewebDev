@@ -1,0 +1,239 @@
+﻿
+
+
+
+
+
+
+/* ===================================================================
+ *  03. slider
+ *
+ * ------------------------------------------------------------------- */
+
+.slider-section {}
+
+.main-img{	position:relative;	overflow:hidden;	height:400px !important;}
+.main-img .bg-box{	width:100%;	height:400px !important;}
+.main-img img{    position: absolute;    bottom: -1px;    left: 50%;    margin-left: -50px;	height:400px !important;}
+.main-img .bg-box01{	background:url('https://www.phps.kr/img/banners/main/centerbanner_sms.gif') no-repeat;	background-size:cover;	background-position:center center;background:#a1e4e7}
+.main-img .bg-box02{	background:url('https://www.phps.kr/img/banners/main/centerbanner_ssl.gif') no-repeat;	background-size:cover;	background-position:center center;background:#ecf3bf}
+.main-img .bg-box03{	background:url('https://www.phps.kr/img/banners/main/centerbanner_img.gif') no-repeat;	background-size:cover;	background-position:center center;background:#a0ddb1}
+.main-img .bg-box04{	background:url('https://www.phps.kr/img/banners/main/centerbanner_dom.gif') no-repeat;	background-size:cover;	background-position:center center;background:#abb9f6}
+
+.bx-controls{width: 100%; position:absolute ;z-index:1;top:0;height: 100%;}
+
+.bx-pager{    position: absolute;    bottom:2%;    left: 48%;width: 50%;}
+.bx-pager .bx-default-pager {position:absolute;width:100%;z-index:1	}
+.bx-pager .bx-default-pager .bx-pager-item a{width:10px;	height:10px;	border:1px #fff solid;border-radius:50%;	display:block;    margin: 13px 0;	cursor:pointer;    text-indent: -9999px;	border: 1px solid #3171f0;color:#000}
+.bx-pager .bx-default-pager .bx-pager-item a.active, .bx-controls a:hover{text-decoration:underline;color:red}
+
+.bx-pager-item  {display:inline-block;text-align: center;margin:1%;height: 5px;}
+.bx-pager-item a {padding:5px;color:#000;background:#ddd; width:5px;height:5px;color: transparent;border-radius: 100px;    display: inline-block;}
+.bx-pager-item a:hover {color: transparent;background:red}
+.bx-pager-item a:active{background:red}
+
+.bx-controls-direction{BACKGROUND:#ddd;position:absolute;width:100%;z-index:1;bottom:3%;width: 5%;height:12px;padding:15px 20px;border-radius:50px;left: 60%;}
+.bx-controls-direction .bx-prev {position: absolute;left:20%;background-image:url(https://www.hanacard.co.kr/hana/images/main/main_slide_prev.png); width:12px;height:12px;color: transparent;background-repeat: no-repeat;}
+.bx-controls-direction .bx-prev:hover {color: transparent;}
+
+.bx-controls-direction .bx-next {position: absolute;left:45%;background-image:url(https://www.hanacard.co.kr/hana/images/main/main_slide_next.png);width:12px;height:12px;color: transparent;background-repeat: no-repeat; }
+.bx-controls-direction .bx-next:hover {color: transparent;}
+
+
+.bx-controls-auto {position:absolute;width:1%;z-index:1;bottom:7%;left: 65.5%;height:12px}
+
+.bx-controls-auto > .bx-controls-auto-item > .bx-start{ display:inline-block;color:#000;background-image:url(https://www.hanacard.co.kr/hana/images/main/btn_mc_banner_play.png);width:12px;height:12px;color: transparent;background-repeat: no-repeat;color: transparent;}
+.bx-controls-auto > .bx-controls-auto-item > .bx-start:hover {color: transparent;}
+
+.bx-controls-auto > .bx-controls-auto-item > .bx-stop{ display:inline-block;color:#000;background-image:url(https://www.hanacard.co.kr/hana/images/main/btn_mc_banner_stop.png);width:12px;height:12px;color: transparent;background-repeat: no-repeat;color: transparent;}
+.bx-controls-auto > .bx-controls-auto-item > .bx-stop:hover {color: transparent;}
+
+.bx-controls-auto > .bx-controls-auto-item > .active{ display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+ *  04. service1
+ *
+ * ------------------------------------------------------------------- */
+
+.section-service {margin:0 auto;background:#f5f6f8;padding:25px 0;box-shadow: 0px 0px 1px #ddd;}
+
+.service-item {background:#fff;width:1080px;margin:0 auto;border-bottom: 1px solid #e6e6e6;    height: 209px;box-shadow: 1px 0px 1px #ddd;}
+.service-item > ul{text-align:center;vertical-align:middle;}
+
+.service-item .col-md-1 {width:50%;text-align:center;float: left;padding:50px 0;}
+.service-item .col-md-1 > li  {display:inline-block;padding:0 10px;font-size:15px;width:15%;line-height:20px;}
+.service-item .col-md-1 > li > a {color:#000;    font-weight: bold;}
+.service-item .col-md-1 > li > a:hover {color:#087ee3}
+.service-item .col-md-1 > li > a > img {text-align: center;margin: 0 auto;padding-bottom:20px;display:block}
+
+.service-item .col-md-2 {width:43%;text-align:center;display:inline-block;padding:50px 0 51px 60px;background:#eaebef;float:right;position:relative}
+.service-item .col-md-2:after {background-image:url(http://all.bluebiz.kr/userData/test/blueweb_new/images/service-item-bg.png);content:"";position:absolute;top: 21%;left: -1px;width: 100px;height: 150px;background-repeat: no-repeat;}
+
+
+.service-item .col-md-2 > li > div > h2 {font-size:17px;text-align:left;font-weight:normal;margin: 0;padding-bottom:10px}
+.service-item .col-md-2 > li > div > div > input {height:35px;float: left;border:1px solid #eaebef;width:60%;text-indent:10px;font-size:18px}
+.service-item .col-md-2 > li > div > div > span {height:39px;display: inline-block;width:30%;background:#fb5e27;color:#fff;float: left;font-size:18px;line-height:30px}
+.service-item .col-md-2 > li > div > div > span > select  {border: 0;height: 39px;background:#fb5e27;color: #fff;font-size:18px;font-weight: normal;cursor: pointer;width:150px}
+.service-item .col-md-2 > li > div > div > span > select > option {border:0}
+
+.service-item .col-md-2 > li > div > ul {width:100%;margin-top:10px;text-align:left;display: inline-block;}
+.service-item .col-md-2 > li > div > ul > li {display:inline-block;font-size:15px;color:#a9a9a9}
+.service-item .col-md-2 > li > div > ul > li > a {color:#555;font-size:13px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+ *  05. service2
+ *
+ * ------------------------------------------------------------------- */
+
+.additional-item {margin:0 auto;margin-top:15px;width:1080px;}
+.additional-item > div {display:inline-block;vertical-align:top;background:#fff;text-align:left; }
+.additional-item > div > div {padding:5%;min-height:158px}
+
+.additional-item .col-md-1 {width:32.3%;margin-right:1%}
+.additional-item .col-md-1 > div {width:90%;display:inline-block;position:relative;box-shadow: 1px 1px 1px #ddd;}
+.additional-item .col-md-1 > div > h2 {font-size:17px;padding-bottom:10px;text-align:left;}
+.additional-item .col-md-1 > div > h2 > span {color:#087ee3}
+.additional-item .col-md-1 > div > p {font-size:15px;padding-bottom:15px;color:#087ee3;text-align:left}
+.additional-item .col-md-1 > div > .fa-angle-right {color:#087ee3;font-size: 30px;text-align:center;padding-right:30px;vertical-align:middle}
+.additional-item .col-md-1 > div > img {position: absolute;right: 10%;top: 35%;}
+
+.additional-item .col-md-2 {width:32.3%;margin-right:1%;box-shadow: 1px 1px 1px #ddd;}
+.additional-item .col-md-2 > div {width:90%;display:inline-block;position:relative;}
+.additional-item .col-md-2 > div > h2 {font-size:17px;padding-bottom:10px;text-align:left;}
+.additional-item .col-md-2 > div > h2 > span {color:#087ee3}
+.additional-item .col-md-2 > div > p {font-size:15px;padding-bottom:15px;color:#087ee3;text-align:left;}
+.additional-item .col-md-2 > div > .fa-angle-right {color:#087ee3;font-size: 30px;text-align:center;padding-right:30px;vertical-align:middle}
+.additional-item .col-md-2 > div > img {position: absolute;right: 10%;top: 38%;}
+
+.additional-item .col-md-3 {width:32.3%;box-shadow: 1px 1px 1px #ddd;}
+.additional-item .col-md-3 > div {width:90%;position:relative;min-height:157px;}
+
+.additional-item .col-md-3 > div > .row-md-1 {border-bottom:1px solid #ddd;display:table;padding-bottom:20px;padding-top:10px;width: 100%;}
+.additional-item .col-md-3 > div > .row-md-1 >  h2 {font-size:17px;width: 50%; display:table-cell;vertical-align:middle;padding-right:30px}
+.additional-item .col-md-3 > div > .row-md-1 >  h2  > span {color:#FFC107;}
+.additional-item .col-md-3 > div > .row-md-1 >  p { display:table-cell;   vertical-align: middle;font-size:15px;color:#555}
+.additional-item .col-md-3 > div > .row-md-1 >  p  > span{color:#087ee3}
+
+
+.additional-item .col-md-3 > div > .row-md-2 {display:table;padding-top:20px;width: 100%;}
+.additional-item .col-md-3 > div > .row-md-2 >  h2 {font-size:17px;width: 50%;display:table-cell;vertical-align:middle;padding-right:30px;}
+.additional-item .col-md-3 > div > .row-md-2 >  h2  > span {color:#FFC107;}
+.additional-item .col-md-3 > div > .row-md-2 >  p { display:table-cell;   vertical-align: middle;font-size:15px;color:#555}
+.additional-item .col-md-3 > div > .row-md-2 >  p  > span{color:#087ee3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+ *  06. service3
+ *
+ * ------------------------------------------------------------------- */
+
+.board-item {margin:0 auto;margin-top:15px;width:1080px}
+.board-item > div {display:inline-block;font-size:12px;vertical-align:top;background:#fff;text-align:left;width:32.3%;min-height:160px}
+.board-item > div > div {padding:10% 5%;height: 120px;}
+
+.board-item .col-xe-1 {margin-right:1%;box-shadow: 1px 1px 1px #ddd;}
+.board-item .col-xe-1 > div {width:90%;display:inline-block;position:relative;}
+.board-item .col-xe-1 > div  > ul > h2 {font-size:17px;padding-bottom:15px;text-align:left;margin:0}
+.board-item .col-xe-1 > div  > ul > a {color: #087ee3;font-size: 20px;position: absolute;right: 5%;top:17%;font-weight: bold;width:20px;text-align: right;}
+.board-item .col-xe-1 > div  > ul > li > p {font-size:12px;line-height:20px;color:#444;text-align:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width:190px;display: inline-block;}
+.board-item .col-xe-1 > div  > ul > li > div {float:right;vertical-align:top;line-height:20px}
+
+
+.board-item .col-xe-2 {margin-right:1%;box-shadow: 1px 1px 1px #ddd;}
+.board-item .col-xe-2 > div {width:90%;display:inline-block;position:relative}
+.board-item .col-xe-2 > div > h2 {font-size:17px;padding-bottom:30px;text-align:center;margin:0}
+.board-item .col-xe-2 > div > p {font-size:35px;padding-bottom:10px;color:#087ee3;font-family:'Daum';text-align:center;font-weight:bold}
+.board-item .col-xe-2 > div > span {font-size:13px;text-align:center;display: block;color:#000;padding-top: 10px;}
+
+
+.board-item .col-xe-3 > div {width:90%;display:inline-block;position:relative;box-shadow: 1px 1px 1px #ddd;}
+.board-item .col-xe-3 > div > h2 {font-size:17px;padding-bottom:15px;text-align:center;margin:0}
+.board-item .col-xe-3 > div > ul {text-align:center}
+.board-item .col-xe-3 > div > ul > li {display:inline-block;width:25%;text-align:center;vertical-align: text-top;}
+.board-item .col-xe-3 > div > ul > li > p > a {color:#000;display: block;}
+.board-item .col-xe-3 > div > ul > li > img {display:block;margin:0 auto;padding-bottom:5px}
+
+.icon-new {background: #fb5e27;color: #fff;padding:2px 5px;border-radius: 3px;font-size: 10px;font-weight: bold;vertical-align: top;}
+.service-line {height:55px;background:#ddd;width: 1px !important;margin: 0 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+ *  07. footer-banner
+ *
+ * ------------------------------------------------------------------- */
+
+.footer-banner{ position:relative; width:1080px; margin:auto;table-layout:fixed; overflow:hidden;margin-top:20px}
+.footer-banner > ul{ width:200%; height:100%; display:inline-block; position:relative; transition-duration:1s;}
+.footer-banner > ul > li{ position:relative; width:1080px; height:80px; float:left;}
+.footer-banner > ul > li > a{ width:100%; height:150px;justify-content: center;align-items: center;    cursor: pointer;}
+.footer-banner > nav{ margin-top:-40px; text-align:center; position:absolute; width:100%;}
+.nav-b{ width:16px; height:16px; display:inline-block; border-radius:8px; margin:4px; background-color:#808080; transition-duration:0.3s;    cursor: pointer;}
+.selected{ width:30px; transition-duration:0.3s;    cursor: pointer;}
+
+.effect0{ margin-left:0%;}
+.effect1{ margin-left:-100%;}
+.effect2{ margin-left:-200%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
