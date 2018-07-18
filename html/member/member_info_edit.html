@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html  lang="ko">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="IE=edge">	
+
+   <!-- favicon ================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- fonts	================================================== -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- slide	================================================== -->
+	<script src="http://all.bluebiz.kr/userData/test/blueweb_test/js/jquery-1.9.1.min.js"></script> 
+
+	<!-- css	    ================================================== -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/login.css"> 
+
+</head>
+<body>
+
+
+
+<!--========== header ==========-->
+<header class="header">
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/top.html");
+?>
+</header>
+<!--========== end header ==========-->
+
+
+
+
+
+
+
+
+<!--========== start phone/e-mail  ==========-->
+<script>
+$(function(){
+	$("input[name=idcheck1],input[name=idcheck2],input[name=idcheck3],input[name=idcheck4]").click(function(){
+		if($(this).index()==0){
+			$(this).parent().parent().find("div.id-input").last().find("input").attr("placeholder","이메일");
+		}else{
+			$(this).parent().parent().find("div.id-input").last().find("input").attr("placeholder","핸드폰");
+		};
+	});
+});
+</script>
+<!--========== end phone/e-mail   ==========-->
+
+
+
+
+
+<!--========== start  tab_effect  ==========-->
+<script type="text/javascript">
+$(function(){
+	$(".member-info-edit-tab > ul > li > a").each(function(){
+		$(this).click(function(){
+			var index = $(this).parent().index();
+			$(this).parent().addClass("member-info-edit-tab-active").siblings().removeClass("member-info-edit-tab-active");
+			$(this).parent().parent().parent().parent().find(".member-info-edit-box").removeClass("memberTablActive").eq(index).addClass("memberTablActive");
+		});
+	});
+});
+</script>
+<!--========== end tab_effect ==========-->
+
+
+
+
+<!--========== member_info_edit ==========-->
+<section class="member-info-edit-warp">	
+	<div class="member-info-edit-area">		
+		<div class="member-info-edit-table">
+
+
+
+			<h2>회원 정보 변경</h2>
+
+
+
+			<!-- tab -->
+			<div class="member-info-edit-tab"> 
+				<ul>
+					<li class="member-info-edit-tab-btn member-info-edit-tab-active"><a href="#">회원 정보</a></li>
+					<li class="member-info-edit-tab-btn"><a href="#">로그인 정보</a></li>		
+					<li class="member-info-edit-tab-btn"><a href="#">회원 탈퇴</a></li>		
+				</ul>
+			</div>
+
+
+
+			<!--tab01 -->
+			<div class="member-info-edit-box memberTablActive">			
+				<div>		
+					
+					<h3>회원 기본 정보</h3>
+					<span>※ 회원정보는 호스팅 정보와 별도로 관리되어 회원정보를 변경 하셔도<Br>호스팅 정보는 변경되지 않습니다.</span>
+
+					<div class="input-type-a">
+						<input type="text" disabled value="임현숙"/>						
+					</div>
+										
+
+					<div class="input-type-a">											
+						<input class="input-type01"  type="text" placeholder="이메일">
+						<button class="input-btn01">인증키발급</button>
+						<input class="input-type02" type="text" value="" placeholder="인증번호">					
+						<button class="input-btn02">확인</button>
+					</div>
+
+					<div class="input-type-a">	
+						<input class="input-type01" type="text" value="" placeholder="휴대폰전화번호">								
+					</div>
+						
+					<hr>							
+
+					<h3>정보 수신 여부</h3>
+					<span>※ 부서비스 관련 중요한 변경 사항은 수신동의와 관계없이 발송됩니다.</span>
+
+					<div class="input-type-b">		
+						<input class="input-radio" type="radio" value="" name="radio1" checked="" id="aaa"><label for="aaa" class="input-label"> 이메일 수신여부</label>
+						<input class="input-radio" type="radio" value="" name="radio1" id="bbb"><label for="bbb" class="input-label"> SMS 수신여부</label>
+					</div>
+
+				</div>	
+
+				<button class="member-info-edit-btn" onclick="location.href='member_info_edit_ok_mem.html';">정보 변경</button>
+
+			</div>
+
+
+
+
+
+			<!--tab02 -->
+			<div class="member-info-edit-box">				
+				<div>				
+
+					<h3>회원 기본 정보</h3>
+					
+					<div class="input-type-a">
+						<input type="text" disabled value="임현숙"/>
+						<input type="text" disabled value="개인회원"/>
+					</div>
+					
+					<div class="input-type-a">
+						<input type="text" value="" placeholder="기본비밀번호">
+						<input type="text" value="" placeholder="새비밀번호">
+						<input type="text" value="" placeholder="새비밀번호 확인">
+					</div>
+					
+					<p>* 영문자, 숫자, 특수문자 포함 8-12자리로 설정</p>
+
+				</div>					
+				
+				<button class="id-ok" onclick="location.href='member_info_edit_ok_login.html';">정보 변경</button>
+
+			</div>
+
+
+
+
+			<!--tab03 -->
+			<div class="member-info-edit-box">				
+				<div>				
+
+					<p>					
+						그동안 블루웹 서비스를 이용해 주셔서 감사합니다. <br>
+						아래의 양식에 맞게 기입하신 후 <span>[확인]</span> 버튼을 클릭하면 자동탈퇴 처리됩니다. <br><br>
+						회원 관련된 정보는 모두 삭제가 되어 복구가 불가능하며, 기존에 이용하시던 서비스는 모두 중단되므로 탈퇴신청을 하시기 전 신중을 기하시기 바랍니다. 탈퇴 후 동일한 아이디로는 회원가입이 불가능합니다.<br><br>
+						호스팅 서비스를 이용하고 계신 고객분들은 탈퇴 신청 이전에 해지 처리가 되어야 가능하므로 해지절차를 따라주시기 바랍니다. <br><br>
+						도메인 서비스를 이용하시는 분들은 정보 갱신을 위해 탈퇴 처리가 되지 않습니다.					<br><br>
+					</p>
+					
+					<div class="input-type-a">	
+						<input class="input-type01" type="text" value="" placeholder="아이디">
+						<input class="input-type01" type="text" value="" placeholder="비밀번호">
+					</div>
+					
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="111" class="input-check"><label for="111" class="input-label"> 더 이상 서비스를 사용하지 않아서</label>
+					</div>
+							
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="222" class="input-check"><label for="222" class="input-label"> 원하는 정보 및 서비스가 없어서</label>
+					</div>
+
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="333" class="input-check"><label for="333" class="input-label"> 불친절한 고객 상담 때문에</label>
+					</div>
+							
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="444" class="input-check"><label for="444" class="input-label"> 서비스가 불안정 혹은 속도가 느려서</label>
+					</div>
+
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="555" class="input-check"><label for="555" class="input-label"> 사용하기가 불편해서</label>
+					</div>
+
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="666" class="input-check"><label for="666" class="input-label"> 다른 유사한 서비스를 제공하는 업체에 가입했으므로</label>
+					</div>
+
+					<div class="input-type-c">	
+						<input type="checkbox" value="" name="checkbox" checked="" id="777" class="input-check"><label for="777" class="input-label"> 기타 (60자 이내)</label>
+					</div>
+
+					<div class="input-type-c">	
+							<textarea name="" class="input-textarea"></textarea>
+					</div>
+					
+					<p><a href="#">잠깐! 명의변경을 원하시면 이곳을 클릭하세요!</a></p>
+				
+				</div>					
+				
+				<button class="id-ok" onclick="location.href='member_info_edit_ok_quit.html';">확인</button>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</section>
+<!--========== end member_info_edit ==========-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--========== footer ==========-->
+<footer class="footer">		
+<?php
+	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/bottom.html");
+?>
+</footer>
+<!--========== end footer ==========-->
+
+
+
+
+</body>
+</html>
+
