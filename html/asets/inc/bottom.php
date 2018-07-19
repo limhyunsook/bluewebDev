@@ -22,7 +22,7 @@
                 <li><a href="#">서버호스팅 <img src="/html/asets/images/icon_update.png" alt="new"></a></li>
                 <li><a href="#">코로케이션</a></li>
                 <li><a href="#">매니지먼트</a></li>
-                <li><a href="#">부가서비스<img src="/html/asets/images/icon_b.gif" alt="new"></a></li>
+                <li><a href="#">부가서비스</a></li>
                 <li><a href="#">서버 견적 요청</a></li>
                 <li><a href="#">서비스 상담 문의</a></li>
             </ul>          
@@ -38,9 +38,7 @@
                 <li><a href="#">도메인 정보 변경</a></li>
                 <li><a href="#">도메인 가치평가</a></li>
                 <li><a href="#">삭제 예정 도메인</a></li>
-                <li><a href="#">무료 파킹 <img src="/html/asets/images/icon_i.gif" alt="업그레이드"></a></li>
-                <li><a href="#">무료 포워딩</a></li>
-                <li><a href="#">DNS 관리 서비스</a></li>
+                <li><a href="#">무료 파킹</a></li>
             </ul>
         </li>
         <li>
@@ -62,18 +60,9 @@
                 <li><a href="#">요금 납부/미납 조회</a></li>
                 <li><a href="#">공지사항</a></li>
                 <li><a href="#">작업공지</a></li>
-                <li><a href="#">이벤트 <img src="/html/asets/images/icon_h.gif" alt="new"></a></li>
+                <li><a href="#">이벤트</a></li>
                 <li><a href="#">신규 서비스</a></li>                   
-                <li><a href="#">자주 묻는 질문</a></li>
-                <li><a href="#">1:1질문과 답변</a></li>
-                <li><a href="#">문의메일 보내기</a></li>
-                <li><a href="#">고객상담 전화번호 안내</a></li>
-                <li><a href="#">서비스 사용법</a></li>
-                <li><a href="#">칭찬합니다</a></li>
-                <li><a href="#">Best 칭찬사원</a></li>
-                <li><a href="#">제안합니다</a></li>
-                <li><a href="#">제안 반영 내역</a></li>
-                
+                <li><a href="#">자주 묻는 질문</a></li>     
             </ul>
         </li>
          <li>
@@ -84,24 +73,9 @@
                 <li><a href="#">결제조회 <img src="/html/asets/images/icon_event.png" alt="이벤트"></a></li>
                 <li><a href="#">호스팅 요금납부</a></li>
                 <li><a href="#">도메인 예치금 관리</a></li>
-                <li><a href="#">세금계산서/영수증 발급</a></li>
-                <li><a href="#">결제방법안내</a></li>
-                <li><a href="#">무통장입금 안내</a></li>  
-                <li><a href="#">실시간계좌이체</a></li> 
-                <li><a href="#">신용카드결제승인</a></li> 
-                <li><a href="#">호스팅 관리 툴</a></li> 
-                <li><a href="#">호스팅 사용현황</a></li> 
                 <li><a href="#">호스팅 신청/결제 확인</a></li> 
                 <li><a href="#">호스팅 정보변경</a></li> 
-                <li><a href="#">모바일웹 신청/관리</a></li> 
-                <li><a href="#">호스팅 명의변경</a></li> 
-                <li><a href="#">도메인 사용 현황</a></li> 
-                <li><a href="#">도메인 신청/결제 확인</a></li> 
-                <li><a href="#">부가서비스 신청</a></li> 
-                <li><a href="#">도메인 소유권 이전</a></li> 
-                <li><a href="#">1:1 친절상담실</a></li> 
-                <li><a href="#">이벤트 쿠폰</a></li> 
-                <li><a href="#">회원정보 변경</a></li> 
+                <li><a href="#">모바일웹 신청/관리</a></li>    
             </ul>
         </li>
     </ul>
