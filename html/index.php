@@ -84,7 +84,7 @@
 				<div>
 					<h2>도메인검색</h2>
 					<div>
-						<input type="text" name="" placeholder="www">
+						<input type="text" name="" placeholder="blueweb.com ">
 						<button type="image" class="btn"><i class="fa fa-search"></i> 검색</button>
 					</div>
 					<ul>
@@ -224,7 +224,7 @@
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-    include($_SERVER["DOCUMENT_ROOT"]."./html/asets/inc/bottom.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/asets/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->

@@ -24,8 +24,7 @@ table{width:100%}
 textarea{resize:none}
 b, dt, label{font-weight:500}
 img{max-width:100%}
-
-
+hr {border: 0;    height: 1px;background: #Ddd;margin:30px 0;}
 
 
 /* Grid */
