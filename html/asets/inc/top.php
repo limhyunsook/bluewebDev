@@ -32,7 +32,7 @@
 						</nav>		
 						<div>
 							<ul>
-								<h2><a href="/html/hosting/linux_info.html">웹호스팅</a></h2>
+								<h2><a href="/html/hosting/linux_info.html">웹호스팅 <img src="/html/asets/images/icon_new.png" alt="new"></a></h2>
 								<li><a href="/html/hosting/linux_info.html">리눅스 웹호스팅</a></li>
                                 <li><a href="/html/hosting/linux_info.html">윈도우 웹호스팅</a></li>
 								<li><a href="/html/hosting/linux_cost.html">제로XE 호스팅</a></li>		
@@ -47,7 +47,7 @@
 							<ul>
 								<h2><a href="#">웹사이트 구축 지원</a></h2>
 								<li><a href="#">이전 대행</a></li>
-								<li><a href="#">간편제작</a></li>
+								<li><a href="#">간편제작 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 								<li><a href="#">SSL호스팅</a></li>
 							</ul>	
 						</div>
@@ -76,14 +76,14 @@
 								<li><a href="#">코로케이션 안내</a></li>
 								<li><a href="#">서버 코로케이션</a></li>
 								<li><a href="#">랙 코로케이션</a></li>
-								<li><a href="#">신청절차</a></li>
+								<li><a href="#">신청절차 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">서비스 신청</a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">매니지먼트 서비스</a></h2>	
 								<li><a href="#">매니지먼트란</a></li>
 								<li><a href="#">서비스종류/신청</a></li>
-								<li><a href="#">작업신청</a></li>
+								<li><a href="#">작업신청 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">부가서비스</a></h2>	
@@ -110,7 +110,7 @@
 								<li><a href="#">구매 대행</a></li>
 							</ul>					
 							<ul>
-								<h2><a href="#">기간이전</a></h2>
+								<h2><a href="#">기간이전 <img src="/html/asets/images/icon_update.png" alt="update"></a></h2>
 								<li><a href="#">기관연장</a></li>	
 							</ul>							
 							<ul>
@@ -138,7 +138,7 @@
 							</ul>	
 							<ul>	
 								<h2><a href="#">컨설팅</a></h2>
-								<li href="#"><a>모의해킹</a></li>
+								<li href="#"><a>모의해킹 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 								<li href="#"><a>취약점진단</a></li>
                                 <li href="#"><a>침해사고분석</a></li>
 							</ul>	
@@ -147,7 +147,7 @@
 								<li href="#"><a>SSL</a></li>
 								<li href="#"><a>방화벽</a></li>
                                 <li href="#"><a>웹 방화벽</a></li>   
-                                <li href="#"><a>이메일 보안</a></li>
+                                <li href="#"><a>이메일 보안 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
                                 <li href="#"><a>DB 암호화</a></li>                        
 							</ul>	
 							<ul>	
@@ -178,13 +178,13 @@
 							</ul>	
 							<ul>	
 								<h2><a href="#">쿠킹엠</a></h2>
-								<li href="#"><a>7일무료체험</a></li>
+								<li href="#"><a>7일무료체험 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li href="#"><a>신청하기</a></li>
 							</ul>	
 							<ul>	
 								<h2><a href="#">코참비즈</a></h2>
 								<li href="#"><a>상공회의소 회원 무료</a></li>
-								<li href="#"><a>신청하기</a></li>
+								<li href="#"><a>신청하기 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>	
 							<ul>	
 								<h2><a href="#">홈페이지제작센터</a></h2>
@@ -214,12 +214,12 @@
 							</ul>
 							<ul>
 								<h2><a href="#">이벤트 및 신규서비스</a></h2>
-								<li><a href="#">이벤트</a></li>
+								<li><a href="#">이벤트 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">신규 서비스</a></li>
 							</ul>							
 							<ul>
 								<h2><a href="#">상담 및 문의</a></h2>
-								<li><a href="#">자주 묻는 질문</a></li>
+								<li><a href="#">자주 묻는 질문 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 								<li><a href="#">1:1질문과 답변</a></li>
 								<li><a href="#">문의메일 보내기</a></li>							
 							</ul>					
@@ -237,7 +237,7 @@
 						<div>
 							<ul>
 								<h2><a href="#">요금관리</a></h2>
-								<li><a href="#">결제조회</a></li>
+								<li><a href="#">결제조회 <img src="/html/asets/images/icon_new.png" alt="new"></a></li>
 								<li><a href="#">호스팅 요금납부</a></li>
 								<li><a href="#">도메인 예치금 관리</a></li>
 								<li><a href="#">결제방법안내</a></li>
@@ -246,11 +246,11 @@
 								<h2><a href="#">호스팅관리</a></h2>
 								<li><a href="#">호스팅 신청/결제 확인</a></li>
 								<li><a href="#">호스팅 정보변경</a></li>
-								<li><a href="#">호스팅 명의변경</a></li>
+								<li><a href="#">호스팅 명의변경 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">도메인관리</a></h2>
-								<li><a href="#">도메인 사용 현황</a></li>
+								<li><a href="#">도메인 사용 현황 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">도메인 신청/결제 확인</a></li>
 								<li><a href="#">부가서비스 신청</a></li>
 								<li><a href="#">도메인 소유권 이전</a></li>							

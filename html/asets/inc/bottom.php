@@ -38,7 +38,7 @@
                 <li><a href="#">도메인 정보 변경</a></li>
                 <li><a href="#">도메인 가치평가</a></li>
                 <li><a href="#">삭제 예정 도메인</a></li>
-                <li><a href="#">무료 파킹</a></li>
+                <li><a href="#">무료 파킹 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
             </ul>
         </li>
         <li>
@@ -59,7 +59,7 @@
                 <li><a href="#">세금계산서/영수증 발급</a></li>
                 <li><a href="#">요금 납부/미납 조회</a></li>
                 <li><a href="#">공지사항</a></li>
-                <li><a href="#">작업공지</a></li>
+                <li><a href="#">작업공지 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
                 <li><a href="#">이벤트</a></li>
                 <li><a href="#">신규 서비스</a></li>                   
                 <li><a href="#">자주 묻는 질문</a></li>     

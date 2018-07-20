@@ -10,27 +10,27 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 
-/* Reset with bootstrap */
 
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
-body,input,textarea,select,button,table{font-family: 'NanumSquareWeb', sans-serif}
-body{-ms-word-break:break-all;word-break:keep-all;word-wrap:break-word}
-a{text-decoration:none;color:inherit}
-a:hover, a:focus, a:active{text-decoration:none;color:inherit}
-a, button, input, textarea{-moz-transition:border-color .4s,background .3s,color .3s,opacity .4s;-webkit-transition:border-color .4s,background .3s,color .3s,opacity .4s;transition:border-color .3s,background .3s,color .3s,opacity .4s,transform .4s}
-li{list-style:none}
-address,em{font-style:normal}
-table{width:100%}
-textarea{resize:none}
-b, dt, label{font-weight:500}
-img{max-width:100%}
-hr {border: 0;    height: 1px;background: #Ddd;margin:30px 0;}
+/* Reset with bootstrap */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;}
+body,input,textarea,select,button,table{font-family: 'NanumSquareWeb', sans-serif;}
+body{-ms-word-break:break-all;word-break:keep-all;word-wrap:break-word;}
+a{text-decoration:none;color:inherit;}
+a:hover, a:focus, a:active{text-decoration:none;color:inherit;}
+a, button, input, textarea{-moz-transition:border-color .4s,background .3s,color .3s,opacity .4s;-webkit-transition:border-color .4s,background .3s,color .3s,opacity .4s;transition:border-color .3s,background .3s,color .3s,opacity .4s,transform .4s;}
+li{list-style:none;}
+address,em{font-style:normal;}
+table{width:100%;}
+textarea{resize:none;}
+b, dt, label{font-weight:500;}
+img{max-width:100%;}
+hr {border: 0;height: 1px;background: #Ddd;margin:30px 0;}
 
 
 /* Grid */
 .row{margin-right: -10px;margin-left: -10px;}
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding-left:10px;padding-right:10px}
-.container{ position: relative;max-width:1130px;margin:0 auto;padding:0 15px}
+.container{ position: relative;max-width:1080px;margin:0 auto;padding:0 15px;}
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
