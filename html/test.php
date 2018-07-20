@@ -184,7 +184,9 @@
 </section>
 <!--========== end service ==========-->
 
-
+<?php
+echo $_SERVER["DOCUMENT_ROOT"];
+?>
 
 </body>
 </html>
