@@ -184,8 +184,10 @@
 </section>
 <!--========== end service ==========-->
 
+<hr>
 <?php
 echo $_SERVER["DOCUMENT_ROOT"];
+var_dump($_SERVER["DOCUMENT_ROOT"]);
 ?>
 
 </body>
