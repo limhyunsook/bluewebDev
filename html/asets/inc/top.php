@@ -26,73 +26,30 @@
 				 <div>
 					<div>
 						<nav>											
-							<a href="/html/hosting/index.html">호스팅</a>
-							<p>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</p>
-							<img src="http://www.nhbank.com/KO/images/common/bg_mainMenu.png" alt="호스팅메뉴 이미지">
+                            <h2>웹호스팅</h2>
+							<p>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</p>							
+                            <a href="/html/hosting/index.html">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>
-								<h2><a href="/html/hosting/linux_info.html">리눅스 웹호스팅</a></h2>
-								<li><a href="/html/hosting/linux_info.html">리눅스 호스팅이란?</a></li>
-								<li><a href="/html/hosting/linux_cost.html">리눅스 호스팅 종류 및 요금</a></li>
-								<li><a href="/html/hosting/linux_aprocess.html">신청절차</a></li>
-								<li><a href="/html/hosting/linux_faq.html">FAQ</a></li>
+								<h2><a href="/html/hosting/linux_info.html">웹호스팅 <img src="/html/asets/images/icon_new.png" alt="new"></a></h2>
+								<li><a href="/html/hosting/linux_info.html">리눅스 웹호스팅</a></li>
+                                <li><a href="/html/hosting/linux_info.html">윈도우 웹호스팅</a></li>
+								<li><a href="/html/hosting/linux_cost.html">제로XE 호스팅</a></li>		
+                                <li><a href="/html/hosting/linux_faq.html">.NET 호스팅</a></li>
+                                <li><a href="/html/hosting/linux_faq.html">리셀러 호스팅</a></li>
 							</ul>		
 							<ul>
-								<h2><a href="#">윈도우 웹호스팅</a></h2>
-								<li><a href="#">윈도우 호스팅이란?</a></li>
-								<li><a href="#">윈도우 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
+								<h2><a href="#">솔루션 지원</a></h2>
+								<li><a href="/html/hosting/linux_aprocess.html">이미지 호스팅</a></li>
+								<li><a href="/html/hosting/linux_faq.html">동영상 호스팅</a></li>
 							</ul>		
 							<ul>
-								<h2><a href="#">제로XE 호스팅</a></h2>
-								<li><a href="#">제로XE 호스팅이란?</a></li>
-								<li><a href="#">제로XE 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>		
-							<ul>
-								<h2><a href="#">이미지 호스팅</a></h2>
-								<li><a href="#">이미지 호스팅이란?</a></li>
-								<li><a href="#">이미지 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>		
-							<ul>
-								<h2><a href="#">동영상 호스팅</a></h2>
-								<li><a href="#">동영상 호스팅이란?</a></li>
-								<li><a href="#">동영상 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>		
-							<ul>
-								<h2><a href="#">.NET 호스팅</a></h2>
-								<li><a href="#">.NET 호스팅이란?</a></li>
-								<li><a href="#">.NET 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>		
-							<ul>
-								<h2><a href="#">리셀러 호스팅</a></h2>
-								<li><a href="#">리셀러 호스팅이란?</a></li>
-								<li><a href="#">리셀러 호스팅 종류 및 요금</a></li>
-								<li><a href="#">신청절차</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>									
-							<ul>
-								<h2><a href="#">SSL 보안서버</a></h2>
-								<li><a href="#">보안서버란?</a></li>
-								<li><a href="#">보안서버 신청절차</a></li>
-								<li><a href="#">보안서버 신청/갱신</a></li>
-								<li><a href="#">보안인증서(CRT) 등록</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">부가서비스</a></h2>
-								<li><a href="#">CDP백업</a></li>
-								<li><a href="#">본인확인/아이핀</a></li>
-								<li><a href="#">	전자지불시스템(PG)</a></li>
-							</ul>
+								<h2><a href="#">웹사이트 구축 지원</a></h2>
+								<li><a href="#">이전 대행</a></li>
+								<li><a href="#">간편제작 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
+								<li><a href="#">SSL호스팅</a></li>
+							</ul>	
 						</div>
 					</div>
 				</div>
@@ -101,68 +58,38 @@
 				<a href="#">서버호스팅</a>
 				<div>
 					<div>
-						<nav><a href="#">서버호스팅</a></nav>
+						<nav>											
+                            <h2>서버호스팅</h2>
+							<p>대의 서버를 독립적으로 이용하실 수 있는 서비스</p>							
+                            <a href="/html/hosting/index.html">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
+						</nav>		
 						<div>
 							<ul>
-								<h2><a href="#">서비스 소개</a></h2>
+								<h2><a href="#">서버호스팅</a></h2>
 								<li><a href="#">서버호스팅이란?</a></li>
 								<li><a href="#">블루웹의 장점</a></li>
 								<li><a href="#">서비스 설비</a></li>
 								<li><a href="#">네트워크</a></li>
 							</ul>									
 							<ul>
-								<h2><a href="#">BL 시리즈 서버</a></h2>
-								<li><a href="#">BL-1624SAS(쿼드코어)</a></li>
-								<li><a href="#">BL-1624SA(쿼드코어)</a></li>
-								<li><a href="#">BL-1614SA(하스웰)</a></li>
-								<li><a href="#">BL-1724SA(하스웰)</a></li>
-								<li><a href="#">BL-1724SAS(하스웰)</a></li>
-								<li><a href="#">BL-2728SA(하스웰)</a></li>
-								<li><a href="#">BL-2628SA(쿼드코어)</a></li>
-								<li><a href="#">BL-2628RDSA(쿼드코어)</a></li>
-							</ul>
-							
-							<ul>
-								<h2><a href="#">FUJITSU 서버</a></h2>
-								<li><a href="#">RX1330M1(하스웰)</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">HP 서버</a></h2>				
-								<li><a href="#">DL320eG8v2(쿼드코어)</a></li>
-								<li><a href="#">DL360pG8(쿼드코어)</a></li>
-								<li><a href="#">DL380pG8(쿼드코어)</a></li>
-								<li><a href="#">HP-DL380G7H (웨스트미어)</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">BM 서버</a></h2>
-								<li><a href="#">X3250M5(쿼드코어)</a></li>
-								<li><a href="#">X3550M4-IVY(쿼드코어)</a></li>
-								<li><a href="#">X3550M4-IVY(쿼드코어)</a></li>
-								<li><a href="#">X3650M4-IVY(쿼드코어)</a></li>
-								<li><a href="#">X3650M4-IVY(쿼드코어)</a></li>
-							</ul>
-							<ul>
 								<h2><a href="#">코로케이션</a></h2>	
 								<li><a href="#">코로케이션 안내</a></li>
 								<li><a href="#">서버 코로케이션</a></li>
 								<li><a href="#">랙 코로케이션</a></li>
-								<li><a href="#">신청절차</a></li>
+								<li><a href="#">신청절차 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">서비스 신청</a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">매니지먼트 서비스</a></h2>	
 								<li><a href="#">매니지먼트란</a></li>
 								<li><a href="#">서비스종류/신청</a></li>
-								<li><a href="#">작업신청</a></li>
+								<li><a href="#">작업신청 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">부가서비스</a></h2>	
 								<li><a href="#">무료 기본지원 서비스</a></li>
 								<li><a href="#">유료 지원 서비스</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">서버 상담의뢰</a></h2>		
-							</ul>
+							</ul>					
 						</div>
 					</div>
 				</div>
@@ -171,129 +98,109 @@
 				<a href="#">도메인</a>
 				<div>
 					<div>
-						<nav><a href="#">도메인</a></nav>
+						<nav>											
+                            <h2>도메인</h2>
+							<p>도메인은 개인 또는 기업을 대표하는 브랜드이자 첫인상입니다.</p>							
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+						</nav>		
 						<div>
 							<ul>
-								<h2><a href="#">도메인 등록 검색</a></h2>
-								<li><a href="#">도메인 멀티검색</a></li>
-								<li><a href="#">.한국도메인 등록</a></li>
-								<li><a href="#">국제도메인 등록</a></li>
-								<li><a href="#">kr도메인 등록</a></li>
-								<li><a href="#">.asia 등록</a></li>
-								<li><a href="#">.mobi 등록</a></li>
-								<li><a href="#">한글도메인 등록</a></li>
-							</ul>
+								<h2><a href="#">도메인 등록</a></h2>
+								<li><a href="#">도메인 검색</a></li>
+								<li><a href="#">구매 대행</a></li>
+							</ul>					
 							<ul>
-								<h2><a href="#">한글,한국 도메인 검색</a></h2>
-								<li><a href="#">도메인 멀티검색</a></li>
-								<li><a href="#">.한국도메인 등록</a></li>
-								<li><a href="#">국제도메인 등록</a></li>
-								<li><a href="#">kr도메인 등록</a></li>
-								<li><a href="#">.asia 등록</a></li>
-								<li><a href="#">.mobi 등록</a></li>
-								<li><a href="#">한글도메인 등록</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">도메인 기간연장</a></h2>
-								<li><a href="#">도메인 기간 연장</a></li>
-								<li><a href="#">삭제예정 도메인 복구신청</a></li>
-								<li><a href="#">도메인 만기일 맞춤</a></li>
-							</ul>	
-							<ul>
-								<h2><a href="#">도메인 기관 이전</a></h2>
-								<li><a href="#">기관이전 신청</a></li>
-								<li><a href="#">국제도메인 인증코드 신청</a></li>
-								<li><a href="#">국내도메인 인증코드 신청</a></li>
-							</ul>	
-							<ul>
-								<h2><a href="#">도메인 정보변경</a></h2>
-								<li><a href="#">내도메인관리</a></li>
-								<li><a href="#">소유권이전</a></li>
-								<li><a href="#">세금 계산서</a></li>
-								<li><a href="#">예치금 관리</a></li>
-								<li><a href="#">kr도메인명 변경</a></li>
-							</ul>	
+								<h2><a href="#">기간이전 <img src="/html/asets/images/icon_update.png" alt="update"></a></h2>
+								<li><a href="#">기관연장</a></li>	
+							</ul>							
 							<ul>
 								<h2><a href="#">도메인 가치평가</a></h2>
-								<li><a href="#">도메인 무료 포워딩</a></li>
-								<li><a href="#">도메인 무료 파킹</a></li>
-								<li><a href="#">무료 DNS</a></li>
-								<li><a href="#">기본페이지 편집</a></li>
-								<li><a href="#">도메인 가치 평가</a></li>
-								<li><a href="#">kr도메인 만기일 맞춤</a></li>
-								<li><a href="#">예치금 관리</a></li>
-								<li><a href="#">도메인 매매</a></li>
+								<li><a href="#">도메인 정보</a></li>
 							</ul>	
 						</div>
 					</div>
 				</div>
-			</li>
+			</li>			
 			<li>
-				<a href="#">이비즈로</a>
+				<a href="#">보안</a>
 				<div>
 					<div>
-						<nav><a href="#">이비즈로</a></nav>
+						<nav>											
+                            <h2>보안</h2>
+							<p>사이버 보안 위협으로부터 실시간 대응하며 고객의 정보를 안전하게 보호합니다.</p>							
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+						</nav>		
+						<div>
+							<ul>	
+								<h2><a href="#">보안관제</a></h2>
+								<li href="#"><a>원격관제</a></li>
+								<li href="#"><a>파견관제</a></li>
+							</ul>	
+							<ul>	
+								<h2><a href="#">컨설팅</a></h2>
+								<li href="#"><a>모의해킹 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
+								<li href="#"><a>취약점진단</a></li>
+                                <li href="#"><a>침해사고분석</a></li>
+							</ul>	
+							<ul>	
+								<h2><a href="#">보안상품</a></h2>
+								<li href="#"><a>SSL</a></li>
+								<li href="#"><a>방화벽</a></li>
+                                <li href="#"><a>웹 방화벽</a></li>   
+                                <li href="#"><a>이메일 보안 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
+                                <li href="#"><a>DB 암호화</a></li>                        
+							</ul>	
+							<ul>	
+								<h2><a href="#">보안 솔루션</a></h2>
+								<li href="#"><a>문서 중앙화</a></li>
+                                <li href="#"><a>랜섬웨어 차단</a></li>
+                                <li href="#"><a>개인정보보호</a></li>
+                                <li href="#"><a>유해 사이트 차단</a></li>                        
+							</ul>																						
+						</div>
+					</div>
+				</div>
+			</li>
+            <li>
+				<a href="#">솔루션</a>
+				<div>
+					<div>
+						<nav>											
+                            <h2>솔루션</h2>
+							<p>홈페이지 DIY(직접 제작)부터 전문 제작의뢰까지, 고객에게 딱 맞는 맞춤형 홈페이지를 제공합니다.</p>							
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+						</nav>		
 						<div>
 							<ul>	
 								<h2><a href="#">이비즈로</a></h2>
-								<li href="#"><a>이비즈로란?</a></li>
-								<li href="#"><a>주요기능</a></li>
-								<li href="#"><a>활용방법</a></li>
-								<li href="#"><a>추천사이트</a></li>
-								<li href="#"><a>이비즈로 매뉴얼</a></li>
-								<li href="#"><a>이비즈로 동영상 강의</a></li>
+								<li href="#"><a>홈페이지자동구축</a></li>
+								<li href="#"><a>신청하기</a></li>
 							</ul>	
 							<ul>	
-								<h2><a href="#">부가서비스</a></h2>
-								<li href="#"><a>SMS문자 발송 서비스</a></li>
-								<li href="#"><a>실명인증</a></li>
-								<li href="#"><a>에스크로 서비스</a></li>
-								<li href="#"><a>전자지불 서비스</a></li>
-								<li href="#"><a>2차도메인 신청 매뉴얼</a></li>
+								<h2><a href="#">쿠킹엠</a></h2>
+								<li href="#"><a>7일무료체험 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
+								<li href="#"><a>신청하기</a></li>
 							</ul>	
 							<ul>	
-								<h2><a href="#">서비스 종류 및 신청</a></h2>
-								<li href="#"><a>서비스 가격 및 종류</a></li>
-								<li href="#"><a>무료 도메인 인증키</a></li>
-								<li href="#"><a>서비스 신청절차</a></li>
-								<li href="#"><a>초기 결제내역 조회</a></li>
-								<li href="#"><a>서비스 문의메일</a></li>
+								<h2><a href="#">코참비즈</a></h2>
+								<li href="#"><a>상공회의소 회원 무료</a></li>
+								<li href="#"><a>신청하기 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>	
 							<ul>	
-								<h2><a href="#">홈페이지 제작지원</a></h2>
-								<li href="#"><a>부분제작 지원이란?</a></li>
-								<li href="#"><a>부분제작신청</a></li>
-								<li href="#"><a>유료 제작 서비스</a></li>
-								<li href="#"><a>포트폴리오</a></li>
-							</ul>	
-							<ul>	
-								<h2><a href="#">무료 디자인 컨텐츠</a></h2>
-								<li href="#"><a>디자인 컨텐츠 무료제공</a></li>
-							</ul>	
-							<ul>	
-								<h2><a href="#">홈페이지 제작</a></h2>									
-							</ul>
-							<ul>	
-								<h2><a href="#">업종별스킨</a></h2>
-							</ul>																
+								<h2><a href="#">홈페이지제작센터</a></h2>
+								<li href="#"><a>신청하기</a></li>
+							</ul>																						
 						</div>
 					</div>
 				 </div>
 			</li>
 			<li>
-				<a href="#">모바일</a>
-				<div>
-					<div>
-						<nav><a href="#">모바일</a></nav>		
-						<div>&nbsp;</div>
-					</div>
-				</div>
-			</li>
-			<li>
 				<a href="#">고객센터</a>
 				<div>
 					<div>
-						<nav><a href="#">고객센터</a></nav>
+						<nav>											
+                            <h2>고객센터</h2>							
+						</nav>		
 						<div>
 							<ul>
 								<h2><a href="#">빠른 메뉴</a></h2>
@@ -307,84 +214,52 @@
 							</ul>
 							<ul>
 								<h2><a href="#">이벤트 및 신규서비스</a></h2>
-								<li><a href="#">이벤트</a></li>
+								<li><a href="#">이벤트 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">신규 서비스</a></li>
-							</ul>
-							<ul>
-								<h2><a href="#">사용법 안내</a></h2>
-								<li><a href="#">서비스 사용법</a></li>
-							</ul>
+							</ul>							
 							<ul>
 								<h2><a href="#">상담 및 문의</a></h2>
-								<li><a href="#">자주 묻는 질문</a></li>
+								<li><a href="#">자주 묻는 질문 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 								<li><a href="#">1:1질문과 답변</a></li>
-								<li><a href="#">문의메일 보내기</a></li>
-								<li><a href="#">고객상담 전화번호 안내</a></li>								
-							</ul>										
-							<ul>
-								<h2><a href="#">고객의 소리</a></h2>										
-								<li><a href="#">칭찬합니다</a></li>	
-								<li><a href="#">Best 칭찬사원</a></li>
-								<li><a href="#">제안합니다</a></li>
-								<li><a href="#">제안 반영 내역</a></li>
-								<li><a href="#">BlueCGI 불량사용자 신고</a></li>
-							</ul>
+								<li><a href="#">문의메일 보내기</a></li>							
+							</ul>					
 						</div>
 					</div>
 				</div>
 			</li>
 			<li>
-				<a href="#">마이페이지</a>
+				<a href="#">내서비스관리</a>
 				<div>
 					<div>
-						<nav><a href="#">마이페이지</a></nav>
+						<nav>											
+                            <h2>내서비스관리</h2>							
+						</nav>		
 						<div>
 							<ul>
 								<h2><a href="#">요금관리</a></h2>
-								<li><a href="#">결제조회</a></li>
+								<li><a href="#">결제조회 <img src="/html/asets/images/icon_new.png" alt="new"></a></li>
 								<li><a href="#">호스팅 요금납부</a></li>
 								<li><a href="#">도메인 예치금 관리</a></li>
-								<li><a href="#">세금계산서/영수증 발급</a></li>
 								<li><a href="#">결제방법안내</a></li>
-								<li><a href="#">무통장입금 안내</a></li>
-								<li><a href="#">실시간계좌이체</a></li>
-								<li><a href="#">신용카드결제승인</a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">호스팅관리</a></h2>
-								<li><a href="#">호스팅 관리 툴</a></li>
-								<li><a href="#">호스팅 사용현황</a></li>
 								<li><a href="#">호스팅 신청/결제 확인</a></li>
-								<li><a href="#">호스팅 정보변경</a></li>			
-								<li><a href="#">모바일웹 신청/관리</a></li>
-								<li><a href="#">호스팅 명의변경</a></li>
+								<li><a href="#">호스팅 정보변경</a></li>
+								<li><a href="#">호스팅 명의변경 <img src="/html/asets/images/icon_event.png" alt="event"></a></li>
 							</ul>
 							<ul>
 								<h2><a href="#">도메인관리</a></h2>
-								<li><a href="#">도메인 사용 현황</a></li>
+								<li><a href="#">도메인 사용 현황 <img src="/html/asets/images/icon_update.png" alt="update"></a></li>
 								<li><a href="#">도메인 신청/결제 확인</a></li>
 								<li><a href="#">부가서비스 신청</a></li>
 								<li><a href="#">도메인 소유권 이전</a></li>							
-							</ul>	
-							<ul>
-								<h2><a href="#">솔루션관리</a></h2>
-								<li><a href="#">이비즈로 관리</a></li>
-								<li><a href="#">오픈몰 관리</a></li>
-								<li><a href="#">렛츠몰 관리</a></li>
-							</ul>	
-							<ul>
-								<h2><a href="#">기타서비스 관리</a></h2>
-								<li><a href="#">블루CGI 관리</a></li>
-								<li><a href="#">SSL 보안서버 관리</a></li>
-							</ul>	
+							</ul>
 							<ul>	
 								<h2><a href="#">나만의 혜택 관리</a></h2>
+                                <li><a href="#">회원정보 변경</a></li>
 								<li><a href="#">1:1 친절상담실</a></li>
 								<li><a href="#">이벤트 쿠폰</a></li>
-							</ul>	
-							<ul>
-								<h2><a href="#">원정보 관리</a></h2>	
-								<li><a href="#">회원정보 변경</a></li>
 							</ul>
 						</div>
 					</div>

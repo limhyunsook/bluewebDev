@@ -34,8 +34,6 @@
 </head>
 <body>
 
-
-
 <!--========== header ==========-->
 <header class="header">
 <?php
@@ -67,24 +65,22 @@
 
 <!--========== service ==========-->
 <section class="section-service">	
-
-
-
-	 <!-- service-item1 -->
+    
+	<!-- service-item1 -->
 	<div class="service-item">
-		<ul class="col-m-1" >
-			<li><a href="#"><img src="/html/asets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<Br/>호스팅</a></li>
-			<li><a href="#"><img src="/html/asets/images/icon_menuline03.png" alt="윈도우호스팅">윈도우<Br/>호스팅</a></li>
-			<li><a href="#"><img src="/html/asets/images/icon_menuline02.png" alt="이미지호스팅">이미지<Br/>호스팅</a></li>
-			<li><a href="#"><img src="/html/asets/images/icon_menuline05.png" alt="DNS호스팅">DNS<Br/>호스팅</a></li>
-			<li><a href="#"><img src="/html/asets/images/icon_menuline04.png" alt="SSL호스팅">SSL<Br/>신청</a></li>
+		<ul class="col-md-6 col-m-1">
+			<li><a href="#" class="ico-main01"><img src="/html/asets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
+            <li><a href="#" class="ico-main02"><img src="/html/asets/images/icon_menuline02.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
+            <li><a href="#" class="ico-main03"><img src="/html/asets/images/icon_menuline03.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
+            <li><a href="#" class="ico-main04"><img src="/html/asets/images/icon_menuline04.png" alt="DNS호스팅">DNS<br/>호스팅</a></li>
+            <li><a href="#" class="ico-main05"><img src="/html/asets/images/icon_menuline05.png" alt="SSL호스팅">SSL<br/>신청</a></li>			
 		</ul>	
-		<ul class="col-m-2">	
+		<ul class="col-md-6 col-m-2">	
 			<li>
 				<div>
 					<h2>도메인검색</h2>
 					<div>
-						<input type="text" name="" placeholder="www">
+						<label><input type="text"></label>
 						<button type="image" class="btn"><i class="fa fa-search"></i> 검색</button>
 					</div>
 					<ul>
@@ -106,26 +102,25 @@
 
 
 
-
-
+    
 	<!-- service-item2 -->
 	<div class="service-item2">          
         <ul class="row">
-            <li class="col-md-4">
+            <li class="col-xs-4">
                 <div class="col-m-1">
                     <h2><span>부가</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/html/asets/images/icon_service.png" alt="부가서비스">		
                 </div>
             </li>
-            <li class="col-md-4">
+            <li class="col-xs-4">
                 <div class="col-m-2">
                     <h2><span>매니지먼트</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/html/asets/images/icon_management.png" alt="부가서비스">		
                 </div>
             </li>
-            <li class="col-md-4">
+            <li class="col-xs-4">
                 <div class="col-m-3">
                     <div class="row-m-1">
                         <h2><span>1차</span> 네임서버</h2>
@@ -148,7 +143,7 @@
 	<!-- service-item3 -->
 	<div class="service-item3">
          <ul class="row">
-            <li class="col-md-4">                
+            <li class="col-xs-4">              
                 <div class="col-xe-1">                  
                     <h2>공지사항</h2>
                     <a href="#">+</a>
@@ -159,7 +154,7 @@
                     </ul>                  		
                 </div>
             </li>
-            <li class="col-md-4">                              
+           <li class="col-xs-4">                 
                 <div class="col-xe-2">                   
                     <h2>고객센터</h2>
                     <div>	
@@ -168,7 +163,7 @@
                     </div>    
                 </div>
             </li>
-            <li class="col-md-4">     
+            <li class="col-xs-4">
                 <div class="col-xe-3">                   
                     <h2>서비스관리</h2>
                     <div>					
@@ -224,7 +219,7 @@
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-    include($_SERVER["DOCUMENT_ROOT"]."./html/asets/inc/bottom.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/asets/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->
