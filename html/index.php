@@ -12,15 +12,17 @@
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
 	<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
 	<!-- favicon ================================================== -->
-	<link rel="shortcut icon" href="/html/asets/images/favicon.ico">
+	<link rel="shortcut icon" href="/html/assets/images/favicon.ico">
 
 	<!-- slide ================================================== --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>    
-	<script src="/html/asets/js/main_script.js"></script>
+	<script src="/html/assets/js/main_script.js"></script>
 
     <!-- bootstrapk ================================================== -->    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"><!-- 합쳐지고 최소화된 최신 CSS -->
@@ -28,8 +30,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     
     <!-- css ================================================== -->
-	<link rel="stylesheet" href="/html/asets/css/common.css">
-	<link rel="stylesheet" href="/html/asets/css/style.css">
+	<link rel="stylesheet" href="/html/assets/css/common.css">
+	<link rel="stylesheet" href="/html/assets/css/style.css">
 
 </head>
 <body>
@@ -37,7 +39,7 @@
 <!--========== header ==========-->
 <header class="header">
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/html/asets/inc/top.php");
+	include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/top.php");
 ?>
 </header>
 <!--========== end header ==========-->
@@ -47,8 +49,8 @@
 
 
 <!--========== slide ==========-->
-<section class="slider-section">	
-	<div class="main-img">	
+<section class="slider">	
+	<div class="main-slider">	
 		<div class="bxslider">
 			<div class="bg-box01 bg-box"></div>
 			<div class="bg-box02 bg-box"></div>
@@ -67,16 +69,17 @@
 <section class="section-service">	
     
 	<!-- service-item1 -->
-	<div class="service-item">
-		<ul class="col-md-6 col-m-1">
-			<li><a href="#" class="ico-main01"><img src="/html/asets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
-            <li><a href="#" class="ico-main02"><img src="/html/asets/images/icon_menuline02.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
-            <li><a href="#" class="ico-main03"><img src="/html/asets/images/icon_menuline03.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
-            <li><a href="#" class="ico-main04"><img src="/html/asets/images/icon_menuline04.png" alt="DNS호스팅">DNS<br/>호스팅</a></li>
-            <li><a href="#" class="ico-main05"><img src="/html/asets/images/icon_menuline05.png" alt="SSL호스팅">SSL<br/>신청</a></li>			
+	<div class="container service-item1">
+		<ul class="row col-m-1">
+			<li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
+            <li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline02.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
+            <li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline03.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
+            <li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline04.png" alt="DNS호스팅">DNS<br/>호스팅</a></li>
+            <li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline05.png" alt="SSL호스팅">제로XE<br/>호스팅</a></li>			
+            <li class="col-xs-2"><a href="#"><img src="/html/assets/images/icon_menuline06.png" alt="SSL호스팅">SSL<br/>신청</a></li>			
 		</ul>	
-		<ul class="col-md-6 col-m-2">	
-			<li>
+		<ul class="row col-m-2">	
+			<li class="col-xs-12">
 				<div>
 					<h2>도메인검색</h2>
 					<div>
@@ -104,20 +107,20 @@
 
     
 	<!-- service-item2 -->
-	<div class="service-item2">          
+	<div class="container service-item2">          
         <ul class="row">
             <li class="col-xs-4">
                 <div class="col-m-1">
                     <h2><span>부가</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
-                    <img src="/html/asets/images/icon_service.png" alt="부가서비스">		
+                    <img src="/html/assets/images/icon_service.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
                 <div class="col-m-2">
                     <h2><span>매니지먼트</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
-                    <img src="/html/asets/images/icon_management.png" alt="부가서비스">		
+                    <img src="/html/assets/images/icon_management.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
@@ -141,7 +144,7 @@
 
 
 	<!-- service-item3 -->
-	<div class="service-item3">
+	<div class="container service-item3">
          <ul class="row">
             <li class="col-xs-4">              
                 <div class="col-xe-1">                  
@@ -168,15 +171,15 @@
                     <h2>서비스관리</h2>
                     <div>					
                         <div>
-                            <img src="/html/asets/images/icon_question.png" alt="1:1문의">
+                            <img src="/html/assets/images/icon_question.png" alt="1:1문의">
                             <a href="#">1:1문의</a>	
                         </div>	                     
                         <div>
-                            <img src="/html/asets/images/icon_taxbill.png" alt="세금계산서">
+                            <img src="/html/assets/images/icon_taxbill.png" alt="세금계산서">
                             <a href="#">세금계산서</a>				
                         </div>
                         <div>
-                            <img src="/html/asets/images/icon_manual.png" alt="매뉴얼">
+                            <img src="/html/assets/images/icon_manual.png" alt="매뉴얼">
                             <a href="#">회사소개서</a>			
                         </div>
                     </div>					
@@ -192,8 +195,8 @@
 
 		
     <!--========== footer slide ==========-->
-    <section class="slider-section2">	
-        <div class="main-img">	
+    <section class="slider clearfix">	
+        <div class="footer_slider">	
             <div class="bxslider">
                 <div class="bg-box01 bg-box"></div>
                 <div class="bg-box02 bg-box"></div>              
@@ -219,7 +222,7 @@
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-    include($_SERVER["DOCUMENT_ROOT"]."/html/asets/inc/bottom.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->
