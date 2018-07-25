@@ -1,15 +1,15 @@
 <nav class="blue-navbar">
 	<div class="nav-table">				
 		<ul class="nav-middle">
-            <li><a href="/html/member/login.php">로그인</a></li>			
+            <li class="t-1"><a href="/html/member/login.html">로그인</a></li>			
             <li>|</li>
-			<li><a href="http://homepage.blueweb.co.kr/" target="_blank">홈페이지 제작센터</a></li>			
+			<li><a href="#">홈페이지 제작센터</a></li>			
             <li>|</li>
-			<li><a href="http://db.blueweb.co.kr/bluecgi/rIndex.html" target="_blank">블루 CGI</a></li>
+			<li><a href="#">블루 CGI</a></li>
 			<li>|</li>
-			<li><a href="http://sms.blueweb.co.kr/" target="_blank">블루 SMS</a></li>				
+			<li><a href="#">블루 SMS</a></li>				
             <li>|</li>
-			<li><a href="http://partner.blueweb.co.kr/" target="_blank">파트너</a></li>				
+			<li><a href="#">파트너</a></li>				
 		</ul>	
 	</div>
 </nav>
@@ -22,27 +22,27 @@
 		</h2>	
 		<ul>
 			<li>
-				<a href="/html/hosting/service.php">호스팅</a>
+				<a href="/html/hosting/index.html">호스팅</a>
 				 <div>
 					<div>
 						<nav>											
                             <h2>웹호스팅</h2>
 							<p>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</p>							
-                            <a href="/html/hosting/service.php">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
+                            <a href="/html/hosting/index.html">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>
-								<h2><a href="/html/hosting/service.php">웹호스팅 <img src="/html/assets/images/icon_new.png" alt="new"></a></h2>
-								<li><a href="#">리눅스 웹호스팅</a></li>
-                                <li><a href="#">윈도우 웹호스팅</a></li>
-								<li><a href="#">제로XE 호스팅</a></li>		
-                                <li><a href="#">.NET 호스팅</a></li>
-                                <li><a href="#">리셀러 호스팅</a></li>
+								<h2><a href="/html/hosting/linux_info.html">웹호스팅 <img src="/html/assets/images/icon_new.png" alt="new"></a></h2>
+								<li><a href="/html/hosting/linux_info.html">리눅스 웹호스팅</a></li>
+                                <li><a href="/html/hosting/linux_info.html">윈도우 웹호스팅</a></li>
+								<li><a href="/html/hosting/linux_cost.html">제로XE 호스팅</a></li>		
+                                <li><a href="/html/hosting/linux_faq.html">.NET 호스팅</a></li>
+                                <li><a href="/html/hosting/linux_faq.html">리셀러 호스팅</a></li>
 							</ul>		
 							<ul>
 								<h2><a href="#">솔루션 지원</a></h2>
-								<li><a href="#">이미지 호스팅</a></li>
-								<li><a href="#">동영상 호스팅</a></li>
+								<li><a href="/html/hosting/linux_aprocess.html">이미지 호스팅</a></li>
+								<li><a href="/html/hosting/linux_faq.html">동영상 호스팅</a></li>
 							</ul>		
 							<ul>
 								<h2><a href="#">웹사이트 구축 지원</a></h2>
@@ -61,7 +61,7 @@
 						<nav>											
                             <h2>서버호스팅</h2>
 							<p>대의 서버를 독립적으로 이용하실 수 있는 서비스</p>							
-                            <a href="#">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
+                            <a href="/html/hosting/index.html">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>
@@ -101,7 +101,7 @@
 						<nav>											
                             <h2>도메인</h2>
 							<p>도메인은 개인 또는 기업을 대표하는 브랜드이자 첫인상입니다.</p>							
-                            <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>
@@ -128,7 +128,7 @@
 						<nav>											
                             <h2>보안</h2>
 							<p>사이버 보안 위협으로부터 실시간 대응하며 고객의 정보를 안전하게 보호합니다.</p>							
-                            <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>	
@@ -168,7 +168,7 @@
 						<nav>											
                             <h2>솔루션</h2>
 							<p>홈페이지 DIY(직접 제작)부터 전문 제작의뢰까지, 고객에게 딱 맞는 맞춤형 홈페이지를 제공합니다.</p>							
-                            <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
+                            <a href="/html/hosting/index.html">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
 						<div>
 							<ul>	
