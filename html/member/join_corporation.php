@@ -1,33 +1,50 @@
 <!DOCTYPE HTML>
 <html  lang="ko">
 <head>
-
+    
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="IE=edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-   <!-- favicon ================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	
-	<!-- fonts	================================================== -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+	<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- slide	================================================== -->
-	<script src="http://all.bluebiz.kr/userData/test/blueweb_test/js/jquery-1.9.1.min.js"></script> 
+    
+	<!-- favicon ================================================== -->
+	<link rel="shortcut icon" href="/html/assets/images/favicon.ico">
 
-	<!-- css	    ================================================== -->
-	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/join.css"> 
+	<!-- slide ================================================== --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>    
+	<script src="/html/assets/js/main_script.js"></script>
+
+    <!-- bootstrapk ================================================== -->    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"><!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"><!-- 부가적인 테마 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    
+    <!-- css ================================================== -->
+	<link rel="stylesheet" href="/html/assets/css/common.css">
+	<link rel="stylesheet" href="/html/assets/css/style.css">
 
 </head>
 <body>
 
-
-
-
+    
+    
+    
+    
+    
 <!--========== header ==========-->
 <header class="header">
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/top.html");
+	include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/top.php");
 ?>
 </header>
 <!--========== end header ==========-->
@@ -84,7 +101,7 @@ $(function(){
 			</div>
 
 			<div class="frm-input">
-				<input type="text" value="" placeholder="아이디"  class="input-style01"><bR>
+				<input type="text" value="" placeholder="아이디"  class="input-style01"><bR/>
 				<div class="tooltip">영문 소문자, 숫자 조합 6~15자로 입력해 주세요.</div>
 				<button class="join-btn01">중복확인</button>							
 			</div>
@@ -151,9 +168,9 @@ $(function(){
 		<!-- agreement -->	
 		<div class="form-type2">		
 			
-			<input type="checkbox" value="" name="checkbox" checked="" id="ccc" class="table-style04"><label for="ccc" class="table-style05"> 블루웹 회원 약관에 동의합니다.</label><a href="../member/agreement_user.html">상세보기</a>
-			<bR>
-			<input type="checkbox" value="" name="checkbox" checked="" id="eee" class="table-style04"><label for="eee" class="table-style05"> 개인정보의 수집 및 이용에 동의합니다.</label><a href="../member/privacy.html">상세보기</a>
+			<input type="checkbox" value="" name="checkbox" checked="" id="ccc" class="table-style04"><label for="ccc" class="table-style05"> 블루웹 회원 약관에 동의합니다.</label><a href="/html/agreements/agreement_user.php">상세보기</a>
+			<bR/>
+			<input type="checkbox" value="" name="checkbox" checked="" id="eee" class="table-style04"><label for="eee" class="table-style05"> 개인정보의 수집 및 이용에 동의합니다.</label><a href="/html/agreements/agreement_person.php">상세보기</a>
 				
 			<table>
 			<caption>개인정보 수집 및 이용안내</caption>
@@ -170,14 +187,14 @@ $(function(){
 			</thead>
 			<tbody>
 				<tr>
-					<td>성명, 아이디, 비밀번호,<Br>전화번호, 이메일 주소</td>
-					<td>이용자 식별 및 서비스 이용,<Br>장애 처리, 정보 안내</td>
+					<td>성명, 아이디, 비밀번호,<Br/>전화번호, 이메일 주소</td>
+					<td>이용자 식별 및 서비스 이용,<Br/>장애 처리, 정보 안내</td>
 					<td>회원탈퇴 후 1년</td>
 				</tr>
 			</tbody>
 			</table>
 		</div>
-		<button class="join-btn04"><a href="join_complete.html">회원가입</a></button>				
+		<button class="join-btn04"><a href="/html/member/join_complete.php">회원가입</a></button>				
 	</div>
 
 	<p>※ 블루웹은 만 14세 미만 아동의 회원가입을 받지 않습니다.</p>
@@ -200,7 +217,7 @@ $(function(){
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/bottom.html");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->

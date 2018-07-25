@@ -84,16 +84,16 @@
 <div class="container address">			
     <ul class="row col-m-1">
 		<li><a href="http://ir.blueweb.co.kr/" target="_blink">회사소개</a></li>
-		<li><a href="http://all.bluebiz.kr/userData/test/blueweb_new/agreement_person.html" class="link">개인정보처리방침</a></li>
-		<li><a href="http://all.bluebiz.kr/userData/test/blueweb_new/agreement_user.html">회원약관</a></li>	
-		<li><a href="http://all.bluebiz.kr/userData/test/blueweb_new/agreement_hosting.html">호스팅약관</a></li>
-		<li><a href="http://all.bluebiz.kr/userData/test/blueweb_new/agreement_domain.html">도메인약관</a></li>
+		<li><a href="/html/agreements/agreement_person.php" class="link">개인정보처리방침</a></li>
+		<li><a href="/html/agreements/agreement_user.php">회원약관</a></li>	
+		<li><a href="/html/agreements/agreement_hosting.php">호스팅약관</a></li>
+		<li><a href="/html/agreements/agreement_domain.php">도메인약관</a></li>
 	</ul>				
 	<ul class="row col-m-2">
 		<li>서울시 강남구 언주로 430(역삼동,윤익빌딩10층) (주)블루웹</li>	
 		<li>대표이사 : 장봉근</li>
 		<li>사업자번호 : 106-81-85951</li>
-		<li>통신판매업 신고번호 : 강남 3315호</li><Br>				
+		<li>통신판매업 신고번호 : 강남 3315호</li><Br/>				
 		<li>TEL : 1588-2120</li>
 		<li>FAX : 02-567-3400</li>
 		<li>EMAIL : <a href="mailto:master@blueweb.co.kr">master@blueweb.co.kr</a></li>

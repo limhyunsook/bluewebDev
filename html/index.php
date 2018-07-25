@@ -52,10 +52,10 @@
 <section class="slider">	
 	<div class="main-slider">	
 		<div class="bxslider">
-			<div class="bg-box01 bg-box"></div>
-			<div class="bg-box02 bg-box"></div>
-			<div class="bg-box03 bg-box"></div>
-			<div class="bg-box04 bg-box"></div>
+			<div class="bg-img01 bg-box"></div>
+			<div class="bg-img02 bg-box"></div>
+			<div class="bg-img03 bg-box"></div>
+			<div class="bg-img04 bg-box"></div>
 		</div>	
 	</div>	
 </section>

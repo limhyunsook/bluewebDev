@@ -1,32 +1,50 @@
 <!DOCTYPE HTML>
 <html  lang="ko">
 <head>
-
+    
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="IE=edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-   <!-- favicon ================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+	<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- fonts	================================================== -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+	<!-- favicon ================================================== -->
+	<link rel="shortcut icon" href="/html/assets/images/favicon.ico">
 
-	<!-- slide	================================================== -->
-	<script src="http://all.bluebiz.kr/userData/test/blueweb_test/js/jquery-1.9.1.min.js"></script> 
+	<!-- slide ================================================== --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>    
+	<script src="/html/assets/js/main_script.js"></script>
 
-	<!-- css	    ================================================== -->
-	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/login.css"> 
+    <!-- bootstrapk ================================================== -->    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"><!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"><!-- 부가적인 테마 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    
+    <!-- css ================================================== -->
+	<link rel="stylesheet" href="/html/assets/css/common.css">
+	<link rel="stylesheet" href="/html/assets/css/style.css">
 
 </head>
 <body>
 
-
-
+    
+    
+    
+    
+    
 <!--========== header ==========-->
 <header class="header">
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/top.html");
+	include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/top.php");
 ?>
 </header>
 <!--========== end header ==========-->
@@ -78,10 +96,7 @@ $(function(){
 	<div class="member-info-edit-area">		
 		<div class="member-info-edit-table">
 
-
-
 			<h2>회원 정보 변경</h2>
-
 
 
 			<!-- tab -->
@@ -92,7 +107,6 @@ $(function(){
 					<li class="member-info-edit-tab-btn"><a href="#">회원 탈퇴</a></li>		
 				</ul>
 			</div>
-
 
 
 			<!--tab01 -->
@@ -130,12 +144,9 @@ $(function(){
 
 				</div>	
 
-				<button class="member-info-edit-btn" onclick="location.href='member_info_edit_ok_mem.html';">정보 변경</button>
+				<button class="member-info-edit-btn" onclick="location.href='/html/member/member_info_edit_ok_mem.php';">정보 변경</button>
 
 			</div>
-
-
-
 
 
 			<!--tab02 -->
@@ -159,11 +170,9 @@ $(function(){
 
 				</div>					
 				
-				<button class="id-ok" onclick="location.href='member_info_edit_ok_login.html';">정보 변경</button>
+				<button class="id-ok" onclick="location.href='/html/member/member_info_edit_ok_login.php';">정보 변경</button>
 
 			</div>
-
-
 
 
 			<!--tab03 -->
@@ -171,11 +180,11 @@ $(function(){
 				<div>				
 
 					<p>					
-						그동안 블루웹 서비스를 이용해 주셔서 감사합니다. <br>
-						아래의 양식에 맞게 기입하신 후 <span>[확인]</span> 버튼을 클릭하면 자동탈퇴 처리됩니다. <br><br>
-						회원 관련된 정보는 모두 삭제가 되어 복구가 불가능하며, 기존에 이용하시던 서비스는 모두 중단되므로 탈퇴신청을 하시기 전 신중을 기하시기 바랍니다. 탈퇴 후 동일한 아이디로는 회원가입이 불가능합니다.<br><br>
-						호스팅 서비스를 이용하고 계신 고객분들은 탈퇴 신청 이전에 해지 처리가 되어야 가능하므로 해지절차를 따라주시기 바랍니다. <br><br>
-						도메인 서비스를 이용하시는 분들은 정보 갱신을 위해 탈퇴 처리가 되지 않습니다.					<br><br>
+						그동안 블루웹 서비스를 이용해 주셔서 감사합니다. <br/>
+						아래의 양식에 맞게 기입하신 후 <span>[확인]</span> 버튼을 클릭하면 자동탈퇴 처리됩니다. <br/><br/>
+						회원 관련된 정보는 모두 삭제가 되어 복구가 불가능하며, 기존에 이용하시던 서비스는 모두 중단되므로 탈퇴신청을 하시기 전 신중을 기하시기 바랍니다. 탈퇴 후 동일한 아이디로는 회원가입이 불가능합니다.<br/><br/>
+						호스팅 서비스를 이용하고 계신 고객분들은 탈퇴 신청 이전에 해지 처리가 되어야 가능하므로 해지절차를 따라주시기 바랍니다. <br/><br/>
+						도메인 서비스를 이용하시는 분들은 정보 갱신을 위해 탈퇴 처리가 되지 않습니다.<br/><br/>
 					</p>
 					
 					<div class="input-type-a">	
@@ -212,22 +221,16 @@ $(function(){
 					</div>
 
 					<div class="input-type-c">	
-							<textarea name="" class="input-textarea"></textarea>
+						<textarea name="" class="input-textarea"></textarea>
 					</div>
 					
 					<p><a href="#">잠깐! 명의변경을 원하시면 이곳을 클릭하세요!</a></p>
 				
 				</div>					
 				
-				<button class="id-ok" onclick="location.href='member_info_edit_ok_quit.html';">확인</button>
+				<button class="id-ok" onclick="location.href='/html/member/member_info_edit_ok_quit.php';">확인</button>
 
 			</div>
-
-
-
-
-
-
 
 
 
@@ -258,7 +261,7 @@ $(function(){
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/userData/test/blueweb_new/inc/bottom.html");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->
