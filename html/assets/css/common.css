@@ -25,7 +25,8 @@ textarea{resize:none;}
 b, dt, label{font-weight:500;}
 img{max-width:100%;}
 hr {border: 0;height: 1px;background: #Ddd;margin:30px 0;}
-button, input, optgroup, select, textarea {border-radius: 2px !important;box-shadow: 0 !important;}
+button, input, optgroup, select, textarea, checkbox, radio {border-radius: 2px !important;box-shadow: none !important;text-shadow: none !important;}
+
 
 /* Grid */
 .row{margin-right: -10px;margin-left: -10px;}
@@ -33,23 +34,32 @@ button, input, optgroup, select, textarea {border-radius: 2px !important;box-sha
 .container{ position: relative;max-width:1080px;margin:0 auto;padding-right:0px;padding-left: 0px;min-width: 1080px;}
 
 
--/* Theme */
-.bg-wh{background-color:#fff !important;}
-.bg-primary{background-color:#087ee3 !important; color: #fff !important;}
-.bg-sky{background-color:#a0ddb1 !important;}
-.bg-grn{background-color:#ecf3bf !important;}
-.bg-mint{ background: #a1e4e7 !important; color: #fff !important;}
-.bg-gray{ background: #f9f9f9 !important; color: #555 !important;}
-.bg-orange{background: #fb5e27 !important;color: #fff !important;}
+/* button */
+.btn-primary {background-color: #087ee3 !important;border-color: #087ee3 !important;}
+.btn-primary:hover{background-color:#076fc8 !important;border-color:#005aa7 !important;}
 
-.color-wh{color:#fff !important;}
-.color-primary{color:#087ee3 !important;}
-.color-orange{color:#fb5e27 !important;}
-.color-blk{color:#000 !important;}
-.color-grey{color:#ddd !important;}
-.color-yellow{color:#FFC107 !important;}
-.color-green{color:#10a860 !important;}
-.color-blue{color:#007ee5 !important;}
+.btn-success {background-color: #0aa761 !important;border-color: #0aa761 !important;}
+.btn-success:hover{background-color:#0a9255 !important;border-color:#077a47 !important;}
+
+.btn-info {background-color: #4779da !important;border-color: #4779da !important;}
+.btn-info:hover {background-color:#076fc8 !important;border-color:#005aa7 !important;}
+ 
+.btn-warning {background-color: #f6ba26 !important;border-color: #f6ba26 !important;}
+.btn-warning:hover{background-color:#edaf16 !important;border-color:#d89d0a !important;}
+
+.btn-danger {background-color: #ef490f !important;;border-color: #ef490f !important;}
+.btn-danger:hover {background-color:#e0440e !important;border-color:#c13b0c !important;}
+
+
+
+.btn {display: inline-block;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;cursor: pointer;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;    
+touch-action: manipulation;   
+-ms-touch-action: manipulation;     
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
 
 
 /* subtop */
@@ -65,4 +75,8 @@ button, input, optgroup, select, textarea {border-radius: 2px !important;box-sha
 
 
 
+
+/* margins */
+.ma0{margin-top:8px !important;}
+.ma1{margin-bottom: 8px !important;}
 

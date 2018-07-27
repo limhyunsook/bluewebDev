@@ -127,7 +127,7 @@
                                             <option>3년선납결제(12개월무료)</option>
                                             <option>매월 결제</option>
                                         </select>
-                                        <button class="btn bg-primary" type="submit" onclick="location.href='/html/hosting/application.php';">선납무이자</button>
+                                        <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">선납무이자</button>
                                     </td>
                                  </tr>   
                             </tbody>
@@ -189,8 +189,8 @@
                             </tbody>
                             </table>   
                             
-                            <button type="button" class="btn btn-primary" href="#step02">다음 단계</button>
-                            <button type="button" class="btn btn-warning" onclick="location.href='/html/hosting/registration.php';">견적서 출력</button>           
+                            <button type="button" class="btn btn-primary ma1" href="#step02">다음 단계</button>
+                            <button type="button" class="btn btn-success" onclick="location.href='/html/hosting/registration.php';">견적서 출력</button>           
                         </div>
                     </li>  
                 </ul>   
@@ -322,14 +322,14 @@
                         <th scope="row">FTP ID	</th>
                         <td scope="col">
                             <input type="text" class="form-control" placeholder="Text input">
-                            <button class="btn bg-primary" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
+                            <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
                         </td>
                     </tr>  
                     <tr class="table-success">
                         <th scope="col">메일주소</th>
                         <td scope="col">
                             <input type="text" class="form-control" placeholder="Text input">
-                            <button class="btn bg-primary" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
+                            <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
                         </td>
                     </tr>  
                     <tr class="table-success">
@@ -406,7 +406,7 @@
                         <th scope="col">파트너 ID</th>
                         <td scope="col">
                             <input type="text" class="form-control" placeholder="Text input">
-                            <button class="btn bg-primary" type="submit" onclick="location.href='/html/hosting/application.php';">파트너정보확인</button>   
+                            <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">파트너정보확인</button>   
                         </td>
                     </tr>
                 </thead>               
