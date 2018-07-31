@@ -20,7 +20,6 @@
 
 	<!-- slide ================================================== --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>    
 	<script src="/html/assets/js/main_script.js"></script>
 
@@ -35,11 +34,16 @@
 
 </head>
 <body>
+    
+    
+    
+    
+    
 
 <!--========== header ==========-->
 <header class="header">
 <?php
-	include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/top.php");
+	include($_SERVER["DOCUMENT_ROOT"]."/html/inc/top.php");
 ?>
 </header>
 <!--========== end header ==========-->
@@ -52,10 +56,10 @@
 <section class="slider">	
 	<div class="main-slider">	
 		<div class="bxslider">
-			<div class="bg-box01 bg-box"></div>
-			<div class="bg-box02 bg-box"></div>
-			<div class="bg-box03 bg-box"></div>
-			<div class="bg-box04 bg-box"></div>
+			<div class="bg-img01 bg-box"></div>
+			<div class="bg-img02 bg-box"></div>
+			<div class="bg-img03 bg-box"></div>
+			<div class="bg-img04 bg-box"></div>
 		</div>	
 	</div>	
 </section>
@@ -193,6 +197,7 @@
 
 		
 
+    
 		
     <!--========== footer slide ==========-->
     <section class="slider clearfix">	
@@ -222,12 +227,17 @@
 <!--========== footer ==========-->
 <footer class="footer">		
 <?php
-    include($_SERVER["DOCUMENT_ROOT"]."/html/assets/inc/bottom.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/html/inc/bottom.php");
 ?>
 </footer>
 <!--========== end footer ==========-->
 
 
+    
+    
+    
+    
+    
 
 
 </body>
