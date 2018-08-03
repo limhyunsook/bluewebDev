@@ -77,8 +77,51 @@ class Sample extends MY_Controller
             $result .= $char[mt_rand(0, strlen($char)-1)];
         }
         return($result);
-    }
+	}
 
-	
+	function pay(){
+		echo $this->test();
+
+	}
+
+	function inicis(){
+		$this->load->view('common/head');
+		$this->load->view('inicis_1');
+		$this->load->view('common/foot');
+	}
+
+	function input(){
+		$this->load->view('common/head');
+		$this->load->view('insert');
+		$this->load->view('common/foot');
+	}
+
+/*	function field(){
+		$name = $this->input->get("name",true);
+		$email = $this->input->get("email",true);
+
+		echo $name;
+		echo $email;
+	}*/
+
+	function test_db(){
+		$m_name = $this->input->get("m_name",true);
+		$m_email = $this->input->get("m_email",true);
+
+		$this->load->database(); //데이터베이스 호출
+		$this->load->model('test_model'); //모델호출
+		$stx = 0;
+		$db  = $this->test_model->test_sel($stx,$m_name,$m_email); //모델 함수 호출 , 함수 호출 하듯 파라메터 전달이 가능 합니다.
+
+		
+
+		$data = [];
+		$data['db1'] = $db;
+		$data['user'] = 'my dev 진영';
+
+		$this->load->view('test_db',$data);
+
+		///print_r($db);
+	}
 	
 }
