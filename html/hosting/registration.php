@@ -57,7 +57,7 @@
 <section class="container-warp">	
 		
     <div class="sub-top">
-        <h5>원하는 호스팅 365일 언제나</h5>			
+        <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
         <h2>리눅스 호스팅</h2>	
     </div>    
     

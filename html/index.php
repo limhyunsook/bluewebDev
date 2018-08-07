@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"><!-- 부가적인 테마 -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script><!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     
-    <!-- css ================================================== -->
+    <!-- css ================================================== -->   
 	<link rel="stylesheet" href="/html/assets/css/common.css">
 	<link rel="stylesheet" href="/html/assets/css/style.css">
-
+    
 </head>
 <body>
     

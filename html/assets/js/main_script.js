@@ -1,13 +1,5 @@
 	
 
-
-
-
-
-
-
-
-
 // --------------------------  메인 슬라이드 -------------------------- //
 
 $(window).load(function(){
@@ -32,7 +24,7 @@ $(window).load(function(){
     //슬라이더 동작
     $('.main-slide>ul').bxSlider();    // 메인슬라이더
     $('.footer-slide>ul').bxSlider();  // 풋터슬라이더
-    
+     
 });
 
 
