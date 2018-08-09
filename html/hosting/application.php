@@ -30,7 +30,6 @@
     <!-- css ================================================== -->
 	<link rel="stylesheet" href="/html/assets/css/common.css">
 	<link rel="stylesheet" href="/html/assets/css/style.css">
-    
 </head>
 <body>
     
@@ -69,23 +68,25 @@
             
             <!-- Nav tabs -->
             <ul class="nav nav-pills tab02" role="tablist">
-                <li role="presentation" class="active col-xs-4" ><a href="#step01" aria-controls="step01" role="tab" data-toggle="tab"><strong>STEP 01</strong>호스팅 기본 정보 선택</a></li>
-                <li role="presentation" class="col-xs-4"><a href="#step02" aria-controls="step02" role="tab" data-toggle="tab"><strong>STEP 02</strong>호스팅 관리 정보 입력</a></li>
-                <li role="presentation" class="col-xs-4"><a href="#step03" aria-controls="step03" role="tab" data-toggle="tab"><strong>STEP 03</strong>호스팅 신청정보 확인 및 결제</a></li>
+                <li role="presentation" class="active col-xs-3" ><a href="#step01" aria-controls="step01" role="tab" data-toggle="tab"><strong>STEP 01</strong>호스팅 기본 정보 선택</a></li>
+                <li role="presentation" class="col-xs-3"><a href="#step02" aria-controls="step02" role="tab" data-toggle="tab"><strong>STEP 02</strong>호스팅 관리 정보 입력</a></li>
+                <li role="presentation" class="col-xs-3"><a href="#step03" aria-controls="step03" role="tab" data-toggle="tab"><strong>STEP 03</strong>호스팅 신청정보 확인 및 결제</a></li>
+                <li role="presentation" class="col-xs-3"><a href="#step04" aria-controls="step04" role="tab" data-toggle="tab"><strong>STEP 04</strong>호스팅 신청 완료</a></li>
             </ul>
 
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div class="tab-content fixing">
               
                 <!-- tab 1 -->
                 <div role="tabpanel" class="tab-pane active" id="step01"> 
                     <ul class="row">
-                        <li class="col-xs-9">
-
-                            <table class="table step01_table1 ma2">                
+                        <li class="col-xs-9 list">
+                                
+                            <table class="table step01_table1 ma2"> 
+                            <caption>호스팅 기본 정보 선택</caption>       
                             <tbody>
                                  <tr>
-                                    <th scope="col">호스팅 종류</th>
+                                    <th>호스팅 종류</th>
                                     <td>     
                                         <div class="selectbox">
                                             <button class="btncontainer">선택하세요!</button>
@@ -107,10 +108,10 @@
                                         <table class="table step01_table4">
                                         <thead>
                                             <tr>
-                                                <th scope="col">트래픽</th>
-                                                <th scope="col">웹용량</th>
-                                                <th scope="col">DB용량</th>
-                                                <th scope="col">메일용량(개수)</th>
+                                                <th>트래픽</th>
+                                                <th>웹용량</th>
+                                                <th>DB용량</th>
+                                                <th>메일용량(개수)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -149,14 +150,26 @@
                                                 <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
                                                 <span class="radio-text"></span>웹메일
                                             </label>                    
-                                        </div> 
+                                        </div>
+                                        <div class="selectbox ma0">
+                                            <button class="btncontainer">다음</button>
+                                            <div class="dropdown">
+                                                <button class="btncontainer btnstyle">
+                                                  <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">다음</a>
+                                                    <a href="#">네이버</a>
+                                                </div>
+                                            </div>   
+                                        </div>
                                     </td>
                                 </tr>  
                                 <tr class="table-success">
                                     <th scope="row">호스팅 요금<br/>납부방식</th>
                                     <td>    
                                         <div class="selectbox">
-                                            <button class="btncontainer">선택하세요!</button>
+                                            <button class="btncontainer">결제방식 선택</button>
                                             <div class="dropdown">
                                                 <button class="btncontainer btnstyle">
                                                   <i class="fa fa-caret-down"></i>
@@ -178,97 +191,59 @@
                             
                             <div class="step01_refer">* 호스팅 견적을 메일로 받아 보실 수 있습니다.</div>
 
-                        </li>                  
-                        <li class="col-xs-1"></li> 
-                        <li class="col-xs-3">  
-                            <div class="step01_table3">
-                                <table class="table">
-                                <caption>결제 금액 계산</caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">항목</th>
-                                        <th scope="col">비용</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-success">
-                                        <td scope="col">초기세팅비</td>
-                                        <td>5,500원</td>
-                                    </tr>  
-                                    <tr class="table-success">
-                                        <td scope="col">당월요금</td>
-                                        <td scope="col">30,000원</td>
-                                    </tr>  
-                                    <tr class="table-success">
-                                        <td scope="col">선납 요금</td>
-                                        <td scope="col">8,000원</td>
-                                    </tr>  
-                                    <tr class="table-success">
-                                        <td scope="col">옵션 요금</td>
-                                        <td scope="col">8,000원</td>
-                                    </tr>  
-                                    <tr class="table-success">                                     
-                                        <td scope="col" colspan="2">결제 예상 금액<br/><span>88,000원</span></td>
-                                    </tr>  
-                                </tbody>
-                                </table>   
-                                <div class="step_nextbtn1">
-                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 step_nextbtn1-1">다음 단계</button> 
-                                    <button type="button" class="btn btn-success step_nextbtn1-2" onclick="location.href='#';">견적서 출력</button>
-                                </div>     
-                            </div>
-                        </li>  
+                        </li>                          
                     </ul>                     
                 </div>      
 
                 
                 <!-- tab 2 -->
                 <div role="tabpanel" class="tab-pane" id="step02">
-
-                    <table class="table step02_table">
-                    <caption>회원 정보</caption>       
+                   
+                    <table class="table step02_table">       
+                    <caption>회원 정보</caption>   
                     <tbody>
                          <tr>
-                            <th scope="col">이름</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>이름</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">아이디</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">메일주소</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>메일주소</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>휴대 전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                     </tbody>
                     </table>   
-
-                    <div class="step02_refer">고객님이 지금까지 사용중인 호스팅이 22건 있습니다.<Br/>이 중 하나의 호스팅 정보와 아래 관리자 정보 및 요금 담당자 정보를 일치시킬 수 있습니다.</div>
+                    
 
                     <div class="step02_appli">
-                        <p>기존 호스팅 정보와 동일한 정보 사용하여 호스팅 신청</p>                         
+                        <span>고객님이 지금까지 사용중인 호스팅이 22건 있습니다.<Br/>이 중 하나의 호스팅 정보와 아래 관리자 정보 및 요금 담당자 정보를 일치시킬 수 있습니다.</span>
+                        <p>기존 호스팅 정보와 동일한 정보 사용하여 호스팅 신청</p>    
                         <div class="selectbox">                                                   
-                            <button class="btncontainer">선택하세요!</button>
+                            <button class="btncontainer">기존 호스팅 선택</button>
                             <div class="dropdown">
                                 <button class="btncontainer btnstyle">
                                   <i class="fa fa-caret-down"></i>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">1</a>
-                                    <a href="#">1</a>
-                                    <a href="#">1</a>
+                                    <a href="#">http://cookingm.co.kr/01</a>
+                                    <a href="#">http://cookingm.co.kr/02</a>
+                                    <a href="#">http://cookingm.co.kr/03</a>
                                 </div>
                             </div>   
                         </div> 
                     </div>
+                    
 
                     <table class="table step02_table">
                     <caption>호스팅 관리자 정보
@@ -279,22 +254,22 @@
                     </caption>                           
                     <tbody>
                          <tr>
-                            <th scope="col">관리자 이름</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>관리자 이름</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">메일주소</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col">
+                            <th>전화번호</th>
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <span>(- 포함시켜주세요)</span>                        
                             </td>
                         <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                            <td scope="col">
+                            <th>휴대 전화번호</th>
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <span>(- 포함시켜주세요)</span>                        
                             </td>
@@ -317,23 +292,23 @@
                     </caption>                             
                     <tbody>
                         <tr>
-                            <th scope="col">요금 담당자 이름</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>요금 담당자 이름</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">청구 메일주소</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col">
+                            <th>전화번호</th>
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <span>(- 포함시켜주세요)</span>                        
                             </td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                             <td scope="col">
+                            <th>휴대 전화번호</th>
+                             <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <span>(- 포함시켜주세요)</span>                        
                             </td>
@@ -346,33 +321,33 @@
                     <caption>FTP정보</caption>
                     <tbody>
                         <tr>
-                            <th scope="col">도메인</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <th>도메인</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">FTP ID	</th>
-                            <td scope="col">
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
                             </td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">메일주소</th>
-                            <td scope="col">
+                            <th>메일주소</th>
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">중복검사</button>
                             </td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">FTP 비밀번호</th>
-                            <td scope="col">
+                            <th>FTP 비밀번호</th>
+                            <td>
                                 <input type="password" class="form-control" placeholder="Text input"> 
                                 <span>※ FTP비밀번호는 도메인명, FTP ID와 동일하게 설정할 수 없으며,8자 이상으로 작성하셔야 합니다.</span>   
                             </td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">FTP 비밀번호 확인</th>
-                            <td scope="col"><input type="password" class="form-control" placeholder="Text input"></td>
+                            <th>FTP 비밀번호 확인</th>
+                            <td><input type="password" class="form-control" placeholder="Text input"></td>
                         </tr>  
                     </tbody>
                     </table>   
@@ -382,18 +357,17 @@
                     <caption>APM 정보</caption>
                     <tbody>
                         <tr>
-                            <th scope="col">PHP종류 선택</th>
-                            <td scope="col">  
+                            <th>PHP종류 선택</th>
+                            <td>  
                                 <div class="selectbox">
-                                    <button class="btncontainer">선택하세요!</button>
+                                    <button class="btncontainer">PHP 5.x.x</button>
                                     <div class="dropdown">
                                         <button class="btncontainer btnstyle">
                                           <i class="fa fa-caret-down"></i>
                                         </button>
                                         <div class="dropdown-content">
-                                            <a href="#">1</a>
-                                            <a href="#">1</a>
-                                            <a href="#">1</a>
+                                            <a href="#">PHP 5.x.x</a>
+                                            <a href="#">PHP 7.x.x</a>
                                         </div>
                                     </div>
                                 </div>
@@ -401,7 +375,7 @@
                         </tr>
                         <tr class="table-success">
                             <th scope="row">DB종류 선택</th>
-                            <td scope="col">        
+                            <td>        
                                 <div class="radio">
                                     <label class="radiocontainer">
                                         <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
@@ -413,27 +387,27 @@
                                     </label> 
                                 </div>    
                                 <div class="selectbox">
-                                    <button class="btncontainer">선택하세요!</button>
+                                    <button class="btncontainer">MySQL 5.X 버전</button>
                                     <div class="dropdown">
                                         <button class="btncontainer btnstyle">
                                           <i class="fa fa-caret-down"></i>
                                         </button>
                                         <div class="dropdown-content">
-                                            <a href="#">1</a>
-                                            <a href="#">1</a>
-                                            <a href="#">1</a>
+                                            <a href="#">MySQL 3.X 버전</a>
+                                            <a href="#">MySQL 4.X 버전</a>
+                                            <a href="#">MySQL 5.X 버전</a>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">DB 아이디</th>
-                            <td scope="col"></td>
+                            <th>DB 아이디</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">DB 비밀번호</th>
-                            <td scope="col"></td>
+                            <th>DB 비밀번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>                     
                     </tbody>
                     </table>  
@@ -443,13 +417,12 @@
                         - Apache 버전은 최신 버전으로 설치 됩니다.
                     </div>
 
-
                     <table class="table step02_table ma2">
                     <caption>파트너 정보 확인</caption>
                     <tbody>
                         <tr>
-                            <th scope="col">파트너 ID</th>
-                            <td scope="col">
+                            <th>파트너 ID</th>
+                            <td>
                                 <input type="text" class="form-control" placeholder="Text input">
                                 <button class="btn btn-danger ma0" type="submit" onclick="location.href='/html/hosting/application.php';">파트너정보확인</button>   
                             </td>
@@ -457,11 +430,8 @@
                     </tbody>               
                     </table>   
 
-                    <div class="step02_refer">-  파트너 ID를 알고계신 고객께서는 파트너 ID를 입력후 반드시 '파트너정보확인' 버튼을 클릭하여 인증을 받기 바랍니다.</div>     
-                                        
-                    <div class="step_nextbtn2">
-                        <button type="button" id="tabStep02" class="btn btn-primary ma1 step02_b">다음 단계</button>                
-                    </div>                      
+                    <div class="step02_refer">-  파트너 ID를 알고계신 고객께서는 파트너 ID를 입력후 반드시 '파트너정보확인' 버튼을 클릭하여 인증을 받기 바랍니다.</div>    
+                              
                 </div>
                 
                 
@@ -478,28 +448,28 @@
                     </caption>                             
                     <tbody>
                         <tr>
-                            <th scope="col">호스팅 종류</th>
-                            <td scope="col"></td>
+                            <th>호스팅 종류</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">호스팅 사양</th>
-                            <td scope="col"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">메일 형태</th>
-                            <td scope="col"></td>
+                            <th>메일 형태</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">요금납부 방식</th>
-                            <td scope="col"></td>
+                            <th>요금납부 방식</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                          <tr class="table-success">
-                            <th scope="col">혜택</th>
-                            <td scope="col"></td>
+                            <th>혜택</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                          <tr class="table-success">
-                            <th scope="col">보안서비스</th>
-                            <td scope="col"></td>
+                            <th>보안서비스</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                     </tbody>
                     </table>   
@@ -512,24 +482,24 @@
                     </caption>                             
                     <tbody>
                         <tr>
-                            <th scope="col">이름</th>
-                            <td scope="col"></td>
+                            <th>이름</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">아이디</th>
-                            <td scope="col"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">메일주소</th>
-                            <td scope="col"></td>
+                            <th>메일주소</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col"></td>
+                            <th>전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                          <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                            <td scope="col"></td>
+                            <th>휴대 전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>                         
                     </tbody>
                     </table>   
@@ -543,83 +513,35 @@
                     </caption>                             
                     <tbody>
                         <tr>
-                            <th scope="col">이름</th>
-                            <td scope="col"></td>
+                            <th>이름</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">아이디</th>
-                            <td scope="col"></td>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">메일주소</th>
-                            <td scope="col"></td>
+                            <th>메일주소</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                         <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col"></td>
+                            <th>전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>  
                          <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                            <td scope="col"></td>
+                            <th>휴대 전화번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
                         </tr>            
                     </tbody>
                     </table>   
-
-
-                    <table class="table table-hover step03_table1">
-                    <thead>
-                        <tr>
-                            <th scope="col">초기세팅비</th>
-                            <th scope="col">당월 요금</th>
-                            <th scope="col">선납 요금</th>
-                            <th scope="col">옵션 요금</th>
-                            <th scope="col">총액</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-success">
-                            <td>5,500원</td>
-                            <td>1,800원</td>
-                            <td>0원</td>
-                            <td>0원</td>
-                            <td>7,300원</td>
-                        </tr>                                          
-                    </tbody>
-                    </table>   
                     
-                    <table class="table step03_table1">
-                    <caption>호스팅 이용 약관</caption>                             
-                    <tbody>
-                        <tr>
-                            <th scope="col">이름</th>
-                            <td scope="col"></td>
-                        </tr>
-                        <tr class="table-success">
-                            <th scope="row">아이디</th>
-                            <td scope="col"></td>
-                        </tr>  
-                        <tr class="table-success">
-                            <th scope="col">메일주소</th>
-                            <td scope="col"></td>
-                        </tr>  
-                        <tr class="table-success">
-                            <th scope="col">전화번호</th>
-                            <td scope="col"></td>
-                        </tr>  
-                         <tr class="table-success">
-                            <th scope="col">휴대 전화번호</th>
-                            <td scope="col"></td>
-                        </tr>                         
-                    </tbody>
-                    </table>  
-                
                     
                     <table class="table step03_table2">
                     <caption>약관 동의</caption>                             
                     <tbody>
                         <tr>
-                            <th scope="col">호스팅 이용약관 동의</th>
-                            <td scope="col">     
+                            <th>호스팅 이용약관 동의</th>
+                            <td>     
                                 <label class="chkcontainer">
                                     <input type="checkbox" name="check1" checked="checked">
                                     <span class="check-text"></span>호스팅 약관에 동의 합니다.        
@@ -628,23 +550,117 @@
                             </td>
                         </tr>                       
                     </tbody>
-                    </table>  
-                    
-                    <div class="step_nextbtn2">
-                        <button type="button" id="tabStep01" class="btn btn-primary" onclick="location.href='#';">결제하기</button>
-                        <button type="button" class="btn btn-success" onclick="location.href='#';">견적서 출력</button>  
-                    </div>
-               </div>    
+                    </table>                
+                </div>    
                 
+                <!-- tab 4 -->
+                <div role="tabpanel" class="tab-pane" id="step04">                  
+                    <div class="error_message01">
+                        <i class="fa fa-check"></i>
+                        <h2><span class="color01">카드결제</span>가<br>실패되었습니다.</h2>
+                        <p><span>실패사유</span>를 살펴보시고 다시 결제부탁드립니다.</p>
+                    </div>
+                    <table class="table step03_table1">                                         
+                    <tbody>
+                        <tr>
+                            <th>도메인명</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
+                        </tr>
+                        <tr class="table-success">
+                            <th scope="row">주문번호</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
+                        </tr>  
+                        <tr class="table-success">
+                            <th>에러메시지</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
+                        </tr>  
+                        <tr class="table-success">
+                            <th>결제내역(원)</th>
+                            <td><input type="text" class="form-control" placeholder="Text input"></td>
+                        </tr>    
+                    </tbody>
+                    </table>                     
+                </div>    
+
                 
           </div>            
         </div>          
+        
+        <!-- 계산기 -->
+        <div class="step01_table3 cart">
+            <table class="table">
+                <caption>결제 금액 계산</caption>
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>비용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>웹호스팅</td>
+                        <td>360,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td><span class="not">ㄴ</span>5% 할인</td>
+                        <td class="color02">-18,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td><span  class="not">ㄴ</span>설치비</td>
+                        <td>30,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td>트래픽</td>
+                        <td>960,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td><span>ㄴ</span>5% 할인</td>
+                        <td class="color02">-48,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td>웹메일</td>
+                        <td>60,000원</td>
+                    </tr>  
+                    <tr class="table-success">
+                        <td><span  class="not">ㄴ</span>5% 할인</td>
+                        <td class="color02">-48,000원</td>
+                    </tr>  
+                    
+                    <tr class="table-success">                                     
+                        <td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+                    </tr>  
+                </tbody>
+            </table>   
+            <div class="step_nextbtn1">
+                <button type="button" id="tabStep01" class="btn btn-primary ma1" onclick="tabNextStep();">
+                    다음 단계 <span class="lnr lnr-chevron-right"></span>
+                </button>  
+                <button type="button" id="tabStep01" class="btn btn-danger ma1" onclick="tabNextStep();">
+                    결제하기 <span class="lnr lnr-chevron-right"></span>
+                </button>                  
+                
+                <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
+                <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
+                <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a>
+                
+            </div>     
+        </div>
+        
         
     </div>    
 </section>
 <!--========== END hosting ==========-->
 
-
+<script type="text/javascript">
+function tabNextStep(){
+    var idx = $(".tab-pane.active").index();
+    var sidname = $(".tab-content.fixing > div").eq(idx).next().attr('id');
+    if(sidname != undefined){
+      $('.blu-content a[href=#' + sidname+ ']').tab('show');  
+    }
+    //
+}
+</script>
 
 
 
@@ -663,18 +679,7 @@
 
 
 
-<script type="text/javascript">
-    $(function(){
-        $("#tabStep01").click(function(){
-            $('.blu-content a[href="#step02"]').tab('show')
-           
-        })
-        $("#tabStep02").click(function(){
-            $('.blu-content a[href="#step03"]').tab('show')
-
-        })
-    })
-</script>        
+     
     
     
     

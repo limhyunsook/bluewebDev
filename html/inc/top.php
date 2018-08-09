@@ -1,3 +1,18 @@
+<!--========== topbanner ==========-->
+<!--div style="position: relative;max-width:1200px;margin:0 auto;" id="topBannerArea">
+    <a href="#" style="display:block;" target="_blank">
+        <img src="/html/assets/images/mobile_banner1.jpg" alt="페키지 배너">
+    </a>
+    <div style="position: absolute;bottom: 5px;right: 75px;">
+        <img src="/html/assets/images/banner_close.gif" alt="닫기" onclick="objTBC.closeTopBannerArea();">
+    </div>
+    <div style="position: absolute;bottom: 5px;right: 0;">
+        <img src="/html/assets/images/banner_close2.gif" alt="안보기" onclick="objTBC.closeTopBannerCookie();">
+    </div>
+</div-->
+ <!--========== topbanner ==========-->
+
+
 <nav class="blue-navbar wrapper">
 	<div class="nav-table">				
 		<ul class="nav-middle">
