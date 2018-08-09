@@ -7,10 +7,10 @@
 
 
 
-.header{padding-top:10px;width:100%;margin:0 auto;position: relative;z-index: 2;}
+.header{width:100%;margin:0 auto;position: relative;z-index: 2;}
 
 .blue-navbar {margin:0 auto;}
-.blue-navbar > div{position:relative;}
+.blue-navbar > div{position:relative;margin-top: 10px;}
 .blue-navbar > div > ul {width:100%;text-align:right;}
 .blue-navbar > div > ul > li {display:inline-block;padding-left:3px;font-size:12px;vertical-align:top;}
 .blue-navbar > div > ul > li > a {color:#555;}
@@ -354,21 +354,22 @@
 
 
 
-.step01_table1 {border: 1px solid #ddd;margin-bottom: 30px}
+.step01_table1 {border: 1px solid #ddd;}
+.step01_table1 > caption {font-size: 15px;color: #fff;font-weight: bold;background: #334862;padding: 15px;position: relative;top: 1px;}
 .step01_table1 > tbody > tr > th {border-right: 1px solid #ddd;background: #f8fafc;}
 .step01_table1 > tbody > tr > td > div:nth-child(1) {margin-bottom: 8px;}
 .step01_table2 {border: 1px solid #ddd;border-top:3px solid #087ee3;margin-top: 20px;}
 .step01_table2 > thead > tr > th {background: #f8fafc;}
 .step01_table2 > tbody > tr > th {text-align: center;}
 .step01_table2 > tbody > tr > td {text-align: center;}
-.step01_table3 {border:1px solid #ddd;padding:20px;border-top: 3px solid #087ee3;}
-.step01_table3 > table > caption {font-size: 17px;padding:15px;background: #535561;text-align: center;font-weight: bold;color:#fff;margin-bottom: 15px;}
+.step01_table3 {border:1px solid #ddd;padding:20px;}
+.step01_table3 > table > caption {font-size: 17px;padding:15px;background: #334862;text-align: center;font-weight: bold;color:#fff;margin-bottom: 15px;}
 .step01_table3 > table > thead > tr > th {text-align: center;width: 50%;display: inline-block;float: left;}
 .step01_table3 > table > tbody > tr > td {width: 50%;display: inline-block;float: left;}
 .step01_table3 > table > tbody > tr > td:nth-child(1) {text-align: left;float: left;}
 .step01_table3 > table > tbody > tr > td:nth-child(2) {text-align: right;}
 .step01_table3 > table > tbody > tr:last-child > td{width: 100%;text-align: right;}
-.step01_table3 > table> tbody > tr > td > span {font-size: 27px;font-weight: bold;color: #087ee3;font-family: 'Tahoma';}
+
 
 .step01_table4 {border:1px solid #ddd;padding:20px;margin-top: 8px;margin-bottom: 0 !important;}
 .step01_table4 > thead > tr > th {text-align: center;background: #f8fafc;}
@@ -381,10 +382,13 @@
 .step01_table3 > button {width: 100%;}
 .step01_table1_a {display: block;width: 20%;}
 
+.not {font-size: 12px;vertical-align: 3px;color: #888;}
+.total_price {font-size: 27px;font-weight: bold;color: #087ee3;font-family: 'Tahoma';}
+
 
 .step02_table {border: 1px solid #ddd;}
-.step02_table > caption {font-size:15px;color: #000;font-weight: bold;}
-.step02_table > caption > label {float:right;font-size: 12px;color: #555;margin: 0;position: relative;width: 16%;}
+.step02_table > caption {font-size: 15px;color: #fff;font-weight: bold;background: #334862;padding: 15px;position: relative;top: 1px;}
+.step02_table > caption > label {float:right;font-size: 12px;color: #fff;margin: 0;position: relative;width: 22%;}
 .step02_table > caption > label > input {position: absolute;right: 100%;margin-right: 8px;top: -2px;}
 .step02_table > caption > span {float:right;font-size: 14px;}
 .step02_table > thead > tr > th {background: #f8fafc;text-align: center;vertical-align: middle;border-right: 1px solid #Ddd;}
@@ -395,13 +399,15 @@
 .step02_refer {font-size: 12px;color: #989898;display: block;padding-bottom: 20px;line-height: 1.5;}
 .step02_refer > a {font-weight: bold; font-size: 12px;}
 .step02_refer > a:hover{color:#ef490f;}
+
 .step02_appli {padding:20px;margin-bottom: 20px;border: 1px solid #ddd;background: #f8fafc;}
+.step02_appli > span {display: block;margin-bottom: 15px;font-size: 12px;color: #0aa761;}
 .step02_appli > p {display: block;padding-bottom: 10px;}
 .step02_appli > div {position: relative;}
 
 .step03_table1 {border: 1px solid #ddd;}
-.step03_table1 > caption {font-size:15px;color: #000;font-weight: bold;}
-.step03_table1 > caption > button {float:right;font-size: 11px;padding: 3px 6px;}
+.step03_table1 > caption {font-size: 15px;color: #fff;font-weight: bold;background: #334862;padding: 15px;position: relative;top: 1px;}
+.step03_table1 > caption > button {float:right;font-size: 11px;padding: 2px 6px;}
 .step03_table1 > thead > tr > th {background: #f8fafc;text-align: center;vertical-align: middle;border-right: 1px solid #Ddd;}
 .step03_table1 > tbody > tr > th {background: #f8fafc;text-align: center;vertical-align: middle;border-right: 1px solid #Ddd;}
 .step03_table1 > tbody > tr > td  {text-align: center;}
@@ -409,7 +415,7 @@
 
 
 .step03_table2 {border: 1px solid #ddd;}
-.step03_table2 > caption {font-size:15px;color: #000;font-weight: bold;}
+.step03_table2 > caption {font-size: 15px;color: #fff;font-weight: bold;background: #334862;padding: 15px;position: relative;top: 1px;}
 .step03_table2 > caption > button {float:right;font-size: 11px;padding: 3px 6px;}
 .step03_table2 > thead > tr > th {background: #f8fafc;text-align: center;vertical-align: middle;border-right: 1px solid #Ddd;}
 .step03_table2 > tbody > tr > th {background: #f8fafc;text-align: center;vertical-align: middle;border-right: 1px solid #Ddd;}
@@ -419,13 +425,10 @@
 
 
 .step_nextbtn1 {width: 100%;display: inline-block;text-align: center;margin-top: 30px;}
-.step_nextbtn1 > button {width: 100%;display: inline-block;margin: 0 auto;text-align: center;}
-.step_nextbtn1-1 {padding:10px 0;font-size: 20px;}
-.step_nextbtn1-2 {padding:8px 0;font-size: 15px;}
+.step_nextbtn1 > button {width: 100%;padding:3% 5%;display: inline-block;margin: 0 auto;text-align: left;font-size: 20px;}
+.step_nextbtn1 > button > span {font-size: 15px;position: relative;top: 6px;right: 0;float: right;font-weight: 900;}
 
-.step_nextbtn2 {width: 100%;display: inline-block;text-align: center;margin-top: 30px;}
-.step_nextbtn2 > button {width: 20%;display: inline-block;margin: 0 auto;text-align: center;padding:10px 0;font-size: 20px;}
-
+.step_nextbtn1 > a {width: 100%;text-align: left;}
 
 
 
@@ -467,6 +470,20 @@
 
 
 
+.list {width:900px;}
+.cart {right:0;width: 300px;float: right;margin: 50px 0;}
+.fixing {width: 880px;float:left;}
+
+
+
+
+
+.error_message01 {text-align: center;margin: 100px 0 50px;}
+.error_message01 > h2 {font-size: 50px;margin: 25px 0;line-height: 1.4;}
+.error_message01 > h2 > span{font-weight: 600;}
+.error_message01 > p {font-size: 20px;color: #555;}
+.error_message01 > p > span {color: #087ee3;} 
+.error_message01 > i  {font-size: 80px;color: #087ee3;}
 
 
 

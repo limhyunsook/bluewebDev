@@ -22,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>    
 	<script src="/html/assets/js/main_script.js"></script>
+    <script src="/html/assets/js/top_banner.js"></script>
 
     <!-- bootstrapk ================================================== -->    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"><!-- 합쳐지고 최소화된 최신 CSS -->
@@ -35,9 +36,7 @@
 </head>
 <body>
     
-    
-    
-    
+       
     
 
 <!--========== header ==========-->
