@@ -30,7 +30,7 @@
     <!-- css ================================================== -->
 	<link rel="stylesheet" href="/html/assets/css/common.css">
 	<link rel="stylesheet" href="/html/assets/css/style.css">
-
+    
 </head>
 <body>
     
@@ -55,13 +55,16 @@
 <!--========== info ==========-->
 <section class="container-warp">	
 		
-    <div class="sub-top">
-        <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-        <h2>신청하기</h2>	
+    <!-- 서브컨텐츠 -->  
+    <div class="sub-content">
+        <div class="wrapper"> 
+            <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
+            <h2>신청하기</h2>	
+        </div>    
     </div>    
     
-    <div class="container sub-container"> 
-       
+    <!-- 바디컨텐츠 -->  
+    <div class="blu-content wrapper">        
         <div role="tabpanel">
             
             <!-- Nav tabs -->
@@ -83,15 +86,23 @@
                             <tbody>
                                  <tr>
                                     <th scope="col">호스팅 종류</th>
-                                    <td>  
-                                        <select class="form-control">
-                                            <option>보급형</option>
-                                            <option>기본형</option>
-                                            <option>블루형</option>
-                                            <option>파워형</option>
-                                            <option>파워플러스</option>
-                                        </select>
-                                        
+                                    <td>     
+                                        <div class="selectbox">
+                                            <button class="btncontainer">선택하세요!</button>
+                                            <div class="dropdown">
+                                                <button class="btncontainer btnstyle">
+                                                  <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">LINUX 보급형</a>
+                                                    <a href="#">LINUX 기본형</a>
+                                                    <a href="#">LINUX 블루형</a>
+                                                    <a href="#">LINUX 파워형</a>
+                                                    <a href="#">LINUX 파워플러스</a>
+                                                    <a href="#">LINUX MAX형</a>
+                                                </div>
+                                            </div> 
+                                        </div>
                                         
                                         <table class="table step01_table4">
                                         <thead>
@@ -120,22 +131,22 @@
                                     <td>
                                         <div>
                                             웹메일을 이미 사용중입니까?
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
+                                            <label class="radiocontainer">
+                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
                                                 <span class="radio-text"></span>YES
                                             </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="radiocontainer">
+                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
                                                 <span class="radio-text"></span>NO
                                             </label>  
                                         </div>       
                                         <div>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
+                                            <label class="radiocontainer">
+                                                <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1" checked="checked">
                                                 <span class="radio-text"></span>아웃룩
                                             </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="radiocontainer">
+                                                <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
                                                 <span class="radio-text"></span>웹메일
                                             </label>                    
                                         </div> 
@@ -143,19 +154,27 @@
                                 </tr>  
                                 <tr class="table-success">
                                     <th scope="row">호스팅 요금<br/>납부방식</th>
-                                    <td>
-                                        <select class="form-control">
-                                            <option>자동이체(매월 5% 할인) </option>
-                                            <option>1년선납결제(2개월무료)</option>
-                                            <option>2년선납결제(6개월무료)</option>
-                                            <option>3년선납결제(12개월무료)</option>
-                                            <option>매월 결제</option>
-                                        </select>
-                                        <a href="#" class="btn btn-danger ma0">선납무이자</a>
+                                    <td>    
+                                        <div class="selectbox">
+                                            <button class="btncontainer">선택하세요!</button>
+                                            <div class="dropdown">
+                                                <button class="btncontainer btnstyle">
+                                                  <i class="fa fa-caret-down"></i>
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">자동이체(매월 5% 할인)</a>
+                                                    <a href="#">1년선납결제(2개월무료)</a>
+                                                    <a href="#">2년선납결제(6개월무료)</a>
+                                                    <a href="#">3년선납결제(12개월무료)</a>
+                                                    <a href="#">매월 결제</a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <a href="#" class="btn btn-danger step01_table1_a ma0">선납무이자</a>
                                     </td>
                                  </tr>   
                             </tbody>
-                            </table>                       
+                            </table>    
                             
                             <div class="step01_refer">* 호스팅 견적을 메일로 받아 보실 수 있습니다.</div>
 
@@ -193,9 +212,10 @@
                                     </tr>  
                                 </tbody>
                                 </table>   
-
-                                <button type="button" id="tabStep01" class="btn btn-primary ma1">다음 단계</button>                           
-                                <button type="button" class="btn btn-success" onclick="location.href='#';">견적서 출력</button>           
+                                <div class="step_nextbtn1">
+                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 step_nextbtn1-1">다음 단계</button> 
+                                    <button type="button" class="btn btn-success step_nextbtn1-2" onclick="location.href='#';">견적서 출력</button>
+                                </div>     
                             </div>
                         </li>  
                     </ul>                     
@@ -206,7 +226,7 @@
                 <div role="tabpanel" class="tab-pane" id="step02">
 
                     <table class="table step02_table">
-                    <caption>결제 금액 계산</caption>       
+                    <caption>회원 정보</caption>       
                     <tbody>
                          <tr>
                             <th scope="col">이름</th>
@@ -234,21 +254,26 @@
                     <div class="step02_refer">고객님이 지금까지 사용중인 호스팅이 22건 있습니다.<Br/>이 중 하나의 호스팅 정보와 아래 관리자 정보 및 요금 담당자 정보를 일치시킬 수 있습니다.</div>
 
                     <div class="step02_appli">
-                        <div>
-                            기존 호스팅 정보와 동일한 정보 사용하여 호스팅 신청<Br/><Br/>
-                            <select class="form-control">
-                                <option>1</option>
-                                <option>1</option>
-                                <option>1</option>
-                                <option>1</option>
-                            </select>                 
+                        <p>기존 호스팅 정보와 동일한 정보 사용하여 호스팅 신청</p>                         
+                        <div class="selectbox">                                                   
+                            <button class="btncontainer">선택하세요!</button>
+                            <div class="dropdown">
+                                <button class="btncontainer btnstyle">
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">1</a>
+                                    <a href="#">1</a>
+                                    <a href="#">1</a>
+                                </div>
+                            </div>   
                         </div> 
                     </div>
 
                     <table class="table step02_table">
                     <caption>호스팅 관리자 정보
-                        <label>
-                            <input type="checkbox" name="check" checked="checked">
+                        <label class="chkcontainer">
+                            <input type="checkbox" name="check1" checked="checked">
                             <span class="check-text"></span>회원정보와 동일하게 설정
                         </label>      
                     </caption>                           
@@ -280,15 +305,15 @@
 
                     <table class="table step02_table">
                     <caption>       
-                        요금 담당자 정보
-                        <label>
-                            <input type="checkbox" name="check" checked="checked">
+                        요금 담당자 정보                        
+                        <label class="chkcontainer">
+                            <input type="checkbox" name="check2" checked="checked">
                             <span class="check-text"></span>관리자 정보와 동일하게 설정	
-                        </label> 
-                         <label>
-                            <input type="checkbox" name="check" checked="checked">
+                        </label>      
+                        <label class="chkcontainer">
+                            <input type="checkbox" name="check3" >
                             <span class="check-text"></span>회원정보와 동일하게 설정  
-                        </label>                             
+                        </label>            
                     </caption>                             
                     <tbody>
                         <tr>
@@ -341,13 +366,13 @@
                         <tr class="table-success">
                             <th scope="col">FTP 비밀번호</th>
                             <td scope="col">
-                                <input type="text" class="form-control" placeholder="Text input"> 
+                                <input type="password" class="form-control" placeholder="Text input"> 
                                 <span>※ FTP비밀번호는 도메인명, FTP ID와 동일하게 설정할 수 없으며,8자 이상으로 작성하셔야 합니다.</span>   
                             </td>
                         </tr>  
                         <tr class="table-success">
                             <th scope="col">FTP 비밀번호 확인</th>
-                            <td scope="col"><input type="text" class="form-control" placeholder="Text input"></td>
+                            <td scope="col"><input type="password" class="form-control" placeholder="Text input"></td>
                         </tr>  
                     </tbody>
                     </table>   
@@ -358,34 +383,48 @@
                     <tbody>
                         <tr>
                             <th scope="col">PHP종류 선택</th>
-                            <td scope="col">
-                                <select class="form-control">
-                                    <option>1</option>
-                                    <option>1</option>
-                                    <option>1</option>
-                                    <option>1</option>
-                                </select>
+                            <td scope="col">  
+                                <div class="selectbox">
+                                    <button class="btncontainer">선택하세요!</button>
+                                    <div class="dropdown">
+                                        <button class="btncontainer btnstyle">
+                                          <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">1</a>
+                                            <a href="#">1</a>
+                                            <a href="#">1</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr class="table-success">
                             <th scope="row">DB종류 선택</th>
                             <td scope="col">        
                                 <div class="radio">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="radiocontainer">
+                                        <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
                                         <span class="radio-text"></span>MySQL
                                     </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="radiocontainer">
+                                        <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
                                         <span class="radio-text"></span>MariaDB 10.x.x
                                     </label> 
-                                </div>                            
-                                 <select class="form-control">
-                                    <option>1</option>
-                                    <option>1</option>
-                                    <option>1</option>
-                                    <option>1</option>
-                                </select>
+                                </div>    
+                                <div class="selectbox">
+                                    <button class="btncontainer">선택하세요!</button>
+                                    <div class="dropdown">
+                                        <button class="btncontainer btnstyle">
+                                          <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">1</a>
+                                            <a href="#">1</a>
+                                            <a href="#">1</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>  
                         <tr class="table-success">
@@ -418,18 +457,21 @@
                     </tbody>               
                     </table>   
 
-                    <div class="step02_refer">-  파트너 ID를 알고계신 고객께서는 파트너 ID를 입력후 반드시 '파트너정보확인' 버튼을 클릭하여 인증을 받기 바랍니다.</div>                
-                    <button type="button" id="tabStep02" class="btn btn-primary ma1 step02_b">다음 단계</button>                          
+                    <div class="step02_refer">-  파트너 ID를 알고계신 고객께서는 파트너 ID를 입력후 반드시 '파트너정보확인' 버튼을 클릭하여 인증을 받기 바랍니다.</div>     
+                                        
+                    <div class="step_nextbtn2">
+                        <button type="button" id="tabStep02" class="btn btn-primary ma1 step02_b">다음 단계</button>                
+                    </div>                      
                 </div>
                 
                 
+                
+                
+                
                 <!-- tab 3 -->
-                <div role="tabpanel" class="tab-pane" id="step03">
+                <div role="tabpanel" class="tab-pane" id="step03">  
                     
-              
-                    
-                    
-                    <table class="table step03_table">
+                    <table class="table step03_table1">
                     <caption>                   
                         호스팅 기본 정보
                         <button type="button" id="tabStep02" class="btn btn-danger step03_b">호스팅 기본정보 수정</button>                        
@@ -463,10 +505,10 @@
                     </table>   
                     
                     
-                    <table class="table step03_table">
+                    <table class="table step03_table1">
                     <caption>                   
                         호스팅 관리자 정보
-                        <button type="button" id="tabStep02" class="btn btn-danger step03_b">호스팅 관리자정보 수정</button>                        
+                        <button type="button" id="tabStep02" class="btn btn-danger step03_b">호스팅 관리자정보 수정</button> 
                     </caption>                             
                     <tbody>
                         <tr>
@@ -494,10 +536,10 @@
                     
                     
                     
-                    <table class="table step03_table">
+                    <table class="table step03_table1">
                     <caption>                   
                         요금 담당자 정보
-                        <button type="button" id="tabStep02" class="btn btn-danger step03_b">호스팅 요금 담당자 정보 수정</button>                        
+                        <button type="button" id="tabStep02" class="btn btn-danger step03_b">호스팅 요금 담당자 정보 수정</button>  
                     </caption>                             
                     <tbody>
                         <tr>
@@ -524,7 +566,7 @@
                     </table>   
 
 
-                    <table class="table table-hover step03_table">
+                    <table class="table table-hover step03_table1">
                     <thead>
                         <tr>
                             <th scope="col">초기세팅비</th>
@@ -545,7 +587,7 @@
                     </tbody>
                     </table>   
                     
-                    <table class="table step03_table">
+                    <table class="table step03_table1">
                     <caption>호스팅 이용 약관</caption>                             
                     <tbody>
                         <tr>
@@ -572,22 +614,26 @@
                     </table>  
                 
                     
-                    <table class="table step03_table">
+                    <table class="table step03_table2">
                     <caption>약관 동의</caption>                             
                     <tbody>
                         <tr>
                             <th scope="col">호스팅 이용약관 동의</th>
-                            <td scope="col">                 
-                                <label>
-                                    <input type="checkbox" name="check" checked="checked">
-                                    <span class="check-text"></span>호스팅 약관에 동의 합니다.           
-                                </label>                                
+                            <td scope="col">     
+                                <label class="chkcontainer">
+                                    <input type="checkbox" name="check1" checked="checked">
+                                    <span class="check-text"></span>호스팅 약관에 동의 합니다.        
+                                </label>                             
+                                <a href="#" class="btn btn-danger ma0">약관보기</a>
                             </td>
                         </tr>                       
                     </tbody>
                     </table>  
-                
                     
+                    <div class="step_nextbtn2">
+                        <button type="button" id="tabStep01" class="btn btn-primary" onclick="location.href='#';">결제하기</button>
+                        <button type="button" class="btn btn-success" onclick="location.href='#';">견적서 출력</button>  
+                    </div>
                </div>    
                 
                 
@@ -620,11 +666,11 @@
 <script type="text/javascript">
     $(function(){
         $("#tabStep01").click(function(){
-            $('.sub-container a[href="#step02"]').tab('show')
+            $('.blu-content a[href="#step02"]').tab('show')
            
         })
         $("#tabStep02").click(function(){
-            $('.sub-container a[href="#step03"]').tab('show')
+            $('.blu-content a[href="#step03"]').tab('show')
 
         })
     })

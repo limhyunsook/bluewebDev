@@ -55,12 +55,16 @@
 <section class="container-warp">	
     
     
-    <div class="sub-top">
-        <h5>원하는 호스팅 365일 언제나 블루웹</h5>				
-        <h2>호스팅약관</h2>	
-    </div>
+<!-- 서브컨텐츠 -->  
+    <div class="sub-content">
+        <div class="wrapper"> 
+            <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
+            <h2>리눅스 호스팅</h2>	
+        </div>    
+    </div>    
     
-    <div class="container sub-container">
+    <!-- 바디컨텐츠 -->  
+    <div class="blu-content wrapper">        
     
         <!-- Nav tabs -->
         <ul class="nav nav-pills tab03" role="tablist">

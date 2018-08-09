@@ -1,4 +1,4 @@
-<nav class="blue-navbar">
+<nav class="blue-navbar wrapper">
 	<div class="nav-table">				
 		<ul class="nav-middle">
             <li class="t-1"><a href="/html/member/login.php">로그인</a></li>			
@@ -16,7 +16,7 @@
 
 
 <div class="nav-menu">
-	<div class="container nav-bottom">
+	<div class="container nav-bottom wrapper">
 		<h2>
 			<a href="/html/index.php"><img src="/html/assets/images/blueweb_logo.png" alt="블루웹 로고"></a>
 		</h2>	
@@ -30,7 +30,7 @@
 							<p>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</p>							
                             <a href="#">서비스 알아보기 <i class="fa fa-angle-right"></i></a>
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>
 								<h2><a href="#">웹호스팅</a></h2>
 								<li><a href="/html/hosting/service.php">리눅스 웹호스팅 <img src="/html/assets/images/icon_new.png" alt="new"></a></li>
@@ -63,7 +63,7 @@
 							<p>대의 서버를 독립적으로 이용하실 수 있는 서비스</p>							
                             <a href="#">서비스 알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>
 								<h2><a href="#">서버호스팅</a></h2>
 								<li><a href="#">서버호스팅이란?</a></li>
@@ -103,7 +103,7 @@
 							<p>도메인은 개인 또는 기업을 대표하는 브랜드이자 첫인상입니다.</p>							
                             <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>
 								<h2><a href="#">도메인 등록</a></h2>
 								<li><a href="#">도메인 검색</a></li>
@@ -130,7 +130,7 @@
 							<p>사이버 보안 위협으로부터 실시간 대응하며 고객의 정보를 안전하게 보호합니다.</p>							
                             <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>	
 								<h2><a href="#">보안관제</a></h2>
 								<li><a href="#">원격관제</a></li>
@@ -170,7 +170,7 @@
 							<p>홈페이지 DIY(직접 제작)부터 전문 제작의뢰까지, 고객에게 딱 맞는 맞춤형 홈페이지를 제공합니다.</p>							
                             <a href="#">서비스알아보기 <i class="fa fa-angle-right"></i> </a>
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>	
 								<h2><a href="#">이비즈로</a></h2>
 								<li><a href="#">홈페이지자동구축</a></li>
@@ -201,7 +201,7 @@
 						<nav>											
                             <h2>고객센터</h2>							
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>
 								<h2><a href="#">빠른 메뉴</a></h2>
 								<li><a href="#">세금계산서/영수증 발급</a></li>
@@ -234,7 +234,7 @@
 						<nav>											
                             <h2>내서비스관리</h2>							
 						</nav>		
-						<div>
+						<div class="wrapper">
 							<ul>
 								<h2><a href="#">요금관리</a></h2>
 								<li><a href="#">결제조회 <img src="/html/assets/images/icon_new.png" alt="new"></a></li>

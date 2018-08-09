@@ -201,7 +201,7 @@
 		
     <!--========== footer slide ==========-->
     <section class="slider clearfix">	
-        <div class="footer_slider">	
+        <div class="footer_slider wrapper">	
             <div class="bxslider">
                 <div class="bg-box01 bg-box"></div>
                 <div class="bg-box02 bg-box"></div>              

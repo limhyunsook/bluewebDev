@@ -1,5 +1,5 @@
 <div class="container sitemap">	
-    <ul class="row">
+    <ul class="row wrapper">
         <li class="col-xs-2">
             <p>
                 <a href="#">호스팅</a>
@@ -82,14 +82,14 @@
 </div>
 
 <div class="address">			
-    <ul class="row col-m-1">
+    <ul class="row col-m-1 wrapper">
 		<li><a href="http://ir.blueweb.co.kr/" target="_blink">회사소개</a></li>
 		<li><a href="/html/agreements/agreement.php" class="link">개인정보처리방침</a></li>
 		<li><a href="/html/agreements/agreement.php">회원약관</a></li>	
 		<li><a href="/html/agreements/agreement.php">호스팅약관</a></li>
 		<li><a href="/html/agreements/agreement.php">도메인약관</a></li>
 	</ul>				
-	<ul class="row col-m-2">
+	<ul class="row col-m-2 wrapper">
 		<li>서울시 강남구 언주로 430(역삼동,윤익빌딩10층) (주)블루웹</li>	
 		<li>대표이사 : 장봉근</li>
 		<li>사업자번호 : 106-81-85951</li>
@@ -98,7 +98,7 @@
 		<li>FAX : 02-567-3400</li>
 		<li>EMAIL : <a href="mailto:master@blueweb.co.kr">master@blueweb.co.kr</a></li>
 	</ul>
-	<span>ⓒ Blueweb All rights Reserved</span>
+	<span class="wrapper">ⓒ Blueweb All rights Reserved</span>
 </div>
 
 
