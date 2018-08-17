@@ -616,8 +616,75 @@
                                     </table>
                             
                             </div>
-
+                            
+                            
                         </li>                          
+                        <li class="col-xs-3 list">                        
+                             <!-- 계산기 -->
+                            <div class="cart">
+                                <table class="table">
+                                    <caption class="table_title">결제 금액 계산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>항목</th>
+                                            <th>비용</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-success">
+                                            <td>웹호스팅</td>
+                                            <td>360,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-18,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>설치비</td>
+                                            <td>30,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>트래픽</td>
+                                            <td>960,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-48,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>웹메일</td>
+                                            <td>60,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-48,000원</td>
+                                        </tr>  
+
+                                        <tr class="table-success">                                     
+                                            <td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+                                        </tr>  
+                                    </tbody>
+                                </table>   
+                                <div class="btnBox">
+                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 cart_btnext" onclick="tabNextStep();">
+                                        다음 단계 <span class="lnr lnr-chevron-right"></span>
+                                    </button>  
+                                    <button type="button" id="tabStep01" class="btn btn-danger ma1 cart_btnext" onclick="tabNextStep();">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button>           
+                                    <button type="button" id="tabStep01" class="btn btn-warning ma1 cart_btprev" onclick="tabNextStep();">
+                                        <span class="lnr lnr-chevron-left"></span> 이전단계 
+                                    </button>           
+
+                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
+                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
+                                    <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
+                                </div>     
+                                <div class="alert alert-warning ma0" role="alert"><a href="#"><i class="fa fa-exclamation-circle"></i> 결제가 안 될 때 <strong>ActiveX</strong> 수동설치</a></div>
+                            </div>
+
+                        
+                        </li>
                     </ul>                     
                 </div>      
                 
@@ -625,250 +692,236 @@
                 <!-- tab 2 -->
                 <div role="tabpanel" class="tab-pane" id="step02">  
                                     
-                    
-                    <table class="table tableTypeA ma2">
-                    <caption class="table_title">결제수단</caption>                             
-                    <tbody>                       
-                        <tr>
-                            <th>예치금</th>
-                            <td>  
-                                <input type="text" class="form-control" placeholder="Deposit">   
-                            </td>
-                        </tr>  
-                        <tr>
-                            <th rowspan="3">결제 방법</th>
-                            <td>                    
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
-                                    <span class="radio-text"></span> 신용카드                                    
-                                </label>       
-                                <a href="#" class="btn btn-primary btn_xs a_inlinblock">무이자 할부 안내</a>
-                            </td>
-                        </tr> 
-                        <tr>
-                            <td>     
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-                                    <span class="radio-text"></span> 실시간 계좌이체                                    
-                                </label>   
-                                <a href="#" class="btn btn-primary btn_xs a_inlinblock">현금영수증 안내</a>                            
-                                <div> 
-                                    <table class="table tableTypeC ma0">
-                                    <tbody>   
-                                    <tr>
-                                        <th>현금영수증</th>
-                                        <td>
-                                            <label class="radiocontainer radio_w ma1">
-                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
-                                                <span class="radio-text"></span>개인소득공제
-                                            </label>
-                                            <div class="radio_down">
-                                                <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
-                                                <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
-                                                <input type="text" class="form-control" placeholder="Name"> 
-                                                <a href="#" class="btn btn-primary ma0">확인</a>
-                                            </div>                                       
-                                            <label class="radiocontainer ma1">
-                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
-                                                <span class="radio-text"></span>사업자 지출증빙
-                                            </label>
-                                            <div class="radio_down">
-                                                <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
-                                                <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
-                                                <input type="text" class="form-control" placeholder="Business name"> 
-                                                <a href="#" class="btn btn-primary ma0">확인</a>
-                                            </div>      
-                                        </td>                                    
-                                    </tr>  
-                                    <tr>
-                                        <th>세금계산서 신청</th>
-                                        <td>
-                                            <label class="radiocontainer radio_w ma1">
-                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
-                                                <span class="radio-text"></span>개인소득공제
-                                            </label>
-                                            <div class="radio_down">
-                                                <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
-                                                <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
-                                                <input type="text" class="form-control" placeholder="Name"> 
-                                                <a href="#" class="btn btn-primary ma0">확인</a>
-                                            </div>                                       
-                                            <label class="radiocontainer ma1">
-                                                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
-                                                <span class="radio-text"></span>사업자 지출증빙
-                                            </label>
-                                            <div class="radio_down">
-                                                <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
-                                                <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
-                                                <input type="text" class="form-control" placeholder="Business name"> 
-                                                <a href="#" class="btn btn-primary ma0">확인</a>
-                                            </div>      
-                                        </td>                                    
-                                    </tr>  
-                                    <tr>
-                                        <th>신청 안 함</th>
-                                        <td></td>                                    
-                                    </tr>      
-                                        
-                                        
-                                        
-                                    </tbody>
-                                    </table>  
-                                    <div class="tip ma0 color01"> 2018년 08월 20일까지 미입금 시 자동취소 됩니다.</div>
-                                </div>
-                            </td>
-                        </tr> 
-                        <tr>
-                            <td>  
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-                                    <span class="radio-text"></span> 무통장 입금(가상계좌)
-                                </label>
-                            </td>
-                        </tr> 
-                        
-                        
-                        
-                        
-                        
-                        
-                        <tr>
-                            <th rowspan="3">증빙 서류</th>
-                            <td>  
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
-                                    <span class="radio-text"></span> 현금영수증 신청
-                                </label>                                 
-                            </td>
-                        </tr>    
-                        <tr>                            
-                            <td>                                
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1" checked="checked">
-                                    <span class="radio-text"></span> 세금계산서 신청
-                                </label>                               
-                            </td>
-                        </tr>    
-                        <tr>                           
-                            <td>                                 
-                                <label class="radiocontainer">
-                                    <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
-                                    <span class="radio-text"></span> 신청 안 함
-                                </label>
-                            </td>
-                        </tr>    
-                    </tbody>
-                    </table>           
-                    
-                    <div class="tip ma2">
-                        ※ 2005년 4월부터 개정된 부가가치세법에 따라 신용카드 매출전표가 세금계산서를 대체합니다.<br>
-                        ※ 예치금을 일부 사용하고 신용카드/휴대폰 결제를 하는 경우, 현금영수증은 예치금 사용 금액에 대해서만 발행됩니다.                                    
-                    </div>
-                    
-                    <div class="tip ma2">
-                        * 현금영수증과 세금계산서는 중복으로 발행되지 않습니다.<br>
-                        * 현금영수증은 현재 페이지에서만 발행할 수 있습니다.<br>
-                        * Mac OS에서는 결제가 불가능합니다                                
-                    </div>
+                    <ul class="row">
+                        <li class="col-xs-9">
+                            <table class="table tableTypeA ma2">
+                            <caption class="table_title">결제수단</caption>                             
+                            <tbody>                       
+                                <tr>
+                                    <th>예치금</th>
+                                    <td>  
+                                        <input type="text" class="form-control" placeholder="Deposit">   
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th rowspan="3">결제 방법</th>
+                                    <td>                    
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
+                                            <span class="radio-text"></span> 신용카드                                    
+                                        </label>       
+                                        <a href="#" class="btn btn-primary btn_xs a_inlinblock">무이자 할부 안내</a>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>     
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                                            <span class="radio-text"></span> 실시간 계좌이체                                    
+                                        </label>   
+                                        <a href="#" class="btn btn-primary btn_xs a_inlinblock">현금영수증 안내</a>                            
+                                        <div> 
+                                            <table class="table tableTypeC ma0">
+                                            <tbody>   
+                                            <tr>
+                                                <th>현금영수증</th>
+                                                <td>
+                                                    <label class="radiocontainer radio_w ma1">
+                                                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
+                                                        <span class="radio-text"></span>개인소득공제
+                                                    </label>
+                                                    <div class="radio_down">
+                                                        <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
+                                                        <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
+                                                        <input type="text" class="form-control" placeholder="Name"> 
+                                                        <a href="#" class="btn btn-primary ma0">확인</a>
+                                                    </div>                                       
+                                                    <label class="radiocontainer ma1">
+                                                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                                                        <span class="radio-text"></span>사업자 지출증빙
+                                                    </label>
+                                                    <div class="radio_down">
+                                                        <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
+                                                        <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
+                                                        <input type="text" class="form-control" placeholder="Business name"> 
+                                                        <a href="#" class="btn btn-primary ma0">확인</a>
+                                                    </div>      
+                                                </td>                                    
+                                            </tr>  
+                                            <tr>
+                                                <th>세금계산서 신청</th>
+                                                <td>
+                                                    <label class="radiocontainer radio_w ma1">
+                                                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
+                                                        <span class="radio-text"></span>개인소득공제
+                                                    </label>
+                                                    <div class="radio_down">
+                                                        <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
+                                                        <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
+                                                        <input type="text" class="form-control" placeholder="Name"> 
+                                                        <a href="#" class="btn btn-primary ma0">확인</a>
+                                                    </div>                                       
+                                                    <label class="radiocontainer ma1">
+                                                        <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                                                        <span class="radio-text"></span>사업자 지출증빙
+                                                    </label>
+                                                    <div class="radio_down">
+                                                        <input type="text" class="form-control ma1 ma0" placeholder="Telephone"> 
+                                                        <input type="text" class="form-control ma1" placeholder="Cash receipt card"> 
+                                                        <input type="text" class="form-control" placeholder="Business name"> 
+                                                        <a href="#" class="btn btn-primary ma0">확인</a>
+                                                    </div>      
+                                                </td>                                    
+                                            </tr>  
+                                            <tr>
+                                                <th>신청 안 함</th>
+                                                <td></td>                                    
+                                            </tr>      
 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+                                            </tbody>
+                                            </table>  
+                                            <div class="tip ma0 color01"> 2018년 08월 20일까지 미입금 시 자동취소 됩니다.</div>
+                                        </div>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>  
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                                            <span class="radio-text"></span> 무통장 입금(가상계좌)
+                                        </label>
+                                    </td>
+                                </tr> 
+
+
+
+
+
+
+                                <tr>
+                                    <th rowspan="3">증빙 서류</th>
+                                    <td>  
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
+                                            <span class="radio-text"></span> 현금영수증 신청
+                                        </label>                                 
+                                    </td>
+                                </tr>    
+                                <tr>                            
+                                    <td>                                
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1" checked="checked">
+                                            <span class="radio-text"></span> 세금계산서 신청
+                                        </label>                               
+                                    </td>
+                                </tr>    
+                                <tr>                           
+                                    <td>                                 
+                                        <label class="radiocontainer">
+                                            <input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
+                                            <span class="radio-text"></span> 신청 안 함
+                                        </label>
+                                    </td>
+                                </tr>    
+                            </tbody>
+</table>           
+
+                            <div class="tip ma2">
+                                ※ 2005년 4월부터 개정된 부가가치세법에 따라 신용카드 매출전표가 세금계산서를 대체합니다.<br>
+                                ※ 예치금을 일부 사용하고 신용카드/휴대폰 결제를 하는 경우, 현금영수증은 예치금 사용 금액에 대해서만 발행됩니다.                                    
+                            </div>
+                            <div class="tip ma2">
+                                * 현금영수증과 세금계산서는 중복으로 발행되지 않습니다.<br>
+                                * 현금영수증은 현재 페이지에서만 발행할 수 있습니다.<br>
+                                * Mac OS에서는 결제가 불가능합니다                                
+                            </div>
+                        </li>                          
+                        <li class="col-xs-3">               
+                             <!-- 계산기 -->
+                            <div class="cart">
+                                <table class="table">
+                                    <caption class="table_title">결제 금액 계산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>항목</th>
+                                            <th>비용</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-success">
+                                            <td>웹호스팅</td>
+                                            <td>360,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-18,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>설치비</td>
+                                            <td>30,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>트래픽</td>
+                                            <td>960,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-48,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td>웹메일</td>
+                                            <td>60,000원</td>
+                                        </tr>  
+                                        <tr class="table-success">
+                                            <td><span class="not">ㄴ</span> 5% 할인</td>
+                                            <td class="color02">-48,000원</td>
+                                        </tr>  
+
+                                        <tr class="table-success">                                     
+                                            <td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+                                        </tr>  
+                                    </tbody>
+                                </table>   
+                                <div class="btnBox">
+                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 cart_btnext" onclick="tabNextStep();">
+                                        다음 단계 <span class="lnr lnr-chevron-right"></span>
+                                    </button>  
+                                    <button type="button" id="tabStep01" class="btn btn-danger ma1 cart_btnext" onclick="tabNextStep();">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button>           
+                                    <button type="button" id="tabStep01" class="btn btn-warning ma1 cart_btprev" onclick="tabNextStep();">
+                                        <span class="lnr lnr-chevron-left"></span> 이전단계 
+                                    </button>           
+
+                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
+                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
+                                    <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
+                                </div>     
+                                <div class="alert alert-warning ma0" role="alert"><a href="#"><i class="fa fa-exclamation-circle"></i> 결제가 안 될 때 <strong>ActiveX</strong> 수동설치</a></div>
+                            </div>
+                        
+                        </li>                 
+                    </ul>                    
                 </div>    
                 
                 <!-- tab 3 -->
                 <div role="tabpanel" class="tab-pane" id="step03">       
-                    
-                
-                    
-                    <div class="signal">
-                        <i class="fa fa-check"></i>
-                        <h2><span class="color01">카드결제</span>가<br>실패되었습니다.</h2>
-                        <p><span>실패사유</span>를 살펴보시고 다시 결제부탁드립니다.</p>
-                    </div> 
-                    
-                    
-                </div>    
+                    <!--
+                    javascript 실행
+                    1.
+                    $("#step03").load("application_failure.php");
+                    2.
+                    $("#step03").load("application_complete.php");
+                    -->
+                    <script type="text/javascript">
+                        $("#step03").load("application_failure.php");
+                    </script>                   
+                </div>   
 
-                
-          </div>            
-        </div>          
-        
-        <!-- 계산기 -->
-        <div class="cart">
-            <table class="table">
-                <caption class="table_title">결제 금액 계산</caption>
-                <thead>
-                    <tr>
-                        <th>항목</th>
-                        <th>비용</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-success">
-                        <td>웹호스팅</td>
-                        <td>360,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td><span class="not">ㄴ</span>5% 할인</td>
-                        <td class="color02">-18,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td><span  class="not">ㄴ</span>설치비</td>
-                        <td>30,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td>트래픽</td>
-                        <td>960,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td><span>ㄴ</span>5% 할인</td>
-                        <td class="color02">-48,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td>웹메일</td>
-                        <td>60,000원</td>
-                    </tr>  
-                    <tr class="table-success">
-                        <td><span  class="not">ㄴ</span>5% 할인</td>
-                        <td class="color02">-48,000원</td>
-                    </tr>  
-                    
-                    <tr class="table-success">                                     
-                        <td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
-                    </tr>  
-                </tbody>
-            </table>   
-            <div class="btnBox">
-                <button type="button" id="tabStep01" class="btn btn-primary ma1 cart_btnext" onclick="tabNextStep();">
-                    다음 단계 <span class="lnr lnr-chevron-right"></span>
-                </button>  
-                <button type="button" id="tabStep01" class="btn btn-danger ma1 cart_btnext" onclick="tabNextStep();">
-                    결제하기 <span class="lnr lnr-chevron-right"></span>
-                </button>           
-                <button type="button" id="tabStep01" class="btn btn-warning ma1 cart_btprev" onclick="tabNextStep();">
-                    <span class="lnr lnr-chevron-left"></span> 이전단계 
-                </button>           
-                
-                <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
-                <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
-                <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
-            </div>     
-            <div class="alert alert-warning ma0" role="alert"><a href="#"><i class="fa fa-exclamation-circle"></i> 결제가 안 될 때 <strong>ActiveX</strong> 수동설치</a></div>
-        </div>
-        
-        
+            </div>            
+        </div>    
     </div>    
 </section>
 <!--========== END hosting ==========-->
@@ -877,38 +930,6 @@
     
 
     
-<script type="text/javascript">
-function tabNextStep(){
-    var idx = $(".tab-pane.active").index();
-    var sidname = $(".tab-content.fixing > div").eq(idx).next().attr('id');
-    if(sidname != undefined){
-      $('.blu-content a[href=#' + sidname+ ']').tab('show');
-        if(sidname=="step03"){
-            $(".blu-content.wrapper").addClass("lastStep");
-                $(".fixing").addClass("full");
-        }else{
-            $(".blu-content.wrapper.lastStep").removeClass("lastStep");
-                $(".fixing").removeClass("full");
-        }
-    }
-    //
-}    
-    $(function(){
-        $("a[data-toggle='tab']").on("click",function(e){
-           e.preventDefault();
-            $(this).tab('show');
-            if($(e.target).attr("href")=="#step03"){
-                $(".blu-content.wrapper").addClass("lastStep");
-                $(".fixing").addClass("full");
-            }else{
-                $(".blu-content.wrapper.lastStep").removeClass("lastStep");
-                $(".fixing").removeClass("full");
-            }
-            
-        });         
-    })  
-</script>
-
 
     
     

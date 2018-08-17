@@ -30,6 +30,11 @@
     <!-- css ================================================== -->
 	<link rel="stylesheet" href="/html/assets/css/common.css">
 	<link rel="stylesheet" href="/html/assets/css/style.css">
+    <script type="text/javascript">
+        $(function(){
+            $(".closeBtn").on("click",function(){ self.close();});            
+        })
+    </script>
 </head>
 <body>
 
@@ -37,7 +42,7 @@
     <div class="layerPup">
         <div class="Puptop">
             <h2><strong>보안서버인증 의무규정 관련 법령 전문</strong></h2>
-            <a href="javascript:void(0)" onclick="javascript:hostingCore.closeLayer();" ><span class="lnr lnr-cross"></span></a>
+            <a  class="closeBtn" ><span class="lnr lnr-cross"></span></a>
         </div>
         <div class="Pupbot about_law nob">
             <dl>

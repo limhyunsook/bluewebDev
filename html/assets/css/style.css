@@ -329,7 +329,7 @@
 
 .table {border: 1px solid #ddd;margin-bottom: 0px;}
 .table_title {font-size: 15px;color: #000;font-weight: bold;}
-.not {font-size: 12px;vertical-align: 3px;color: #888;}
+.not {font-size: 12px;vertical-align: 3px;color: #ddd;}
 .total_price {font-size: 27px;font-weight: bold;color: #087ee3;font-family: 'Tahoma';}
 
 .tableTypeA > tbody > tr > th {border-right: 1px solid #ddd;background: #f8fafc;}
@@ -355,7 +355,7 @@
 
 
 
-.cart {right:0;width: 300px;float: right;margin: 87px 0;border:1px solid #ddd;padding:20px;}
+.cart {margin: 36px 0;border:1px solid #ddd;padding:20px;}
 .cart > table {border:0;}
 .cart > table > caption {font-size: 17px;padding:15px;background: #334862;text-align: center;font-weight: bold;color:#fff;margin-bottom: 15px;}
 .cart > table > thead > tr > th {text-align: center;width: 50%;display: inline-block;float: left;}
@@ -375,21 +375,25 @@
 .tip > a {font-weight: bold; font-size: 12px;}
 .tip > a:hover{color:#ef490f;}
 
-.hosingNum {padding:20px;border: 1px solid #ddd;background: #f8fafc;}e
+.hosingNum {padding:20px;border: 1px solid #ddd;background: #f8fafc;}
 .hosingNum > span {display: block;margin-bottom: 15px;font-size: 12px;color: #0aa761;}
 .hosingNum > p {display: block;padding-bottom: 10px;}
 .hosingNum > div {position: relative;}
 
-.list {width:900px;}
+
+/*
+.list {width:700px;}
 .fixing {width: 880px;float:left;}
 .fixing.full{ width:1200px;}
-
+*/
 .signal {text-align: center;margin: 50px 0 100px;}
 .signal > h2 {font-size: 50px;margin: 25px 0;line-height: 1.4;}
 .signal > h2 > span{font-weight: 600;}
 .signal > p {font-size: 20px;color: #555;}
 .signal > p > span {color: #087ee3;} 
 .signal > i  {font-size: 80px;color: #087ee3;}
+.signal > div {margin-top: 30px;}
+.signal > div > a {width:150px;padding: 10px;font-size:15px;}
 
 .btn_xs {float:right;font-size: 11px;padding: 2px 6px;position: relative;top: -3px;}
 
@@ -421,8 +425,8 @@
 .layerPup {display: inline-block;}
 .Puptop {position: relative;background: #087ee3;display: block;padding: 20px;}
 .Puptop > h2 {font-size:17px; color:#FFF;}
-.Puptop > a {position:absolute; top:16px; right:15px;}
-.Puptop > a > span {font-size: 22px;color: #fff;}
+.Puptop > a {position:absolute; top:16px; right:15px;cursor: pointer;}
+.Puptop > a > span {font-size: 22px;color: #fff;cursor: pointer;}
 .Pupbot {float:left; width:100%;padding:15px;}
 .Pupbot dl {margin-bottom: 30px;}
 .Pupbot dl dt {font-weight: 700;margin-bottom: 10px;font-size: 15px;}
