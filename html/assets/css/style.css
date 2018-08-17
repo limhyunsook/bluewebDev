@@ -133,8 +133,6 @@
 .service-item1 .col-m-2 > li > div > div > button {border-radius: 0;height: 40px;background: #fb5e27;color:#fff;font-size:15px;}
 .service-item1 .col-m-2 > li > div > div > button:hover{background: #ef490f;}
 .service-item1 .col-m-2 > li > div > div > span {height:40px;display: inline-block;width:30%;background:#fb5e27;color:#fff;font-size:18px;line-height:1.5;}
-.service-item1 .col-m-2 > li > div > div > span > select {border: none;height: 40px;background:#fb5e27;color: #fff;font-size:18px;font-weight: normal;cursor: pointer;width:150px;text-indent:10px; outline: 0;}
-.service-item1 .col-m-2 > li > div > div > span > select > option{ border:none;}
 .service-item1 .col-m-2 > li > div > ul {width:100%;margin-top:10px;text-align:left;display: inline-block;}
 .service-item1 .col-m-2 > li > div > ul > li {display:inline-block;font-size:15px;color:#a9a9a9;}
 .service-item1 .col-m-2 > li > div > ul > li > a {color:#555;font-size:13px;}
@@ -204,13 +202,13 @@
 .tab01 > li > a:hover {background: #eeeeee;}
 .tab01 > li+li {margin-left: 0; }
 
-.tab02 > li {padding-left: 0px;padding-right: 0px;}
-.tab02 > li > a {border-radius: 0px;padding:10px 0;text-align:center;}
-.tab02 > li > a > strong {display: block;font-size: 18px;}
-.tab02 > li.active > a, .tab02 > li.active > a:focus, .tab02 > li.active > a:hover {background-color: #087ee3 !important;border-radius: 2px;}
-.tab02 > li > a {background: #f5f6f8;border-radius: 2px;font-size: 15px;line-height: 1.8;}
-.tab02 > li > a:hover {background: #eeeeee;}
-.tab02 > li+li {margin-left: 0; }
+.tab_payment > li {padding-left: 0px;padding-right: 0px;}
+.tab_payment > li > a {border-radius: 0px;padding:10px 0;text-align:center;}
+.tab_payment > li > a > strong {display: block;font-size: 18px;}
+.tab_payment > li.active > a, .tab02 > li.active > a:focus, .tab02 > li.active > a:hover {background-color: #087ee3 !important;border-radius: 2px;}
+.tab_payment > li > a {background: #f5f6f8;border-radius: 2px;font-size: 15px;line-height: 1.8;}
+.tab_payment > li > a:hover {background: #eeeeee;}
+.tab_payment > li+li {margin-left: 0; }
 
 .subtitbox {background: url(https://d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/pricing_pay-less-by-using-more.3c9c02be70b77748bbc523e42c828b2ade8dde03.png) no-repeat;background-position: right;padding:30px 0;}
 .subtit {font-size: 30px;color: #000;padding: 0;margin-bottom: 20px;letter-spacing: -1px;}
@@ -336,7 +334,8 @@
 
 .tableTypeA > tbody > tr > th {border-right: 1px solid #ddd;background: #f8fafc;}
 .tableTypeA > tbody > tr > td > span{font-size: 12px;}
-.tableTypeA > caption > label {display:inline-block;float: right;}
+.chk_r {display:inline-block;float: right;}
+.chk_l {display:inline-block;float: left;margin-left: 80px;}
 .tableTypeA > tbody > tr > td > h2 {margin-right:100px; display:block;font-size: 14px;font-weight: 600;}
 
 
@@ -368,9 +367,9 @@
 .cart_billnum {border-top: 1px dashed #ddd;padding: 6px 0px 0;}
 
 .cart_btnext {font-size: 16px;text-align: left;}
-.cart_btnext > span {font-size: 15px;position: relative;top: 6px;right: 0;float: right;font-weight: 700;}
+.cart_btnext > span {font-size: 15px;position: relative;top: 3px;right: 0;float: right;font-weight: 700;}
 .cart_btprev {font-size: 16px;text-align: right;}
-.cart_btprev > span {font-size: 15px;position: relative;top: 6px;right: 0;float: left;font-weight: 700;}
+.cart_btprev > span {font-size: 15px;position: relative;top: 3px;right: 0;float: left;font-weight: 700;}
 
 .tip {font-size: 12px;color: #989898;display: block;line-height: 1.5;}
 .tip > a {font-weight: bold; font-size: 12px;}
@@ -383,6 +382,7 @@
 
 .list {width:900px;}
 .fixing {width: 880px;float:left;}
+.fixing.full{ width:1200px;}
 
 .signal {text-align: center;margin: 50px 0 100px;}
 .signal > h2 {font-size: 50px;margin: 25px 0;line-height: 1.4;}
@@ -399,6 +399,46 @@
 
 .radio_down {margin-bottom:10px;width: 100%;}
 .radio_w {width: 100%;}
+
+.blu-content.wrapper.lastStep .cart{ display:none;}
+
+.service {margin-bottom:300px;display: block;}
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+ *  popup
+ * ------------------------------------------------------------------- */
+
+.layerPup {display: inline-block;}
+.Puptop {position: relative;background: #087ee3;display: block;padding: 20px;}
+.Puptop > h2 {font-size:17px; color:#FFF;}
+.Puptop > a {position:absolute; top:16px; right:15px;}
+.Puptop > a > span {font-size: 22px;color: #fff;}
+.Pupbot {float:left; width:100%;padding:15px;}
+.Pupbot dl {margin-bottom: 30px;}
+.Pupbot dl dt {font-weight: 700;margin-bottom: 10px;font-size: 15px;}
+.Pupbot dl dd {font-size: 12px;line-height: 1.7;color: #555;}        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

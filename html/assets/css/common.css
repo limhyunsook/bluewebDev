@@ -59,8 +59,11 @@ input:focus {background: #f8fafc;border-color:#087ee3 !important;}
 
 
 /* select box */
-
 .selectbox {position: relative;}
+.selectbox > select {border:1px solid #087ee3!important;padding:6px;min-width:243px}
+
+
+/*
 .btncontainer {background-color: #fff;border:1px solid #087ee3;color: #555;padding: 6.5px 10px;font-size: 14px;outline: none;border-radius: 2px 0 0 2px !important;text-align: left;width: 214px;}
 .dropdown {position: absolute;display: inline-block;left: 214px;}
 .dropdown-content {display: none;position: absolute;background-color:#fff;min-width: 242px;z-index: 1;right: 0;border: 1px solid #087ee3;border-top: 0;}
@@ -69,9 +72,7 @@ input:focus {background: #f8fafc;border-color:#087ee3 !important;}
 .dropdown:hover .dropdown-content {display: block;}
 .btncontainer:hover, .dropdown:hover .btncontainer {background-color: #087ee3;color: #Fff;}
 .btnstyle {border-left:0;border-radius: 0 2px 2px 0!important;text-align: center;padding: 6.5px 10px;width: inherit;margin-left: -1px;}
-
-
-
+*/
 
 
 
@@ -79,6 +80,12 @@ input:focus {background: #f8fafc;border-color:#087ee3 !important;}
 /* Grid */
 .row{margin-right: -10px;margin-left: -10px;}
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding-left:10px;padding-right:10px;}
+
+
+
+
+
+
 
 .container{margin:0 auto;padding-right:0px;padding-left: 0px;min-width: 1200px;max-width: 1200px;}
 .wrapper {max-width: 1200px;min-width: 1200px;margin: 0 auto;}
