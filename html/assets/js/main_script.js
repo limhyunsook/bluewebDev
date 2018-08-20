@@ -25,11 +25,38 @@ $(window).load(function(){
     $('.main-slide>ul').bxSlider();    // 메인슬라이더
     $('.footer-slide>ul').bxSlider();  // 풋터슬라이더
      
+    
+            $("a[data-toggle='tab']").on("click",function(e){
+           e.preventDefault();
+            $(this).tab('show');
+            if($(e.target).attr("href")=="#step03"){
+                $(".blu-content.wrapper").addClass("lastStep");
+                $(".fixing").addClass("full");
+            }else{
+                $(".blu-content.wrapper.lastStep").removeClass("lastStep");
+                $(".fixing").removeClass("full");
+            }
+            
+        }); 
 });
 
 
 
-
+function tabNextStep(){
+    var idx = $(".tab-pane.active").index();
+    var sidname = $(".tab-content.fixing > div").eq(idx).next().attr('id');
+    if(sidname != undefined){
+      $('.blu-content a[href=#' + sidname+ ']').tab('show');
+        if(sidname=="step03"){
+            $(".blu-content.wrapper").addClass("lastStep");
+                $(".fixing").addClass("full");
+        }else{
+            $(".blu-content.wrapper.lastStep").removeClass("lastStep");
+                $(".fixing").removeClass("full");
+        }
+    }
+    //
+} 
 
 
 
