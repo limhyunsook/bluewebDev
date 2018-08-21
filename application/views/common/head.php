@@ -50,25 +50,11 @@
 <!--========== header ==========-->
 <header class="header">
 
-<!--========== topbanner ==========-->
-<!--div style="position: relative;max-width:1200px;margin:0 auto;" id="topBannerArea">
-    <a href="#" style="display:block;" target="_blank">
-        <img src="/assets/images/mobile_banner1.jpg" alt="페키지 배너">
-    </a>
-    <div style="position: absolute;bottom: 5px;right: 75px;">
-        <img src="/assets/images/banner_close.gif" alt="닫기" onclick="objTBC.closeTopBannerArea();">
-    </div>
-    <div style="position: absolute;bottom: 5px;right: 0;">
-        <img src="/assets/images/banner_close2.gif" alt="안보기" onclick="objTBC.closeTopBannerCookie();">
-    </div>
-</div-->
- <!--========== topbanner ==========-->
-
 
 <nav class="blue-navbar wrapper">
 	<div class="nav-table">				
 		<ul class="nav-middle">
-            <li class="t-1"><a href="/html/member/login.php">로그인</a></li>			
+            <li class="t-1"><a href="/page/member/login.php">로그인</a></li>			
             <li>|</li>
 			<li><a href="#">홈페이지 제작센터</a></li>			
             <li>|</li>
@@ -85,11 +71,11 @@
 <div class="nav-menu">
 	<div class="container nav-bottom wrapper">
 		<h2>
-			<a href="/html/index.php"><img src="/assets/images/blueweb_logo.png" alt="블루웹 로고"></a>
+			<a href="/page/index.php"><img src="/assets/images/blueweb_logo.png" alt="블루웹 로고"></a>
 		</h2>	
 		<ul>
 			<li>
-				<a href="/html/hosting/service.php">호스팅</a>
+				<a href="/page/hosting/service.php">호스팅</a>
 				 <div>
 					<div>
 						<nav>											
@@ -100,7 +86,7 @@
 						<div class="wrapper">
 							<ul>
 								<h2><a href="#">웹호스팅</a></h2>
-								<li><a href="/html/hosting/service.php">리눅스 웹호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
+								<li><a href="/page/hosting/service.php">리눅스 웹호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
                                 <li><a href="#">윈도우 웹호스팅</a></li>
 								<li><a href="#">제로XE 호스팅</a></li>		
                                 <li><a href="#">.NET 호스팅</a></li>

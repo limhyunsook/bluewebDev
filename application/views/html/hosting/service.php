@@ -38,7 +38,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>5,000<span>원</span></h3>
                             <span>월 기본요금</span>      
-                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -46,7 +46,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>10,000<span>원</span></h3>
                             <span>월 기본요금</span>   
-                            <button class="btn  btn-success ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-success ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -54,7 +54,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>15,000<span>원</span></h3>
                             <span>월 기본요금</span>   
-                            <button class="btn  btn-info ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-info ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -62,7 +62,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>30,000<span>원</span></h3>
                             <span>월 기본요금</span>                                                               
-                            <button class="btn  btn-danger ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-danger ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -70,7 +70,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>50,000<span>원</span></h3>
                             <span>월 기본요금</span>     
-                            <button class="btn  btn-warning ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-warning ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -78,7 +78,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">      
                             <h3>100,000<span>원</span></h3>
                             <span>월 기본요금</span>  
-                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/html/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                     </tr>
@@ -180,7 +180,7 @@
                                     <li><span>DB</span><span>무제한</span></li>
                                     <li><span>아룻룩</span><span>10개</span></li>				
                                 </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">신청하기</button>                                                                      
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                      
                             </div>                        
                         </div>  
                         <div class="col-md-3">
@@ -197,7 +197,7 @@
                                     <li><span>DB</span><span>무제한</span></li>
                                     <li><span>아룻룩</span><span>10개</span></li>				
                                 </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">신청하기</button>                                                                  
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                  
                             </div>                        
                         </div>  
                         <div class="col-md-3">
@@ -214,7 +214,7 @@
                                     <li><span>DB</span><span>무제한</span></li>
                                     <li><span>아룻룩</span><span>10개</span></li>				
                                 </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">신청하기</button>                                                     
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                     
                             </div>                        
                         </div>  
                         <div class="col-md-3">
@@ -231,7 +231,7 @@
                                     <li><span>DB</span><span>무제한</span></li>
                                     <li><span>아룻룩</span><span>10개</span></li>				
                                 </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">신청하기</button>                                                                    
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                    
                             </div>                        
                         </div>  
                     </div>  
@@ -256,9 +256,9 @@
                                     다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
                                     회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
                                 </p>
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/html/hosting/application.php';">신청하기</button>                  
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
+                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
                             </div> 
                         </li>    
                         <li class="col-xs-4 price03">
@@ -273,9 +273,9 @@
                                     다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
                                     회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
                                 </p>
-                                 <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/html/hosting/application.php';">신청하기</button>                  
+                                 <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
+                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
                             </div> 
                         </li> 
                         <li class="col-xs-4 price03">
@@ -290,9 +290,9 @@
                                     다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
                                     회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
                                 </p>
-                                 <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/html/hosting/application.php';">신청하기</button>                  
+                                 <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
+                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
+                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
                             </div> 
                         </li>                     
                     </ul>                
@@ -326,7 +326,7 @@
                                     <h3>19.500<span>원</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                 </div>
                             </div>
                         </li>
@@ -351,7 +351,7 @@
                                     <h3>19.500<span>원</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                 </div>
                             </div>
                         </li>
@@ -376,7 +376,7 @@
                                     <h3>19.500<span>원</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                 </div>
                              </div>
                         </li>
@@ -401,7 +401,7 @@
                                     <h3>19.500<span>원</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                 </div>
                              </div>
                         </li>
@@ -426,7 +426,7 @@
                                     <h3>19.500<span>원</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                 </div>
                             </div>
                         </li>                 		
@@ -456,7 +456,7 @@
                                         <li><span>트래픽</span><span>180G/월</span></li>
                                         <li><span>DB</span><span>무제한</span></li>
                                         <li><span>아룻룩</span><span>10개</span></li>	
-                                        <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button> 
+                                        <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button> 
                                     </ul>     
                                 </aside>
                             </div>
@@ -476,7 +476,7 @@
                                         <li><span>트래픽</span><span>180G/월</span></li>
                                         <li><span>DB</span><span>무제한</span></li>
                                         <li><span>아룻룩</span><span>10개</span></li>	
-                                        <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button> 
+                                        <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button> 
                                     </ul>     
                                 </aside>
                             </div>
@@ -496,7 +496,7 @@
                                         <li><span>트래픽</span><span>180G/월</span></li>
                                         <li><span>DB</span><span>무제한</span></li>
                                         <li><span>아룻룩</span><span>10개</span></li>				
-                                        <button type="button" class="btn btn-danger" onclick="location.href='/html/hosting/application.php';">신청하기</button>                
+                                        <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
                                     </ul>                                     
                                 </aside>
                             </div>                       

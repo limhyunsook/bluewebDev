@@ -166,24 +166,11 @@
 
 
 
-
-
-
-
-<!--========== footer ==========-->
-<footer class="footer">		
-
-</footer>
-<!--========== end footer ==========-->
-
-
-    
     
     
     
     
 
 
-</body>
-</html>
+
 
