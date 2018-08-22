@@ -1,15 +1,16 @@
 <!--========== info ==========-->
 <section class="container-warp">	
 		
-    <!-- sub content -->  
+    <!-- sub-title -->  
     <div class="sub-content">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
             <h2>신청하기</h2>	
         </div>    
     </div>    
-    
-    <!-- body content -->  
+    <!-- //sub-title -->  
+	
+    <!-- body-content -->  
     <div class="blu-content wrapper">        
         <div role="tabpanel">
             
@@ -32,13 +33,13 @@
                             <div class="service">
 								
                                 <!-- 웹호스팅 신청 정보 -->
-                                <table class="table tableTypeA ma2"> 
+                                <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">신청 정보</caption>       
                                 <tbody>
                                 <tr>
                                     <th>호스팅 종류</th>
                                     <td>                                            
-                                        <div class="selectbox ma1">                                        
+                                        <div class="selectbox mb12">                                        
                                             <select class="selectpicker">
                                                 <option>LINUX 보급형</option>
                                                 <option>LINUX 기본형</option>
@@ -72,7 +73,7 @@
                                 <tr class="table-success">
                                     <th scope="row">메일 형태</th>
                                     <td>
-                                        <div class="ma1">
+                                        <div class="mb12">
                                             웹메일을 이미 사용중입니까?
                                             <label class="radiocontainer">
                                                 <input type="radio" name="inlineRadioOptions13" id="inlineRadio1" value="option1" checked="checked">
@@ -93,7 +94,7 @@
                                                 <span class="radio-text"></span>웹메일
                                             </label>                    
                                         </div>
-                                        <div class="selectbox ma0">
+                                        <div class="selectbox mt12">
                                             <select class="selectpicker">
                                                 <option>다음</option>
                                                 <option>네이버</option> 
@@ -114,22 +115,22 @@
                                                 <option>매월 결제</option>  
                                             </select>                                          
                                         </div>
-                                        <a href="#" class="btn btn-primary ma0 a_block">선납무이자</a>
+                                        <a href="#" class="btn btn-primary mt12 a_block">선납무이자</a>
                                     </td>
                                 </tr>   
                                 </tbody>
                                 </table>    
 
                                 <!-- 도메인입력 -->
-                                <table class="table tableTypeA ma2"> 
+                                <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">도메인 입력</caption>       
                                 <tbody>
                                  <tr>
                                     <th>대표 도메인</th>
                                     <td>  
                                         <input type="text" class="form-control" placeholder="Domain">               
-                                        <a href="#" class="btn btn-primary ma0 a_block">도메인 체크</a>
-                                        <div class="tip color01 ma0">
+                                        <a href="#" class="btn btn-primary mt12 a_block">도메인 체크</a>
+                                        <div class="tip color01 mt12">
                                             도메인 입력 후 ‘도메인 체크’ 버튼을 눌러 주세요. 
                                         </div>
                                         <div class="tip">
@@ -141,7 +142,7 @@
                                 </table>   
 
                                 <!-- 옵션 추가 -->
-                                <table class="table tableTypeA ma2"> 
+                                <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">
                                     옵션 추가                                    
                                     <label class="chkcontainer chk_l">
@@ -153,7 +154,7 @@
                                 <tr>
                                     <th>트래픽</th>
                                     <td>  
-                                        <div class="selectbox ma0">
+                                        <div class="selectbox">
                                             <select class="selectpicker">
                                                 <option>신청안함</option>
                                                 <option>4G</option>
@@ -168,7 +169,7 @@
                                 <tr>
                                     <th>웹 용량</th>
                                     <td>  
-                                        <div class="selectbox ma0">
+                                        <div class="selectbox">
                                             <select class="selectpicker">
                                                 <option>신청안함</option>
                                                 <option>2G</option>
@@ -189,14 +190,14 @@
 
 
                                 <!-- 부가서비스 추가 -->
-                                <table class="table tableTypeA ma2"> 
+                                <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">부가서비스 추가</caption>       
                                 <tbody>
                                 <tr>
                                     <th>SSL 보안서버인증서</th>
                                     <td>  
                                         <a href="#" class="btn btn-primary a_block" data-toggle="modal" data-target="#exampleModalCenter">관련법령</a>
-                                        <div class="tip color01 ma0">정통부 의무규정 사항 </div>
+                                        <div class="tip color01 mt12">정통부 의무규정 사항 </div>
                                     </td>   
                                 </tr>  
                                 <tr>
@@ -225,7 +226,7 @@
                             <div class="service">
 								
 								<!-- 신청정보 -->
-								<table class="table tableTypeA ma2"> 
+								<table class="table tableTypeA mb12"> 
 								<caption class="table_title">신청 정보</caption>       
 								<tbody>
 								<tr>
@@ -244,8 +245,8 @@
 									<th>IDC 선택</th>
 									<td>  
 										IBM X3550M5(6core) 
-										<a href="#" class="btn btn-primary ma0 a_block">서버 변경</a>
-										<a href="#" class="btn btn-primary ma0 a_block">부품 추가</a>
+										<a href="#" class="btn btn-primary mt12 a_block">서버 변경</a>
+										<a href="#" class="btn btn-primary mt12 a_block">부품 추가</a>
 									</td>   
 								</tr>  	
 								<tr>
@@ -265,14 +266,14 @@
 											<th>MEM</th>
 											<td>
 												8GB TruDDR4 Memory (1Rx4, 1.2V) PC4-19200 CL17 2400MHz LP RDIMM
-												<a href="#" class="btn btn-primary ma0 a_block">RAM 변경</a>
+												<a href="#" class="btn btn-primary mt12 a_block">RAM 변경</a>
 											</td>
 										</tr> 
 										<tr>
 											<th>HDD</th>
 											<td>
 												300GB 10K 12Gbps SAS 2.5in G3HS HDD
-												<a href="#" class="btn btn-primary ma0 a_block">HDD 변경</a>
+												<a href="#" class="btn btn-primary mt12 a_block">HDD 변경</a>
 											</td>
 										</tr> 
 										</tbody>
@@ -337,7 +338,7 @@
 												<span class="glyphicon glyphicon-th"></span>
 											</div>
 										</div>
-										<p class="ma0"> (계약 만료일: 2020-08-21)</p>
+										<p class="mt12"> (계약 만료일: 2020-08-21)</p>
 									</td>    
 								</tr>
 								<tr>
@@ -365,7 +366,7 @@
 
 
 								<!-- 위탁운영 서비스 추가 (선택 사항) -->
-								<table class="table tableTypeA ma2"> 
+								<table class="table tableTypeA mb12"> 
 									<caption class="table_title">위탁운영 서비스 추가 <span class="color01">(선택 사항)</span></caption> 
 								<tbody>
 								<tr>
@@ -390,7 +391,7 @@
 
 
 								<!-- 소프트웨어 추가 -->
-								<table class="table tableTypeA ma2"> 
+								<table class="table tableTypeA mb12"> 
 								<caption class="table_title">소프트웨어 추가</caption>       
 								<tbody>
 								<tr>
@@ -401,23 +402,23 @@
 											<span class="radio-text"></span>소프트웨어 신청
 										</label>
 										
-										<div class="ma0 ma1">											
+										<div class="chk mt12 mb12">											
 											<label class="chkcontainer">
-												<input type="checkbox" name="check2" checked="checked">
+												<input type="checkbox" name="check2">
 												<span class="check-text"></span>OS 라이선스								
 											</label>      
 											<label class="chkcontainer">
-												<input type="checkbox" name="check2" checked="checked">
+												<input type="checkbox" name="check2">
 												<span class="check-text"></span>DB 라이선스					
 											</label>      
 											<label class="chkcontainer">
-												<input type="checkbox" name="check2" checked="checked">
+												<input type="checkbox" name="check2">
 												<span class="check-text"></span>기타 라이선스						
 											</label>   
 										</div>
 										
 										<label class="radiocontainer">
-											<input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="option1" checked="checked">
+											<input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="option1">
 											<span class="radio-text"></span>신청 안 함
 										</label>
 										
@@ -425,7 +426,7 @@
 								</tr>  							
 								<tr>
 									<td>
-										<h2 class="ma1">OS 라이선스</h2>
+										<h2 class="mb12">OS 라이선스</h2>
 										<label class="radiocontainer">
 											<input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 임대
@@ -434,7 +435,7 @@
 											<input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 구매
 										</label>
-										<div class="selectbox ma0">
+										<div class="selectbox mt12">
 											<select class="selectpicker">
 												<option>선납 안 함</option>
 												<option>1개월</option>
@@ -447,7 +448,7 @@
 								</tr>
 								<tr>
 									<td>
-										<h2 class="ma1">DB 라이선스</h2>
+										<h2 class="mb12">DB 라이선스</h2>
 										<label class="radiocontainer">
 											<input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 임대
@@ -456,7 +457,7 @@
 											<input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 구매
 										</label>
-										<div class="selectbox ma0">
+										<div class="selectbox mt12">
 											<select class="selectpicker">
 												<option>선납 안 함</option>
 												<option>1개월</option>
@@ -469,7 +470,7 @@
 								</tr>   
 								<tr>
 									<td>
-										<h2 class="ma1">기타 라이선스</h2>
+										<h2 class="mb12">기타 라이선스</h2>
 										<label class="radiocontainer">
 											<input type="radio" name="inlineRadioOptions11" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 임대
@@ -478,7 +479,7 @@
 											<input type="radio" name="inlineRadioOptions11" id="inlineRadio1" value="option1" checked="checked">
 											<span class="radio-text"></span>라이선스 구매
 										</label>
-										<div class="selectbox ma0">
+										<div class="selectbox mt12">
 											<select class="selectpicker">
 												<option>선납 안 함</option>
 												<option>1개월</option>
@@ -496,7 +497,7 @@
 
 
 								<!-- 부가서비스 추가 -->
-								<table class="table tableTypeA ma2"> 
+								<table class="table tableTypeA mb12"> 
 								<caption class="table_title">부가서비스 추가</caption>       
 								<tbody>
 								<tr>
@@ -629,18 +630,18 @@
 								</div>
 								
                                 <div class="btnBox">
-                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 cart_btnext" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
                                         다음 단계 <span class="lnr lnr-chevron-right"></span>
                                     </button>  
-                                    <button type="button" id="tabStep01" class="btn btn-danger ma1 cart_btnext" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="tabNextStep();">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>           
-                                    <button type="button" id="tabStep01" class="btn btn-warning ma1 cart_btprev" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-warning mb12 cart_btprev" onclick="tabNextStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>           
 
-                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
-                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
+                                    <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
+                                    <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
                                 </div>    
                             </div>
@@ -653,9 +654,62 @@
                 <div role="tabpanel" class="tab-pane" id="step02">  
                                     
                     <ul class="row">
+						
                         <li class="col-xs-9">
 							
-							<table class="table tableTypeA ma2">
+							<table class="table tableTypeA table-hover mb12">
+                            <caption class="table_title">신청 리스트</caption>                             
+                            <tbody>      								
+							<tr>
+								<th>서버명</th>
+								<th>OS</th>
+								<th>Disk</th>
+								<th>CPU/Memory</th>
+								<th>서버수량</th>
+								<th>약정</th>
+								<th>월사용 요금</th>
+							</tr>  
+							<tr>
+								<td><input type="text" class="form-control" placeholder="server"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>LINUX 보급형</option>
+										</select> 
+									</div>	
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>100G</option>
+											<option>20G</option>
+										</select> 
+									</div>									
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1vCore*1GB (26,000원)</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1년</option>
+											<option>2년</option>
+											<option>3년</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0원"></td>
+							</tr>  
+                            </tbody>
+							</table>  
+							
+							
+							<table class="table tableTypeA mb12">
                             <caption class="table_title">신청 정보</caption>                             
                             <tbody>      								
                                 <tr>
@@ -671,7 +725,7 @@
 							
 							
 							
-                            <table class="table tableTypeA ma2">
+                            <table class="table tableTypeA mb12">
                             <caption class="table_title">결제수단</caption>                             
                             <tbody>      								
                                 <tr>
@@ -700,11 +754,11 @@
                             </tbody>
 							</table>           
 
-                            <div class="tip ma2">
+                            <div class="tip mb12">
                                 ※ 2005년 4월부터 개정된 부가가치세법에 따라 신용카드 매출전표가 세금계산서를 대체합니다.<br>
                                 ※ 예치금을 일부 사용하고 신용카드/휴대폰 결제를 하는 경우, 현금영수증은 예치금 사용 금액에 대해서만 발행됩니다.                                    
                             </div>
-                            <div class="tip ma2">
+                            <div class="tip mb12">
                                 * 현금영수증과 세금계산서는 중복으로 발행되지 않습니다.<br>
                                 * 현금영수증은 현재 페이지에서만 발행할 수 있습니다.<br>
                                 * Mac OS에서는 결제가 불가능합니다                                
@@ -768,18 +822,18 @@
 								</div>
 								
                                 <div class="btnBox">
-                                    <button type="button" id="tabStep01" class="btn btn-primary ma1 cart_btnext" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
                                         다음 단계 <span class="lnr lnr-chevron-right"></span>
                                     </button>  
-                                    <button type="button" id="tabStep01" class="btn btn-danger ma1 cart_btnext" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="tabNextStep();">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>           
-                                    <button type="button" id="tabStep01" class="btn btn-warning ma1 cart_btprev" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-warning mb12 cart_btprev" onclick="tabNextStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>           
 
-                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
-                                    <a href="" class="btn btn-success ma1" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
+                                    <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
+                                    <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
                                 </div>   
                             </div>

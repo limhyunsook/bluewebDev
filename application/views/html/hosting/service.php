@@ -1,21 +1,24 @@
-<!--========== container ==========-->
+<!-- container -->
 <section class="container-warp">	
 		
-    <!-- 서브컨텐츠 -->  
+	
+    <!-- sub-title -->  
     <div class="sub-content">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
             <h2>리눅스 호스팅</h2>	
         </div>    
     </div>    
+	<!-- //sub-title -->  
+	
     
-    <!-- 바디컨텐츠 -->  
+    <!-- sub-content -->  
     <div class="blu-content wrapper">        
         <div role="tabpanel">
             
             <!-- Nav tabs -->
             <ul class="nav nav-pills tab01" role="tablist">
-                <li role="presentation" class="active col-xs-2"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab">리눅스 호스팅</a></li>
+                <li role="presentation" class="col-xs-2 active"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab">리눅스 호스팅</a></li>
                 <li role="presentation" class="col-xs-2"><a href="#window" aria-controls="window" role="tab" data-toggle="tab">윈도우 호스팅</a></li>
                 <li role="presentation" class="col-xs-2"><a href="#zeroxe" aria-controls="zeroxe" role="tab" data-toggle="tab">제로XE 호스팅</a></li>
                 <li role="presentation" class="col-xs-2"><a href="#net" aria-controls="net" role="tab" data-toggle="tab">.NET 호스팅</a></li>
@@ -25,7 +28,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
 
-                <!-- 리눅스 --> 
+               	<!-- linux --> 
                 <div role="tabpanel" class="tab-pane active" id="linux">               
 
                     <table class="table table-bordered table-hover price01">
@@ -38,7 +41,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>5,000<span>원</span></h3>
                             <span>월 기본요금</span>      
-                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -46,7 +49,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>10,000<span>원</span></h3>
                             <span>월 기본요금</span>   
-                            <button class="btn  btn-success ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-success mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -54,7 +57,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>15,000<span>원</span></h3>
                             <span>월 기본요금</span>   
-                            <button class="btn  btn-info ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-info mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -62,7 +65,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>30,000<span>원</span></h3>
                             <span>월 기본요금</span>                                                               
-                            <button class="btn  btn-danger ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-danger mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -70,7 +73,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>50,000<span>원</span></h3>
                             <span>월 기본요금</span>     
-                            <button class="btn  btn-warning ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-warning mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                         <th scope="col">
@@ -78,7 +81,7 @@
                             <img src="/assets/images/icon_login_typy02.jpg">      
                             <h3>100,000<span>원</span></h3>
                             <span>월 기본요금</span>  
-                            <button class="btn  btn-primary ma1" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
+                            <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
                             <p>(자동이체5%할인)</p>
                         </th>
                     </tr>
@@ -149,22 +152,19 @@
                     </tr>
                     </tbody>
                     </table>   
-                </div>         
+                </div>     
+				<!-- //linux --> 	
+					
 
 
-
-
-                <!-- 윈도우 -->   
+                <!-- windows -->   
                 <div role="tabpanel" class="tab-pane" id="window">      
                     
                     <div class="subtitbox">
                         <h2 class="subtit">Windows 웹호스팅 종류 및 요금</h2>
                         <p class="subtxt">Window 2008 R2 및 2016 64bit Server 기반의 안정적인 호스팅 서비스<br>보안기능 강화와 사용기능이 향상된 윈도우 호스팅을 이용해보세요</p>
-                    </div>
-                    
-                    
-                    
-                    
+                    </div>                  
+                                        
                     <div class="row">
                         <div class="col-md-3">
                             <div class="price02">  
@@ -236,11 +236,11 @@
                         </div>  
                     </div>  
                 </div>
+				<!-- //windows -->   
 
 
 
-
-                <!-- 제로xe -->  
+                <!-- zeroxe -->  
                 <div role="tabpanel" class="tab-pane" id="zeroxe">                
                     <h2 class="subtit">제로XE 호스팅 종류 및 요금</h2>
                     <ul class="row">
@@ -297,11 +297,11 @@
                         </li>                     
                     </ul>                
                 </div>
+				<!-- //zeroxe -->  
 
 
 
-
-                <!-- 닷넷 -->    
+				<!-- net -->    
                 <div role="tabpanel" class="tab-pane" id="net">                          
                     <h2 class="subtit">.NET 호스팅 종류 및 요금</h2>
                     <ul class="row">
@@ -432,12 +432,11 @@
                         </li>                 		
                     </ul>                
                 </div>
+				<!-- //net -->  	
 
 
 
-
-
-                <!-- 리셀러 -->    
+                <!-- reseller -->    
                 <div role="tabpanel" class="tab-pane" id="reseller">                   
                     <h2 class="subtit">리셀러 호스팅 종류 및 요금</h2>
                     <ul class="row">
@@ -503,11 +502,12 @@
                         </li>   
                     </ul>                
                 </div>            
+				<!-- //reseller -->    
 
             </div>          
         </div>  
     </div>
-        
+    <!-- //sub-content -->     
     
     
     <!-- additional service -->  
@@ -519,7 +519,7 @@
             <h4><span class="lnr lnr-phone"></span> 1544-2120</h4>
         </div>    
     </div>
-    
+    <!-- //additional service -->  
     
         
     
@@ -574,12 +574,12 @@
             </li>               
         </ul>
     </div>
-    
+    <!-- //additional service -->  
     
     
     
 </section>
-<!--========== END hosting ==========-->
+<!-- //container -->
 
 
 

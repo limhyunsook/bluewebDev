@@ -1,4 +1,4 @@
-<!--========== slide ==========-->
+<!-- slide -->
 <section class="slider">	
 	<div class="main-slider">	
 		<div class="bxslider">
@@ -9,18 +9,18 @@
 		</div>	
 	</div>	
 </section>
-<!--========== end slide ==========-->
+<!-- //slide -->
 
 
 
 
 
-<!--========== service ==========-->
-<section class="section-service">	
+<!-- container -->
+<section class="section-container">	
     
-	<!-- service-item1 -->
-	<div class="container service-item1">
-		<ul class="row col-m-1">
+	<!-- item1 -->
+	<div class="container">
+		<ul class="row col-xs-6 item1-1">
 			<li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline02.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline03.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
@@ -28,13 +28,13 @@
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline05.png" alt="SSL호스팅">제로XE<br/>호스팅</a></li>			
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline06.png" alt="SSL호스팅">SSL<br/>신청</a></li>			
 		</ul>	
-		<ul class="row col-m-2">	
+		<ul class="row col-xs-6 item1-2">	
 			<li class="col-xs-12">
 				<div>
 					<h2>도메인검색</h2>
 					<div>
 						<label><input type="text"></label>
-						<button type="image" class="btn"><i class="fa fa-search"></i> 검색</button>
+						<button type="image" class="btn"><i class="fa fa-search"></i>검색</button>
 					</div>
 					<ul>
 						<li><a href="#">기간연장</a></li>
@@ -51,30 +51,28 @@
 			</li>
 		</ul>	
 	</div>
-	<!-- end service-item1 -->
-
-
-
-    
-	<!-- service-item2 -->
-	<div class="container service-item2">          
+	<!-- //item1 -->
+	
+	
+	<!-- item2 -->
+	<div class="container row-t">       
         <ul class="row">
             <li class="col-xs-4">
-                <div class="col-m-1">
-                    <h2><span>부가</span>서비스<Br/>호스팅 이벤트</h2>
+                <div class="canvas item2">
+                    <h2><span class="color01">부가</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/assets/images/icon_service.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="col-m-2">
+                <div class="canvas item2">
                     <h2><span>매니지먼트</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/assets/images/icon_management.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="col-m-3">
+                <div class="canvas item2">
                     <div class="row-m-1">
                         <h2><span>1차</span> 네임서버</h2>
                         <p>ns4.blueweb.co.kr<Br/><span>211.202.2.4</span></p>			
@@ -87,17 +85,14 @@
             </li>
         </ul>   
 	</div>
-	<!-- end service-item2 -->
+	<!-- //item2 -->
 
-
-
-
-
-	<!-- service-item3 -->
-	<div class="container service-item3">
+		
+	<!-- item3 -->
+	<div class="container row-t">
          <ul class="row">
             <li class="col-xs-4">              
-                <div class="col-xe-1">                  
+                <div class="canvas item3">             
                     <h2>공지사항</h2>
                     <a href="#">+</a>
                     <ul>					
@@ -108,7 +103,7 @@
                 </div>
             </li>
            <li class="col-xs-4">                 
-                <div class="col-xe-2">                   
+                <div class="canvas item3">                               
                     <h2>고객센터</h2>
                     <div>	
                         <p>1588-2120</p>
@@ -117,18 +112,18 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="col-xe-3">                   
+                 <div class="canvas item3">         
                     <h2>서비스관리</h2>
                     <div>					
-                        <div>
+                        <div class="col-xs-4">     
                             <img src="/assets/images/icon_question.png" alt="1:1문의">
                             <a href="#">1:1문의</a>	
                         </div>	                     
-                        <div>
+                        <div class="col-xs-4">     
                             <img src="/assets/images/icon_taxbill.png" alt="세금계산서">
                             <a href="#">세금계산서</a>				
                         </div>
-                        <div>
+                        <div class="col-xs-4">     
                             <img src="/assets/images/icon_manual.png" alt="매뉴얼">
                             <a href="#">회사소개서</a>			
                         </div>
@@ -138,14 +133,14 @@
             </li>         
         </ul>
 	</div>
-	<!-- end service-item3 -->
+	<!-- //item3 -->
 
 
 		
 
     
 		
-    <!--========== footer slide ==========-->
+    <!-- footer slide -->
     <section class="slider clearfix">	
         <div class="footer_slider wrapper">	
             <div class="bxslider">
@@ -154,14 +149,14 @@
             </div>	
         </div>	
     </section>
-    <!--========== end footer slide ==========-->
+    <!-- //footer slide -->
 
 
 
 
 
 </section>
-<!--========== end service ==========-->
+<!-- //container -->
 
 
 

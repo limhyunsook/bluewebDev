@@ -54,7 +54,7 @@
 <nav class="blue-navbar wrapper">
 	<div class="nav-table">				
 		<ul class="nav-middle">
-            <li class="t-1"><a href="/page/member/login.php">로그인</a></li>			
+            <li class="t-1"><a href="/page/login.php">로그인</a></li>			
             <li>|</li>
 			<li><a href="#">홈페이지 제작센터</a></li>			
             <li>|</li>
