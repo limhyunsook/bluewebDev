@@ -1,22 +1,21 @@
-<!--========== info ==========-->
+<!-- container -->
 <section class="container-warp">	
 
-	<!-- body content -->  
-    <div class="blu-content layout">  
+	
+	<!-- body-content -->  
+    <div class="blu-content layout-lg"> 
 		
-		<ul class="row content">
+		<ul class="row layout-sm">
 			<li class="col-xs-6">
 				<div class="col-m-2 b-login">
 					<h2>일반 <span>로그인</span></h2>				
 					<form id="loginForm" method="post" novalidate="novalidate">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="아이디를 입력하세요">         
-						<div class="tooltip">아이디를 입력해주세요.</div>
+						<input type="text" class="form-control" placeholder="아이디를 입력하세요">    
 					</div>
 
 					<div class="form-group">			
 						<input type="password" class="form-control" placeholder="비밀번호를 입력하세요">
-						<div class="tooltip">비밀번호를 입력해주세요.</div>
 					</div>
 
 					<div class="form-group">		
@@ -71,5 +70,8 @@
 		</ul>   	
 				
 	</div>
+	<!-- //body-content -->  
+		
 
 </section>
+<!-- //container -->

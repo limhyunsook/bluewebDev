@@ -18,9 +18,9 @@
 <!-- container -->
 <section class="section-container">	
     
-	<!-- item1 -->
+	<!-- panel1 -->
 	<div class="container">
-		<ul class="row col-xs-6 item1-1">
+		<ul class="row col-xs-6 panel1-1">
 			<li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline02.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline03.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
@@ -28,7 +28,7 @@
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline05.png" alt="SSL호스팅">제로XE<br/>호스팅</a></li>			
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline06.png" alt="SSL호스팅">SSL<br/>신청</a></li>			
 		</ul>	
-		<ul class="row col-xs-6 item1-2">	
+		<ul class="row col-xs-6 panel1-2">	
 			<li class="col-xs-12">
 				<div>
 					<h2>도메인검색</h2>
@@ -51,28 +51,28 @@
 			</li>
 		</ul>	
 	</div>
-	<!-- //item1 -->
+	<!-- //panel1 -->
 	
 	
-	<!-- item2 -->
+	<!-- panel2 -->
 	<div class="container row-t">       
         <ul class="row">
             <li class="col-xs-4">
-                <div class="canvas item2">
-                    <h2><span class="color01">부가</span>서비스<Br/>호스팅 이벤트</h2>
+                <div class="canvas panel2">
+                    <h2><span>부가</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/assets/images/icon_service.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="canvas item2">
+                <div class="canvas panel2">
                     <h2><span>매니지먼트</span>서비스<Br/>호스팅 이벤트</h2>
                     <a>서비스를 확인하세요!<i class="fa fa-angle-right"></i></a>
                     <img src="/assets/images/icon_management.png" alt="부가서비스">		
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="canvas item2">
+                <div class="canvas panel2">
                     <div class="row-m-1">
                         <h2><span>1차</span> 네임서버</h2>
                         <p>ns4.blueweb.co.kr<Br/><span>211.202.2.4</span></p>			
@@ -85,14 +85,14 @@
             </li>
         </ul>   
 	</div>
-	<!-- //item2 -->
+	<!-- //panel2 -->
 
 		
-	<!-- item3 -->
+	<!-- panel3 -->
 	<div class="container row-t">
          <ul class="row">
             <li class="col-xs-4">              
-                <div class="canvas item3">             
+                <div class="canvas panel3">             
                     <h2>공지사항</h2>
                     <a href="#">+</a>
                     <ul>					
@@ -103,7 +103,7 @@
                 </div>
             </li>
            <li class="col-xs-4">                 
-                <div class="canvas item3">                               
+                <div class="canvas panel3">                               
                     <h2>고객센터</h2>
                     <div>	
                         <p>1588-2120</p>
@@ -112,7 +112,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                 <div class="canvas item3">         
+                 <div class="canvas panel3">         
                     <h2>서비스관리</h2>
                     <div>					
                         <div class="col-xs-4">     
@@ -133,25 +133,20 @@
             </li>         
         </ul>
 	</div>
-	<!-- //item3 -->
-
-
-		
+	<!-- //panel3 -->
 
     
 		
-    <!-- footer slide -->
+    <!-- banner -->
     <section class="slider clearfix">	
-        <div class="footer_slider wrapper">	
+        <div class="banner wrapper">	
             <div class="bxslider">
                 <div class="bg-box01 bg-box"></div>
                 <div class="bg-box02 bg-box"></div>              
             </div>	
         </div>	
     </section>
-    <!-- //footer slide -->
-
-
+    <!-- //banner -->
 
 
 

@@ -1,6 +1,7 @@
-<!--========== info ==========-->
+<!-- container -->
 <section class="container-warp">	
 		
+	
     <!-- sub-title -->  
     <div class="sub-content">
         <div class="wrapper"> 
@@ -10,29 +11,37 @@
     </div>    
     <!-- //sub-title -->  
 	
+	
     <!-- body-content -->  
     <div class="blu-content wrapper">        
         <div role="tabpanel">
             
+			
             <!-- nav tabs -->
-            <ul class="nav nav-pills tab_payment" role="tablist">
-                <li role="presentation" class="active col-xs-4"><a href="#step01" aria-controls="step01" role="tab" data-toggle="tab"><strong>STEP 01</strong>호스팅 기본 정보 선택</a></li>
+            <ul class="nav nav-pills tab-pay" role="tablist">
+                <li role="presentation" class="col-xs-4 active"><a href="#step01" aria-controls="step01" role="tab" data-toggle="tab"><strong>STEP 01</strong>호스팅 기본 정보 선택</a></li>
                 <li role="presentation" class="col-xs-4"><a href="#step02" aria-controls="step02" role="tab" data-toggle="tab"><strong>STEP 02</strong>호스팅 신청정보 확인 및 결제</a></li>
                 <li role="presentation" class="col-xs-4"><a href="#step03" aria-controls="step03" role="tab" data-toggle="tab"><strong>STEP 03</strong>호스팅 신청 완료</a></li>
             </ul>
-
+			<!-- //nav tabs -->
+			
+			
             <!-- tab panes -->
-            <div class="tab-content fixing">
+            <div class="tab-content">
+				
+				
               
-                <!-- tab 1 -->
+				<!-- step01 -->
                 <div role="tabpanel" class="tab-pane active" id="step01"> 
                     <ul class="row">
-                        <li class="col-xs-9 list">
+                        <li class="col-xs-9">
                                
-                            <!-- 웹호스팅 -->
+							
+                            <!-- web-hosting -->
                             <div class="service">
 								
-                                <!-- 웹호스팅 신청 정보 -->
+								
+                                <!-- 신청 정보 -->
                                 <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">신청 정보</caption>       
                                 <tbody>
@@ -120,7 +129,9 @@
                                 </tr>   
                                 </tbody>
                                 </table>    
+								<!-- //신청 정보 -->
 
+								
                                 <!-- 도메인입력 -->
                                 <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">도메인 입력</caption>       
@@ -140,7 +151,9 @@
                                 </tr>   
                                 </tbody>
                                 </table>   
+								<!-- //도메인입력 -->
 
+								
                                 <!-- 옵션 추가 -->
                                 <table class="table tableTypeA mb12"> 
                                 <caption class="table_title">
@@ -187,6 +200,7 @@
                                 </tr>  
                                 </tbody>
                                 </table>
+								<!-- //옵션 추가 -->
 
 
                                 <!-- 부가서비스 추가 -->
@@ -219,11 +233,17 @@
                                 </tr>  
                                 </tbody>
                                 </table>
-                            </div>
+								<!-- //부가서비스 추가 -->
+								
+																
+                            </div> 
+							<!-- //web-hosting -->
                             
-                            
-                            <!-- 서버호스팅 -->
+														
+							
+                            <!-- server-hosting -->
                             <div class="service">
+								
 								
 								<!-- 신청정보 -->
 								<table class="table tableTypeA mb12"> 
@@ -361,8 +381,7 @@
 								</tr>
 								</tbody>
 								</table>
-
-
+								<!-- //신청정보 -->	
 
 
 								<!-- 위탁운영 서비스 추가 (선택 사항) -->
@@ -388,6 +407,7 @@
 								</tr>  
 								</tbody>
 								</table>
+								<!-- //위탁운영 서비스 추가 (선택 사항) -->
 
 
 								<!-- 소프트웨어 추가 -->
@@ -492,7 +512,7 @@
 								</tr>  
 								</tbody>
 								</table>
-
+								<!-- //소프트웨어 추가 -->
 
 
 
@@ -571,10 +591,17 @@
 								</tr>  
 								</tbody>
 								</table>
+								<!-- //부가서비스 추가 -->
+								
+								
 							</div>  
+							<!-- //server-hosting -->
+							
+							
                         </li>       						
-                        <li class="col-xs-3 list">                        
-                             <!-- 계산기 -->
+                        <li class="col-xs-3">   
+							
+                            <!-- cart -->
                             <div class="cart">
                                 <table class="table">
                                     <caption class="table_title">결제 금액 계산</caption>
@@ -636,7 +663,7 @@
                                     <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="tabNextStep();">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>           
-                                    <button type="button" id="tabStep01" class="btn btn-warning mb12 cart_btprev" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabNextStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>           
 
@@ -645,18 +672,24 @@
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
                                 </div>    
                             </div>
+							<!-- //cart -->
+							
                         </li>
                     </ul>                     
                 </div>      
+                <!-- //step01 -->
                 
-                
-                <!-- tab 2 -->
+				
+				
+                <!-- step02 -->
                 <div role="tabpanel" class="tab-pane" id="step02">  
                                     
                     <ul class="row">
 						
                         <li class="col-xs-9">
 							
+							
+							<!--  신청리스트 -->
 							<table class="table tableTypeA table-hover mb12">
                             <caption class="table_title">신청 리스트</caption>                             
                             <tbody>      								
@@ -707,8 +740,11 @@
 							</tr>  
                             </tbody>
 							</table>  
+							<!--  //신청리스트 -->
+								
 							
 							
+							<!-- 신청 정보 -->
 							<table class="table tableTypeA mb12">
                             <caption class="table_title">신청 정보</caption>                             
                             <tbody>      								
@@ -722,9 +758,11 @@
                                 </tr>  
                             </tbody>
 							</table>       
+							<!-- //신청 정보 -->
 							
 							
 							
+							<!-- 결제수단 -->
                             <table class="table tableTypeA mb12">
                             <caption class="table_title">결제수단</caption>                             
                             <tbody>      								
@@ -753,7 +791,10 @@
                                 </tr>  
                             </tbody>
 							</table>           
-
+							<!-- 결제수단 -->
+							
+							
+							
                             <div class="tip mb12">
                                 ※ 2005년 4월부터 개정된 부가가치세법에 따라 신용카드 매출전표가 세금계산서를 대체합니다.<br>
                                 ※ 예치금을 일부 사용하고 신용카드/휴대폰 결제를 하는 경우, 현금영수증은 예치금 사용 금액에 대해서만 발행됩니다.                                    
@@ -763,10 +804,15 @@
                                 * 현금영수증은 현재 페이지에서만 발행할 수 있습니다.<br>
                                 * Mac OS에서는 결제가 불가능합니다                                
                             </div>
-                        </li>                          
+
+							
+                        </li> 
+						
+						
                         <li class="col-xs-3">  
 							
-                            <!-- 계산기 -->
+							
+                            <!-- cart -->
                             <div class="cart">
                                 <table class="table">
 								<caption class="table_title">결제 금액 계산</caption>
@@ -828,7 +874,7 @@
                                     <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="tabNextStep();">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>           
-                                    <button type="button" id="tabStep01" class="btn btn-warning mb12 cart_btprev" onclick="tabNextStep();">
+                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabNextStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>           
 
@@ -837,12 +883,23 @@
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
                                 </div>   
                             </div>
-                        </li>                 
+							<!-- //cart -->
+							
+							
+							
+                        </li>    
+						
+						
+						
                     </ul>                    
-                </div>    
-                
-                <!-- tab 3 -->
+                </div>    				
+				<!-- //step02 -->                
+				
+				
+				
+                <!-- step03  -->				
                 <div role="tabpanel" class="tab-pane" id="step03">    
+					
 
 					<script>
 					$("#step03").load("nts_application_ok.php");
@@ -853,19 +910,22 @@
 					<a href="application_cancel.html">cancel Page</a>	
 					-->
 					
+										
                 </div>   
+				<!-- //step03  -->
+								
 
-            </div>            
+				
+            </div>         
+			<!-- //tab panes -->
+			
+			
         </div>    
-    </div>    
+    </div>  
+	
+	
 </section>
-<!--========== end hosting ==========-->
-
-
-
-
-
-
+<!-- //container -->
 
 
 <!-- modal -->
@@ -880,30 +940,30 @@
 					</button>
 				</div>
 				<div class="modal-body">
-						<dl>
-							<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』제28조(개인정보의 보호조치)</dt>
-							<dd>
-							정보통신서비스 제공자 등이 개인정보를 취급할 때에는 개인정보의 분실·도난·누출·변조 또는 훼손을 방지하기 위하여 대통령령으로 정하는 기준에 따라 다음 각 호의 기술적·관리적 조치를 하여야 한다.<br>
-							4. 개인정보를 안전하게 저장·전송할 수 있는 암호화 기술 등을 이용한 보안조치
-							</dd>
-						</dl>
-						<dl>
-							<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』시행령 제15조(개인정보의 보호조치)</dt>
-							<dd>
-							④ 법 제28조 제1항 제4호에 따라 정보통신서비스 제공자 등은 개인정보가 안전하게 저장ㆍ전송될 수 있도록 다음 각 호의 보안조치를 하여야 한다.<br>
-							3. 정보통신망을 통하여 이용자의 개인정보 및 인증정보를 송신ㆍ수신하는 경우 보안서버 구축 등의 조치<br>이하 생략
-							</dd>
-						</dl>
-						<dl>
-							<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』 제76조(과태료)</dt>
-							<dd>
-							① 다음 각 호의 어느 하나에 해당하는 자와 제7호부터 제11호까지의 경우에 해당하는 행위를 하도록 한 자에게는 3천만 원 이하의 과태료를 부과한다.<br>
-							3. 제28조제1항(제67조에 따라 준용되는 경우를 포함한다)에 따른 기술적·관리적 조치를 하지 아니한 자
-							</dd>
-						</dl>
-						<p class="logo">
-							<img src="/assets/images/bg_law.gif" alt="정보통신부 한국정보보호진흥원">
-						</p>
+					<dl>
+						<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』제28조(개인정보의 보호조치)</dt>
+						<dd>
+						정보통신서비스 제공자 등이 개인정보를 취급할 때에는 개인정보의 분실·도난·누출·변조 또는 훼손을 방지하기 위하여 대통령령으로 정하는 기준에 따라 다음 각 호의 기술적·관리적 조치를 하여야 한다.<br>
+						4. 개인정보를 안전하게 저장·전송할 수 있는 암호화 기술 등을 이용한 보안조치
+						</dd>
+					</dl>
+					<dl>
+						<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』시행령 제15조(개인정보의 보호조치)</dt>
+						<dd>
+						④ 법 제28조 제1항 제4호에 따라 정보통신서비스 제공자 등은 개인정보가 안전하게 저장ㆍ전송될 수 있도록 다음 각 호의 보안조치를 하여야 한다.<br>
+						3. 정보통신망을 통하여 이용자의 개인정보 및 인증정보를 송신ㆍ수신하는 경우 보안서버 구축 등의 조치<br>이하 생략
+						</dd>
+					</dl>
+					<dl>
+						<dt>『정보통신망 이용촉진 및 정보보호 등에 관한 법률』 제76조(과태료)</dt>
+						<dd>
+						① 다음 각 호의 어느 하나에 해당하는 자와 제7호부터 제11호까지의 경우에 해당하는 행위를 하도록 한 자에게는 3천만 원 이하의 과태료를 부과한다.<br>
+						3. 제28조제1항(제67조에 따라 준용되는 경우를 포함한다)에 따른 기술적·관리적 조치를 하지 아니한 자
+						</dd>
+					</dl>
+					<p class="logo">
+						<img src="/assets/images/bg_law.gif" alt="정보통신부 한국정보보호진흥원">
+					</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
@@ -913,7 +973,7 @@
 		</div>
 	</div>
 </div>
-    
+<!-- //modal -->
 
     
     
