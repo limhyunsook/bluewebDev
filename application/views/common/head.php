@@ -54,11 +54,11 @@
 	<nav class="nav-bar wrapper">
 		<div>				
 			<ul>
-				<li><a href="/page/login.php">로그인</a></li>	
-				<li><a href="#">홈페이지 제작센터</a></li>		
-				<li><a href="#">블루 CGI</a></li>
-				<li><a href="#">블루 SMS</a></li>		
-				<li><a href="#">파트너</a></li>				
+				<li><a href="/page/member/login.php">로그인</a></li>	
+				<li><a href="http://homepage.blueweb.co.kr/" target="_blank">홈페이지 제작센터</a></li>		
+				<li><a href="http://db.blueweb.co.kr/bluecgi/rIndex.html" target="_blank">블루 CGI</a></li>
+				<li><a href="http://sms.blueweb.co.kr/" target="_blank">블루 SMS</a></li>		
+				<li><a href="http://partner.blueweb.co.kr/" target="_blank">파트너</a></li>			
 			</ul>	
 		</div>
 	</nav>
@@ -75,21 +75,21 @@
 					 <div>
 						<div>
 							<nav>											
-								<h2>웹호스팅</h2>
+								<h2>호스팅</h2>
 								<p>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</p>							
 								<a href="#">서비스 알아보기 <i class="fa fa-angle-right"></i></a>
 							</nav>		
 							<div class="wrapper">
 								<ul>
 									<h2><a href="#">웹호스팅</a></h2>
-									<li><a href="/page/hosting/service.php">리눅스 웹호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
-									<li><a href="#">윈도우 웹호스팅</a></li>
-									<li><a href="#">제로XE 호스팅</a></li>		
-									<li><a href="#">.NET 호스팅</a></li>
-									<li><a href="#">리셀러 호스팅</a></li>
+									<li><a href="/page/hosting/service.php">웹호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
+									<li><a href="#">웹에이전시 호스팅</a></li>
+									<li><a href="#">워드프레스 호스팅</a></li>		
+									<li><a href="#">DB 호스팅</a></li>
 								</ul>		
 								<ul>
 									<h2><a href="#">솔루션 지원</a></h2>
+									<li><a href="#">SMS 호스팅</a></li>
 									<li><a href="#">이미지 호스팅</a></li>
 									<li><a href="#">동영상 호스팅</a></li>
 								</ul>		
@@ -104,7 +104,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#">서버호스팅</a>
+					<a href="/page/server/server.php">서버호스팅</a>
 					<div>
 						<div>
 							<nav>											
@@ -115,29 +115,18 @@
 							<div class="wrapper">
 								<ul>
 									<h2><a href="#">서버호스팅</a></h2>
-									<li><a href="#">서버호스팅이란?</a></li>
-									<li><a href="#">블루웹의 장점</a></li>
-									<li><a href="#">서비스 설비</a></li>
-									<li><a href="#">네트워크</a></li>
+									<li><a href="/page/server/server.php">서버임대/구매</a></li>
+									<li><a href="#">1분설치 서버</a></li>
+									<li><a href="#">VPN</a></li>
 								</ul>									
 								<ul>
-									<h2><a href="#">코로케이션</a></h2>	
-									<li><a href="#">코로케이션 안내</a></li>
-									<li><a href="#">서버 코로케이션</a></li>
-									<li><a href="#">랙 코로케이션</a></li>
-									<li><a href="#">신청절차 <img src="/assets/images/icon_update.png" alt="update"></a></li>
-									<li><a href="#">서비스 신청</a></li>
+									<h2><a href="#">위탁운영</a></h2>	
+									<li><a href="#">백업</a></li>
+									<li><a href="#">모니터링 <img src="/assets/images/icon_update.png" alt="update"></a></li>
 								</ul>
 								<ul>
-									<h2><a href="#">매니지먼트 서비스</a></h2>	
-									<li><a href="#">매니지먼트란</a></li>
-									<li><a href="#">서비스종류/신청</a></li>
-									<li><a href="#">작업신청 <img src="/assets/images/icon_event.png" alt="event"></a></li>
-								</ul>
-								<ul>
-									<h2><a href="#">부가서비스</a></h2>	
-									<li><a href="#">무료 기본지원 서비스</a></li>
-									<li><a href="#">유료 지원 서비스</a></li>
+									<h2><a href="#">서버파킹</a></h2>	
+									<li><a href="#">랙</a></li>
 								</ul>					
 							</div>
 						</div>

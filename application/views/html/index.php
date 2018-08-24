@@ -21,7 +21,7 @@
 	<!-- panel1 -->
 	<div class="container">
 		<ul class="row col-xs-6 panel1-1">
-			<li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
+			<li class="col-xs-2"><a href="/page/hosting/service.php"><img src="/assets/images/icon_menuline01.png" alt="리눅스호스팅">리눅스<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline02.png" alt="이미지호스팅">이미지<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline03.png" alt="윈도우호스팅">윈도우<br/>호스팅</a></li>
             <li class="col-xs-2"><a href="#"><img src="/assets/images/icon_menuline04.png" alt="DNS호스팅">DNS<br/>호스팅</a></li>

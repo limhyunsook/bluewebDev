@@ -37,7 +37,7 @@ class Page extends MY_Controller
 		}
 
 
-		//var_dump(strpos($method, 'nts'));
+		var_dump(strpos($method, 'nts'));
 		if(file_exists($filepath)){
 			$main_data = array();			
 			if( !strpos($method, 'nts')   ){

@@ -139,7 +139,7 @@
                                  <tr>
                                     <th>대표 도메인</th>
                                     <td>  
-                                        <input type="text" class="form-control" placeholder="Domain">               
+                                        <input type="text" class="form-control" placeholder="도메인을 입력해주세요.">               
                                         <a href="#" class="btn btn-primary mt12 a_block">도메인 체크</a>
                                         <div class="tip color01 mt12">
                                             도메인 입력 후 ‘도메인 체크’ 버튼을 눌러 주세요. 
@@ -703,7 +703,7 @@
 								<th>월사용 요금</th>
 							</tr>  
 							<tr>
-								<td><input type="text" class="form-control" placeholder="server"></td>
+								<td><input type="text" class="form-control" placeholder="Server"></td>
 								<td>
 									<div class="selectbox reset">                                        
 										<select class="selectpicker">
@@ -769,7 +769,7 @@
                                 <tr>
                                     <th>예치금</th>
                                     <td>  
-                                        <input type="text" class="form-control" placeholder="Deposit">   
+                                        <input type="text" class="form-control" placeholder="예치금을 입력해주세요.">   
                                     </td>
                                 </tr>  
                                 <tr>
@@ -902,12 +902,12 @@
 					
 
 					<script>
-					$("#step03").load("nts_application_ok.php");
+					$("#step03").load("nts_application_cancel.php");
 					</script>	
 					
 					<!--
-					<a href="application_ok.html">ok Page</a>
-					<a href="application_cancel.html">cancel Page</a>	
+					<a href="nts_application_ok.php">ok Page</a>
+					<a href="nts_application_cancel.php">cancel Page</a>	
 					-->
 					
 										

@@ -6,7 +6,7 @@
     <div class="sub-content">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>블루웹 웹호스팅</h2>	
+            <h2>서버 호스팅</h2>	
         </div>    
     </div>    
 	<!-- //sub-title -->  
@@ -19,11 +19,12 @@
 			
             <!-- nav tabs -->
             <ul class="nav nav-pills tab-cont" role="tablist">
-                <li role="presentation" class="col-xs-2 active"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab">리눅스 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#window" aria-controls="window" role="tab" data-toggle="tab">윈도우 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#zeroxe" aria-controls="zeroxe" role="tab" data-toggle="tab">제로XE 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#net" aria-controls="net" role="tab" data-toggle="tab">.NET 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#reseller" aria-controls="reseller" role="tab" data-toggle="tab">리셀러 호스팅</a></li>
+                <li role="presentation" class="col-xs-2 active"><a href="#server_all" aria-controls="server_all" role="tab" data-toggle="tab">전체 서버</a></li>
+                <li role="presentation" class="col-xs-2"><a href="#server_event" aria-controls="server_event" role="tab" data-toggle="tab">특가 서버</a></li>
+                <li role="presentation" class="col-xs-2"><a href="#server_bl" aria-controls="server_bl" role="tab" data-toggle="tab">BL 서버</a></li>
+                <li role="presentation" class="col-xs-2"><a href="#server_fu" aria-controls="server_fu" role="tab" data-toggle="tab">FUJITSU 서버</a></li>
+                <li role="presentation" class="col-xs-2"><a href="#server_hp" aria-controls="server_hp" role="tab" data-toggle="tab">HP 서버</a></li>
+				<li role="presentation" class="col-xs-2"><a href="#server_ibm" aria-controls="server_ibm" role="tab" data-toggle="tab">IBM 서버</a></li>
             </ul>
 			<!-- //nav tabs -->
 			
@@ -32,25 +33,24 @@
             <div class="tab-content">
 				
 
-               	<!-- linux --> 
-                <div role="tabpanel" class="tab-pane active" id="linux"> 
+               	<!-- server_all --> 
+                <div role="tabpanel" class="tab-pane active" id="server_all"> 
 					
 					<div class="subtitbox">
-						<h2>linux 웹호스팅 종류 및 요금</h2>
-						<p>
+						<h2 class="subtit">linux 웹호스팅 종류 및 요금</h2>
+						<p class="subtxt">
 							빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경<br>
 							다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
 							회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
 						</p>
-						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
-					</div> 										
+					</div> 
                     <table class="table table-bordered table-hover l-table">                    
                     <thead>
                     <tr>
                         <th scope="col"><img src="/assets/images/img_linux.png"></th>
                         <th scope="col">
                             <h2>보급형</h2>                                   
-                            <img src="/assets/images/sample.png">     
+                            <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>5,000<span>원</span></h3>
                             <span>월 기본요금</span>      
                             <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -58,7 +58,7 @@
                         </th>
                         <th scope="col">
                             <h2>기본형</h2>    
-                            <img src="/assets/images/sample.png">     
+                            <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>10,000<span>원</span></h3>
                             <span>월 기본요금</span>   
                             <button class="btn  btn-success mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -66,7 +66,7 @@
                         </th>
                         <th scope="col">
                             <h2>블루형</h2>    
-                            <img src="/assets/images/sample.png">     
+                            <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>15,000<span>원</span></h3>
                             <span>월 기본요금</span>   
                             <button class="btn  btn-info mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -74,7 +74,7 @@
                         </th>
                         <th scope="col">
                             <h2>파워형</h2>    
-                            <img src="/assets/images/sample.png">     
+                            <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>30,000<span>원</span></h3>
                             <span>월 기본요금</span>                                                               
                             <button class="btn  btn-danger mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -82,7 +82,7 @@
                         </th>
                         <th scope="col">
                             <h2>파워플러스</h2>  
-                            <img src="/assets/images/sample.png">     
+                            <img src="/assets/images/icon_login_typy02.jpg">     
                             <h3>50,000<span>원</span></h3>
                             <span>월 기본요금</span>     
                             <button class="btn  btn-warning mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -90,7 +90,7 @@
                         </th>
                         <th scope="col">
                             <h2>맥스형</h2>    
-                            <img src="/assets/images/sample.png">      
+                            <img src="/assets/images/icon_login_typy02.jpg">      
                             <h3>100,000<span>원</span></h3>
                             <span>월 기본요금</span>  
                             <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
@@ -166,19 +166,15 @@
                     </table>   					
 					
                 </div>     
-				<!-- //linux --> 	
+				<!-- //server_all --> 	
 					
 
-                <!-- windows -->   
-                <div role="tabpanel" class="tab-pane" id="window">      
+                <!-- server_event -->   
+                <div role="tabpanel" class="tab-pane" id="server_event">      
                     
                     <div class="subtitbox">
-                        <h2>Windows 웹호스팅 종류 및 요금</h2>
-                        <p>
-							Window 2008 R2 및 2016 64bit Server 기반의 안정적인 호스팅 서비스<br>
-							보안기능 강화와 사용기능이 향상된 윈도우 호스팅을 이용해보세요
-						</p>
-						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
+                        <h2 class="subtit">Windows 웹호스팅 종류 및 요금</h2>
+                        <p class="subtxt">Window 2008 R2 및 2016 64bit Server 기반의 안정적인 호스팅 서비스<br>보안기능 강화와 사용기능이 향상된 윈도우 호스팅을 이용해보세요</p>
                     </div>              
                     <div class="row">
                         <div class="col-md-3">
@@ -252,20 +248,19 @@
                     </div>  
 					
                 </div>
-				<!-- //windows -->   
+				<!-- //server_event -->   
 
 
-                <!-- zeroxe -->  
-                <div role="tabpanel" class="tab-pane" id="zeroxe">  
+                <!-- server_bl -->  
+                <div role="tabpanel" class="tab-pane" id="server_bl">  
 					
 					<div class="subtitbox">
-                        <h2>제로XE 호스팅 종류 및 요금</h2>
-                        <p>
+                        <h2 class="subtit">제로XE 호스팅 종류 및 요금</h2>
+                        <p class="subtxt">
 							제로보드 XE 홈페이지 제작 툴로 손쉽게 홈페이지 구축 가능<br>
 							제보로드4 업그레이드 가능, XE 버전의 자동패치 기능 제공<br>							
 							제로보드 XE 버전으로 구축 운영하고자 하는 홈페이지
 						</p>
-						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>						
                     </div>        
                     <ul class="row">
                         <li class="col-xs-4 z-table">
@@ -322,27 +317,25 @@
                     </ul>  
 					
                 </div>
-				<!-- //zeroxe -->  
+				<!-- //server_bl -->  
 
 
-				<!-- net -->    
-                <div role="tabpanel" class="tab-pane" id="net">    
+				<!-- server_fu -->    
+                <div role="tabpanel" class="tab-pane" id="server_fu">    
 					
 					<div class="subtitbox">
-                        <h2>.NET 호스팅 종류 및 요금</h2>
-                        <p>
+                        <h2 class="subtit">.NET 호스팅 종류 및 요금</h2>
+                        <p class="subtxt">
 							3배 이상 빠른 페이지 처리, 메모리 누수, 교착 상태 및 충돌 방지, 쉬운 프로그래밍<br>
 							windows2003 server의 최적화 웹호스팅, 25개 이상의 .net언어 지원<br>
 							.aspx 기반의 Windows 2003 server 웹호스팅. IIS 및 DB(Mssql)를 이용한 홈페이지 운영
 						</p>
-						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
                     </div>  
                     <ul class="row">
                         <li class="col-xs-4 n-table">
                             <div class="col-m-4"> 
                                 <div>
 									<span class="badge badge-danger">이슈</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>									
                                     <h2>리눅스 보급형</h2> 
                                     <p>1년 선납  전용 요금</p>
                                 </div>
@@ -467,20 +460,19 @@
                     </ul>               
 					
                 </div>
-				<!-- //net -->  	
+				<!-- //server_fu -->  	
 
 
-                <!-- reseller -->    
-                <div role="tabpanel" class="tab-pane" id="reseller">  
+                <!-- server_hp -->    
+                <div role="tabpanel" class="tab-pane" id="server_hp">  
 					
                    	<div class="subtitbox">
-                        <h2>리셀러 호스팅 종류 및 요금</h2>
-                        <p>							
+                        <h2 class="subtit">리셀러 호스팅 종류 및 요금</h2>
+                        <p class="subtxt">							
 							하나의 호스팅으로 여러 개의 홈페이지의 개발/관리가 가능<br>
 							웹호스팅 비용을 크게 절감할 수 있는 서비스<br>
 							호스팅 하나로 최대 20개까지 홈페이지를 운용하고자 하는 웹에이전시나 프리랜서 등
 						</p>
-						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
                     </div>  					
                     <ul class="row">
                         <li class="col-xs-3 r-table">
@@ -579,7 +571,118 @@
                     </ul>                
 					
                 </div>            
-				<!-- //reseller -->  
+				<!-- //server_hp -->  
+				
+				
+				<!-- server_ibm -->    
+                <div role="tabpanel" class="tab-pane" id="server_ibm">  
+					
+                   	<div class="subtitbox">
+                        <h2 class="subtit">리셀러 호스팅 종류 및 요금</h2>
+                        <p class="subtxt">							
+							하나의 호스팅으로 여러 개의 홈페이지의 개발/관리가 가능<br>
+							웹호스팅 비용을 크게 절감할 수 있는 서비스<br>
+							호스팅 하나로 최대 20개까지 홈페이지를 운용하고자 하는 웹에이전시나 프리랜서 등
+						</p>
+                    </div>  					
+                    <ul class="row">
+                        <li class="col-xs-3 r-table">
+                            <div class="col-m-2">                        
+								<div class="badge-add">
+									<span class="badge badge-danger">NEW</span>
+									<span class="badge border-primary primary badge-border">20% 할인</span>								
+								</div>
+                               <em class="name">리눅스 보급형</em>
+								<dl>
+									<dt>메모리</dt>
+									<dd>1G</dd>
+									
+									<dt>스토리지</dt>
+									<dd>SSD 25GB</dd>
+									
+									<dt>트래픽</dt>
+									<dd>500GB/월</dd>
+								</dl>
+								<p class="cost">
+									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
+									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
+								</p>
+                            </div>
+                        </li>   
+                        <li class="col-xs-3 r-table">
+                            <div class="col-m-2">                        
+                                <div class="badge-add">
+									<span class="badge badge-danger">NEW</span>
+									<span class="badge border-primary primary badge-border">20% 할인</span>								
+								</div>
+                                <em class="name">리눅스 보급형</em>
+								<dl>
+									<dt>메모리</dt>
+									<dd>1G</dd>
+									
+									<dt>스토리지</dt>
+									<dd>SSD 25GB</dd>
+									
+									<dt>트래픽</dt>
+									<dd>500GB/월</dd>
+								</dl>
+								<p class="cost">
+									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
+									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
+								</p>
+                            </div>
+                        </li>   
+                        <li class="col-xs-3 r-table">
+                            <div class="col-m-2">                        
+                                <div class="badge-add">
+									<span class="badge badge-danger">NEW</span>
+									<span class="badge border-primary primary badge-border">20% 할인</span>								
+								</div>
+								<em class="name">리눅스 보급형</em>
+								<dl>
+									<dt>메모리</dt>
+									<dd>1G</dd>
+									
+									<dt>스토리지</dt>
+									<dd>SSD 25GB</dd>
+									
+									<dt>트래픽</dt>
+									<dd>500GB/월</dd>
+								</dl>
+								<p class="cost">
+									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
+									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
+								</p>
+								
+                            </div>                       
+                        </li>   
+						<li class="col-xs-3 r-table">
+                            <div class="col-m-2">                        
+                                <div class="badge-add">
+									<span class="badge badge-danger">NEW</span>
+									<span class="badge border-primary primary badge-border">20% 할인</span>								
+								</div>
+								<em class="name">리눅스 보급형</em>
+								<dl>
+									<dt>메모리</dt>
+									<dd>1G</dd>
+									
+									<dt>스토리지</dt>
+									<dd>SSD 25GB</dd>
+									
+									<dt>트래픽</dt>
+									<dd>500GB/월</dd>
+								</dl>
+								<p class="cost">
+									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
+									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
+								</p>
+                            </div>                       
+                        </li>   
+                    </ul>                
+					
+                </div>            
+				<!-- //server_ibm -->  
 				
 
             </div>
