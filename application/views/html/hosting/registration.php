@@ -122,8 +122,8 @@
                             </tbody>
                             </table>   
                             
-                            <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">다음 단계</button>
-                            <button type="button" class="btn btn-primary" onclick="location.href='/html/hosting/application.php';">견적서 출력</button>           
+                            <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">다음 단계</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">견적서 출력</button>           
                         </div>
                     </li>  
                 </ul>   
@@ -160,18 +160,4 @@
 
 
 
-
-<!--========== footer ==========-->
-<footer class="footer">		
-
-</footer>
-<!--========== end footer ==========-->
-
-
-
-
-
-
-</body>
-</html>
 
