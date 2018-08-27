@@ -6,7 +6,7 @@
     <div class="sub-content">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>서버 호스팅</h2>	
+            <h2>블루웹 웹호스팅</h2>	
         </div>    
     </div>    
 	<!-- //sub-title -->  
@@ -19,12 +19,11 @@
 			
             <!-- nav tabs -->
             <ul class="nav nav-pills tab-cont" role="tablist">
-                <li role="presentation" class="col-xs-2 active"><a href="#server_all" aria-controls="server_all" role="tab" data-toggle="tab">전체 서버</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#server_event" aria-controls="server_event" role="tab" data-toggle="tab">특가 서버</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#server_bl" aria-controls="server_bl" role="tab" data-toggle="tab">BL 서버</a></li>
+                <li role="presentation" class="col-xs-2 active"><a href="#server_bl" aria-controls="server_bl" role="tab" data-toggle="tab">BL 서버</a></li>
                 <li role="presentation" class="col-xs-2"><a href="#server_fu" aria-controls="server_fu" role="tab" data-toggle="tab">FUJITSU 서버</a></li>
                 <li role="presentation" class="col-xs-2"><a href="#server_hp" aria-controls="server_hp" role="tab" data-toggle="tab">HP 서버</a></li>
-				<li role="presentation" class="col-xs-2"><a href="#server_ibm" aria-controls="server_ibm" role="tab" data-toggle="tab">IBM 서버</a></li>
+                <li role="presentation" class="col-xs-2"><a href="#server_ibm" aria-controls="server_ibm" role="tab" data-toggle="tab">IBM 서버</a></li>
+
             </ul>
 			<!-- //nav tabs -->
 			
@@ -33,656 +32,512 @@
             <div class="tab-content">
 				
 
-               	<!-- server_all --> 
-                <div role="tabpanel" class="tab-pane active" id="server_all"> 
+               	<!-- server_bl --> 
+                <div role="tabpanel" class="tab-pane active" id="server_bl"> 
 					
 					<div class="subtitbox">
-						<h2 class="subtit">linux 웹호스팅 종류 및 요금</h2>
+						<h2 class="subtit">BL 서버 시리즈</h2>
 						<p class="subtxt">
-							빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경<br>
-							다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
-							회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
+							신뢰성 있는 인텔의 정품 하드웨어를 사용하여 최적의 성능을 구현할 수 있는 시스템을 설계하여 오랜기간 안정성 테스트를<br>
+							거친 BL 서버 시리즈는 많은 사용자들에게 이미 검증된 서비스 입니다.<br>
+							서버의 성능은 사이트 규모에 따라 적합하게 선택되어야 하는 만큼, 요구에 알맞는 하드웨어로 제공해드립니다. 
 						</p>
-					</div> 
-                    <table class="table table-bordered table-hover l-table">                    
+						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
+					</div> 			
+					
+					
+                    <table class="table tableTypeD">                    
                     <thead>
                     <tr>
-                        <th scope="col"><img src="/assets/images/img_linux.png"></th>
-                        <th scope="col">
-                            <h2>보급형</h2>                                   
-                            <img src="/assets/images/icon_login_typy02.jpg">     
-                            <h3>5,000<span>원</span></h3>
-                            <span>월 기본요금</span>      
-                            <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
-                        <th scope="col">
-                            <h2>기본형</h2>    
-                            <img src="/assets/images/icon_login_typy02.jpg">     
-                            <h3>10,000<span>원</span></h3>
-                            <span>월 기본요금</span>   
-                            <button class="btn  btn-success mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
-                        <th scope="col">
-                            <h2>블루형</h2>    
-                            <img src="/assets/images/icon_login_typy02.jpg">     
-                            <h3>15,000<span>원</span></h3>
-                            <span>월 기본요금</span>   
-                            <button class="btn  btn-info mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
-                        <th scope="col">
-                            <h2>파워형</h2>    
-                            <img src="/assets/images/icon_login_typy02.jpg">     
-                            <h3>30,000<span>원</span></h3>
-                            <span>월 기본요금</span>                                                               
-                            <button class="btn  btn-danger mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
-                        <th scope="col">
-                            <h2>파워플러스</h2>  
-                            <img src="/assets/images/icon_login_typy02.jpg">     
-                            <h3>50,000<span>원</span></h3>
-                            <span>월 기본요금</span>     
-                            <button class="btn  btn-warning mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
-                        <th scope="col">
-                            <h2>맥스형</h2>    
-                            <img src="/assets/images/icon_login_typy02.jpg">      
-                            <h3>100,000<span>원</span></h3>
-                            <span>월 기본요금</span>  
-                            <button class="btn  btn-primary mb12" type="submit" onclick="location.href='/page/hosting/application.php';">신청하기</button>
-                            <p>(자동이체5%할인)</p>
-                        </th>
+						<th>브랜드 및 상품명</th>
+						<th>사양</th>
+						<th>회선</th>
+						<th>IP</th>
+						<th>신청하기</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="table-success">
-                        <th scope="row">트래픽</th>
-                        <td>90G<Br/>(1일 3G)</td>
-                        <td>180G<Br/>(1일 6G)</td>
-                        <td>240G<Br/>(1일 8G)</td>
-                        <td>360G<Br/>(1일 12G)</td>
-                        <td>600G<Br/>(1일 20G)</td>
-                        <td>2100G<Br/>(1일 70G)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">하드용량</th>
-                        <td>1.5G</td>
-                        <td>3G</td>
-                        <td>5G</td>
-                        <td>10G</td>
-                        <td>15G</td>
-                        <td>40G</td>
-                    </tr>                    
-                    <tr>
-                        <th scope="row">DB (MySQL)</th>
-                        <td>무제한</td>
-                        <td>무제한</td>
-                        <td>무제한</td>
-                        <td>무제한</td>
-                        <td>무제한</td>
-                        <td>무제한</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">메일 (POP 아웃룩)</th>
-                        <td>5개</td>
-                        <td>10개</td>
-                        <td>20개</td>
-                        <td>30개</td>
-                        <td>30개</td>
-                        <td>50개</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">운영 가능 호스팅 수</th>
-                        <td>1개</td>
-                        <td>1개</td>
-                        <td>1개</td>
-                        <td>4개</td>
-                        <td>4개</td>
-                        <td>5개</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">초기설치비</th>
-                        <td>5,000 원</td>
-                        <td>5,000 원</td>
-                        <td>5,000 원</td>
-                        <td>5,000 원</td>
-                        <td>5,000 원</td>
-                        <td>10,000 원</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">보안서비스</th>
-                        <td>기본</td>
-                        <td>기본</td>
-                        <td>기본</td>
-                        <td>기본</td>
-                        <td>기본</td>
-                        <td>고급</td>
-                    </tr>
+                        <td scope="row">
+							<img src="/assets/images/logo_hp.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_ibm.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          	
+					<tr class="table-success">
+                        <td scope="row">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          											
                     </tbody>
-                    </table>   					
+                    </table> 			
 					
                 </div>     
-				<!-- //server_all --> 	
+				<!-- //server_bl --> 	
 					
 
-                <!-- server_event -->   
-                <div role="tabpanel" class="tab-pane" id="server_event">      
+                <!-- server_fu -->   
+                <div role="tabpanel" class="tab-pane" id="server_fu">      
                     
                     <div class="subtitbox">
-                        <h2 class="subtit">Windows 웹호스팅 종류 및 요금</h2>
-                        <p class="subtxt">Window 2008 R2 및 2016 64bit Server 기반의 안정적인 호스팅 서비스<br>보안기능 강화와 사용기능이 향상된 윈도우 호스팅을 이용해보세요</p>
-                    </div>              
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="w-table">  
-                                <h2>보급형</h2> 
-                                <p>1년 선납  전용 요금</p>
-                                <img src="https://www.dotname.co.kr/assets/images/hosting/web/ico_window.jpg">		
-                                <h3>19.500<span>원</span></h3>
-                                <h5>월 기본요금</h5>
-                                <ul>
-                                    <li><span>서비스사양</span><span>기본형</span></li>
-                                    <li><span>하드용량</span><span>3G</span></li>
-                                    <li><span>트래픽</span><span>180G/월</span></li>
-                                    <li><span>DB</span><span>무제한</span></li>
-                                    <li><span>아룻룩</span><span>10개</span></li>				
-                                </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                      
-                            </div>                        
-                        </div>  
-                        <div class="col-md-3">
-                            <div class="w-table">  
-                                <h2>보급형</h2> 
-                                <p>1년 선납  전용 요금</p>
-                                <img src="https://www.dotname.co.kr/assets/images/hosting/web/ico_window.jpg">		
-                                <h3>19.500<span>원</span></h3>
-                                <h5>월 기본요금</h5>
-                                <ul>
-                                    <li><span>서비스사양</span><span>기본형</span></li>
-                                    <li><span>하드용량</span><span>3G</span></li>
-                                    <li><span>트래픽</span><span>180G/월</span></li>
-                                    <li><span>DB</span><span>무제한</span></li>
-                                    <li><span>아룻룩</span><span>10개</span></li>				
-                                </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                  
-                            </div>                        
-                        </div>  
-                        <div class="col-md-3">
-                            <div class="w-table">  
-                                <h2>보급형</h2> 
-                                <p>1년 선납  전용 요금</p>
-                                <img src="https://www.dotname.co.kr/assets/images/hosting/web/ico_window.jpg">		
-                                <h3>19.500<span>원</span></h3>
-                                <h5>월 기본요금</h5>
-                                <ul>
-                                    <li><span>서비스사양</span><span>기본형</span></li>
-                                    <li><span>하드용량</span><span>3G</span></li>
-                                    <li><span>트래픽</span><span>180G/월</span></li>
-                                    <li><span>DB</span><span>무제한</span></li>
-                                    <li><span>아룻룩</span><span>10개</span></li>				
-                                </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                     
-                            </div>                        
-                        </div>  
-                        <div class="col-md-3">
-                            <div class="w-table">  
-                                <h2>보급형</h2> 
-                                <p>1년 선납  전용 요금</p>
-                                <img src="https://www.dotname.co.kr/assets/images/hosting/web/ico_window.jpg">		
-                                <h3>19.500<span>원</span></h3>
-                                <h5>월 기본요금</h5>
-                                <ul>
-                                    <li><span>서비스사양</span><span>기본형</span></li>
-                                    <li><span>하드용량</span><span>3G</span></li>
-                                    <li><span>트래픽</span><span>180G/월</span></li>
-                                    <li><span>DB</span><span>무제한</span></li>
-                                    <li><span>아룻룩</span><span>10개</span></li>				
-                                </ul>						
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                                                                    
-                            </div>                        
-                        </div>  
-                    </div>  
-					
-                </div>
-				<!-- //server_event -->   
-
-
-                <!-- server_bl -->  
-                <div role="tabpanel" class="tab-pane" id="server_bl">  
-					
-					<div class="subtitbox">
-                        <h2 class="subtit">제로XE 호스팅 종류 및 요금</h2>
-                        <p class="subtxt">
-							제로보드 XE 홈페이지 제작 툴로 손쉽게 홈페이지 구축 가능<br>
-							제보로드4 업그레이드 가능, XE 버전의 자동패치 기능 제공<br>							
-							제로보드 XE 버전으로 구축 운영하고자 하는 홈페이지
+						<h2 class="subtit">FUJITSU 서버</h2>
+						<p class="subtxt">
+							고객의 다양한 요구에 부응하기 위하여 HP, IBM, SAMSUNG 등 다양한 국내외의 서버 전문 브랜드의 제품을 제공하고 있습니다.<br>
+							뛰어난 성능과 안정성을 자랑하는 최고의 제품을 다양한 부가서비스와 함께 저렴한 가격으로 만나보시기 바랍니다. 
 						</p>
-                    </div>        
-                    <ul class="row">
-                        <li class="col-xs-4 z-table">
-                            <div class="col-m-1">
-                                <div>
-                                    <h2>zeroxe hosting</h2>
-                                    <p>Standard</p>
-                                    <span>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</span>
-                                </div>
-                                <p>
-                                    빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경<br>
-                                    다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
-                                    회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
-                                </p>
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
-                            </div> 
-                        </li>    
-                        <li class="col-xs-4 z-table">
-                            <div class="col-m-2">
-                                <div>
-                                    <h2>zeroxe hosting</h2>
-                                    <p>Premium</p>
-                                    <span>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</span>
-                                </div>
-                                <p>
-                                    빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경<br>
-                                    다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
-                                    회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
-                                </p>
-                                 <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
-                            </div> 
-                        </li> 
-                        <li class="col-xs-4 z-table">
-                            <div class="col-m-2">
-                                <div>
-                                    <h2>zeroxe hosting</h2>
-                                    <p>Basic</p>
-                                    <span>빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경</span>
-                                </div>
-                                <p>
-                                    빠른 처리속도, 뛰어난 안정성, 신속한 업그레이드, PHP 프로그램 최적화 환경<br>
-                                    다양한 부가서비스, 각종 무료CGI 제공, POP3 메일제공, 고성의서버의 안정성제공<br>
-                                    회사 홍보, 쇼핑몰, 커뮤니티 등 HTML + PHP 로 구현된 홈페이지
-                                </p>
-                                 <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-magnifier"></span> 체험신청</button>                  
-                                <button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';"><span class="lnr lnr-heart"></span> 관심등록</button>                  
-                                <button type="button" class="btn btn-success" onclick="location.href='/page/hosting/application.php';">신청하기</button>                  
-                            </div> 
-                        </li>                     
-                    </ul>  
+						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
+					</div> 		
+					
+					
+                    <table class="table tableTypeD">                    
+                    <thead>
+                    <tr>
+						<th>브랜드 및 상품명</th>
+						<th>사양</th>
+						<th>회선</th>
+						<th>IP</th>
+						<th>신청하기</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_hp.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_ibm.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          	
+					<tr class="table-success">
+                        <td scope="row">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          											
+                    </tbody>
+                    </table>   
 					
                 </div>
-				<!-- //server_bl -->  
+				<!-- //server_fu -->   
 
 
-				<!-- server_fu -->    
-                <div role="tabpanel" class="tab-pane" id="server_fu">    
-					
-					<div class="subtitbox">
-                        <h2 class="subtit">.NET 호스팅 종류 및 요금</h2>
-                        <p class="subtxt">
-							3배 이상 빠른 페이지 처리, 메모리 누수, 교착 상태 및 충돌 방지, 쉬운 프로그래밍<br>
-							windows2003 server의 최적화 웹호스팅, 25개 이상의 .net언어 지원<br>
-							.aspx 기반의 Windows 2003 server 웹호스팅. IIS 및 DB(Mssql)를 이용한 홈페이지 운영
-						</p>
-                    </div>  
-                    <ul class="row">
-                        <li class="col-xs-4 n-table">
-                            <div class="col-m-4"> 
-                                <div>
-									<span class="badge badge-danger">이슈</span>
-                                    <h2>리눅스 보급형</h2> 
-                                    <p>1년 선납  전용 요금</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>서비스사양<br><span>기본형</span></li>
-                                        <li>하드용량<br><span>3G</span></li>
-                                        <li>트래픽<br><span>180G/월</span></li>
-                                        <li>DB<br><span>무제한</span></li>
-                                        <li>아룻룩<br><span>10개</span></li>				
-                                    </ul>						
-                                </div>				
-                                <div>
-                                    <h5>월 기본요금</h5>
-                                    <h3>19.500<span>원</span></h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-xs-4 n-table">
-                            <div class="col-m-4"> 
-                                <div>
-                                    <span class="badge badge-danger">추천</span>
-                                    <h2>리눅스 기본형</h2> 
-                                    <p>1년 선납  전용 요금</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>서비스사양<br><span>기본형</span></li>
-                                        <li>하드용량<br><span>3G</span></li>
-                                        <li>트래픽<br><span>180G/월</span></li>
-                                        <li>DB<br><span>무제한</span></li>
-                                        <li>아룻룩<br><span>10개</span></li>				
-                                    </ul>						
-                                </div>				
-                                <div>
-                                    <h5>월 기본요금</h5>
-                                    <h3>19.500<span>원</span></h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-xs-4 n-table">
-                            <div class="col-m-4"> 
-                                <div>
-                                    <span class="badge badge-primary">추천</span>
-                                    <h2>리눅스 블루형</h2> 
-                                    <p>1년 선납  전용 요금</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>서비스사양<br><span>기본형</span></li>
-                                        <li>하드용량<br><span>3G</span></li>
-                                        <li>트래픽<br><span>180G/월</span></li>
-                                        <li>DB<br><span>무제한</span></li>
-                                        <li>아룻룩<br><span>10개</span></li>				
-                                    </ul>						
-                                </div>				
-                                <div>
-                                    <h5>월 기본요금</h5>
-                                    <h3>19.500<span>원</span></h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
-                                </div>
-                             </div>
-                        </li>
-                        <li class="col-xs-4 n-table">
-                            <div class="col-m-4"> 
-                                <div>
-                                    <span class="badge badge-success">기본</span>
-                                    <h2>리눅스 파워형</h2> 
-                                    <p>1년 선납  전용 요금</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>서비스사양<br><span>기본형</span></li>
-                                        <li>하드용량<br><span>3G</span></li>
-                                        <li>트래픽<br><span>180G/월</span></li>
-                                        <li>DB<br><span>무제한</span></li>
-                                        <li>아룻룩<br><span>10개</span></li>				
-                                    </ul>						
-                                </div>				
-                                <div>
-                                    <h5>월 기본요금</h5>
-                                    <h3>19.500<span>원</span></h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
-                                </div>
-                             </div>
-                        </li>
-                        <li class="col-xs-4 n-table">
-                            <div class="col-m-4"> 
-                                <div>
-                                    <span class="badge badge-warning">이슈</span>
-                                    <h2>리눅스 파워플러스</h2> 
-                                    <p>1년 선납  전용 요금</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>서비스사양<br><span>기본형</span></li>
-                                        <li>하드용량<br><span>3G</span></li>
-                                        <li>트래픽<br><span>180G/월</span></li>
-                                        <li>DB<br><span>무제한</span></li>
-                                        <li>아룻룩<br><span>10개</span></li>				
-                                    </ul>						
-                                </div>				
-                                <div>
-                                    <h5>월 기본요금</h5>
-                                    <h3>19.500<span>원</span></h3>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" onclick="location.href='/page/hosting/application.php';">신청하기</button>                
-                                </div>
-                            </div>
-                        </li>                 		
-                    </ul>               
-					
-                </div>
-				<!-- //server_fu -->  	
-
-
-                <!-- server_hp -->    
+                <!-- server_hp -->  
                 <div role="tabpanel" class="tab-pane" id="server_hp">  
 					
-                   	<div class="subtitbox">
-                        <h2 class="subtit">리셀러 호스팅 종류 및 요금</h2>
-                        <p class="subtxt">							
-							하나의 호스팅으로 여러 개의 홈페이지의 개발/관리가 가능<br>
-							웹호스팅 비용을 크게 절감할 수 있는 서비스<br>
-							호스팅 하나로 최대 20개까지 홈페이지를 운용하고자 하는 웹에이전시나 프리랜서 등
+					<div class="subtitbox">
+						<h2 class="subtit">HP 서버</h2>
+						<p class="subtxt">
+							고객의 다양한 요구에 부응하기 위하여 HP, IBM, SAMSUNG 등 다양한 국내외의 서버 전문 브랜드의 제품을 제공하고 있습니다.<br>
+							뛰어난 성능과 안정성을 자랑하는 최고의 제품을 다양한 부가서비스와 함께 저렴한 가격으로 만나보시기 바랍니다. 
 						</p>
-                    </div>  					
-                    <ul class="row">
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-								<div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-                               <em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>
-                        </li>   
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-                                <em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>
-                        </li>   
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-								<em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-								
-                            </div>                       
-                        </li>   
-						<li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-								<em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>                       
-                        </li>   
-                    </ul>                
+						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
+					</div> 			
 					
-                </div>            
+					
+                    <table class="table tableTypeD">                    
+                    <thead>
+                    <tr>
+						<th>브랜드 및 상품명</th>
+						<th>사양</th>
+						<th>회선</th>
+						<th>IP</th>
+						<th>신청하기</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_hp.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_ibm.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          	
+					<tr class="table-success">
+                        <td scope="row">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          											
+                    </tbody>
+                    </table>   
+					
+                </div>
 				<!-- //server_hp -->  
-				
-				
+
+
 				<!-- server_ibm -->    
-                <div role="tabpanel" class="tab-pane" id="server_ibm">  
+                <div role="tabpanel" class="tab-pane" id="server_ibm">    
 					
-                   	<div class="subtitbox">
-                        <h2 class="subtit">리셀러 호스팅 종류 및 요금</h2>
-                        <p class="subtxt">							
-							하나의 호스팅으로 여러 개의 홈페이지의 개발/관리가 가능<br>
-							웹호스팅 비용을 크게 절감할 수 있는 서비스<br>
-							호스팅 하나로 최대 20개까지 홈페이지를 운용하고자 하는 웹에이전시나 프리랜서 등
+					<div class="subtitbox">
+						<h2 class="subtit">IBM 서버</h2>
+						<p class="subtxt">
+							고객의 다양한 요구에 부응하기 위하여 HP, IBM, SAMSUNG 등 다양한 국내외의 서버 전문 브랜드의 제품을 제공하고 있습니다.<br>
+							뛰어난 성능과 안정성을 자랑하는 최고의 제품을 다양한 부가서비스와 함께 저렴한 가격으로 만나보시기 바랍니다. 
 						</p>
-                    </div>  					
-                    <ul class="row">
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-								<div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-                               <em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>
-                        </li>   
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-                                <em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>
-                        </li>   
-                        <li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-								<em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-								
-                            </div>                       
-                        </li>   
-						<li class="col-xs-3 r-table">
-                            <div class="col-m-2">                        
-                                <div class="badge-add">
-									<span class="badge badge-danger">NEW</span>
-									<span class="badge border-primary primary badge-border">20% 할인</span>								
-								</div>
-								<em class="name">리눅스 보급형</em>
-								<dl>
-									<dt>메모리</dt>
-									<dd>1G</dd>
-									
-									<dt>스토리지</dt>
-									<dd>SSD 25GB</dd>
-									
-									<dt>트래픽</dt>
-									<dd>500GB/월</dd>
-								</dl>
-								<p class="cost">
-									<s><span class="per-mon">20,000원/월</span><span class="per-day">666원/일</span></s>
-									<ins><span class="per-mon"><span class="big">15,000원</span>/월</span><span class="per-day">500원/일</span></ins>
-								</p>
-                            </div>                       
-                        </li>   
-                    </ul>                
+						<a href="#">사양 자세히 보기 <i class="fa fa-angle-right"></i></a>
+					</div>
 					
-                </div>            
-				<!-- //server_ibm -->  
+					
+                    <table class="table tableTypeD">                    
+                    <thead>
+                    <tr>
+						<th>브랜드 및 상품명</th>
+						<th>사양</th>
+						<th>회선</th>
+						<th>IP</th>
+						<th>신청하기</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_hp.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							<img src="/assets/images/logo_ibm.png">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          	
+					<tr class="table-success">
+                        <td scope="row">
+							<span class="badge badge-border-danger">EVENT</span><br>
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>								
+							<p>
+								190,000원	
+								<span>/월</span>
+							</p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          											
+                    </tbody>
+                    </table>               
+					
+                </div>
+				<!-- //server_ibm -->  	
+
+
+             
 				
 
             </div>

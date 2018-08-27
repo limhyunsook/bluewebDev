@@ -17,8 +17,8 @@
 .nav-menu > div > h2 {position:absolute;margin: 0;text-align:left;top: 10px;}
 .nav-menu > div > h2 > a > img {display:block;}
 .nav-menu > div > ul{ table-layout:fixed; margin:auto; z-index:1;height:70px;float: right;}
-.nav-menu > div > ul > li{float:left;table-layout:fixed;height:70px;text-align: right;}
-.nav-menu > div > ul > li > a {padding-left:50px;color:#000;z-index:3;position: relative;height:70px;line-height:70px;font-size: 17px;font-weight:bold;display:inline-block;}
+.nav-menu > div > ul > li{float:left;table-layout:fixed;height:70px;text-align: right;padding-left:50px;}
+.nav-menu > div > ul > li > a {color:#000;z-index:3;position: relative;height:70px;line-height:70px;font-size: 17px;font-weight:bold;display:inline-block;}
 .nav-menu > div > ul > li > div{ width:100%; height:0; left:0; display:inline-block; position:absolute; text-align:center; z-index:1; top:70px;transition-duration:0.6s; overflow: hidden;background:#eff5fe;}
 .nav-menu > div > ul > li > div > div{display:inline-block; table-layout:fixed; margin:auto; text-align:left;position:relative;padding: 40px 0;}
 .nav-menu > div > ul > li > div > div > nav{ width:455px; height:100%;float:left;display:block; top:0;z-index:4;}
@@ -32,8 +32,8 @@
 .nav-menu > div > ul > li > div > div > div > ul > h2 > a {color:#087ee3;}
 .nav-menu > div > ul > li > div > div > div > ul > li > a {font-size:14px;color:#555;line-height:1.8;}
 .nav-menu > div > ul > li > div > div > div > ul > li > a:hover{color: #fb5e27;}
-.nav-menu > div > ul > li:hover > a{color:#fff;z-index:1;position:relative;color:#087ee3;}
-.nav-menu > div > ul > li:hover > a:hover {color:#087ee3;}
+.nav-menu > div > ul > li:hover > a{color:#fff;z-index:1;position:relative;color:#087ee3;border-bottom: 3px solid #087ee3;}
+.nav-menu > div > ul > li:hover > a:hover {color:#087ee3;border-bottom: 3px solid #087ee3;}
 .nav-menu > div > ul > li:hover > div{ width:100%; z-index:2;height:235px;}
 
 
@@ -181,7 +181,7 @@
 .tab-pay > li > a:hover {background: #eeeeee;}
 .tab-pay > li+li {margin-left: 0;}
 
-.subtitbox {background: url(https://ucloudbiz.kt.com/images/po_sub/sub_cont_bg.gif) no-repeat;background-position: right 43px;padding:30px 0;margin-bottom: 50px;}
+.subtitbox {padding:30px 0;margin-bottom: 50px;}
 .subtitbox > h2{font-size: 30px;color: #000;padding: 0;margin-bottom: 20px;letter-spacing: -1px;}
 .subtitbox > p {font-size: 18px;color: #666;padding: 0;display: block;line-height: 1.6;margin-bottom: 20px;}
 .subtitbox > a {color:#087ee3;font-size: 16px;}
@@ -216,10 +216,10 @@
 
 
 .z-table > div {padding:30px;border: 1px solid #ddd;margin-bottom:20px; }
-.z-table > div > div {background: url(http://www.kasperskykorea.kr/files/attach/images/174/457/005/cb59f42bb9f2bcad9cd5669d73f35825.png) no-repeat;background-size: contain;}
-.z-table > div > div > h2 {margin-left:110px;font-size: 15px;color: #087ee3;}
-.z-table > div > div > p {margin-left: 110px;font-size: 30px;margin-bottom:10px;margin-top:5px;}
-.z-table > div > div > span {margin-left: 110px;font-size: 12px;line-height: 1.2;display: block;}
+.z-table > div > div {background: url('/assets/images/sample.png') no-repeat;background-size: contain;}
+.z-table > div > div > h2 {margin-left:150px;font-size: 15px;color: #087ee3;}
+.z-table > div > div > p {margin-left: 150px;font-size: 30px;margin-bottom:10px;margin-top:5px;}
+.z-table > div > div > span {margin-left: 150px;font-size: 12px;line-height: 1.2;display: block;}
 .z-table > div > p {margin-top: 20px;font-size: 12px;}                 
 .z-table > div > .btn-primary {width: 49%;display: inline-block;margin-top: 20px;}
 .z-table > div > .btn-success {width: 100%;margin-top: 5px;}
@@ -229,25 +229,24 @@
 .n-table > div {border:1px solid #ddd;padding:4%;margin-bottom:10px;width:100%;}
 .n-table > div:hover {border:1px solid #ef490f;}
 .n-table > div > div {width:100%;vertical-align:top}
-.n-table > div > div:nth-child(1) {width:25%;display:inline-block;vertical-align: middle;}
-.n-table > div > div:nth-child(2) {width:45%;display:inline-block;vertical-align: middle;}
-.n-table > div > div:nth-child(3) {width:13%;display:inline-block;vertical-align: middle;}
-.n-table > div > div:nth-child(4) {width:15.5%;display:inline-block;vertical-align: middle;text-align: right;}
-.n-table > div > div > span {line-height: 20px;font-size: 11px;padding:0px  13px;color: #fff;vertical-align: top;margin-right:10px;display: inline-block;border-radius:3px}
-.n-table > div > div > span.color01 {background:#ef490f}
-.n-table > div > div > span.color02 {background:#4CAF50}
-.n-table > div > div > span.color03 {background:#FFC107}
-.n-table > div > div > span.color04 {background:#E91E63}
+.n-table > div > div:nth-child(1) {width:20%;display:inline-block;vertical-align: middle;}
+.n-table > div > div:nth-child(2) {width:52%;display:inline-block;vertical-align: middle;}
+.n-table > div > div:nth-child(3) {width:16%;display:inline-block;vertical-align: middle;}
+.n-table > div > div:nth-child(4) {width:8%;display:inline-block;vertical-align: middle;text-align: right;}
+.n-table > div > div:nth-child(4) > button {padding: 10px 30px;}
+
+
 .n-table > div > div > h2 {font-size:25px;color:#000;margin: 15px 0;}
-.n-table > div > div > p {color:#666;font-size: 12px;}
-.n-table > div > div > h3 {font-size:20px;font-family:tahoma;color:#000;margin: 0;}
+.n-table > div > div > p {color:#666;font-size: 15px;}
+.n-table > div > div > h3 {font-size:23px;font-family:tahoma;color:#000;margin: 0;}
 .n-table > div > div > h3 > span {font-size:15px;font-weight:normal}
-.n-table > div > div > h5 {font-size:15px;color:#666;margin: 0;}
+.n-table > div > div > h5 {font-size:18px;color:#666;margin: 0;}
 .n-table > div > div > ul {width:95%;display: inline-block;vertical-align: middle;}
-.n-table > div > div > ul > li {float:left;text-align:center;border-right:1px solid #ddd;font-size: 15px;color:#666;width:19.5%;}
+.n-table > div > div > ul > li {float:left;text-align:center;border-right:1px solid #ddd;font-size: 18px;color:#666;width:19.5%;}
 .n-table > div > div > ul > li:nth-child(5) {border-right:0}
 .n-table > div > div > ul > li > span {color:#0982eb} 
 .n-table > div > div > a {background:#0982eb;padding:10px;color:#fff;font-weight:bold;border-radius:3px;}
+.n-table > div > div > button {font-size:18px;}
 
 .r-table > div {padding:30px;border: 1px solid #ddd;margin-bottom:20px;position: relative;z-index: 1; transition-duration: 0.3s;height: 350px;}
 .r-table > div > span {font-size: 12px;line-height: 1.2;display: block;color: #087ee3;}
@@ -261,8 +260,6 @@
 .big {font-size: 26px;font-family: tahoma;font-weight: bold;}
 
 .r-table > div:hover{border:1px solid #ef490f;}
-.badge-add > span:nth-child(1) {border-radius: 2px;background: #ff9803 ;color: #fff;}
-.badge-add > span:nth-child(2) {border-radius: 2px;border: 1px solid #ef490f ;background: #fff;color: #ef490f;}
 
 .cunselt-content {width: 100%;background:#f8fafc;padding: 100px 0;}
 .cunselt-content > div {margin: 0 auto;text-align: center;}
@@ -286,7 +283,22 @@
 
 
 
+.qna-content {padding-top:70px;padding-bottom:70px;text-align:center;width:100%;BACKGROUND: #efefef;}
+.qna-content > div {text-align: left;width:100%;margin: 0 auto;}
+.qna-content > div > h2 {font-size: 40px;color: #000;padding: 0;margin-bottom: 15px;display: block;line-height: 1.6;text-align: center;}
+.qna-content > div > a {color:#1f7fe9;display: block;text-align:center;margin-top:50px;font-size:20px}
+.qna-content > div > a > i {font-size:25px}
+.qna-content > div > ul > li {margin-bottom:15px}
+.qna-content > div > ul > li > div > h3{ width:100%;padding:20px;display:inline-block;border-radius:2px;position: relative;color:#333;font-size:16px;margin:0;cursor: pointer;font-weight: normal;}
+.qna-content > div > ul > li > div > h3:before {content: "\f107";font-family:FontAwesome;position: absolute;top:10px;right:0;font-style: initial;font-size: 30px;color:#1f7fe9; transition-duration:1s;text-align:center;padding: 3px 20px;}
 
+.qna .qnaBasic > div > div{ background:#fff; display:none;}
+.qna .qnaBasic > div > div > div{ width:100%;padding:3%;color: #333;line-height: 20px;}
+.qna .qnaBasic > div > h3{ background:#f8fafc;}
+
+.qna .qnaActive > div > div{ line-height: 1.6;display:block;word-wrap: break-word;}
+.qna .qnaActive > div > h3{ background:#1f7fe9;transition-duration:1s;color:#fff}
+.qna .qnaActive > div > h3:before{ content: "\f106";transition-duration:1s;color:#Fff}
 
 
 
@@ -314,17 +326,31 @@
 .tableTypeB {border: 1px solid #ddd;}
 .tableTypeB > thead > tr > th {background: #f8fafc;}
 .tableTypeB > tbody > tr > th {text-align: center;}
-.tableTypeB > tbody > tr > td {text-align: center;}
+.tableTypeB > tbody > tr > td {text-align: center;vertical-align: middle;}
 
 .tableTypeC {border:1px solid #ddd;}
 .tableTypeC > tbody > tr > th {width:20%;background-color: #f8fafc !important;border-right: 1px solid #ddd;}
 .tableTypeC > tbody > tr > td {}
 
+.tableTypeD > thead > tr > th {background: #f8fafc;}
+.tableTypeD > tbody > tr > td {vertical-align: middle;padding: 25px;}
+.tableTypeD > tbody > tr > td:nth-child(1) {width:20%;font-size: 20px;}
+.tableTypeD > tbody > tr > td:nth-child(2) {width:40%;text-align:left;}
+.tableTypeD > tbody > tr > td:nth-child(3) {width:10%;text-align: center;}
+.tableTypeD > tbody > tr > td:nth-child(4) {width:10%;text-align: center;}
+.tableTypeD > tbody > tr > td:nth-child(5) {width:20%;text-align: center;}
+.tableTypeD > tbody > tr > td:nth-child(5) > p {font-size: 25px;margin-bottom: 10px;display: block;}
+.tableTypeD > tbody > tr > td:nth-child(5) > p > span {font-size: 15px;}
+
+.tableTypeE > thead > tr > th {background: #f8fafc;}
+.tableTypeE > tbody > tr > td:nth-child(1) {width:60%;}
+.tableTypeE > tbody > tr > td:nth-child(2) {width:10%;text-align:center;}
+.tableTypeE > tbody > tr > td:nth-child(3) {width:10%;text-align: center;}
 
 
 
 
-.cart {margin: 36px 0;border:1px solid #ddd;padding:20px;}
+.cart {border:1px solid #ddd;padding:20px;}
 .cart > table {border:0;}
 .cart > table > caption {font-size: 17px;padding:15px;background: #334862;text-align: center;font-weight: bold;color:#fff;margin-bottom: 15px;}
 .cart > table > thead > tr > th {text-align: center;width: 50%;display: inline-block;float: left;}
@@ -358,7 +384,7 @@
 .message > div {margin-top: 30px;}
 .message > div > a {width:150px;padding: 10px;font-size:15px;}
 
-.btn_xs {float:right;font-size: 11px;padding: 2px 6px;position: relative;top: -3px;}
+.btn_xs {font-size: 11px;padding: 2px 6px}
 
 .btnBox {width: 100%;display: inline-block;text-align: center;margin-top: 15px;}
 .btnBox > button {width: 100%;padding:3% 5%;display: inline-block;margin: 0 auto;}
@@ -370,7 +396,7 @@
 .btnAgree > span  {font-size: 12px;color: #555;display: block;}
 
 .radio_down {margin-bottom:10px;width: 100%;}
-.radio_w {width: 100%;}
+.radio_w {width: 100%;};
 
 .blu-content.wrapper.lastStep .cart{ display:none;}
 .service {margin-bottom:300px;display: block;}
@@ -383,9 +409,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===================================================================
  *  popup
  * ------------------------------------------------------------------- */
+
 .modal-open .modal{width: 100%; height: 100%;display: table;}
 .modal-box {    display: table-cell;vertical-align: middle;    text-align: center;}
 .modal-content {box-shadow: none;outline: none;border-radius: 2px;border:0;display: inline-block;text-align: left;}
@@ -403,11 +443,17 @@
 
 
 
+/* ===================================================================
+ *  domain
+ * ------------------------------------------------------------------- */
 
-
-
-
-
+.dsearch {padding: 20px 0;margin-bottom: 20px;text-align: center;border: 1px solid #ddd;background: #f8fafc;}
+.dsearch > label {position: relative;vertical-align: middle;margin: 0;padding: 0;width: 65%;color: #555} 
+.dsearch > label:before{content: "www.";position: absolute;top:0;left: 0;width: 50px;height: 40px;font-size: 15px;text-indent: 10px;line-height: 40px;}
+.dsearch > label > input {height:40px;float: left;width:100%;text-indent:10px;font-size:15px;padding-left:45px;vertical-align: middle;color: #555; border: 1px solid #ddd; }
+.dsearch > button {border-radius: 0;height: 40px;background: #fb5e27;color:#fff;font-size:15px;}
+.dsearch > button:hover{background: #ef490f;}
+.dsearch > span {height:40px;display: inline-block;width:30%;background:#fb5e27;color:#fff;font-size:18px;line-height:1.5;}
 
 
 /* ===================================================================

@@ -26,13 +26,14 @@ class Page extends MY_Controller
 		if($method == 'hosting'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'server'){
-
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'member'){
-
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'agreements'){
-
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'pop'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'domain'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}
 

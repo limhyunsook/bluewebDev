@@ -28,8 +28,7 @@
     <script src="/assets/js/jquery.bxslider.min.js"></script>
     <script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
 
-	<script src="/assets/js/main_script.js"></script>
-    <script src="/assets/js/top_banner.js"></script>
+	<script src="/assets/js/script.js"></script>
 
     <!-- bootstrapk ================================================== -->    
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
@@ -45,6 +44,35 @@
 <body>
     
        
+	
+	
+	
+<!-- top banner -->
+<div id="topBannerArea" style="position: relative;">
+	<a href="http://cookingm.blueweb.co.kr/mobile/mobile_package_make_regist.html" style="display:block;" target="_blank">
+		<img src="http://mail.blueweb.co.kr/img/top/mobile_pakage_banner.gif" alt="페키지 배너" style="width:100%">
+	</a>
+	<div style="position: absolute;bottom: 5px;right: 75px;">
+		<img src="http://mail.blueweb.co.kr/img/top/banner_close.gif" alt="닫기" id="bannerImg1">
+	</div>
+	<div style="position: absolute;bottom: 5px;right: 0;">
+		<img src="http://mail.blueweb.co.kr/img/top/banner_close2.gif" alt="안보기" id="bannerImg2">
+	</div>
+</div>
+<!-- //top banner -->	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     
 
 <!-- header -->
@@ -82,7 +110,7 @@
 							<div class="wrapper">
 								<ul>
 									<h2><a href="#">웹호스팅</a></h2>
-									<li><a href="/page/hosting/service.php">웹호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
+									<li><a href="/page/hosting/service.php">웹호스팅 <span class="badge badge-warning">event</span></a></li>
 									<li><a href="#">웹에이전시 호스팅</a></li>
 									<li><a href="#">워드프레스 호스팅</a></li>		
 									<li><a href="#">DB 호스팅</a></li>
@@ -96,7 +124,7 @@
 								<ul>
 									<h2><a href="#">웹사이트 구축 지원</a></h2>
 									<li><a href="#">이전 대행</a></li>
-									<li><a href="#">간편제작 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+									<li><a href="#">간편제작 <span class="badge badge-danger">new</span></a></li>
 									<li><a href="#">SSL호스팅</a></li>
 								</ul>	
 							</div>
@@ -122,7 +150,7 @@
 								<ul>
 									<h2><a href="#">위탁운영</a></h2>	
 									<li><a href="#">백업</a></li>
-									<li><a href="#">모니터링 <img src="/assets/images/icon_update.png" alt="update"></a></li>
+									<li><a href="#">모니터링 <span class="badge badge-warning">event</span></a></li>
 								</ul>
 								<ul>
 									<h2><a href="#">서버파킹</a></h2>	
@@ -133,7 +161,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#">도메인</a>
+					<a href="/page/domain/domain.php">도메인</a>
 					<div>
 						<div>
 							<nav>											
@@ -148,7 +176,7 @@
 									<li><a href="#">구매 대행</a></li>
 								</ul>					
 								<ul>
-									<h2><a href="#">기간이전 <img src="/assets/images/icon_update.png" alt="update"></a></h2>
+									<h2><a href="#">기간이전 <span class="badge badge-danger">new</span></a></h2>
 									<li><a href="#">기관연장</a></li>	
 								</ul>							
 								<ul>
@@ -176,7 +204,7 @@
 								</ul>	
 								<ul>	
 									<h2><a href="#">컨설팅</a></h2>
-									<li><a href="#">모의해킹 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+									<li><a href="#">모의해킹 <span class="badge badge-warning">event</span></a></li>
 									<li><a href="#">취약점진단</a></li>
 									<li><a href="#">침해사고분석</a></li>
 								</ul>	
@@ -185,7 +213,7 @@
 									<li><a href="#">SSL</a></li>
 									<li><a href="#">방화벽</a></li>
 									<li><a href="#">웹 방화벽</a></li>   
-									<li><a href="#">이메일 보안 <img src="/assets/images/icon_update.png" alt="update"></a></li>
+									<li><a href="#">이메일 보안 <span class="badge badge-primary">update</span></a></li>
 									<li><a href="#">DB 암호화</a></li>                        
 								</ul>	
 								<ul>	
@@ -216,13 +244,13 @@
 								</ul>	
 								<ul>	
 									<h2><a href="#">쿠킹엠</a></h2>
-									<li><a href="#">7일무료체험 <img src="/assets/images/icon_update.png" alt="update"></a></li>
+									<li><a href="#">7일무료체험 <span class="badge badge-primary">update</span></a></li>
 									<li><a href="#">신청하기</a></li>
 								</ul>	
 								<ul>	
 									<h2><a href="#">코참비즈</a></h2>
 									<li><a href="#">상공회의소 회원 무료</a></li>
-									<li><a href="#">신청하기 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+									<li><a href="#">신청하기 <span class="badge badge-danger">new</span></a></li>
 								</ul>	
 								<ul>	
 									<h2><a href="#">홈페이지제작센터</a></h2>
@@ -252,12 +280,12 @@
 								</ul>
 								<ul>
 									<h2><a href="#">이벤트 및 신규서비스</a></h2>
-									<li><a href="#">이벤트 <img src="/assets/images/icon_update.png" alt="update"></a></li>
+									<li><a href="#">이벤트 <span class="badge badge-primary">update</span></a></li>
 									<li><a href="#">신규 서비스</a></li>
 								</ul>							
 								<ul>
 									<h2><a href="#">상담 및 문의</a></h2>
-									<li><a href="#">자주 묻는 질문 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+									<li><a href="#">자주 묻는 질문 <span class="badge badge-danger">new</span></a></li>
 									<li><a href="#">1:1질문과 답변</a></li>
 									<li><a href="#">문의메일 보내기</a></li>							
 								</ul>					
@@ -275,7 +303,7 @@
 							<div class="wrapper">
 								<ul>
 									<h2><a href="#">요금관리</a></h2>
-									<li><a href="#">결제조회 <img src="/assets/images/icon_new.png" alt="new"></a></li>
+									<li><a href="#">결제조회</a></li>
 									<li><a href="#">호스팅 요금납부</a></li>
 									<li><a href="#">도메인 예치금 관리</a></li>
 									<li><a href="#">결제방법안내</a></li>
@@ -284,11 +312,11 @@
 									<h2><a href="#">호스팅관리</a></h2>
 									<li><a href="#">호스팅 신청/결제 확인</a></li>
 									<li><a href="#">호스팅 정보변경</a></li>
-									<li><a href="#">호스팅 명의변경 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+									<li><a href="#">호스팅 명의변경 <span class="badge badge-primary">update</span></a></li>
 								</ul>
 								<ul>
 									<h2><a href="#">도메인관리</a></h2>
-									<li><a href="#">도메인 사용 현황 <img src="/assets/images/icon_update.png" alt="update"></a></li>
+									<li><a href="#">도메인 사용 현황 <span class="badge badge-warning">event</span></a></li>
 									<li><a href="#">도메인 신청/결제 확인</a></li>
 									<li><a href="#">부가서비스 신청</a></li>
 									<li><a href="#">도메인 소유권 이전</a></li>							

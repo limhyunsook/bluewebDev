@@ -112,11 +112,14 @@ input:focus {background: #f8fafc;border-color:#087ee3 !important;}
 .badge-danger {background-color: #ef490f !important;}
 .badge-default {background-color: #e6e6e6 !important;}
 
+.badge {border-radius: 2px !important;min-width: 40px;}
 
-
-
-
-
+.badge-border-primary {background: #fff;border:1px solid #087ee3 !important;color:#087ee3;}
+.badge-border-success  {background: #fff;border:1px solid #0aa761 !important;color:#0aa761;}
+.badge-border-info  {background: #fff;border:1px solid #4779da !important;color:#4779da;}
+.badge-border-warning  {background: #fff;border:1px solid #f6ba26 !important;color:#f6ba26;}
+.badge-border-danger {background: #fff;border:1px solid #ef490f !important;color:#ef490f;}
+.badge-border-default  {background: #fff;border:1px solid #e6e6e6 !important;color:#e6e6e6;}
 
 
 .color01 {color:#087ee3 !important;}

@@ -27,7 +27,7 @@
 			
 			
             <!-- tab panes -->
-            <div class="tab-content">
+            <div class="tab-content fixing">
 				
 				
               
@@ -415,7 +415,7 @@
 								<caption class="table_title">소프트웨어 추가</caption>       
 								<tbody>
 								<tr>
-									<th rowspan="5">소프트웨어 </th>
+									<th rowspan="4">소프트웨어</th>
 									<td>  
 										<label class="radiocontainer">
 											<input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="option1" checked="checked">
@@ -604,47 +604,47 @@
                             <!-- cart -->
                             <div class="cart">
                                 <table class="table">
-                                    <caption class="table_title">결제 금액 계산</caption>
-                                    <thead>
-									<tr>
-										<th>항목</th>
-										<th>비용</th>
-									</tr>
-                                    </thead>
-                                    <tbody>
-									<tr class="table-success">
-										<td>웹호스팅</td>
-										<td>360,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td><span class="not">ㄴ</span> 5% 할인</td>
-										<td class="color02">-18,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td>설치비</td>
-										<td>30,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td>트래픽</td>
-										<td>960,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td><span class="not">ㄴ</span> 5% 할인</td>
-										<td class="color02">-48,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td>웹메일</td>
-										<td>60,000원</td>
-									</tr>  
-									<tr class="table-success">
-										<td><span class="not">ㄴ</span> 5% 할인</td>
-										<td class="color02">-48,000원</td>
-									</tr>  
+								<caption class="table_title">결제 금액 계산</caption>
+								<thead>
+								<tr>
+									<th>항목</th>
+									<th>비용</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="table-success">
+									<td>웹호스팅</td>
+									<td>360,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-18,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td>설치비</td>
+									<td>30,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td>트래픽</td>
+									<td>960,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td>웹메일</td>
+									<td>60,000원</td>
+								</tr>  
+								<tr class="table-success">
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
 
-									<tr class="table-success">                                     
-										<td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
-									</tr>  
-                                    </tbody>
+								<tr class="table-success">                                     
+									<td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+								</tr>  
+								</tbody>
                                 </table>   
 								
 								<div class="btnAgree">

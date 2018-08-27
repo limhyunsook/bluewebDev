@@ -9,7 +9,7 @@
             <ul>
                 <li><a href="#">리눅스 웹호스팅</a></li>
                 <li><a href="#">윈도우 호스팅</a></li>
-                <li><a href="#">제로XE 호스팅 <img src="/assets/images/icon_new.png" alt="new"></a></li>
+                <li><a href="#">제로XE 호스팅 <span class="badge badge-warning">event</span></a></li>
                 <li><a href="#">이미지 호스팅</a></li>
                 <li><a href="#">동영상 호스팅</a></li>
                 <li><a href="#">.NET 호스팅</a></li>
@@ -21,7 +21,7 @@
                 <a href="#">서버호스팅</a>
             </p>
             <ul>
-                <li><a href="#">서버호스팅 <img src="/assets/images/icon_update.png" alt="new"></a></li>
+                <li><a href="#">서버호스팅 <span class="badge badge-danger">new</span></a></li>
                 <li><a href="#">코로케이션</a></li>
                 <li><a href="#">매니지먼트</a></li>
                 <li><a href="#">부가서비스</a></li>
@@ -40,7 +40,7 @@
                 <li><a href="#">도메인 정보 변경</a></li>
                 <li><a href="#">도메인 가치평가</a></li>
                 <li><a href="#">삭제 예정 도메인</a></li>
-                <li><a href="#">무료 파킹 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+                <li><a href="#">무료 파킹 <span class="badge badge-warning">event</span></a></li>
             </ul>
         </li>
         <li class="col-xs-2">
@@ -61,7 +61,7 @@
                 <li><a href="#">세금계산서/영수증 발급</a></li>
                 <li><a href="#">요금 납부/미납 조회</a></li>
                 <li><a href="#">공지사항</a></li>
-                <li><a href="#">작업공지 <img src="/assets/images/icon_event.png" alt="event"></a></li>
+                <li><a href="#">작업공지 <span class="badge badge-primary">update</span></a></li>
                 <li><a href="#">이벤트</a></li>
                 <li><a href="#">신규 서비스</a></li>                   
                 <li><a href="#">자주 묻는 질문</a></li>     
@@ -72,7 +72,7 @@
                 <a href="#">마이페이지</a>
             </p>
             <ul>
-                <li><a href="#">결제조회 <img src="/assets/images/icon_event.png" alt="이벤트"></a></li>
+                <li><a href="#">결제조회 <span class="badge badge-danger">new</span></a></li>
                 <li><a href="#">호스팅 요금납부</a></li>
                 <li><a href="#">도메인 예치금 관리</a></li>
                 <li><a href="#">호스팅 신청/결제 확인</a></li> 
