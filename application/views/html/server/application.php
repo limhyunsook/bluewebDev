@@ -34,207 +34,361 @@
 				<!-- step01 -->
                 <div role="tabpanel" class="tab-pane active" id="step01"> 
                     <ul class="row">
-                        <li class="col-xs-9">     
+                        <li class="col-xs-9">
 							
                             <div class="service">
 								
 								
-                                <!-- 신청 정보 -->
-                                <table class="table tableTypeA mb12"> 
-                                <caption class="table_title">신청 정보</caption>       
-                                <tbody>
-                                <tr>
-                                    <th>호스팅 종류</th>
-                                    <td>                                            
-                                        <div class="selectbox mb12">                                        
-                                            <select class="selectpicker">
-                                                <option>LINUX 보급형</option>
-                                                <option>LINUX 기본형</option>
-                                                <option>LINUX 블루형</option>
-                                                <option>LINUX 파워형</option>
-                                                <option>LINUX 파워플러스</option>
-                                                <option>LINUX MAX형</option>
-                                            </select> 
-                                        </div>
-
-                                        <table class="table tableTypeB">
-                                        <thead>
-                                            <tr>
-                                                <th>트래픽</th>
-                                                <th>웹용량</th>
-                                                <th>DB용량</th>
-                                                <th class="color01">메일용량(개수)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-success">
-                                                <td>12G</td>
-                                                <td>10G</td>
-                                                <td>무제한</td>
-                                                <td>30개</td>
-                                            </tr>                                          
-                                        </tbody>
-                                        </table>  
-                                    </td>                                     
-                                </tr>
-                                <tr class="table-success">
-                                    <th scope="row">메일 형태</th>
-                                    <td>
-                                        <div class="mb12">
-                                            웹메일을 이미 사용중입니까?
-                                            <label class="radiocontainer">
-                                                <input type="radio" name="inlineRadioOptions13" id="inlineRadio1" value="option1" checked="checked">
-                                                <span class="radio-text"></span>YES
-                                            </label>
-                                            <label class="radiocontainer">
-                                                <input type="radio" name="inlineRadioOptions13" id="inlineRadio1" value="option1">
-                                                <span class="radio-text"></span>NO
-                                            </label>  
-                                        </div>       
-                                        <div>
-                                            <label class="radiocontainer">
-                                                <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1" checked="checked">
-                                                <span class="radio-text"></span>아웃룩
-                                            </label>
-                                            <label class="radiocontainer">
-                                                <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-                                                <span class="radio-text"></span>웹메일
-                                            </label>                    
-                                        </div>
-                                        <div class="selectbox mt12">
-                                            <select class="selectpicker">
-                                                <option>다음</option>
-                                                <option>네이버</option> 
-                                            </select>
-                                        </div>
-                                    </td>
-                                </tr>  
-                                <tr class="table-success">
-                                    <th scope="row">호스팅 요금<br/>납부방식</th>
-                                    <td>    
-                                        <div class="selectbox">
-                                            <select class="selectpicker">
-                                                <option>결제방식 선택</option>
-                                                <option>자동이체(매월 5% 할인)</option>
-                                                <option>1년선납결제(2개월무료)</option>
-                                                <option>2년선납결제(6개월무료)</option>
-                                                <option>3년선납결제(12개월무료)</option>
-                                                <option>매월 결제</option>  
-                                            </select>                                          
-                                        </div>
-                                        <a href="#" class="btn btn-primary mt12 a_block">선납무이자</a>
-                                    </td>
-                                </tr>   
-                                </tbody>
-                                </table>    
-								<!-- //신청 정보 -->
-
-								
-                                <!-- 도메인입력 -->
-                                <table class="table tableTypeA mb12"> 
-                                <caption class="table_title">도메인 입력</caption>       
-                                <tbody>
-                                 <tr>
-                                    <th>대표 도메인</th>
-                                    <td>  
-                                        <input type="text" class="form-control" placeholder="도메인을 입력해주세요.">               
-                                        <a href="#" class="btn btn-primary mt12 a_block">도메인 체크</a>
-                                        <div class="tip color01 mt12">
-                                            도메인 입력 후 ‘도메인 체크’ 버튼을 눌러 주세요. 
-                                        </div>
-                                        <div class="tip">
-                                            도메인을 입력하지 않으면 기본 도메인으로 호스팅이 세팅 됩니다.
-                                        </div>
-                                    </td>   
-                                </tr>   
-                                </tbody>
-                                </table>   
-								<!-- //도메인입력 -->
-
-								
-                                <!-- 옵션 추가 -->
-                                <table class="table tableTypeA mb12"> 
-                                <caption class="table_title">
-                                    옵션 추가                                    
-                                    <label class="chkcontainer chk_l">
-                                        <input type="checkbox" name="check2" checked="checked">
-                                        <span class="check-text"></span>
-                                    </label>                               
-                                </caption>       
-                                <tbody>
-                                <tr>
-                                    <th>트래픽</th>
-                                    <td>  
-                                        <div class="selectbox">
-                                            <select class="selectpicker">
-                                                <option>신청안함</option>
-                                                <option>4G</option>
-                                                <option>8G</option>
-                                                <option>12G</option>
-                                                <option>16G</option>
-                                                <option>20G</option>
-                                            </select>
-                                        </div>
-                                    </td>   
-                                </tr>  
-                                <tr>
-                                    <th>웹 용량</th>
-                                    <td>  
-                                        <div class="selectbox">
-                                            <select class="selectpicker">
-                                                <option>신청안함</option>
-                                                <option>2G</option>
-                                                <option>4G</option>
-                                                <option>6G</option>
-                                                <option>8G</option>
-                                                <option>10G</option>
-                                                <option>12G</option>
-                                                <option>14G</option>
-                                                <option>16G</option>
-                                                <option>16G</option>
-                                            </select>
-                                        </div>
-                                    </td>   
-                                </tr>  
-                                </tbody>
-                                </table>
-								<!-- //옵션 추가 -->
+								<!-- 신청정보 -->
+								<table class="table tableTypeA mb12"> 
+								<caption class="table_title">신청 정보</caption>       
+								<tbody>
+								<tr>
+									<th>IDC 선택</th>
+									<td>  
+										 <div class="selectbox">                                         
+											 <select class="selectpicker">
+												<option>선택하세요!</option>
+												<option>교대센터(SK)</option>
+												<option>강남센터(KT)</option>                  
+											</select>                                       
+										</div>
+									</td>   
+								</tr>  
+								<tr>
+									<th>IDC 선택</th>
+									<td>  
+										IBM X3550M5(6core) 
+										<a href="#" class="btn btn-primary mt12 a_block">서버 변경</a>
+										<a href="#" class="btn btn-primary mt12 a_block">부품 추가</a>
+									</td>   
+								</tr>  	
+								<tr>
+									<th>서버 정보</th>
+									<td>  
+										<table class="table tableTypeA">
+										<tbody>                                        
+										<tr>
+											<th>BOARD</th>
+											<td>Xeon Hexa Core Board</td>
+										</tr> 
+											 <tr>
+											<th>CPU</th>
+											<td>Intel Xeon E5-2603 v4, 1.7GHz, 6C </td>
+										</tr>                                         
+										<tr>
+											<th>MEM</th>
+											<td>
+												8GB TruDDR4 Memory (1Rx4, 1.2V) PC4-19200 CL17 2400MHz LP RDIMM
+												<a href="#" class="btn btn-primary mt12 a_block">RAM 변경</a>
+											</td>
+										</tr> 
+										<tr>
+											<th>HDD</th>
+											<td>
+												300GB 10K 12Gbps SAS 2.5in G3HS HDD
+												<a href="#" class="btn btn-primary mt12 a_block">HDD 변경</a>
+											</td>
+										</tr> 
+										</tbody>
+										</table>                        
+									</td>   
+								</tr>  
+								<tr>
+									<th>상면 정보</th>
+									<td>1U(일반형)</td>    
+								</tr>
+								<tr>
+									<th>회선 정보</th>
+									<td>
+										<div class="selectbox">                                        
+											<select class="selectpicker">
+												<option>Dedicate-10M</option>
+												<option>Dedicate-20M</option>
+												<option>Dedicate-30M</option>
+												<option>Dedicate-40M</option>
+												<option>Dedicate-50M</option>
+												<option>Dedicate-60M</option>
+												<option>Dedicate-70M</option>
+												<option>Dedicate-80M</option>
+												<option>Dedicate-90M</option>
+												<option>Dedicate-100M</option>              
+											</select>                                          
+										</div>                                
+									</td>    
+								</tr>
+								<tr>
+									<th>OS</th>
+									<td>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions5" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span> 리눅스
+										</label>    
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions5" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span> 윈도우
+										</label>   
+									</td>    
+								</tr>
+								<tr>
+									<th>설치 방법</th>
+									<td>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span> 설치 의뢰
+										</label>    
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="option1">
+											<span class="radio-text"></span> 자가 설치 (IDC 방문 및 직접 설치)
+										</label>   
+									</td>     
+								</tr>
+								<tr>
+									<th>개설 희망일</th>
+									<td>                                
+										<div class="input-group date" data-provide="datepicker">
+											<input type="text" class="form-control">
+											<div class="input-group-addon">
+												<span class="glyphicon glyphicon-th"></span>
+											</div>
+										</div>
+										<p class="mt12"> (계약 만료일: 2020-08-21)</p>
+									</td>    
+								</tr>
+								<tr>
+									<th>선납 기간</th>
+									<td>
+										 <div class="selectbox">
+											 <select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>1개월</option>
+												<option>3개월</option>
+												<option>6개월</option>
+												<option>12개월</option>   
+											</select> 
+										</div>  
+									</td>    
+								</tr>
+								<tr>
+									<th>결제일</th>
+									<td>매월 25일 (결제 만료일: <span>2018-09-25</span>)</td>    
+								</tr>
+								</tbody>
+								</table>
+								<!-- //신청정보 -->	
 
 
-                                <!-- 부가서비스 추가 -->
-                                <table class="table tableTypeA mb12"> 
-                                <caption class="table_title">부가서비스 추가</caption>       
-                                <tbody>
-                                <tr>
-                                    <th>SSL 보안서버인증서</th>
-                                    <td>  
-                                        <a href="#" class="btn btn-primary a_block" data-toggle="modal" data-target="#exampleModalCenter">관련법령</a>
-                                        <div class="tip color01 mt12">정통부 의무규정 사항 </div>
-                                    </td>   
-                                </tr>  
-                                <tr>
-                                    <th>SSL 보안서버인증서</th>
-                                    <td>  
-                                        <label class="radiocontainer">
-                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
-                                            <span class="radio-text"></span>구매 및 설치
-                                        </label>
-                                        <label class="radiocontainer">
-                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
-                                            <span class="radio-text"></span>보유중인 SSL설치
-                                        </label>
-                                        <label class="radiocontainer">
-                                            <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1" checked="checked">
-                                            <span class="radio-text"></span>신청 안 함
-                                        </label>                                    
-                                    </td>   
-                                </tr>  
-                                </tbody>
-                                </table>
+								<!-- 위탁운영 서비스 추가 (선택 사항) -->
+								<table class="table tableTypeA mb12"> 
+									<caption class="table_title">위탁운영 서비스 추가 <span class="color01">(선택 사항)</span></caption> 
+								<tbody>
+								<tr>
+									<th>위탁운영</th>
+									<td>  
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions7" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>스탠더드(서버)
+										</label>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions7" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>프리미엄(서버)
+										</label>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions7" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>신청 안 함
+										</label>                                    
+									</td>   
+								</tr>  
+								</tbody>
+								</table>
+								<!-- //위탁운영 서비스 추가 (선택 사항) -->
+
+
+								<!-- 소프트웨어 추가 -->
+								<table class="table tableTypeA mb12"> 
+								<caption class="table_title">소프트웨어 추가</caption>       
+								<tbody>
+								<tr>
+									<th rowspan="4">소프트웨어</th>
+									<td>  
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>소프트웨어 신청
+										</label>
+										
+										<div class="chk mt12 mb12">											
+											<label class="chkcontainer">
+												<input type="checkbox" name="check2">
+												<span class="check-text"></span>OS 라이선스								
+											</label>      
+											<label class="chkcontainer">
+												<input type="checkbox" name="check2">
+												<span class="check-text"></span>DB 라이선스					
+											</label>      
+											<label class="chkcontainer">
+												<input type="checkbox" name="check2">
+												<span class="check-text"></span>기타 라이선스						
+											</label>   
+										</div>
+										
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="option1">
+											<span class="radio-text"></span>신청 안 함
+										</label>
+										
+									</td>   
+								</tr>  							
+								<tr>
+									<td>
+										<h2 class="mb12">OS 라이선스</h2>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 임대
+										</label>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 구매
+										</label>
+										<div class="selectbox mt12">
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>1개월</option>
+												<option>3개월</option>
+												<option>6개월</option>
+												<option>12개월</option>
+											</select>  
+										</div> 
+									</td>                                
+								</tr>
+								<tr>
+									<td>
+										<h2 class="mb12">DB 라이선스</h2>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 임대
+										</label>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 구매
+										</label>
+										<div class="selectbox mt12">
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>1개월</option>
+												<option>3개월</option>
+												<option>6개월</option>
+												<option>12개월</option>  
+											</select>                                       
+										</div> 
+									</td> 
+								</tr>   
+								<tr>
+									<td>
+										<h2 class="mb12">기타 라이선스</h2>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions11" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 임대
+										</label>
+										<label class="radiocontainer">
+											<input type="radio" name="inlineRadioOptions11" id="inlineRadio1" value="option1" checked="checked">
+											<span class="radio-text"></span>라이선스 구매
+										</label>
+										<div class="selectbox mt12">
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>1개월</option>
+												<option>3개월</option>
+												<option>6개월</option>
+												<option>12개월</option>  
+											</select>  
+										</div> 
+									</td> 
+								</tr>  
+								</tbody>
+								</table>
+								<!-- //소프트웨어 추가 -->
+
+
+
+								<!-- 부가서비스 추가 -->
+								<table class="table tableTypeA mb12"> 
+								<caption class="table_title">부가서비스 추가</caption>       
+								<tbody>
+								<tr>
+									<th>방화벽</th>
+									<td>
+										<div class="selectbox">                                        
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>공유형(블루웹)</option>
+											</select>
+										</div>                                 
+									</td>   
+								</tr>  
+								<tr>
+									<th>통합모니터링</th>
+									<td>위탁운영에 포함되어 있습니다</td>   
+								</tr>  
+								<tr>
+									<th>백업</th>
+									<td>
+										<div class="selectbox">                                        
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>백업 100GB</option>
+												<option>백업 150GB</option>
+												<option>백업 200GB</option>
+												<option>백업 300GB</option>
+												<option>백업 350GB</option>
+												<option>백업 400GB</option>
+												<option>백업 450GB</option>
+												<option>백업 500GB</option>
+											</select>                                                                               
+										</div>                                 
+									</td>   
+								</tr>  
+								<tr>
+									<th>바이러스 백신</th>
+									<td>
+
+										<div class="selectbox">                                        
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>Bitdefender GravityZone Business Security</option>                                           
+											</select>
+										</div>                                 
+									</td>   
+								</tr>  
+								<tr>
+									<th>웹방화벽</th>
+									<td>
+										<div class="selectbox">
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>H/W공유형</option> 
+												<option>S/W설치형</option> 
+												<option>리버스 프록시형</option> 
+											</select> 
+										</div>                                 
+									</td>   
+								</tr>  
+								<tr>
+									<th>웹사이트 이전</th>
+									<td>
+										<div class="selectbox">
+											<select class="selectpicker">
+												<option>선납 안 함</option>
+												<option>웹사이트 이전</option> 
+											</select>                                         
+										</div>                                 
+									</td>   
+								</tr>  
+								</tbody>
+								</table>
 								<!-- //부가서비스 추가 -->
 								
-																
-                            </div> 
+								
+							</div>  
 							
                         </li>       						
                         <li class="col-xs-3">   
@@ -300,10 +454,10 @@
                                     </button>  
                                     <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
-                                    </button>             
+                                    </button>           
                                     <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
-                                    </button>                  
+                                    </button>           
 
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
@@ -325,6 +479,61 @@
                     <ul class="row">
 						
                         <li class="col-xs-9">
+							
+							
+							<!--  신청리스트 -->
+							<table class="table tableTypeA table-hover mb12">
+                            <caption class="table_title">신청 리스트</caption>                             
+                            <tbody>      								
+							<tr>
+								<th>서버명</th>
+								<th>OS</th>
+								<th>Disk</th>
+								<th>CPU/Memory</th>
+								<th>서버수량</th>
+								<th>약정</th>
+								<th>월사용 요금</th>
+							</tr>  
+							<tr>
+								<td><input type="text" class="form-control" placeholder="Server"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>LINUX 보급형</option>
+										</select> 
+									</div>	
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>100G</option>
+											<option>20G</option>
+										</select> 
+									</div>									
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1vCore*1GB (26,000원)</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1년</option>
+											<option>2년</option>
+											<option>3년</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0원"></td>
+							</tr>  
+                            </tbody>
+							</table>  
+							<!--  //신청리스트 -->
+								
 							
 							
 							<!-- 신청 정보 -->
@@ -459,7 +668,7 @@
                                     </button>           
                                     <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
-                                    </button>                 
+                                    </button>                
 
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 

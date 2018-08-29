@@ -20,9 +20,8 @@
 		<ul class="row">
 			<li class="col-xs-9">
 				<div class="dsearch">
-					<label><input type="text"></label><button type="image" class="btn"><i class="fa fa-search"></i>검색</button>
+					<label><input type="text"></label><button type="image" class="btn btn-danger" onclick="location.href='/page/domain/domain.php';"><i class="fa fa-search"></i> 검색</button>
 				</div>
-				
 				
 				<table class="table table-hover tableTypeE mb20">                    
 				<thead>
@@ -75,27 +74,27 @@
 				<tr>
 					<td>dd.net</td>				
 					<td>등록불가</td>
-					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_info.html');return false;">정보보기</a></td>
+					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_domain_info.html');return false;">정보보기</a></td>
 				</tr>
 				<tr>
 					<td>dd.com</td>				
 					<td>등록불가</td>
-					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_info.html');return false;">정보보기</a></td>
+					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_domain_info.html');return false;">정보보기</a></td>
 				</tr>
 				<tr>
 					<td>dd.co.kr</td>				
 					<td class="color01">등록가능</td>
-					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_info.html');return false;">정보보기</a></td>
+					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_domain_info.html');return false;">정보보기</a></td>
 				</tr>
 				<tr>
 					<td>dd.kr</td>				
 					<td class="color01">등록가능</td>
-					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_info.html');return false;">정보보기</a></td>
+					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_domain_info.html');return false;">정보보기</a></td>
 				</tr>
 				<tr>
 					<td>dd.net</td>				
 					<td>등록불가</td>
-					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_info.html');return false;">정보보기</a></td>
+					<td><a href="" class="btn btn-success btn_xs" onclick="winOpenDomainPage('/page/pop/nts_domain_info.html');return false;">정보보기</a></td>
 				</tr>
 				</tbody>
 				</table> 

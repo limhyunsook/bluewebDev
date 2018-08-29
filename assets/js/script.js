@@ -6,7 +6,7 @@ $(window).load(function(){
     
     $('.bxslider').bxSlider( {
         mode: 'horizontal',  // 가로 방향 수평 슬라이드        
-        speed: 200,          // 이동 속도를 설정       
+        speed: 350,          // 이동 속도를 설정       
         moveSlides: 1,       // 슬라이드 이동시 개수
         minSlides: 4,        // 최소 노출 개수
         maxSlides: 4,        // 최대 노출 개수
@@ -18,31 +18,37 @@ $(window).load(function(){
         controls: true,      // 이전 다음 버튼 노출 여부
         infiniteLoop: true,  // true/false 무한루프 설정
         controls: true,      // 다음-이전 컨트롤이 추가
-        pager: true          // 현재 위치 페이징 표시 여부 설정
-    });
+		easing : 'linear',   // 속도
+        pager: true         // 현재 위치 페이징 표시 여부 설정
+	})
     
     //슬라이더 동작
     $('.main-slide>ul').bxSlider();    // 메인슬라이더
-    $('.footer-slide>ul').bxSlider();  // 풋터슬라이더
-     
+    $('.footer-slide>ul').bxSlider();  // 풋터슬라이더    
     
-            $("a[data-toggle='tab']").on("click",function(e){
-           e.preventDefault();
-            $(this).tab('show');
-            if($(e.target).attr("href")=="#step03"){
-                $(".blu-content.wrapper").addClass("lastStep");
-                $(".fixing").addClass("full");
-            }else{
-                $(".blu-content.wrapper.lastStep").removeClass("lastStep");
-                $(".fixing").removeClass("full");
-            }
             
-        }); 
 });
 
 
 
+
+
+
 // --------------------------  step1~3 넘기기  -------------------------- //
+$(function(){
+	$("a[data-toggle='tab']").on("click",function(e){
+			   e.preventDefault();
+				$(this).tab('show');
+				if($(e.target).attr("href")=="#step03"){
+					$(".blu-content.wrapper").addClass("lastStep");
+					$(".fixing").addClass("full");
+				}else{
+					$(".blu-content.wrapper.lastStep").removeClass("lastStep");
+					$(".fixing").removeClass("full");
+				}
+            
+        }); 
+});
 function tabNextStep(){
     var idx = $(".tab-pane.active").index();
     var sidname = $(".tab-content.fixing > div").eq(idx).next().attr('id');
@@ -59,10 +65,25 @@ function tabNextStep(){
     //
 } 
 
-
+function tabBackStep(){
+    var idx = $(".tab-pane.active").index();
+    var sidname = $(".tab-content.fixing > div").eq(idx).prev().attr('id');
+    if(sidname != undefined){
+      $('.blu-content a[href=#' + sidname+ ']').tab('show');
+        if(sidname=="step01"){
+            $(".blu-content.wrapper").addClass("lastStep");
+                $(".fixing").addClass("full");
+        }else{
+            $(".blu-content.wrapper.lastStep").removeClass("lastStep");
+                $(".fixing").removeClass("full");
+        }
+    }
+    //
+} 
 
 	
 	
+
 	
 // --------------------------  q&a	-------------------------- //
 $(function(){
@@ -86,17 +107,19 @@ $(function(){
 
 
 
-// --------------------------  popup -------------------------- //				
+// --------------------------  popup -------------------------- //	
+
 function winOpenDomainPage(url){
 	var screenW = screen.availWidth;
 	var screenH = screen.availHeight;
-	var w = 600;
+	var w = 700;
 	var h = 800;
 	var x = (screenW/2) - (w/2);
 	var y = (screenH/2) - (h/2);
-	var domainPopup = window.open(url,'domainPopup','width=600,height=800,left='+x+',top='+y+',scrollbars=auto,resizable=yes');
+	var domainPopup = window.open(url,'domainPopup','width=700,height=800,left='+x+',top='+y+',scrollbars=auto,resizable=yes');
 	domainPopup.focus();
 }
+
 
 
 
@@ -110,7 +133,8 @@ function winOpenDomainPage(url){
 
 //배너 영역 닫기
 function closeTopBanner(){
-	document.getElementById("topBannerArea").style.display = "none";
+	//document.getElementById("topBannerArea").style.display = "none";
+	$("#topBannerArea").addClass("BannerClose");
 }
 
 //배너 영역 열기
@@ -162,6 +186,9 @@ $(function(){
 		setCookie("topBannerCheck","hide",1);
 		closeTopBanner();
 	});
+	$(".BannerBtn").on("click",function(){
+		closeTopBanner();
+	});
 	//다시 안보기 여부 실행
 	TopBannerCheck();
 })
@@ -169,3 +196,24 @@ $(function(){
 
 
 
+
+
+
+
+
+
+// --------------------------  family -------------------------- //
+
+
+var timmm = 300;
+$(function(){
+	$(".familySite").hover(function(){
+		$(this).find(".family_bt").addClass("active");
+		$(this).find("ul").fadeIn(timmm);
+	},function(){
+		$(this).find(".family_bt").removeClass("active");
+		$(this).find("ul").fadeOut(timmm);
+	});
+});
+
+	

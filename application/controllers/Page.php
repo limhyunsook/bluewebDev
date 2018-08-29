@@ -35,7 +35,14 @@ class Page extends MY_Controller
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'domain'){
 			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'cloud'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'solution'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'security'){
+			$method .= '/'.$this->segs[3] ?? null;
 		}
+
 
 
 		//var_dump(strpos($method, 'nts'));

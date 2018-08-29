@@ -70,11 +70,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -90,11 +87,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -108,11 +102,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/sever/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -126,11 +117,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
 					<tr class="table-success">
@@ -144,12 +132,9 @@
 						</td>
                         <td>10Mbps</td>                       
 						<td>1개</td>       
-						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+						<td>							
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          											
                     </tbody>
@@ -196,11 +181,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -216,11 +198,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -234,11 +213,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -252,11 +228,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
 					<tr class="table-success">
@@ -271,11 +244,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          											
                     </tbody>
@@ -322,11 +292,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -342,11 +309,23 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
+						</td>       
+                    </tr>          
+					<tr class="table-success">
+                        <td scope="row">
+							BL-1624SAS<br>(쿼드코어)</td>
+                        <td>
+							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
+							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
+							<span class="badge badge-success">HDD</span> 300GB SAS HDD
+						</td>
+                        <td>10Mbps</td>                       
+						<td>1개</td>       
+						<td>							
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -360,29 +339,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
-						</td>       
-                    </tr>          
-					<tr class="table-success">
-                        <td scope="row">
-							BL-1624SAS<br>(쿼드코어)</td>
-                        <td>
-							<span class="badge badge-danger">CPU</span> Intel® Xeon® Processor E5-2609 v2<br>
-							<span class="badge badge-primary">RAM</span> 8GB DDR-III 1600 PC12800<br>
-							<span class="badge badge-success">HDD</span> 300GB SAS HDD
-						</td>
-                        <td>10Mbps</td>                       
-						<td>1개</td>       
-						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
 					<tr class="table-success">
@@ -397,11 +355,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          											
                     </tbody>
@@ -448,11 +403,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -468,11 +420,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -486,11 +435,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
 					<tr class="table-success">
@@ -504,11 +450,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
 					<tr class="table-success">
@@ -523,11 +466,8 @@
                         <td>10Mbps</td>                       
 						<td>1개</td>       
 						<td>								
-							<p>
-								190,000원	
-								<span>/월</span>
-							</p>
-							<button type="button" class="btn btn-primary" onclick="location.href='/page/hosting/application.php';">신청하기</button>                    						
+							<p>190,000원<span>/월</span></p>
+							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          											
                     </tbody>

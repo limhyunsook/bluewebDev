@@ -1,12 +1,32 @@
 <!-- slide -->
 <section class="slider">	
 	<div class="main-slider">	
+		
 		<div class="bxslider">
-			<div class="bg-img01 bg-box"></div>
-			<div class="bg-img02 bg-box"></div>
-			<div class="bg-img03 bg-box"></div>
-			<div class="bg-img04 bg-box"></div>
+			<div class="slider-img01 slider-box">
+				<div class="sliderTxt01">
+					<h2>차세대 네트워크 보안의 컨트롤 타워</h2>
+					<p>머신러닝이 적용된 네트워크 통합 관리 솔루션 blueweb 매니지먼트출시</p>
+					<a href="">More <span class="lnr lnr-chevron-right"></span></a>
+				</div>		
+			</div>
+			<div class="slider-img02 slider-box">			
+				<div class="sliderTxt02">
+					<h2>더 시운 적용,<br>더 강력한 위협 대응</h2>
+					<p>앤드포인트 보안 최강자 블루웹 ERD 출시!</p>
+					<a href="">More <span class="lnr lnr-chevron-right"></span></a>
+				</div>				
+			</div>	
+			<div class="slider-img04 slider-box">
+				<div class="sliderTxt02">
+					<h2>BLUEWEB TRUSTGUARD<br>FOR AWS</h2>
+					<p>국내최초 AWS 입점 클라우드 차세대 방화벽</p>
+					<a href="">More <span class="lnr lnr-chevron-right"></span></a>
+				</div>	
+			</div>
 		</div>	
+		
+		
 	</div>	
 </section>
 <!-- //slide -->
@@ -34,7 +54,7 @@
 					<h2>도메인검색</h2>
 					<div>
 						<label><input type="text"></label>
-						<button type="image" class="btn"><i class="fa fa-search"></i>검색</button>
+						<button type="image" class="btn btn-danger" onclick="location.href='/page/domain/domain.php';"><i class="fa fa-search"></i> 검색</button>
 					</div>
 					<ul>
 						<li><a href="#">기간연장</a></li>

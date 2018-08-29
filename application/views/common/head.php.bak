@@ -170,7 +170,7 @@
 					</div>
 				</li>			
 				<li>
-					<a href="/page/security/security.php">보안</a>
+					<a href="#">보안</a>
 					<div>
 						<div>
 							<nav>											
@@ -210,7 +210,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="/page/solution/solution.php">솔루션</a>
+					<a href="#">솔루션</a>
 					<div>
 						<div>
 							<nav>											
@@ -243,7 +243,7 @@
 					 </div>
 				</li>
 				<li>
-					<a href="/page/cloud/cloud.php">클라우드</a>
+					<a href="#">클라우드</a>
 					<div>
 						<div>
 							<nav>											

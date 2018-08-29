@@ -105,12 +105,24 @@ input:focus {background: #f8fafc;border-color:#087ee3 !important;}
 .btn {padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;cursor: pointer;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;touch-action: manipulation;-ms-touch-action: manipulation;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;text-shadow: none;box-shadow: none;}
 
 
+
+.label-primary {background-color: #087ee3 !important;font-size: 15px;vertical-align: middle;}
+.label-success {background-color: #0aa761 !important;font-size: 15px;vertical-align: middle;}
+.label-info {background-color: #4779da !important;font-size: 15px;vertical-align: middle;}
+.label-warning {background-color: #f6ba26 !important;font-size: 15px;vertical-align: middle;}
+.label-danger {background-color: #ef490f !important;font-size: 15px;vertical-align: middle;}
+.label-default {background-color: #e6e6e6 !important;font-size: 15px;vertical-align: middle;}
+
+
+
 .badge-primary {background-color: #087ee3 !important;}
 .badge-success {background-color: #0aa761 !important;}
 .badge-info {background-color: #4779da !important;}
 .badge-warning {background-color: #f6ba26 !important;}
 .badge-danger {background-color: #ef490f !important;}
 .badge-default {background-color: #e6e6e6 !important;}
+
+
 
 .badge {border-radius: 2px !important;min-width: 40px;}
 
