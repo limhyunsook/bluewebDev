@@ -7,15 +7,15 @@
 		
 		<ul class="row layout-sm">
 			<li class="col-xs-6">
-				<div class="col-m-2 b-login">
-					<h2>일반 <span>로그인</span></h2>				
+				<div class="col-m-2 panel">
+					<h2 class="subject">일반 <span>로그인</span></h2>				
 					<form id="loginForm" method="post" novalidate="novalidate">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="아이디를 입력하세요">    
+						<input type="text" class="form-control form-control_lg" placeholder="아이디를 입력하세요.">    
 					</div>
 
 					<div class="form-group">			
-						<input type="password" class="form-control" placeholder="비밀번호를 입력하세요">
+						<input type="password" class="form-control form-control_lg" placeholder="비밀번호를 입력하세요.">
 					</div>
 
 					<div class="form-group">		
@@ -30,17 +30,18 @@
 					</div>	
 
 					<div class="login-link">
-						<span><a href="/page/join1.php" class="color01">회원가입</a></span>							
-						<span><a href="/page/idpw.php">아이디/비밀번호 찾기</a></span>							
-						<span><a href="/page/dormant.php">휴면계정찾기</a></span>
+						<span><a href="/page/member/join1.php" class="color01">회원가입</a></span>							
+						<span><a href="/page/member/idsearch.php">아이디 찾기</a></span>							
+						<span><a href="/page/member/pwsearch.php">비밀번호 찾기</a></span>	
+						<span><a href="/page/member/inactive.php">휴면계정찾기</a></span>
 					</div>
 					</form>
 
 				</div>
 			</li>
 			<li class="col-xs-6">
-				<div class="col-m-2 b-login">
-					<h2>SNS <span>로그인</span></h2>				
+				<div class="col-m-2 panel">
+					<h2 class="subject">SNS <span>로그인</span></h2>				
 					<form id="loginForm" method="post" novalidate="novalidate">
 						<div class="sns-inner">
 							<a href="#" class="ico-naver col-xs-3">

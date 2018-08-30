@@ -663,6 +663,7 @@
     
     
 	
+	
 	<!-- q&a-->	
 	<div class="qna-content">	
 		 <div class="wrapper">
@@ -670,10 +671,9 @@
 			<ul class="qna">
 				<li class="col-xs-12 qnaBasic">
                		<div class="col-m-2"> 		
-						<h3><span class="label label-primary">Q</span> [ 호스팅 > 사용안내 ] 네임서버란?</h3>		
+						<h3>[ 호스팅 > 사용안내 ] 네임서버란?</h3>		
 						<div class="quickRightBasic" id="line1">							
 							<div>	
-								<span class="label label-danger">A</span><br><br>
 								특정 네트워크에 속한 특정 호스트에 접속하기 위해, 숫자로 된 IP 주소를 기억하지 않고 도메인
 								네임만으로도 가능하게 하기위해 도메인 네임을 IP 주소로 전환시켜 주는 시스템입니다.
 
@@ -685,10 +685,9 @@
 				</li>
 				<li class="col-xs-12 qnaBasic">
                		<div class="col-m-2"> 		
-						<h3><span class="label label-primary">Q</span> 올바른 호스팅 업체를 선택하는 기준은 무엇인가요?</h3>		
+						<h3>올바른 호스팅 업체를 선택하는 기준은 무엇인가요?</h3>		
 						<div class="quickRightBasic" id="line1">
 							<div>
-								<span class="label label-danger">A</span><br><br>
 								1) 주기적으로 데이터를 백업하고 다중 백업을 하고 있는가?<br> 
 								블루웹은 고객님의 데이터를 정기적 3중 백업하고 있습니다. 백업 시점이 다른 3개의 백업 데이터를 가지고 있으며 서로 다른 물리적 하드디스크에 저장되므로 한쪽에 예측 불가능한 장비문제가 생겨도 고객님의 데이터는 안전하게 보관됩니다.<br><br>
 
@@ -724,10 +723,9 @@
 				</li>
 				<li class="col-xs-12 qnaBasic">
                		<div class="col-m-2"> 		
-						<h3><span class="label label-primary">Q</span> 블루웹 회원 탈퇴 하고 싶습니다.</h3>		
+						<h3>블루웹 회원 탈퇴 하고 싶습니다.</h3>		
 						<div class="quickRightBasic" id="line1">
 							<div>
-								<span class="label label-danger">A</span><br><br>
 								탈퇴는 회원이 더 이상 블루웹 홈페이지의 서비스를 받지 않고자 할 때 신청하는 것입니다. 
 								탈퇴 신청이 되면 바로 자동 탈퇴가 이루어지고 개인정보는 삭제됩니다.
 								단, 이용중인 서비스와 이벤트 참가 및 혜택은 모두 사용하실 수 없게 되니 탈퇴를 하시기 전에
@@ -737,6 +735,7 @@
 					</div>
 				</li>			
 			</ul>	
+			<a href="#">더보기 <i class="fa  fa-angle-right"></i></a>
 		</div>
 	</div>
 	<!-- //q&a-->	

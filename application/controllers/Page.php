@@ -21,18 +21,40 @@ class Page extends MY_Controller
 		if(!$method || $method == 'index') $method = 'index.php';
 		$filepath = APPPATH."views/html/".$method;
 
+
 		//호스팅 처리
 		if($method == 'hosting'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'server'){
 			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'member'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'agreements'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'pop'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'domain'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'cloud'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'solution'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'security'){
+			$method .= '/'.$this->segs[3] ?? null;
 		}
 
+
+
+		//var_dump(strpos($method, 'nts'));
 		if(file_exists($filepath)){
 			$main_data = array();			
-			$this->_header(); //내부함수 해더 호출
+			if( !strpos($method, 'nts')   ){
+				$this->_header(); //내부함수 해더 호출
+			}
 			$this->load->view("/html/$method",$main_data);
-			$this->_footer(); //내부함수 푸터 호출
+			if( !strpos($method, 'nts')  ){
+				$this->_footer(); //내부함수 푸터 호출
+			}
 		}else{
 			echo "404 ERROR";
 		}
