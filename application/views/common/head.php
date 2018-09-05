@@ -13,21 +13,14 @@
 	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
 	<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     
 	<!-- favicon ================================================== -->
 	<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
-	<!-- slide ================================================== --> 
-    <!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    -->
-
+	<!-- script ================================================== --> 
     <script src="/assets/js/jquery-3.3.1.js"></script>
     <script src="/assets/js/jquery.bxslider.min.js"></script>
     <script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
-
 	<script src="/assets/js/script.js"></script>
 
     <!-- bootstrapk ================================================== -->    
@@ -43,7 +36,7 @@
 </head>
 <body>
     
-       
+     
 	
 	
 	

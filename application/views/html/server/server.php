@@ -6,7 +6,7 @@
     <div class="sub-content">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>블루웹 웹호스팅</h2>	
+            <h2>블루웹 서버호스팅</h2>	
         </div>    
     </div>    
 	<!-- //sub-title -->  

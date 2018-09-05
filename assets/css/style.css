@@ -45,9 +45,9 @@
  * ------------------------------------------------------------------- */
 
 .main-slider .slider-box{width:100%;height:500px !important;-webkit-transition-timing-function: ease;}
-.main-slider .slider-img01{background:url('#') no-repeat 50%;background-size:cover;background:#a1e4e7;background: url(https://image.ahnlab.com/event/event_main_banner/banner_523.jpg);background-position: top center;}
-.main-slider .slider-img02{background:url('#') no-repeat 50%;background-size:cover;background:#ecf3bf;background: url(https://image.ahnlab.com/event/event_main_banner/banner_497.jpg);background-position: top center;}
-.main-slider .slider-img04{background:url('#') no-repeat 50%;background-size:cover;background:#abb9f6;background: url(https://image.ahnlab.com/event/event_main_banner/banner_422.jpg);background-position: top center;}
+.main-slider .slider-img01{background:url('#') no-repeat 50%;background-size:cover;background:#a1e4e7;background: url(https://image.ahnlab.com/event/event_main_banner/banner_497.jpg);background-position: top center;}
+.main-slider .slider-img02{background:url('#') no-repeat 50%;background-size:cover;background:#ecf3bf;background: url(https://image.ahnlab.com/event/event_main_banner/banner_523.jpg);background-position: top center;}
+.main-slider .slider-img03{background:url('#') no-repeat 50%;background-size:cover;background:#abb9f6;background: url(https://image.ahnlab.com/event/event_main_banner/banner_422.jpg);background-position: top center;}
 
 .sliderTxt01 {width:1200px;margin: 0 auto;text-align: center;position: relative;top:35%;margin-top: -25px;color: #Fff;transition-delay: 3s;transition-duration: 3s;}
 .sliderTxt01 > h2 {font-size: 50px;margin-bottom: 30px;}
@@ -303,14 +303,16 @@
 .qna-content > div > ul > li > div > h3{ width:100%;padding:20px;display:inline-block;border-radius:2px;position: relative;color:#6b6865;font-size:16px;margin:0;cursor: pointer;font-weight: normal;}
 .qna-content > div > ul > li > div > h3:before {content: "\f107";font-family:FontAwesome;position: absolute;top:10px;right:0;font-style: initial;font-size: 30px;color:#1f7fe9; transition-duration:1s;text-align:center;padding: 3px 20px;}
 
+
+
 .qna {display: inline-block;width: 100%;}
 .qna .qnaBasic > div > div{ background:#f5f5f5; display:none;}
 .qna .qnaBasic > div > div > div{ width:100%;padding:20px;color: #6b6865;line-height: 20px;}
 .qna .qnaBasic > div > h3{ background:#fff;}
 
-.qna .qnaActive > div > div{ line-height: 1.6;display:block;word-wrap: break-word;}
-.qna .qnaActive > div > h3{ background:#1f7fe9;transition-duration:1s;color:#fff}
-.qna .qnaActive > div > h3:before{ content: "\f106";transition-duration:1s;color:#Fff}
+.qna .qnaActive > div{ line-height: 1.6;display:block;word-wrap: break-word;}
+.qna .qnaActive > h3{ background:#1f7fe9;transition-duration:1s;}
+.qna .qnaActive > h3:before{ content: "\f106";transition-duration:1s;color:#ef490f;}
 
 
 
@@ -443,7 +445,7 @@
  * ------------------------------------------------------------------- */
 
 .modal-open .modal{width: 100%; height: 100%;display: table;}
-.modal-box {    display: table-cell;vertical-align: middle;    text-align: center;}
+.modal-box {display: table-cell;vertical-align: middle;    text-align: center;}
 .modal-content {box-shadow: none;outline: none;border-radius: 2px;border:0;display: inline-block;text-align: left;}
 .modal-header {background: #087ee3;border-radius: 1.5px 1.5px 0 0;}
 .modal-header > h5 {color: #fff;font-size: 20px;display: inline-block;}
@@ -455,8 +457,12 @@
 .modal-header .close {font-size: 35px;margin-top: -9px;color:#fff;font-weight: 100;}
 
 
-.info > h2 {background: #087ee3;border-radius: 1.5px 1.5px 0 0;}
-
+.info > h2 {background: #087ee3;border-radius: 1.5px 1.5px 0 0;font-size: 20px;padding: 20px;color: #fff;}
+.info > h2 > a > span {display: block;float:right;font-size: 25px;}
+.info > div {padding: 30px;}
+.info > div > h2 {color:aqua;background: #f9f9f9;padding: 10px;font-size:18px;color: #000;margin-bottom: 20px;}
+.info > div > h2 > span {color: #087ee3;font-weight: 700;}
+.info > div > div {text-align: right;border-top: 1px solid #ddd;padding-top: 30px;}
 
 
 
@@ -643,7 +649,13 @@
 .tab03 > li+li {margin-left: 0; }
 
 
-
+.tab-agree {border-bottom: 1px solid #ddd;}
+.tab-agree > li {padding-left: 0px;padding-right: 0px;text-align: center;width: 15%;}
+.tab-agree > li > a {border-radius: 0px;font-size: 17px;}
+.tab-agree > li.active > a, .tab-agree > li.active > a:focus, .tab-agree > li.active > a:hover {background-color: #fff !important;margin-bottom: -3px;color: #087ee3;border-bottom:3px solid #087ee3;}
+.tab-agree > li > a {background: #fff;border-radius: 2px;}
+.tab-agree  > li > a:hover {background: #fff;margin-bottom: -3px;color: #087ee3;border-bottom:3px solid #087ee3;}
+.tab-agree > li+li {margin-left: 0; }
 
 
 
