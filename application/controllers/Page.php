@@ -29,8 +29,6 @@ class Page extends MY_Controller
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'member'){
 			$method .= '/'.$this->segs[3] ?? null;
-		}else if($method == 'agreements'){
-			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'pop'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'domain'){
@@ -40,6 +38,8 @@ class Page extends MY_Controller
 		}else if($method == 'solution'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}else if($method == 'security'){
+			$method .= '/'.$this->segs[3] ?? null;
+		}else if($method == 'agreement'){
 			$method .= '/'.$this->segs[3] ?? null;
 		}
 

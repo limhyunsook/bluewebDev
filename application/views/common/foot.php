@@ -96,10 +96,10 @@
 <div class="address">			
     <ul class="row col-m-1 wrapper">
 		<li><a href="http://ir.blueweb.co.kr/" target="_blink">회사소개</a></li>
-		<li><a href="/page/agreements/agreement.php" class="link">개인정보처리방침</a></li>
-		<li><a href="/page/agreements/agreement.php">회원약관</a></li>	
-		<li><a href="/page/agreements/agreement.php">호스팅약관</a></li>
-		<li><a href="/page/agreements/agreement.php">도메인약관</a></li>
+		<li><a href="/page/agreement/agreement.php?q=person" class="link">개인정보처리방침</a></li>
+		<li><a href="/page/agreement/agreement.php?q=user">회원약관</a></li>	
+		<li><a href="/page/agreement/agreement.php?q=hosting">호스팅약관</a></li>
+		<li><a href="/page/agreement/agreement.php?q=domain">도메인약관</a></li>
 	</ul>				
 	<ul class="row col-m-2 wrapper">
 		<li>서울시 강남구 언주로 430(역삼동,윤익빌딩10층) (주)블루웹</li>	
