@@ -58,9 +58,9 @@ $(document).ready(function () {
         <td>설명</td>
     </thead>
     <tbody>
-        <?php foreach($lists as $key => $val): ?>
+        <?php $i=1; foreach($lists as $key => $val): ?>
         <tr>
-            <td><?php echo $val['idx'];?></td>
+            <td><?php echo $i++;?></td>
             <td><input type="text" name="service_name" class="text1_<?php echo $val['idx'];?>" value="<?php echo $val['service_name'];?>"></td>
             <td><input type="text" name="service_page" class="text2_<?php echo $val['idx'];?>" value="<?php echo $val['service_page'];?>"></td>
             <td><textarea name="service_memo" cols="35" rows="5" class="text3_<?php echo $val['idx'];?>"><?php echo $val['service_memo'];?></textarea></td>
