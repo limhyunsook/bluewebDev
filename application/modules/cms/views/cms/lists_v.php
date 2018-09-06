@@ -63,7 +63,7 @@ $(document).ready(function () {
             <td><?php echo $val['idx'];?></td>
             <td><input type="text" name="service_name" class="text1_<?php echo $val['idx'];?>" value="<?php echo $val['service_name'];?>"></td>
             <td><input type="text" name="service_page" class="text2_<?php echo $val['idx'];?>" value="<?php echo $val['service_page'];?>"></td>
-            <td><input type="text" name="service_memo" class="text3_<?php echo $val['idx'];?>" value="<?php echo $val['service_memo'];?>"></td>            
+            <td><textarea name="service_memo" cols="35" rows="5" class="text3_<?php echo $val['idx'];?>"><?php echo $val['service_memo'];?></textarea></td>
             <td>
                 <a href="#" class="btn btn-info mod_btn" item="<?php echo $val['idx'];?>">수정</a>
                 <a href="#" class="btn btn-danger del_btn" item="<?php echo $val['idx'];?>">삭제</a>
@@ -89,7 +89,7 @@ $(document).ready(function () {
         </div>
         <div class="input-group">
         <span class="input-group-addon" id="basic-addon3">설명</span>
-        <input type="text" class="form-control" placeholder="불루웹 호스팅" name="service_memo" aria-describedby="basic-addon3">
+            <textarea name="service_memo" cols="105" rows="5"></textarea>        
         </div>
         <div class="input-group">
             <button type="button"  class="btn btn-info btn-lg btn-block add" > 개시 </button>            

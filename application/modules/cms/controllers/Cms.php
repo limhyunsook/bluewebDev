@@ -43,7 +43,7 @@ class Cms extends MY_Controller
 		$data = [];
 		foreach($this->input->get(NULL, TRUE) as $key => $val) $input["{$key}"]  = $val;
 		if(!isset($input["page"])) $input["page"] = 1;
-		if(!isset($input["pagelist"])) $input["pagelist"] = 30;
+		if(!isset($input["pagelist"])) $input["pagelist"] = 100;
 		$data['input'] = $input;
 		$input['table'] = "erp"; // 외부에서 테이블명을 주입
 
