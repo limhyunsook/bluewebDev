@@ -1,31 +1,31 @@
 	
 
-// --------------------------  ¸ÞÀÎ ½½¶óÀÌµå -------------------------- //
+// --------------------------  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ -------------------------- //
 
 $(window).load(function(){
-    
+    /*
     $('.bxslider').bxSlider( {
-        mode: 'horizontal',  // °¡·Î ¹æÇâ ¼öÆò ½½¶óÀÌµå        
-        speed: 350,          // ÀÌµ¿ ¼Óµµ¸¦ ¼³Á¤       
-        moveSlides: 1,       // ½½¶óÀÌµå ÀÌµ¿½Ã °³¼ö
-        minSlides: 4,        // ÃÖ¼Ò ³ëÃâ °³¼ö
-        maxSlides: 4,        // ÃÖ´ë ³ëÃâ °³¼ö
-        slideMargin: 0,      // ½½¶óÀÌµå°£ÀÇ °£°Ý
-        auto: true,          // ÀÚµ¿ ½ÇÇà ¿©ºÎ
-        autoStart: true,     // ·Îµå½Ã ÀÚµ¿ Ç¥½Ã°¡ ½ÃÀÛµË´Ï´Ù. false ÀÌ¸é "½ÃÀÛ"ÄÁÆ®·ÑÀ» Å¬¸¯ÇÏ¸é ½½¶óÀÌµå ¼î°¡ ½ÃÀÛ 
-        autoHover: true,     // ¸¶¿ì½º È£¹ö½Ã Á¤Áö ¿©ºÎ
-        autoControls: true,  // play/stop/pause ½½¶óÀÌµå ÄÁÆ®·Ñ ¹öÆ°
-        controls: true,      // ÀÌÀü ´ÙÀ½ ¹öÆ° ³ëÃâ ¿©ºÎ
-        infiniteLoop: true,  // true/false ¹«ÇÑ·çÇÁ ¼³Á¤
-        controls: true,      // ´ÙÀ½-ÀÌÀü ÄÁÆ®·ÑÀÌ Ãß°¡
-		easing : 'linear',   // ¼Óµµ
-        pager: true         // ÇöÀç À§Ä¡ ÆäÀÌÂ¡ Ç¥½Ã ¿©ºÎ ¼³Á¤
+        mode: 'horizontal',  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½        
+        speed: 350,          // ï¿½Ìµï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½       
+        moveSlides: 1,       // ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        minSlides: 4,        // ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        maxSlides: 4,        // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        slideMargin: 0,      // ï¿½ï¿½ï¿½ï¿½ï¿½Ìµå°£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        auto: true,          // ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        autoStart: true,     // ï¿½Îµï¿½ï¿½ ï¿½Úµï¿½ Ç¥ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ÛµË´Ï´ï¿½. false ï¿½Ì¸ï¿½ "ï¿½ï¿½ï¿½ï¿½"ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½î°¡ ï¿½ï¿½ï¿½ï¿½ 
+        autoHover: true,     // ï¿½ï¿½ï¿½ì½º È£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        autoControls: true,  // play/stop/pause ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½Æ°
+        controls: true,      // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        infiniteLoop: true,  // true/false ï¿½ï¿½ï¿½Ñ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        controls: true,      // ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
+		easing : 'linear',   // ï¿½Óµï¿½
+        pager: true         // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½Â¡ Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	})
     
-    //½½¶óÀÌ´õ µ¿ÀÛ
-    $('.main-slide>ul').bxSlider();    // ¸ÞÀÎ½½¶óÀÌ´õ
-    $('.footer-slide>ul').bxSlider();  // Ç²ÅÍ½½¶óÀÌ´õ    
-    
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½
+    $('.main-slide>ul').bxSlider();    // ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½
+    $('.footer-slide>ul').bxSlider();  // Ç²ï¿½Í½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½    
+    */
             
 });
 
@@ -34,7 +34,7 @@ $(window).load(function(){
 
 
 
-// --------------------------  step1~3 ³Ñ±â±â  -------------------------- //
+// --------------------------  step1~3 ï¿½Ñ±ï¿½ï¿½  -------------------------- //
 $(function(){
 	$("a[data-toggle='tab']").on("click",function(e){
 			   e.preventDefault();
@@ -131,18 +131,18 @@ function winOpenDomainPage(url){
 
 // --------------------------  topbanner -------------------------- //
 
-//¹è³Ê ¿µ¿ª ´Ý±â
+//ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ý±ï¿½
 function closeTopBanner(){
 	//document.getElementById("topBannerArea").style.display = "none";
 	$("#topBannerArea").addClass("BannerClose");
 }
 
-//¹è³Ê ¿µ¿ª ¿­±â
+//ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 function openTopBanner(){
 	document.getElementById("topBannerArea").style.display = "";
 }
 
-//´Ù½Ã ¾Èº¸±â ¿©ºÎ
+//ï¿½Ù½ï¿½ ï¿½Èºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 function TopBannerCheck() {
 	var bannerCookie = getCookie("topBannerCheck");
 	if(bannerCookie != "hide"){
@@ -152,17 +152,17 @@ function TopBannerCheck() {
 	}
 }
 
-//ÄíÅ°°ª ¼³Á¤
+//ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 function setCookie(c_name, c_val, c_date) {
 		var expire = new Date();
-		var cookieDate = 1000*60*60*24 * c_date;//³¯Â¥ ÁöÁ¤
+		var cookieDate = 1000*60*60*24 * c_date;//ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½
 		expire.setTime(expire.getTime() + cookieDate);
-		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; // ÇÑ±Û ±úÁü ¸·±â : escape(cValue)
+		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; // ï¿½Ñ±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : escape(cValue)
 		if(typeof c_date != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
 		document.cookie = cookies;
 }
 
-//ÄíÅ°°ª °¡Áö°í¿À±â
+//ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 function getCookie(c_name) {
 	var c_array = document.cookie.split("; ");
 	var c_count = c_array.length;
@@ -189,7 +189,7 @@ $(function(){
 	$(".BannerBtn").on("click",function(){
 		closeTopBanner();
 	});
-	//´Ù½Ã ¾Èº¸±â ¿©ºÎ ½ÇÇà
+	//ï¿½Ù½ï¿½ ï¿½Èºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	TopBannerCheck();
 })
 

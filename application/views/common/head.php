@@ -19,15 +19,26 @@
 
 	<!-- script ================================================== --> 
     <script src="/assets/js/jquery-3.3.1.js"></script>
-    <script src="/assets/js/jquery.bxslider.min.js"></script>
+    <!-- script src="/assets/js/jquery.bxslider.min.js"></script -->
     <script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
 	<script src="/assets/js/script.js"></script>
 
     <!-- bootstrapk ================================================== -->    
+	<!--
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/jquery-ui.theme.min.css">	
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+	-->
+
+    <link rel="stylesheet" href="/assets/css/jquery-ui.theme.min.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="/assets/js/bootstrap-datepicker.min.js"></script>
+
     
     <!-- css ================================================== -->   
 	<link rel="stylesheet" href="/assets/css/common.css">
@@ -35,7 +46,10 @@
     
 </head>
 <body>
-    
+
+
+
+
      
 	
 	
