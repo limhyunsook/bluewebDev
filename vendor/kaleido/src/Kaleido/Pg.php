@@ -4,8 +4,8 @@ namespace Kaleido;
 use Kaleido\Payments\Inicis\InicisHandler;
 use Kaleido\Payments\Inicis\InicisInterface;
 
-use Kaleido\Payments\Lgcns\LgcnsHandler;
-use Kaleido\Payments\Lgcns\LgcnsInterface;
+// use Kaleido\Payments\Lgcns\LgcnsHandler;
+// use Kaleido\Payments\Lgcns\LgcnsInterface;
 
 class Pg 
 {
@@ -24,7 +24,7 @@ class Pg
 		$this->client = new HttpClient(null,null,null);
 		
 		//lgcns		
-		$this->setLgcnsHeandler(new LgcnsHandler($config));		
+		//$this->setLgcnsHeandler(new LgcnsHandler($config));		
 	}
 	
 	//inicis std
@@ -46,11 +46,11 @@ class Pg
 	//kakao pay
 	function getLgcnsHeandler()
 	{
-		return $this->lgcnsHandler;
+		//return $this->lgcnsHandler;
 	}
 
 	private	function setLgcnsHeandler(LgcnsInterface $lgcnsHandler)
 	{
-		$this->lgcnsHandler = $lgcnsHandler;
+		//$this->lgcnsHandler = $lgcnsHandler;
 	}
 }

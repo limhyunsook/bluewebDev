@@ -1,7 +1,7 @@
 <!-- container -->
-<section class="container-warp">	
-		
-	
+<section class="container-warp">
+<script language="javascript" type="text/javascript" src="https://stdpay.inicis.com/stdjs/INIStdPay.js" charset="UTF-8"></script>
+<script src="/assets/js/order.js"></script>
     <!-- sub-title -->  
     <div class="sub-content">
         <div class="wrapper"> 
@@ -29,7 +29,11 @@
             <!-- tab panes -->
             <div class="tab-content fixing">
                 <!-- step02 -->
-                <div  class="tab-pane_" id="step02">  
+                <div  class="tab-pane_" id="step02">
+                <form id="pay_post" method="post" action="">
+                <input name="buyertel" id="buyertel" type="hidden" value="">
+                <input name="buyeremail" id="buyeremail" type="hidden" value="">
+                
                                     
                     <ul class="row">
 						
@@ -67,6 +71,32 @@
                                 <tr>
                                     <th>결제 방법</th>
                                     <td>  
+
+                                        <div class="radiocontainer">
+                                            <input type="radio" id="methodtype1" value="Card" name="methodtype" >
+                                            <span class="radio-text"></span>
+                                            <label for="methodtype1">신용카드</label>
+                                        </div>
+
+                                        <div class="radiocontainer">
+                                            <input type="radio" id="methodtype2" value="DirectBank" name="methodtype">
+                                            <span class="radio-text"></span>
+                                            <label for="methodtype2">실시간계좌이체</label>
+                                        </div>
+
+                                        <div class="radiocontainer">
+                                            <input type="radio" id="methodtype3" value="Vbank" name="methodtype" checked="checked">
+                                            <span class="radio-text"></span>
+                                            <label for="methodtype3">무통장입금(가상계좌)</label>
+                                        </div>
+                                        
+                                        <div class="radiocontainer">
+                                            <input type="radio" id="methodtype4" value="Hpp" name="methodtype">
+                                            <span class="radio-text"></span>
+                                            <label for="methodtype4">휴대폰</label>
+                                        </div>
+                                        <!--                                     
+
 										<label class="radiocontainer">
                                             <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
                                             <span class="radio-text"></span>신용카드
@@ -79,11 +109,15 @@
                                             <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1" checked="checked">
                                             <span class="radio-text"></span>무통장 입금(가상계좌)
                                         </label> 
+                                        -->
                                     </td>
                                 </tr>  
                             </tbody>
 							</table>           
 							<!-- 결제수단 -->
+                            <input type="hidden" name="buyername" id="buyername" class="form-control"  value="블루웹명">
+                            <input type="hidden" name="price" id="price" class="form-control" value="1000">
+
 							
 							
 							
@@ -144,7 +178,7 @@
 								</tr>  
 
 								<tr class="table-success">                                     
-									<td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+									<td colspan="2">결제 예상 금액<br/><span class="total_price">1000원</span></td>
 								</tr> 
 								</tbody>
                                 </table>  
@@ -157,32 +191,47 @@
 									</label>       
 									<span>(전자상거래법 제8조 2항)</span>
 								</div>
+                                
 								
                                 <div class="btnBox">
+                                    <!-- 
                                     <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
                                         다음 단계 <span class="lnr lnr-chevron-right"></span>
-                                    </button>  
-                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+                                    </button>
+                                    -->  
+                                    <!-- button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button -->           
+                                    
+                                    <button  id="pay_go" class="btn btn-danger mb12 cart_btnext">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>           
+                                    <!--
                                     <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>                 
-
+                                    -->
+                                    <!--
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
+                                    -->
                                 </div>   
                             </div>
 							<!-- //cart -->
+                            <!--<a href="javascript:;" id="pay_go" class="btn btn-danger mb12 cart_btnext">결제하기</a>-->
 							
+
+                            
 							
 							
                         </li>    
 						
 						
 						
-                    </ul>                    
+                    </ul>           
+                    </form>
+                    <div id="pay_load"></div><!-- load pay parameter -->
                 </div>    				
 				<!-- //step02 -->
             </div>         
@@ -242,8 +291,28 @@
 
     
     
-    
-    
+    <script>
+$(document).ready(function () {
+	$('input:radio[name=methodtype]').change(function() {
+		$("#gopaymethod").val($(this).val());
+	});
+});
+	 
+</script>    
+<script>
+// $(document).ready(function(){
+// $.ajax({
+// 			type: "POST",
+// 			data: {id:'1'},
+// 			url: "/kaleido/page/ajax_inicis",
+// 			dataType: "html",
+// 			success: function(data){
+//                 alert(data);
+//             }
+// });
+// });
+
+</script>
     
     
     
