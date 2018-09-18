@@ -17,4 +17,23 @@ class Test extends MY_Controller
 	{
 		$this->load->view('boot_test');
 	}
+
+	public function db_test()
+	{
+		echo '<hr>';
+
+
+		$host = '211.202.2.5';
+		$user = 'root';
+		$pass = 'endrmffp^qmffndnpq#!..';
+		
+		if (!$link = mysql_connect($host, $user, $pass)) {
+			echo 'Could not connect to mysql';
+			exit;
+		}
+
+		var_dump($link);
+		
+
+	}
 }
