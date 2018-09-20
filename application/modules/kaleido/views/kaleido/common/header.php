@@ -11,36 +11,36 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
 	<!-- Css files -->
 	<!-- Icons -->
-	<link href="/assets/css/icons.css" rel="stylesheet" />
+	<link href="/assets_admin/css/icons.css" rel="stylesheet" />
 	<!-- Bootstrap stylesheets (included template modifications) -->
-	<link href="/assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="/assets_admin/css/bootstrap.css" rel="stylesheet" />
 	<!-- jQueryUI -->
-	<link href="/assets/css/appstart-theme/jquery.ui.all.css" rel="stylesheet" />
+	<link href="/assets_admin/css/appstart-theme/jquery.ui.all.css" rel="stylesheet" />
 	<!-- Plugins stylesheets (all plugin custom css) -->
-	<link href="/assets/css/plugins.css" rel="stylesheet" />
+	<link href="/assets_admin/css/plugins.css" rel="stylesheet" />
 	<!-- Main stylesheets (template main css file) -->
-	<link href="/assets/css/main.css" rel="stylesheet" />
+	<link href="/assets_admin/css/main.css" rel="stylesheet" />
 	<!-- Custom stylesheets ( Put your own changes here ) -->
-	<link href="/assets/css/custom.css" rel="stylesheet" />
+	<link href="/assets_admin/css/custom.css" rel="stylesheet" />
 	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="/assets/img/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="icon" href="/assets/img/ico/favicon.ico" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets_admin/img/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets_admin/img/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets_admin/img/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/assets_admin/img/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="icon" href="/assets_admin/img/ico/favicon.ico" type="image/png">
 	<!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
 	<meta name="msapplication-TileColor" content="#3399cc" />
 
 	<!-- Javascripts -->
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-2.1.1.min.js">\x3C/script>')</script>
+        <script>window.jQuery || document.write('<script src="/assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')</script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')</script>
+        <script>window.jQuery || document.write('<script src="/assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')</script>
 		<!--[if lt IE 9]>
-			<script type="text/javascript" src="/assets/js/libs/excanvas.min.js"></script>
+			<script type="text/javascript" src="/assets_admin/js/libs/excanvas.min.js"></script>
 			<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<script type="text/javascript" src="/assets/js/libs/respond.min.js"></script>
+			<script type="text/javascript" src="/assets_admin/js/libs/respond.min.js"></script>
 		<![endif]-->
 
 </head>
@@ -70,7 +70,7 @@
 					<a class="navbar-brand visible-lg visible-md" href="#">Kaleido</a>
 					<!-- Show logo for small screens -->
 					<a class="navbar-brand hidden-lg hidden-md hidden-xs" href="index.html">
-						<img src="/assets/img/logo-sm.png" alt="Jump start">
+						<img src="/assets_admin/img/logo-sm.png" alt="Jump start">
 					</a>
 				</div>
 				<nav id="top-nav" class="navbar-no-collapse" role="navigation">

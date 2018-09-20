@@ -78,8 +78,10 @@
 			<ul>
 				<li><a href="/page/member/login.php">로그인</a></li>	
 				<li><a href="/page/member/login.php">회원가입</a></li>
-				<li><a href="h#">고객센터</a></li>		
-				<li><a href="h#">내서비스관리</a></li>
+				<li><a href="#">고객센터</a></li>		
+				<li><a href="#">내서비스관리</a></li>
+				<li><a href="/admin/payment/inicis_order_list">관리자</a></li>
+				
 			</ul>	
 		</div>
 	</nav>
