@@ -1,40 +1,3 @@
-	
-
-// --------------------------  메인 슬라이드 -------------------------- //
-
-$(window).load(function(){
-    
-    $('.bxslider').bxSlider( {
-        mode: 'horizontal',  // 가로 방향 수평 슬라이드        
-        speed: 350,          // 이동 속도를 설정       
-        moveSlides: 1,       // 슬라이드 이동시 개수
-        minSlides: 4,        // 최소 노출 개수
-        maxSlides: 4,        // 최대 노출 개수
-        slideMargin: 0,      // 슬라이드간의 간격
-        auto: true,          // 자동 실행 여부
-        autoStart: true,     // 로드시 자동 표시가 시작됩니다. false 이면 "시작"컨트롤을 클릭하면 슬라이드 쇼가 시작 
-        autoHover: true,     // 마우스 호버시 정지 여부
-        autoControls: true,  // play/stop/pause 슬라이드 컨트롤 버튼
-        controls: true,      // 이전 다음 버튼 노출 여부
-        infiniteLoop: true,  // true/false 무한루프 설정
-        controls: true,      // 다음-이전 컨트롤이 추가
-		easing : 'linear',   // 속도
-        pager: true         // 현재 위치 페이징 표시 여부 설정
-	})
-    
-    //슬라이더 동작
-    $('.main-slide>ul').bxSlider();    // 메인슬라이더
-    $('.footer-slide>ul').bxSlider();  // 풋터슬라이더    
-    
-            
-});
-
-
-
-
-
-
-// --------------------------  step1~3 넘기기  -------------------------- //
 $(function(){
 	$("a[data-toggle='tab']").on("click",function(e){
 			   e.preventDefault();
@@ -131,18 +94,18 @@ function winOpenDomainPage(url){
 
 // --------------------------  topbanner -------------------------- //
 
-//배너 영역 닫기
+
 function closeTopBanner(){
 	//document.getElementById("topBannerArea").style.display = "none";
 	$("#topBannerArea").addClass("BannerClose");
 }
 
-//배너 영역 열기
+
 function openTopBanner(){
 	document.getElementById("topBannerArea").style.display = "";
 }
 
-//다시 안보기 여부
+
 function TopBannerCheck() {
 	var bannerCookie = getCookie("topBannerCheck");
 	if(bannerCookie != "hide"){
@@ -152,17 +115,17 @@ function TopBannerCheck() {
 	}
 }
 
-//쿠키값 설정
+
 function setCookie(c_name, c_val, c_date) {
 		var expire = new Date();
-		var cookieDate = 1000*60*60*24 * c_date;//날짜 지정
+		var cookieDate = 1000*60*60*24 * c_date;
 		expire.setTime(expire.getTime() + cookieDate);
-		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; // 한글 깨짐 막기 : escape(cValue)
+		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; 
 		if(typeof c_date != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
 		document.cookie = cookies;
 }
 
-//쿠키값 가지고오기
+
 function getCookie(c_name) {
 	var c_array = document.cookie.split("; ");
 	var c_count = c_array.length;
@@ -189,7 +152,7 @@ $(function(){
 	$(".BannerBtn").on("click",function(){
 		closeTopBanner();
 	});
-	//다시 안보기 여부 실행
+	
 	TopBannerCheck();
 })
 
