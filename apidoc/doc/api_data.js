@@ -59,12 +59,25 @@ define({ "api": [
     "type": "post",
     "url": "/getDomain/:domain",
     "title": "",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "domain",
+            "description": "<p>Users unique ID.</p>"
+          }
+        ]
+      }
+    },
     "name": "getDomain",
     "group": "Domain",
     "version": "0.2.0",
     "sampleRequest": [
       {
-        "url": "http://api.github.com/some_path/"
+        "url": "/api/whois/getDomain"
       }
     ],
     "success": {
