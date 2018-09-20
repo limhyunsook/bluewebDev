@@ -1,15 +1,15 @@
 define({
-  "name": "example",
-  "version": "0.1.0",
-  "description": "apiDoc basic example",
-  "title": "Custom apiDoc browser title",
+  "name": "APIDOC",
+  "version": "0.3.0",
+  "description": "블루웹 API 연동문서",
+  "title": "blueweb apiDoc",
   "url": "http://211.202.2.224/api/v1",
   "sampleUrl": false,
   "defaultVersion": "0.0.0",
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2018-09-19T09:02:58.926Z",
+    "time": "2018-09-20T01:20:03.932Z",
     "url": "http://apidocjs.com",
     "version": "0.17.6"
   }

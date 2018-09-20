@@ -18,6 +18,14 @@ class Test extends MY_Controller
 		$this->load->view('boot_test');
 	}
 
+	public function hash()
+	{
+		$options = [
+			'cost' => 12,
+		];
+		echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options)."\n";
+	}
+
 	public function db_test()
 	{
 		echo '<hr>';
