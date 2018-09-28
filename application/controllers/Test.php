@@ -12,10 +12,16 @@ class Test extends MY_Controller
 		$this->load->helper("url");
 		
 	}	
+
 	
 	function index()
 	{
 		$this->load->view('boot_test');
+	}
+
+	public function sns_login()
+	{
+		$this->load->view('sns_login');
 	}
 
 	public function hash()

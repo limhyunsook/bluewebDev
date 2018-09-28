@@ -1,0 +1,1 @@
+<a href="/api/sns_login?type=KO">카카오 로그인 테스트</a>
