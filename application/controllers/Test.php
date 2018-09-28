@@ -21,6 +21,7 @@ class Test extends MY_Controller
 
 	public function sns_login()
 	{
+		
 		$this->load->view('sns_login');
 	}
 

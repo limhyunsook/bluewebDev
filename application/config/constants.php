@@ -127,7 +127,7 @@ define('YH_CLIENT_SECRET', "");
 
 //카카오
 define('KAKAO_CLIENT_ID', '07ef6d076e227242d17405cc700bce67');
-define('KAKAO_CLIENT_SECRET', '');
+define('KAKAO_CLIENT_SECRET', 'kHuqmC1GkXH1wyOhI3OOLt8ucqeZFPax');
 
 
 //트위터는 리다리엑션 없음
@@ -145,6 +145,7 @@ define('API_GOOGLE_REDIRECT_URI', BASE_URL."/api/callback?type=".GOOGLE_CODE);
 define('API_DAUM_REDIRECT_URI', BASE_URL."/api/callback?type=".DAUM_CODE);
 define('API_YAHOO_REDIRECT_URI', BASE_URL."/api/callback?type=".YAHOO_CODE);
 define('API_KAKAO_REDIRECT_URI', BASE_URL."/api/callback?type=".KAKAO_CODE);
+//define('API_KAKAO_REDIRECT_URI', BASE_URL."/api/callback");
 
 
 // 07ef6d076e227242d17405cc700bce67

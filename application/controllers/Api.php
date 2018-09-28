@@ -18,7 +18,7 @@ class Api extends MY_Controller
 	//비회원 가입 API
 	public function simple_bemember_join()
 	{
-		$this->load->library('session');
+		
 		$input = $this->input->post(null,true);		
 		$db = $this->api_model->simple_bemember_join($input);
 
@@ -149,8 +149,15 @@ class Api extends MY_Controller
 		$this->load->helper('url');
 		$this->session->sess_destroy();		
 		$result["status"] = "success";
-		print_r(json_encode($result));
+		print_r(json_encode($result));		
 		exit;
+	}
+
+	function logoutDirect() {
+		$this->load->library('session');
+		$this->load->helper('url');
+		$this->session->sess_destroy();
+		redirect('/');		
 	}
 
 	function singup_controller() {
@@ -405,14 +412,9 @@ class Api extends MY_Controller
 			redirect($url);
 		} else if($type==FACEBOOK_CODE) {
 			$url="https://www.facebook.com/dialog/oauth?client_id=".FB_CLIENT_ID."&redirect_uri=".urlencode(FACEBOOK_REDIRECT_URI)."&scope=email,publish_actions";
-			redirect($url);
-			// https://www.facebook.com/dialog/oauth?client_id=2002058843343880&redirect_uri=https%3A%2F%2Fmomentto.jp%2F%2Fauth%2Fcallback%3Ftype%3DFB&scope=email,publish_actions
-			// https://www.facebook.com/dialog/oauth?client_id=777581829031957&redirect_uri=http%3A%2F%2Fthedays.co.kr%3A89%2Fapi%2Fcallback%3Ftype%3DFB&scope=email,publish_actions
-			// http://thedays.co.kr:89/api/callback?type=FB&error=access_denied&error_code=200&error_description=Permissions%20error&error_reason=user_denied#_=_
-			// https://momentto.jp/auth/callback?type=FB&code=AQAZiQmx6ZyUGwfSOreQwmD3vdisC2-6fa4qZRWSpGxuJnY0LZuCtmkqwr7KahkmAvTFh7VrG-nhSes3p1TrcWVFcfn4jX1xoRtIGLFuhAtomV_oDRjaZl_SaULwwXf0Nd15gKTRLA5RDHegioExJNyYSvG_lv91iM7xtbPKvqAhPlzE-iMYifRglTgzyTcHhKmuYkSJD1k8nqXo9K-M4eJo8kSr7rDV8B7esqsaVL-02Ic11L1MlSR7lOFExiZX6GssUYcItXzwimDCOnGxBBsve_qz1P0DV-Rohbqo_n1FljGcRS2xwrkaacA7Uoeh7-CyPjLnGb5WxyH0iT-VL2Xg#_=_
-			// http://localhost:81/auth/callback?type=FB&code=AQAjBxHqS3a2gV34odVeHpdu7J3uzsgTrGuVyG-AgeVfJpfYr_J4L_FXcr47ntiOVpY9n8teYNAzkrLD68aFoQglj7lwN_jnCf4WD9_NwObOUSi2QOEZiNqWYxHD-kSWYWosATZZ9sxhwCMebQPzoQDLMGZqa-JvtGL5_vSJPmOMJMts5_valqO4ECI2yalwv1dtP291XyLS_yWl8OfvMe-J8ykDEeZ1ESd9iGewCGaIFC3zVYMjVJbuG2b8yTd_dvI8RcosSFmNLJDoHxTQrEXhKvS-NBNlHomj9yHZWW5PM0LivymwKIgmxCfTu2G4QUz21snCBWTXOuBZM0K2QeyO#_=_
+			redirect($url);			
 		} else if($type==KAKAO_CODE) {			
-			$url="https://kauth.kakao.com/oauth/authorize?client_id=".KAKAO_CLIENT_ID."&redirect_uri=".urlencode(API_KAKAO_REDIRECT_URI)."&response_type=code";			
+			  $url="https://kauth.kakao.com/oauth/authorize?client_id=".KAKAO_CLIENT_ID."&redirect_uri=".urlencode(API_KAKAO_REDIRECT_URI)."&response_type=code";			
 			redirect($url);
 		} else if($type==NAVER_CODE) {
 			$url="https://nid.naver.com/oauth2.0/authorize?client_id=".NV_CLIENT_ID."&redirect_uri=".urlencode(NAVER_REDIRECT_URI)."&response_type=code&state=".$state;
@@ -424,8 +426,6 @@ class Api extends MY_Controller
 			$url="https://apis.daum.net/oauth2/authorize?client_id=".DM_CLIENT_ID."&redirect_uri=".urlencode(DAUM_REDIRECT_URI)."&response_type=code";
 			redirect($url);
 		} else if($type == YAHOO_CODE) {
-			// https://auth.login.yahoo.co.jp/yconnect/v2/consent?session=w82oKcc8&display=popup&bcrumb=dD14QVFqYUImc2s9TGpGZ1VJMkhYOWdSNlpoWF9YNTZXcXNFbUE4LQ%3D%3D
-			// $url="https://auth.login.yahoo.co.jp/yconnect/v1/token"	
 			$url = "https://auth.login.yahoo.co.jp/yconnect/v2/consent?session=".YH_CLIENT_ID."&redirect_url=".urlencode(YAHOO_REDIRECT_URI)."&scope=openid";
 			// $url="https://auth.login.yahoo.co.jp/yconnect/v2/consent?session=27Y7z5qf&display=popup&bcrumb=dD0vTlFqYUImc2s9YlZBRWNDU2RiMmhpa3gxcVJhd2U1d3pzZGZFLQ%3D%3D&redirect_url=".urlencode(YAHOO_REDIRECT_URI);
 			redirect($url);
@@ -436,7 +436,7 @@ class Api extends MY_Controller
 	// SNS callback	
 	//리다이렉트로 날아오는곳
 	//상수는 contents.php 파일에 설정되어있음
-	function callback($location) {
+	function callback() {
 		$type=$this->input->get("type", TRUE);
 		$access_token=$this->input->get("access_token", TRUE);
 		$code=$this->input->get("code", TRUE);
@@ -460,12 +460,10 @@ class Api extends MY_Controller
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 			curl_setopt($ch, CURLOPT_POST, 0);
 			$result=curl_exec($ch);
-			$json=json_decode($result);
-			//echo $json->{'error'}->{'code'};
+			$json=json_decode($result);			
 			
 			if(!empty($json->{'error'}->{'code'})) alert('페이스북 통신 에러. 다시 시도해 주십시오.');
 			//if($json->{'error'}->{'code'} == '100') alert('에러');
-			//print_r($result);//bearer 
 
 			$url="https://graph.facebook.com/me?fields=email,name&access_token=".$json->{'access_token'};
 			curl_setopt($ch, CURLOPT_URL, $url);
@@ -555,35 +553,65 @@ class Api extends MY_Controller
 			curl_close($ch);
 			
 			$this->_sns_pro($snstype, $email, $name);
-			
-			//print_r($json);
-			
-			/*
-			 * [id] => 106690101210208496755 
-			 * [email] => ceo@thedays.co.kr 
-			 * [verified_email] => 1 
-			 * [name] => Lee Sangkyo 
-			 * [given_name] => Lee 
-			 * [family_name] => Sangkyo 
-			 * [link] => https://plus.google.com/106690101210208496755 
-			 * [picture] => https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg 
-			 * [gender] => male 
-			 * [locale] => ko
-			 * */
-				
+
 					
 		}else if($type==KAKAO_CODE) {
+			//token
 			$url="https://kauth.kakao.com/oauth/token";
 			$ch=curl_init();
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 			curl_setopt($ch, CURLOPT_POST, 1);
-			$postdata="code=".$code."&client_id=".KAKAO_CLIENT_ID."&redirect_uri=".urlencode(KAKAO_REDIRECT_URI)."&grant_type=authorization_code";
+			$postdata="code=".$code."&client_id=".KAKAO_CLIENT_ID."&redirect_uri=".urlencode(API_KAKAO_REDIRECT_URI)."&grant_type=authorization_code";
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
 			$result=curl_exec($ch);
 			$json=json_decode($result);
+
+			if(isset($json->{'error'})){
+				echo 'error'; exit;
+			}
+
+			//data
+			$url="https://kapi.kakao.com/v1/user/me";
+			curl_setopt($ch, CURLOPT_URL, $url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+			curl_setopt($ch, CURLOPT_POST, 0);
+			$header=array("Authorization: ".$json->{'token_type'}." ".$json->{'access_token'});
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+			$result=curl_exec($ch);			
+			curl_close($ch);
+			$json=json_decode($result);
+
 			print_r($json);
+		
+
+			$this->_sns_login($type, $json->{'uuid'}, 			$json->{'properties'}->{'nickname'});
+
+			
+
+
+
+			/* simple
+			 * stdClass Object
+					(
+						[access_token] => -aiu3wzsLMs48LTC_K19b1n8tB2w9R7j2ea9dwoqAucAAAFmHulmxQ
+						[token_type] => bearer
+						[refresh_token] => fgwiTQ8buYVeUWFg5QCvhkQ9EA2dz9ekO_vrxgoqAucAAAFmHulmww
+						[expires_in] => 21599
+						[scope] => profile
+						[refresh_token_expires_in] => 2591999
+					)
+			*
+			string(309) "
+				{"id":926616158,"
+					uuid":"3Ovf7Nzv2OvY9MXzxP3K_MTzxurY69rr0-Zj",
+					"properties":{"profile_image":"http://k.kakaocdn.net/dn/BhJBM/btqpceIcNxc/8YuerhQkWCavlGqC9zkUc1/profile_640x640s.jpg",
+					"nickname":"성현","thumbnail_image":"http://k.kakaocdn.net/dn/BhJBM/btqpceIcNxc/8YuerhQkWCavlGqC9zkUc1/profile_110x110c.jpg"}
+				}"
+			 */
+
 		
 			
 		// 	$url="https://kapi.kakao.com/v1/user/me";
@@ -621,6 +649,19 @@ class Api extends MY_Controller
 				
 		// 	curl_close($ch);
 		}
+	}
+
+	function _sns_login($sns_type, $uid, $name = null)
+	{
+
+		$newdata = array(
+			'nickname'  => $name,
+			'uid'     => $uid,
+			'logged_in' => TRUE
+		);
+		$this->session->set_userdata($newdata);
+		redirect('/');
+		
 	}
 
 	//로그인 처리 프로세스 진행

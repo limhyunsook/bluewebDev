@@ -74,9 +74,9 @@
 
 
 	<nav class="nav-bar wrapper">
-		<div>				
+		<div>			
 			<ul>
-				<li><a href="/page/member/login.php">로그인</a></li>	
+				<?php  $this->authlib->logined();?>			
 				<li><a href="/page/member/login.php">회원가입</a></li>
 				<li><a href="#">고객센터</a></li>		
 				<li><a href="#">내서비스관리</a></li>

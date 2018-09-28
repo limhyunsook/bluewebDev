@@ -1,1 +1,1 @@
-<a href="/api/sns_login?type=KO">카카오 로그인 테스트</a>
+<a href="/api/sns_login?type=KO"><img src="<?php echo ASSETS_PATH.'/images/kakao_account_login_btn_medium_narrow.png';?>"></a>

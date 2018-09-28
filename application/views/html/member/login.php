@@ -52,7 +52,7 @@
 								<i><img src="/assets/images/ico_login_facebook.png" alt="페이스북 아이콘"></i>
 								<span>페이스북</span>
 							</a>
-							<a href="#" class="ico-kakao col-xs-3">
+							<a href="/api/sns_login?type=KO" class="ico-kakao col-xs-3">
 								<i><img src="/assets/images/ico_login_kakao.png" alt="카카오톡 아이콘"></i>
 								<span>카카오톡</span>
 							</a>
