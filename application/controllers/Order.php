@@ -16,21 +16,28 @@ class Order extends MY_Controller
 	}	
 	public function _remap($method) {
 		$this->segs = $this->uri->segment_array();
-		if ($this->input->is_ajax_request()) {
-			if (method_exists($this, $method)) {
-				$this -> {"{$method}"}();
-			}
+
+		if (method_exists($this, $method)) {			
+			$this->{"{$method}"}();			
 		} else {
-			//ajax가 아니면
-			if (method_exists($this, $method)) {
-				$this->_header(); //내부함수 해더 호출				
-				$this->{"{$method}"}();
-				$this->_footer(); //내부함수 해더 호출
-			} else {
-				$this->err_404();
-			}
-			//$this->output->enable_profiler(true);
+			$this->err_404();
 		}
+
+		// if ($this->input->is_ajax_request()) {
+		// 	if (method_exists($this, $method)) {
+		// 		$this -> {"{$method}"}();
+		// 	}
+		// } else {
+		// 	//ajax가 아니면
+		// 	if (method_exists($this, $method)) {
+		// 		$this->_header(); //내부함수 해더 호출				
+		// 		$this->{"{$method}"}();
+		// 		$this->_footer(); //내부함수 해더 호출
+		// 	} else {
+		// 		$this->err_404();
+		// 	}
+		// 	//$this->output->enable_profiler(true);
+		// }
 	}
 
 	//컨트롤러 시작시에 무조건 참고 한다. 생성자 호출 이후 호출됨
@@ -44,7 +51,9 @@ class Order extends MY_Controller
 	{
 
 		$data = [];
+		$this->_header(); //내부함수 해더 호출
 		$this->load->view('/order/oready',$data);
+		$this->_footer(); //내부함수 해더 호출
 	}
 
 	/**
@@ -52,7 +61,10 @@ class Order extends MY_Controller
 	 */
 	public function ocomplete()
 	{
-		
+		$data = [];
+		$this->_header(); //내부함수 해더 호출
+		$this->load->view('/order/ocomplete',$data);
+		$this->_footer(); //내부함수 해더 호출
 	}
 
 	/**
@@ -60,6 +72,17 @@ class Order extends MY_Controller
 	 */
 	public function ofail()
 	{
+		$data = inicis_init(); //이니시스 컨피그 값 -- helper
+		foreach($this->input->post(NULL, TRUE) as $key => $val) $input["{$key}"]  = $val;
+		
+		$data['input'] = $input ?? null;
+
+		$data['oid']  = "";
+		$data['price'] = $input["price"] ?? 0;
+
+		$pg = new Kaleido\Pg();
+
+		var_dump($pg);
 		
 	}
 	

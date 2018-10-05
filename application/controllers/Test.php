@@ -12,9 +12,43 @@ class Test extends MY_Controller
 		$this->load->helper("url");
 		
 	}	
+
 	
 	function index()
 	{
 		$this->load->view('boot_test');
+	}
+
+	public function sns_login()
+	{
+		
+		$this->load->view('sns_login');
+	}
+
+	public function hash()
+	{
+		$options = [
+			'cost' => 12,
+		];
+		echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options)."\n";
+	}
+
+	public function db_test()
+	{
+		echo '<hr>';
+
+
+		$host = '211.202.2.5';
+		$user = 'root';
+		$pass = 'endrmffp^qmffndnpq#!..';
+		
+		if (!$link = mysql_connect($host, $user, $pass)) {
+			echo 'Could not connect to mysql';
+			exit;
+		}
+
+		var_dump($link);
+		
+
 	}
 }

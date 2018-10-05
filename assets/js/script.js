@@ -1,40 +1,3 @@
-	
-
-// --------------------------  ���� �����̵� -------------------------- //
-
-$(window).load(function(){
-    /*
-    $('.bxslider').bxSlider( {
-        mode: 'horizontal',  // ���� ���� ���� �����̵�        
-        speed: 350,          // �̵� �ӵ��� ����       
-        moveSlides: 1,       // �����̵� �̵��� ����
-        minSlides: 4,        // �ּ� ���� ����
-        maxSlides: 4,        // �ִ� ���� ����
-        slideMargin: 0,      // �����̵尣�� ����
-        auto: true,          // �ڵ� ���� ����
-        autoStart: true,     // �ε�� �ڵ� ǥ�ð� ���۵˴ϴ�. false �̸� "����"��Ʈ���� Ŭ���ϸ� �����̵� � ���� 
-        autoHover: true,     // ���콺 ȣ���� ���� ����
-        autoControls: true,  // play/stop/pause �����̵� ��Ʈ�� ��ư
-        controls: true,      // ���� ���� ��ư ���� ����
-        infiniteLoop: true,  // true/false ���ѷ��� ����
-        controls: true,      // ����-���� ��Ʈ���� �߰�
-		easing : 'linear',   // �ӵ�
-        pager: true         // ���� ��ġ ����¡ ǥ�� ���� ����
-	})
-    
-    //�����̴� ����
-    $('.main-slide>ul').bxSlider();    // ���ν����̴�
-    $('.footer-slide>ul').bxSlider();  // ǲ�ͽ����̴�    
-    */
-            
-});
-
-
-
-
-
-
-// --------------------------  step1~3 �ѱ��  -------------------------- //
 $(function(){
 	$("a[data-toggle='tab']").on("click",function(e){
 			   e.preventDefault();
@@ -131,18 +94,18 @@ function winOpenDomainPage(url){
 
 // --------------------------  topbanner -------------------------- //
 
-//��� ���� �ݱ�
+
 function closeTopBanner(){
 	//document.getElementById("topBannerArea").style.display = "none";
 	$("#topBannerArea").addClass("BannerClose");
 }
 
-//��� ���� ����
+
 function openTopBanner(){
 	document.getElementById("topBannerArea").style.display = "";
 }
 
-//�ٽ� �Ⱥ��� ����
+
 function TopBannerCheck() {
 	var bannerCookie = getCookie("topBannerCheck");
 	if(bannerCookie != "hide"){
@@ -152,17 +115,17 @@ function TopBannerCheck() {
 	}
 }
 
-//��Ű�� ����
+
 function setCookie(c_name, c_val, c_date) {
 		var expire = new Date();
-		var cookieDate = 1000*60*60*24 * c_date;//��¥ ����
+		var cookieDate = 1000*60*60*24 * c_date;
 		expire.setTime(expire.getTime() + cookieDate);
-		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; // �ѱ� ���� ���� : escape(cValue)
+		cookies = c_name + '=' + escape(c_val) + '; domain=blueweb.co.kr; path=/ '; 
 		if(typeof c_date != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
 		document.cookie = cookies;
 }
 
-//��Ű�� ���������
+
 function getCookie(c_name) {
 	var c_array = document.cookie.split("; ");
 	var c_count = c_array.length;
@@ -189,7 +152,7 @@ $(function(){
 	$(".BannerBtn").on("click",function(){
 		closeTopBanner();
 	});
-	//�ٽ� �Ⱥ��� ���� ����
+	
 	TopBannerCheck();
 })
 

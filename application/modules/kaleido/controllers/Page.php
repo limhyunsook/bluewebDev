@@ -54,7 +54,7 @@ class Page extends CI_Controller {
 		
 		//로그인 체크 여부
 		if ($this -> session -> userdata('isLogin') != '') {
-			$mail = explode('@', $this -> session -> userdata['email']);
+			$mail = explode('@', $this->session->userdata['email']);
 			$data['mail_id'] = $mail[0];
 			$data['mail_domain'] = $mail[1];
 			$data['readonly'] = "readonly";
@@ -86,6 +86,8 @@ class Page extends CI_Controller {
 		$data['price'] = $input["price"] ?? 0;
 
 		$pg = new Kaleido\Pg();
+		//var_dump($pg);
+
 		$inicis = $pg->getInicisHeandler($data);
 
 		$data['timestamp'] = $inicis->getTimestamp();
@@ -143,7 +145,7 @@ class Page extends CI_Controller {
             //#####################
             if (strcmp("0000", $_REQUEST["resultCode"]) == 0) {
 
-                echo "####인증성공/승인요청####";
+                //echo "####인증성공/승인요청####";
                 echo "<br/>";
 
 
@@ -213,7 +215,7 @@ class Page extends CI_Controller {
                     //############################################################
                     //5.API 통신결과 처리(***가맹점 개발수정***)
                     //############################################################
-                    echo "## 승인 API 결과 ##";
+                    //echo "## 승인 API 결과 ##";
 
                     $resultMap = json_decode($authResultString, true);
 					
@@ -240,7 +242,7 @@ class Page extends CI_Controller {
 						$insert_data['createDatetime'] 	= date('Y-m-d H:i:s');
 						$insert_id = $this->common_model->insert("inicis_pay_result",$insert_data);//table, data[]
 						if($insert_id) 
-							alert('결제 성공!!',INICIS_URL."/inicis_order_list");
+							alert('결제 성공!!',"/order/ocomplete");
 							//리턴 수신 값 로고 싶으면 alert 주석
 						else{
 							//alert('결제는 성공하였으나 DB 입력 실패...',INICIS_URL."/order_form");

@@ -298,9 +298,12 @@
                                     <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
                                         다음 단계 <span class="lnr lnr-chevron-right"></span>
                                     </button>  
-                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+                                    <!-- button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
-                                    </button>             
+                                    </button -->             
+                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="javascrip:location.href='/order/oready';">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button>
                                     <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
                                         <span class="lnr lnr-chevron-left"></span> 이전단계 
                                     </button>                  

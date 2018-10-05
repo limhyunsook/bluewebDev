@@ -13,15 +13,17 @@
 	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
 	<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<?php $v = mt_rand(1,50); //auto ver change ?>
     
 	<!-- favicon ================================================== -->
 	<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
 	<!-- script ================================================== --> 
-    <script src="/assets/js/jquery-3.3.1.js"></script>
+    <script src="/assets/js/jquery-3.3.1.js?v=<?php echo $v;?>"></script>
     <!-- script src="/assets/js/jquery.bxslider.min.js"></script -->
-    <script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
-	<script src="/assets/js/script.js"></script>
+    
+	<script src="/assets/js/script.js?v=<?php echo $v;?>"></script>
 
     <!-- bootstrapk ================================================== -->    
 	<!--
@@ -32,17 +34,19 @@
 	-->
 
     <link rel="stylesheet" href="/assets/css/jquery-ui.theme.min.css">	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<!-- script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<script src="/assets/js/bootstrap-datepicker.min.js"></script>
 
     
     <!-- css ================================================== -->   
-	<link rel="stylesheet" href="/assets/css/common.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/common.css?v=<?php echo $v;?>">
+	<link rel="stylesheet" href="/assets/css/style.css?v=<?php echo $v;?>">
     
 </head>
 <body>
@@ -70,12 +74,14 @@
 
 
 	<nav class="nav-bar wrapper">
-		<div>				
+		<div>			
 			<ul>
-				<li><a href="/page/member/login.php">로그인</a></li>	
+				<?php  $this->authlib->logined();?>			
 				<li><a href="/page/member/login.php">회원가입</a></li>
-				<li><a href="h#">고객센터</a></li>		
-				<li><a href="h#">내서비스관리</a></li>
+				<li><a href="#">고객센터</a></li>		
+				<li><a href="#">내서비스관리</a></li>
+				<li><a href="/admin/payment/inicis_order_list">관리자</a></li>
+				
 			</ul>	
 		</div>
 	</nav>

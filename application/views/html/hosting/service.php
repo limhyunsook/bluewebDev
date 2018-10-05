@@ -1,3 +1,40 @@
+<?php
+$get = $this->input->get('service',true);
+if(!$get) $get = 'linuxs';
+?>
+<script>
+
+    $(document).ready( function (){      
+        on_tab();
+        // $.each( $('.tab-cont > li '), function( key, value ) {
+        //     //alert($(this).attr("item"));
+        //     if($(this).attr("item") == '2item'){
+        //         $(this).find("a").click();
+        //         $(this).addClass("active");                
+        //     }
+        // });
+    });
+
+     $( window ).on( "load", function() {
+        $('.tab-cont > li > a ').on('click', function (){
+            //claer
+            $('.tab-cont > li ').removeClass('active');
+            $('.tab-cont > li > a').removeClass('active');            
+            
+            //set
+            $(this).addClass("active");
+            $(this).parent().addClass("active");            
+        });
+    });
+    
+
+    function on_tab()
+    {
+         var target = '<?=$get?>';         
+         $("#"+target).find("a").click();
+         $("#"+target).addClass("active");    
+    }
+</script>
 <!-- container -->
 <section class="container-warp">	
 		
@@ -19,11 +56,11 @@
 			
             <!-- nav tabs -->
             <ul class="nav nav-pills tab-cont" role="tablist">
-                <li role="presentation" class="col-xs-2 active"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab">리눅스 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#window" aria-controls="window" role="tab" data-toggle="tab">윈도우 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#zeroxe" aria-controls="zeroxe" role="tab" data-toggle="tab">제로XE 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#net" aria-controls="net" role="tab" data-toggle="tab">.NET 호스팅</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#reseller" aria-controls="reseller" role="tab" data-toggle="tab">리셀러 호스팅</a></li>
+                <li role="presentation" id="linuxs" class="col-xs-2"><a href="#linux"  role="tab" data-toggle="tab">리눅스 호스팅</a></li>
+                <li role="presentation" id="windows" class="col-xs-2"><a href="#window"  role="tab" data-toggle="tab">윈도우 호스팅</a></li>
+                <li role="presentation" id="xes" class="col-xs-2"><a href="#zeroxe"  role="tab" data-toggle="tab">제로XE 호스팅</a></li>
+                <li role="presentation" id="nets" class="col-xs-2"><a href="#net"  role="tab" data-toggle="tab">.NET 호스팅</a></li>
+                <li role="presentation" id="sales" class="col-xs-2"><a href="#reseller" aria-controls="reseller" role="tab" data-toggle="tab">리셀러 호스팅</a></li>
             </ul>
 			<!-- //nav tabs -->
 			

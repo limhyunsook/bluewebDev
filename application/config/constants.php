@@ -88,3 +88,64 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 $base_url = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") ? "https://" : "http://";
 $base_url .= $_SERVER["HTTP_HOST"];
 define('BASE_URL',$base_url);
+
+
+define("ASSETS_PATH","/assets");
+// SNS 약자 생성
+define('TWITTER_CODE', "TW");
+define('FACEBOOK_CODE', "FB");
+define('GOOGLE_CODE', "GP");
+define('NAVER_CODE', "NV");
+define('DAUM_CODE', "DM");
+define('YAHOO_CODE', "YH");
+define('KAKAO_CODE', "KO");
+
+
+//트위터 키
+ define('TW_CLIENT_ID', "");
+ define('TW_CLIENT_SECRET', "");
+
+//페이스북키
+ define('FB_CLIENT_ID', "");
+ define('FB_CLIENT_SECRET', "");
+
+//네이버 키
+ define('NV_CLIENT_ID', "");
+ define('NV_CLIENT_SECRET', "");
+
+//구글키
+define('GP_CLIENT_ID', "");
+define('GP_CLIENT_SECRET', "");
+
+//다음키
+define('DM_CLIENT_ID', "");
+define('DM_CLIENT_SECRET', "");
+
+//yahoo
+define('YH_CLIENT_ID', "");
+define('YH_CLIENT_SECRET', "");
+
+//카카오
+define('KAKAO_CLIENT_ID', '07ef6d076e227242d17405cc700bce67');
+define('KAKAO_CLIENT_SECRET', 'kHuqmC1GkXH1wyOhI3OOLt8ucqeZFPax');
+
+
+//트위터는 리다리엑션 없음
+define('FACEBOOK_REDIRECT_URI', BASE_URL."/auth/callback?type=".FACEBOOK_CODE);
+define('NAVER_REDIRECT_URI', BASE_URL."/auth/callback?type=".NAVER_CODE);
+define('GOOGLE_REDIRECT_URI', BASE_URL."/auth/callback?type=".GOOGLE_CODE);
+define('DAUM_REDIRECT_URI', BASE_URL."/auth/callback?type=".DAUM_CODE);
+define('YAHOO_REDIRECT_URI', BASE_URL."/auth/callback?type=".YAHOO_CODE);
+define('KAKAO_REDIRECT_URI', BASE_URL."/auth/callback?type=".KAKAO_CODE);
+
+//API 콜로 요청 할 경우
+define('API_FACEBOOK_REDIRECT_URI', BASE_URL."/api/callback?type=".FACEBOOK_CODE);
+define('API_NAVER_REDIRECT_URI', BASE_URL."/api/callback?type=".NAVER_CODE);
+define('API_GOOGLE_REDIRECT_URI', BASE_URL."/api/callback?type=".GOOGLE_CODE);
+define('API_DAUM_REDIRECT_URI', BASE_URL."/api/callback?type=".DAUM_CODE);
+define('API_YAHOO_REDIRECT_URI', BASE_URL."/api/callback?type=".YAHOO_CODE);
+define('API_KAKAO_REDIRECT_URI', BASE_URL."/api/callback?type=".KAKAO_CODE);
+//define('API_KAKAO_REDIRECT_URI', BASE_URL."/api/callback");
+
+
+// 07ef6d076e227242d17405cc700bce67

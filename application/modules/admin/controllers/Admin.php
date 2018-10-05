@@ -20,10 +20,13 @@ class Admin extends MY_Controller
 		// $this->load->view("/admin/common/header_admin");			
 		if( method_exists($this, $method) ){
 			$this->{"{$method}"}();
+		}else{
+			$this->err_404();
 		}
 		// $this->load->view("/admin/common/footer_admin");
 	}
 	
+	function err_404(){$this->load->view('/admin/common/not_found');}//404
 	function index()
 	{
 		$data = array();
