@@ -584,9 +584,7 @@ class Api extends MY_Controller
 			curl_close($ch);
 			$json=json_decode($result);
 
-			print_r($json);
-		
-
+			//print_r($json);
 			$this->_sns_login($type, $json->{'uuid'}, 			$json->{'properties'}->{'nickname'});
 
 			
@@ -660,7 +658,11 @@ class Api extends MY_Controller
 			'logged_in' => TRUE
 		);
 		$this->session->set_userdata($newdata);
-		redirect('/');
+		gotohome();
+		close_popup();
+		
+		//alert_parent('로그인완료!','/');		
+		//redirect('/');
 		
 	}
 

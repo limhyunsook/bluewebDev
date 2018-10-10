@@ -19,6 +19,11 @@ class Test extends MY_Controller
 		$this->load->view('boot_test');
 	}
 
+	function info()
+	{
+		phpinfo();
+	}
+
 	public function sns_login()
 	{
 		

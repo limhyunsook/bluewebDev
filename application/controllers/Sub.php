@@ -42,7 +42,7 @@ class Sub extends MY_Controller
 	
 	public function index()
 	{
-		echo "?";
+		phpinfo();
 	}
 
 	public function hosting()

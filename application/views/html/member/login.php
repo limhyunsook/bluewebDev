@@ -44,19 +44,19 @@
 					<h2 class="subject">SNS <span>로그인</span></h2>				
 					<form id="loginForm" method="post" novalidate="novalidate">
 						<div class="sns-inner">
-							<a href="#" class="ico-naver col-xs-3">
+							<a href="#" class="ico-naver col-xs-3 pop_sns">
 								<i><img src="/assets/images/ico_login_naver.png" alt="네이버 아이콘"></i>
 								<span>네이버</span>
 							</a>
-							<a href="#" class="ico-facebook col-xs-3">
+							<a href="#" class="ico-facebook col-xs-3 pop_sns">
 								<i><img src="/assets/images/ico_login_facebook.png" alt="페이스북 아이콘"></i>
 								<span>페이스북</span>
 							</a>
-							<a href="/api/sns_login?type=KO" class="ico-kakao col-xs-3">
+							<a href="#" class="ico-kakao col-xs-3 pop_sns" item="/api/sns_login?type=KO">
 								<i><img src="/assets/images/ico_login_kakao.png" alt="카카오톡 아이콘"></i>
 								<span>카카오톡</span>
 							</a>
-							<a href="#" class="ico-twitter col-xs-3">
+							<a href="#" class="ico-twitter col-xs-3 pop_sns">
 								<i><img src="/assets/images/ico_login_twitter.png" alt="트위터 아이콘"></i>
 								<span>트위터</span>
 							</a>
@@ -76,3 +76,19 @@
 
 </section>
 <!-- //container -->
+<script>
+	$(".pop_sns").on( "click", function() {
+		var baseUrl = "";
+		var item = $(this).attr("item");
+		var width = 1008;
+		var height = 653;
+		var xpos = (screen.width - width) / 2;
+		var ypos = (screen.width - height) / 2;
+		var position = "top=" + ypos + ",left=" + xpos;
+		var features = position + ", width=1008, height=653";
+		var win =  window.open("", "sns_login", features);
+		win.document.write("<form name='pop_submit' action='"+item+"' method='post' > ");		
+		win.document.write("</form>");
+		$(win.document).find("[name='pop_submit']").submit();
+	});
+</script>

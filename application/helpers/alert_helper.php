@@ -49,4 +49,12 @@ function alert_stay($msg){
 	echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=".$CI->config->item('charset')."\">";
 	echo "<script type='text/javascript'> alert('".$msg."'); </script>";
 }
+
+function close_popup(){	
+	echo "<script type='text/javascript'>window.close(); </script>";	
+}
+
+function gotohome(){
+	echo "<script type='text/javascript'>opener.parent.document.location.replace('/');  </script>";	
+}
 ?>
