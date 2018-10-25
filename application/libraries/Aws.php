@@ -10,27 +10,17 @@ use Aws\S3\Exception\S3Exception;
 use Aws\Credentials\CredentialProvider;
 
 class Aws {
-	protected  $key = 'AKIAIUZRQN2M4XEEEDQA';
-	protected  $secret_key = '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';
-	protected  $bucket = 'thedays-resources';
+	protected  $key = '';
+	protected  $secret_key = '';
+	protected  $bucket = '';
 	protected  $region = 'ap-northeast-2';
-	protected  $s3path = 'resources/uploads/product/image/';
+	protected  $s3path = '';
 	protected  $profile = 'default';
 	protected  $path = FCPATH.'/.aws/credentials';
-	protected  $realFilePath =  FCPATH.'resources/uploads/product/temp/';
+	protected  $realFilePath =  FCPATH.'';
 
 	function s3_download($item)
 	{
-
-
-		//$bucket = 'withvideo-resouces';
-		//$key = 'AKIAIUZRQN2M4XEEEDQA';
-		//$skye = "90YQcY8t4VfZYzghoos+0mVnXIqs7P5H5SJABhRF";
-		//$region = "ap-northeast-2";
-		$fileName = "B1000000000083341_kudomiyu_HD_The-Cat.mp4";
-		$filepath = '/resources/uploads/product/image/';
-
-
 		$result['status'] = "";
 		$result['msg'] = "";
 		$result['downloadUrl'] = "";
