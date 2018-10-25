@@ -2,7 +2,7 @@
 
 function kakaopay_init(){
 	$data = array();
-	$data['MID'] = "cnstest25m";			//상점아이디 - 해당값을 변경해서 사용하세요
+	$data['MID'] = "cnstest25m";			//상점아이디 - 해당값을 변경해서 사용하세요 testid cnstest25m
 	$data['merchantEncKey'] = "10a3189211e1dfc6";
 	$data['merchantHashKey'] = "10a3189211e1dfc6";
 	$data['msgName'] = "/merchant/requestDealApprove.dev";
@@ -18,7 +18,7 @@ function kakaopay_init(){
 
 function inicis_init(){
 	$data = array();
-	$data['signKey'] = "SU5JTElURV9UUklQTEVERVNfS0VZU1RS"; //상점 키 - 해당값을 변경해서 사용하세요
+	$data['signKey'] = "SU5JTElURV9UUklQTEVERVNfS0VZU1RS"; //상점 키 - 해당값을 변경해서 사용하세요 testid SU5JTElURV9UUklQTEVERVNfS0VZU1RS
 	$data['mid'] = "INIpayTest";	//상점아이디 - 해당값을 변경해서 사용하세요
 	$data['alg'] = 'sha256';		//알고리즘 타입 
 	return $data;

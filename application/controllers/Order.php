@@ -86,6 +86,14 @@ class Order extends MY_Controller
 		
 	}
 	
+	function otest()
+	{
+
+		$pg = new Kaleido\Pg();
+		var_dump($pg);
+		$pg ->getTimestamp();
+		//$pg->INIStdPayUtil;
+	}
 
 	private function _header()
 	{

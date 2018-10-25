@@ -1,6 +1,7 @@
 <?php  
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+require realpath(FCPATH) . '/vendor/whois/src/Whois/autoload.php';
 //core 에서 MY 상속하고 있음 -- MY_ 는 고정 픽스. 변경시에는 config.php 에서 변경 해야한다
 class Test extends MY_Controller 
 {
@@ -10,8 +11,41 @@ class Test extends MY_Controller
 	{
 		parent::__construct();		
 		$this->load->helper("url");
+	}
+
+	function tt()
+	{
+		foreach($this->input->get(NULL, TRUE) as $key => $val) $request["{$key}"]  = $val;
+		foreach($this->input->post(NULL, TRUE) as $key => $val) $request["{$key}"]  = $val;
+
+		$request['txt'] = $request['txt'] ?? '';
+		print_r($request['txt']);
+
+		$arr = array('1','2','3');
+		print_r($arr);
+
+
+		$data = $request;
+		$this->load->view('test/test', $data);
+	}
+
+	function who()
+	{
 		
+		//$api = new WhoisDomainClient();
+		//$result = $api->infoDomain($params);
+
+		$whois = new Whois\WhoisDomainClient();	
+		$api = $whois->getWhoisHeandler();		
+		var_dump($api);		
 	}	
+
+	function w2()
+	{
+		$whois = new Whois\WhoisDomainClient();	
+		$api = $whois->getWhoisHeandler();
+		$http = new http('','');
+	}
 
 	
 	function index()
