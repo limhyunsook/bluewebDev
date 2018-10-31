@@ -1,14 +1,53 @@
-<!--========== Privacy ==========-->
+<?php
+$get = $this->input->get('agreement',true);
+if(!$get) $get = 'users';
+?>
+<script>
+
+    $(document).ready( function (){      
+        on_tab();
+        // $.each( $('.tab-cont > li '), function( key, value ) {
+        //     //alert($(this).attr("item"));
+        //     if($(this).attr("item") == '2item'){
+        //         $(this).find("a").click();
+        //         $(this).addClass("active");                
+        //     }
+        // });
+    });
+
+     $( window ).on( "load", function() {
+        $('.tab-cont > li > a ').on('click', function (){
+            //claer
+            $('.tab-cont > li ').removeClass('active');
+            $('.tab-cont > li > a').removeClass('active');            
+            
+            //set
+            $(this).addClass("active");
+            $(this).parent().addClass("active");            
+        });
+    });
+    
+
+    function on_tab()
+    {
+         var target = '<?=$get?>';         
+         $("#"+target).find("a").click();
+         $("#"+target).addClass("active");    
+    }
+</script>
+
+<!-- Privacy -->
 <section class="container-warp">	
-    
-    
-<!-- 서브컨텐츠 -->  
-    <div class="sub-content">
+		
+	
+    <!-- sub-title -->  
+    <div class="sub-content t-1">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>블루웹 약관 및 정책</h2>	
+            <h2>약관 및 정책</h2>	
         </div>    
     </div>    
+	<!-- //sub-title -->  
 	
 	
     
@@ -16,11 +55,11 @@
     <div class="blu-content wrapper">        
     
         <!-- Nav tabs -->
-        <ul class="nav nav-pills tab-agree" role="tablist">                
-			<li role="presentation" class="col-xs-3"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">회원약관</a></li>   
-			<li role="presentation" class="col-xs-3"><a href="#hosting" aria-controls="hosting" role="tab" data-toggle="tab">호스팅약관</a></li>           
-			<li role="presentation" class="col-xs-3"><a href="#domain" aria-controls="domain" role="tab" data-toggle="tab">도메인약관</a></li>
-			<li role="presentation" class="active col-xs-3" ><a href="#person" aria-controls="person" role="tab" data-toggle="tab">개인정보처리방침</a></li>      
+		<ul class="nav nav-pills tab-cont" role="tablist">   
+			<li role="presentation" id="users" class="col-xs-3"><a href="#user" aria-controls="#user" role="tab" data-toggle="tab">회원약관</a></li>   
+			<li role="presentation" id="hostings" class="col-xs-3"><a href="#hosting" aria-controls="#hosting" role="tab" data-toggle="tab">호스팅약관</a></li>           
+			<li role="presentation" id="domains" class="col-xs-3"><a href="#domain" aria-controls="#domain" role="tab" data-toggle="tab">도메인약관</a></li>
+			<li role="presentation" id="persons" class="active col-xs-3" ><a href="#person" aria-controls="#person" role="tab" data-toggle="tab">개인정보처리방침</a></li>      
         </ul>
         
                 
@@ -32,19 +71,12 @@
                        
            <!-- tab 1 -->
             <div role="tabpanel" class="tab-pane active" id="user">     				
-					
+			
 				
-				<style>				
-					.agreements h3 {font-weight:bold;margin-top:40px;font-size:18px}
-					.agreements p {margin-top:18px}
-					.oneStep {padding-top:18px}
-					.oneStep > li, .twoStep > li {line-height:18px;line-height:1.8}
-					.agreements .twoStep {padding-left:16px}
-				</style>
 				
 				<!-- 블루웹 회원약관 -->
 				<div class="agreements">
-					<h3>회원약관</h3>
+					<h2>회원약관</h2>
 					<div class="agreeBox">
 						
 						
@@ -1198,23 +1230,12 @@
     
     
 </section>
-<!--========== END Privacy ==========-->
+<!-- //Privacy -->
 
 
 
 
 
-
-
-
-<script>
-<?php
-	$q = $_GET['q'];
-	if($q=="person" || $q=="user" || $q=="hosting" || $q == "domain"){
-		echo "$('a[href=#".$q."]').tab('show');";
-	}
-?>
-</script>
 
 
 

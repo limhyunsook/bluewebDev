@@ -1,12 +1,51 @@
+<?php
+$get = $this->input->get('server',true);
+if(!$get) $get = 'server_bl';
+?>
+<script>
+
+    $(document).ready( function (){      
+        on_tab();
+        // $.each( $('.tab-cont > li '), function( key, value ) {
+        //     //alert($(this).attr("item"));
+        //     if($(this).attr("item") == '2item'){
+        //         $(this).find("a").click();
+        //         $(this).addClass("active");                
+        //     }
+        // });
+    });
+
+     $( window ).on( "load", function() {
+        $('.tab-cont > li > a ').on('click', function (){
+            //claer
+            $('.tab-cont > li ').removeClass('active');
+            $('.tab-cont > li > a').removeClass('active');            
+            
+            //set
+            $(this).addClass("active");
+            $(this).parent().addClass("active");            
+        });
+    });
+    
+
+    function on_tab()
+    {
+         var target = '<?=$get?>';         
+         $("#"+target).find("a").click();
+         $("#"+target).addClass("active");    
+    }
+</script>
+
+
 <!-- container -->
 <section class="container-warp">	
 		
 	
     <!-- sub-title -->  
-    <div class="sub-content">
+    <div class="sub-content t-2">
         <div class="wrapper"> 
-            <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>블루웹 서버호스팅</h2>	
+            <h5>높은 품질과 안정성을 보장합니다</h5>			
+            <h2>가용률 99.99% 이상!<br>서버호스팅</h2>	
         </div>    
     </div>    
 	<!-- //sub-title -->  
@@ -19,13 +58,14 @@
 			
             <!-- nav tabs -->
             <ul class="nav nav-pills tab-cont" role="tablist">
-                <li role="presentation" class="col-xs-2 active"><a href="#server_bl" aria-controls="server_bl" role="tab" data-toggle="tab">BL 서버</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#server_fu" aria-controls="server_fu" role="tab" data-toggle="tab">FUJITSU 서버</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#server_hp" aria-controls="server_hp" role="tab" data-toggle="tab">HP 서버</a></li>
-                <li role="presentation" class="col-xs-2"><a href="#server_ibm" aria-controls="server_ibm" role="tab" data-toggle="tab">IBM 서버</a></li>
-
+                <li role="presentation" id="#server_bl_s" class="col-xs-2 active"><a href="#server_bl" aria-controls="server_bl" role="tab" data-toggle="tab">BL 서버</a></li>
+                <li role="presentation" id="#server_fu_s" class="col-xs-2"><a href="#server_fu" aria-controls="server_fu" role="tab" data-toggle="tab">FUJITSU 서버</a></li>
+                <li role="presentation" id="#server_hp_s" class="col-xs-2"><a href="#server_hp" aria-controls="server_hp" role="tab" data-toggle="tab">HP 서버</a></li>
+                <li role="presentation" id="#server_ibm_s" class="col-xs-2"><a href="#server_ibm" aria-controls="server_ibm" role="tab" data-toggle="tab">IBM 서버</a></li>
             </ul>
 			<!-- //nav tabs -->
+			
+			
 			
 
             <!-- Tab panes -->
@@ -57,7 +97,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="table-success">
+                   <tr>
                         <td scope="row">
 							<img src="/assets/images/logo_hp.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -74,7 +114,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<img src="/assets/images/logo_ibm.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -91,7 +131,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -106,7 +146,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/sever/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -121,7 +161,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<span class="badge badge-border-danger">EVENT</span><br>
 							BL-1624SAS<br>(쿼드코어)</td>
@@ -168,7 +208,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="table-success">
+                   <tr>
                         <td scope="row">
 							<img src="/assets/images/logo_hp.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -185,7 +225,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<img src="/assets/images/logo_ibm.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -202,7 +242,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -217,7 +257,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -232,7 +272,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<span class="badge badge-border-danger">EVENT</span><br>
 							BL-1624SAS<br>(쿼드코어)</td>
@@ -279,7 +319,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="table-success">
+                   <tr>
                         <td scope="row">
 							<img src="/assets/images/logo_hp.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -296,7 +336,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<img src="/assets/images/logo_ibm.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -313,7 +353,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -328,7 +368,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -343,7 +383,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<span class="badge badge-border-danger">EVENT</span><br>
 							BL-1624SAS<br>(쿼드코어)</td>
@@ -390,7 +430,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="table-success">
+                   <tr>
                         <td scope="row">
 							<img src="/assets/images/logo_hp.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -407,7 +447,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<img src="/assets/images/logo_ibm.png">
 							<span class="badge badge-border-danger">EVENT</span><br>
@@ -424,7 +464,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -439,7 +479,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							BL-1624SAS<br>(쿼드코어)</td>
                         <td>
@@ -454,7 +494,7 @@
 							<button type="button" class="btn btn-primary" onclick="location.href='/page/server/application.php';">신청하기</button>                    						
 						</td>       
                     </tr>          	
-					<tr class="table-success">
+					<tr>
                         <td scope="row">
 							<span class="badge badge-border-danger">EVENT</span><br>
 							BL-1624SAS<br>(쿼드코어)</td>
@@ -474,86 +514,17 @@
                     </table>               
 					
                 </div>
-				<!-- //server_ibm -->  	
-
-
-             
-				
-
-            </div>
-			
-			
+				<!-- //server_ibm -->  
+            </div>		
         </div>  
+		
+		
+		
+		
     </div>
     <!-- //body-content -->  
     
-    
-    <!-- consulting -->  
-    <div class="cunselt-content">    
-        <div class="wrapper">
-            <h3>도움이 필요하신가요? 전문가와 상담하세요</h3>
-            <p>상담 문의를 이용하시면 더욱 정확한 상담이 가능합니다.</p>
-            <a href="/consult" class="btn btn-danger" >상담하기</a>
-            <h4><span class="lnr lnr-phone"></span> 1544-2120</h4>
-        </div>    
-    </div>
-    <!-- //consulting -->  
-    
-        
-    
-    <!-- additional -->  
-    <div class="adds-content wrapper">
-        <h2 class="add-title">편리한 부가서비스</h2>
-        <ul class="row">
-            <li class="col-xs-3">
-                <div class="col-m-2">                
-                    <a href="#" class="col-m-2">            
-                        <img src="/assets/images/ico_add01.png">
-                        <p>관리툴 <span class="lnr lnr-chevron-right"></span></p>
-                        <span>트래픽 초기화 등의관리 기능으로 효율적인 호스팅운영이 가능합니다.</span>                    
-                    </a>
-                </div>
-            </li>
-            <li class="col-xs-3">
-                <div class="col-m-2">                
-                    <a href="#">       
-                        <img src="/assets/images/ico_add02.png">
-                        <p>관리툴 <span class="lnr lnr-chevron-right"></span></p>
-                        <span>트래픽 초기화 등의관리 기능으로 효율적인 호스팅운영이 가능합니다.</span>                         
-                    </a>
-                </div>
-            </li>
-            <li class="col-xs-3">
-                <div class="col-m-2">                
-                    <a href="#">     
-                        <img src="/assets/images/ico_add03.png">
-                        <p>관리툴 <span class="lnr lnr-chevron-right"></span></p>
-                        <span>트래픽 초기화 등의관리 기능으로 효율적인 호스팅운영이 가능합니다.</span>                      
-                    </a>
-                </div>
-            </li>
-            <li class="col-xs-3">
-                <div class="col-m-2">                
-                    <a href="#">    
-                        <img src="/assets/images/ico_add04.png">
-                        <p>관리툴 <span class="lnr lnr-chevron-right"></span></p>
-                        <span>트래픽 초기화 등의관리 기능으로 효율적인 호스팅운영이 가능합니다.</span>                     
-                    </a>
-                </div>
-            </li>
-            <li class="col-xs-3">
-                <div class="col-m-2">                
-                   <a href="#"> 
-                        <img src="/assets/images/ico_add05.png">
-                        <p>관리툴 <span class="lnr lnr-chevron-right"></span></p>
-                        <span>트래픽 초기화 등의관리 기능으로 효율적인 호스팅운영이 가능합니다.</span>                    
-                    </a>
-                </div>
-            </li>               
-        </ul>
-    </div>
-    <!-- //additional -->  
-    
+     
     
     
 </section>

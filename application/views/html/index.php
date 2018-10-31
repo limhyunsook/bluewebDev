@@ -1,75 +1,50 @@
 <!-- slide -->
-<section class="slider">	
-	<div class="main-slider">	
-		<!--
-		<div class="bxslider">
-			<div class="slider-img01 slider-box">
-				<div class="sliderTxt02">
-					<h2>더 시운 적용,<br>더 강력한 위협 대응</h2>
-					<p>앤드포인트 보안 최강자 블루웹 ERD 출시!</p>
-					<a href="">More <span class="lnr lnr-chevron-right"></span></a>					
-				</div>		
+ <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="http://localhost/assets/images/banner01.jpg" alt="첫번째 슬라이드">
+			<div class="carousel-caption d-none d-md-block">
+				<div>
+					<div>
+						<h2>더 시운 적용,<br><strong>더 강력한 위협 대응</strong></h2>			
+						<p>앤드포인트 보안 최강자 블루웹 ERD 출시!</p>
+						<a href="#">more →</a>
+					</div>	
+				</div>
 			</div>
-			<div class="slider-img02 slider-box">			
-				<div class="sliderTxt01">
-					<h2>차세대 네트워크 보안의 컨트롤 타워</h2>
-					<p>머신러닝이 적용된 네트워크 통합 관리 솔루션 blueweb 매니지먼트출시</p>
-					<a href="">More <span class="lnr lnr-chevron-right"></span></a>	
-				</div>				
-			</div>	
-			<div class="slider-img03 slider-box">
-				<div class="sliderTxt02">
-					<h2>BLUEWEB TRUSTGUARD<br>FOR AWS</h2>
-					<p>국내최초 AWS 입점 클라우드 차세대 방화벽</p>
-					<a href="">More <span class="lnr lnr-chevron-right"></span></a>
-				</div>	
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="http://localhost/assets/images/banner03.jpg" alt="두번째 슬라이드">
+			<div class="carousel-caption d-none d-md-block">
+				<div>
+					<div>					
+						<h2>차세대 네트워크<br><strong>보안의 컨트롤 타워</strong></h2>
+						<p>머신러닝이 적용된 네트워크 통합 관리 솔루션 blueweb 매니지먼트출시</p>
+						<a href="#">more →</a>
+					</div>
+				</div>
 			</div>
-		</div>	
-        -->		
-	</div>	
-</section>
+		</div>
+	</div>	 
+	
+	<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">이전</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">다음</span>
+	</a>
+	 
+</div>
 <!-- //slide -->
 
 
 
- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img class="d-block w-100" src="https://image.ahnlab.com/event/event_main_banner/banner_497.jpg" alt="첫번째 슬라이드">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>더 시운 적용,<br>더 강력한 위협 대응</h2>
-                        <p>앤드포인트 보안 최강자 블루웹 ERD 출시!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="https://image.ahnlab.com/event/event_main_banner/banner_523.jpg" alt="두번째 슬라이드">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>차세대 네트워크 보안의 컨트롤 타워</h2>
-					        <p>머신러닝이 적용된 네트워크 통합 관리 솔루션 blueweb 매니지먼트출시</p>
-                        </div>
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="https://image.ahnlab.com/event/event_main_banner/banner_422.jpg" alt="세번째 슬라이드">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>BLUEWEB TRUSTGUARD<br>FOR AWS</h2>
-                        <p>국내최초 AWS 입점 클라우드 차세대 방화벽</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">이전</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">다음</span>
-            </a>
-        </div>
 
 <!-- container -->
 <section class="section-container">	
@@ -89,8 +64,8 @@
 				<div>
 					<h2>도메인검색</h2>
 					<div>
-						<label><input type="text"></label>
-						<button type="image" class="btn btn-danger" onclick="location.href='/page/domain/domain.php';"><i class="fa fa-search"></i> 검색</button>
+						<label><input type="text" placeholder="원하는 도메인을 입력하세요"></label>
+						<button type="image" class="btn btn-danger" onclick="location.href='/page/domain/regist.php';"><i class="fa fa-search"></i> 검색</button>
 					</div>
 					<ul>
 						<li><a href="#">기간연장</a></li>
@@ -192,18 +167,36 @@
 	<!-- //panel3 -->
 
     
-		
-    <!-- banner -->
-    <section class="slider clearfix">	
-        <div class="banner wrapper">	
-            <div class="bxslider">
-                <div class="bg-box01 bg-box"></div>
-                <div class="bg-box02 bg-box"></div>              
-            </div>	
-        </div>	
-    </section>
-    <!-- //banner -->
+	
+	<!-- bottom slide -->
+	 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="https://cdn.bmf.kr/banner/main_event/170425/1493082744401_ba9831e4e2bb.png" alt="첫번째 슬라이드">			
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="https://cdn.bmf.kr/banner/main_event/171214/1513243712683_1e0a6312599e.jpg" alt="두번째 슬라이드">			
+			</div>	
+		</div>
 
+		<!-- < > -->  
+		<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">이전</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">다음</span>
+		</a>
+
+	</div>
+	<!-- //slide -->
+	
+		
 
 
 </section>

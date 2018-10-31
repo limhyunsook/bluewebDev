@@ -1,3 +1,41 @@
+<?php
+$get = $this->input->get('idsearch',true);
+if(!$get) $get = 'idsearch_p_s';
+?>
+<script>
+
+    $(document).ready( function (){      
+        on_tab();
+        // $.each( $('.tab-cont > li '), function( key, value ) {
+        //     //alert($(this).attr("item"));
+        //     if($(this).attr("item") == '2item'){
+        //         $(this).find("a").click();
+        //         $(this).addClass("active");                
+        //     }
+        // });
+    });
+
+     $( window ).on( "load", function() {
+        $('.tab-find > li > a ').on('click', function (){
+            //claer
+            $('.tab-find > li ').removeClass('active');
+            $('.tab-find > li > a').removeClass('active');            
+            
+            //set
+            $(this).addClass("active");
+            $(this).parent().addClass("active");            
+        });
+    });
+    
+
+    function on_tab()
+    {
+         var target = '<?=$get?>';         
+         $("#"+target).find("a").click();
+         $("#"+target).addClass("active");    
+    }
+</script>
+
 <!-- container -->
 <section class="container-warp">	
 
@@ -12,8 +50,8 @@
 					
 					<!-- nav tabs -->
 					<ul class="nav nav-pills tab-find" role="tablist">
-						<li role="presentation" class="col-xs-2 active"><a href="#idsearch_p" aria-controls="idsearch_p" role="tab" data-toggle="tab">개인회원</a></li>
-						<li role="presentation" class="col-xs-2"><a href="#idsearch_c" aria-controls="idsearch_c" role="tab" data-toggle="tab">기업회원</a></li>
+						<li role="presentation" id="idsearch_p_s" class="col-xs-2 active"><a href="#idsearch_p" aria-controls="idsearch_p" role="tab" data-toggle="tab">개인회원</a></li>
+						<li role="presentation" id="idsearch_c_s" class="col-xs-2"><a href="#idsearch_c" aria-controls="idsearch_c" role="tab" data-toggle="tab">기업회원</a></li>
 					</ul>
 					<!-- //nav tabs -->
 

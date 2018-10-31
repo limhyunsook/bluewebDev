@@ -41,10 +41,10 @@ if(!$get) $get = 'step01s';
 		
 	
     <!-- sub-title -->  
-    <div class="sub-content t-2">
+    <div class="sub-content t-6">
         <div class="wrapper"> 
-            <h5>높은 품질과 안정성을 보장합니다</h5>			
-            <h2>서버호스팅<br>신청하기</h2>	
+            <h5>운영부터 보안까지 전문가가 관리</h5>			
+            <h2>클라우드 요금계산기</h2>	
         </div>    
     </div>    
     <!-- //sub-title -->  
@@ -431,61 +431,79 @@ if(!$get) $get = 'step01s';
                         <li class="col-xs-3">   
 							
                             <!-- cart -->
-                            <div class="col-xs-12 cart-new">
-								<h4>주문 요약</h4>								
-								<ul class="cart-total">
-									<li>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>LINUX 보급형</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>₩194,040</p></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>₩5,390/월</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>36 개월</p></div>
-										</div>
-									</li>
-									<li>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>아웃룩</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>₩4,040</p></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>₩4,040/년</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>12 개월</p></div>
-										</div>
-									</li>
-								</ul>
-								<div class="row cart-price">
-									<div class="col-xs-5">
-										<div><p>합계</p></div>
-									</div>
-									<div class="col-xs-7 text-right">
-										<p id="totalPrice">₩198,080</p>
-									</div>
-								</div>
-								<div class="cart-Agree">
+                            <div class="cart">
+                                <table class="table">
+								<h2>결제 금액 계산</h2>
+								<thead>
+								<tr>
+									<th>항목</th>
+									<th>비용</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>웹호스팅</td>
+									<td>360,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-18,000원</td>
+								</tr>  
+								<tr>
+									<td>설치비</td>
+									<td>30,000원</td>
+								</tr>  
+								<tr>
+									<td>트래픽</td>
+									<td>960,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
+								<tr>
+									<td>웹메일</td>
+									<td>60,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
+
+								<tr>                                     
+									<td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+								</tr>  
+								</tbody>
+                                </table>   
+								
+								<div class="btnAgree">
 									<p>결제할 서비스 내용을 확인하였으며 구매에 동의하시겠습니까?</p>
 									<label class="chkcontainer chk_l">
 										<input type="checkbox" name="check2" checked="checked">
-										<span class="check-text"></span>동의합니다.		
+										<span class="check-text"></span>동의합니다.										
 									</label>       
 									<span>(전자상거래법 제8조 2항)</span>
 								</div>
-								<div class="cart-btn">
-                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">다음 단계 <span class="lnr lnr-chevron-right"></span>
-                                    </button>             
-									
-                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="javascrip:location.href='/order/oready';">결제하기 <span class="lnr lnr-chevron-right"></span>
+								
+                                <div class="btnBox">
+                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
+                                        다음 단계 <span class="lnr lnr-chevron-right"></span>
+                                    </button>  
+                                    <!-- button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button -->           
+									<button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="javascrip:location.href='/order/oready';">
+										결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>
-									
-                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();"><span class="lnr lnr-chevron-left"></span> 이전단계 
-                                    </button>                  
+                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
+                                        <span class="lnr lnr-chevron-left"></span> 이전단계 
+                                    </button>           
 
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
-                                </div> 							
-							</div>
+                                </div>    
+                            </div>
 							<!-- //cart -->
 							
                         </li>
@@ -501,7 +519,62 @@ if(!$get) $get = 'step01s';
                     <ul class="row">
 						
                         <li class="col-xs-9">
-													
+							
+							
+							<!--  신청리스트 -->
+							<table class="table tableTypeA table-hover mb12">
+                            <caption class="table_title">신청 리스트</caption>                             
+                            <tbody>      								
+							<tr>
+								<th>서버명</th>
+								<th>OS</th>
+								<th>Disk</th>
+								<th>CPU/Memory</th>
+								<th>서버수량</th>
+								<th>약정</th>
+								<th>월사용 요금</th>
+							</tr>  
+							<tr>
+								<td><input type="text" class="form-control" placeholder="Server"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>LINUX 보급형</option>
+										</select> 
+									</div>	
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>100G</option>
+											<option>20G</option>
+										</select> 
+									</div>									
+								</td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1vCore*1GB (26,000원)</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0"></td>
+								<td>
+									<div class="selectbox reset">                                        
+										<select class="selectpicker">
+											<option>1년</option>
+											<option>2년</option>
+											<option>3년</option>
+										</select> 
+									</div>									
+								</td>
+								<td><input type="text" class="form-control" placeholder="0원"></td>
+							</tr>  
+                            </tbody>
+							</table>  
+							<!--  //신청리스트 -->
+								
+							
 							
 							<!-- 신청 정보 -->
 							<table class="table tableTypeA mb12">
@@ -572,61 +645,79 @@ if(!$get) $get = 'step01s';
 							
 							
                             <!-- cart -->
-                            <div class="col-xs-12 cart-new">
-								<h4>주문 요약</h4>								
-								<ul class="cart-total">
-									<li>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>LINUX 보급형</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>₩194,040</p></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>₩5,390/월</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>36 개월</p></div>
-										</div>
-									</li>
-									<li>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>아웃룩</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>₩4,040</p></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-5 col-lg-8"><p>₩4,040/년</p></div>
-											<div class="col-xs-7 col-lg-4 text-right"><p>12 개월</p></div>
-										</div>
-									</li>
-								</ul>
-								<div class="row cart-price">
-									<div class="col-xs-5">
-										<div><p>합계</p></div>
-									</div>
-									<div class="col-xs-7 text-right">
-										<p id="totalPrice">₩198,080</p>
-									</div>
-								</div>
-								<div class="cart-Agree">
+                            <div class="cart">
+                                <table class="table">
+								<h2>결제 금액 계산</h2>
+								<thead>
+								<tr>
+									<th>항목</th>
+									<th>비용</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>웹호스팅</td>
+									<td>360,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-18,000원</td>
+								</tr>  
+								<tr>
+									<td>설치비</td>
+									<td>30,000원</td>
+								</tr>  
+								<tr>
+									<td>트래픽</td>
+									<td>960,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
+								<tr>
+									<td>웹메일</td>
+									<td>60,000원</td>
+								</tr>  
+								<tr>
+									<td><span class="not">ㄴ</span> 5% 할인</td>
+									<td class="color02">-48,000원</td>
+								</tr>  
+
+								<tr>                                     
+									<td colspan="2">결제 예상 금액<br/><span class="total_price">88,000원</span></td>
+								</tr>  
+								</tbody>
+                                </table>   
+								
+								<div class="btnAgree">
 									<p>결제할 서비스 내용을 확인하였으며 구매에 동의하시겠습니까?</p>
 									<label class="chkcontainer chk_l">
 										<input type="checkbox" name="check2" checked="checked">
-										<span class="check-text"></span>동의합니다.		
+										<span class="check-text"></span>동의합니다.										
 									</label>       
 									<span>(전자상거래법 제8조 2항)</span>
 								</div>
-								<div class="cart-btn">
-                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">다음 단계 <span class="lnr lnr-chevron-right"></span>
-                                    </button>             
-									
-                                    <button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="javascrip:location.href='/order/oready';">결제하기 <span class="lnr lnr-chevron-right"></span>
+								
+                                <div class="btnBox">
+                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
+                                        다음 단계 <span class="lnr lnr-chevron-right"></span>
+                                    </button>  
+                                    <!-- button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+                                        결제하기 <span class="lnr lnr-chevron-right"></span>
+                                    </button -->           
+									<button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="javascrip:location.href='/order/oready';">
+										결제하기 <span class="lnr lnr-chevron-right"></span>
                                     </button>
-									
-                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();"><span class="lnr lnr-chevron-left"></span> 이전단계 
-                                    </button>                  
+                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
+                                        <span class="lnr lnr-chevron-left"></span> 이전단계 
+                                    </button>           
 
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
                                     <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
-                                </div> 							
-							</div>
+                                </div>    
+                            </div>
 							<!-- //cart -->
 							
 							

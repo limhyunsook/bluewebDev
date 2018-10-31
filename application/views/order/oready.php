@@ -1,15 +1,54 @@
+<?php
+$get = $this->input->get('hosting',true);
+if(!$get) $get = 'step01s';
+?>
+<script>
+
+    $(document).ready( function (){      
+        on_tab();
+        // $.each( $('.tab-pay > li '), function( key, value ) {
+        //     //alert($(this).attr("item"));
+        //     if($(this).attr("item") == '2item'){
+        //         $(this).find("a").click();
+        //         $(this).addClass("active");                
+        //     }
+        // });
+    });
+
+     $( window ).on( "load", function() {
+        $('.tab-pay > li > a ').on('click', function (){
+            //claer
+            $('.tab-pay > li ').removeClass('active');
+            $('.tab-pay > li > a').removeClass('active');            
+            
+            //set
+            $(this).addClass("active");
+            $(this).parent().addClass("active");            
+        });
+    });
+    
+
+    function on_tab()
+    {
+         var target = '<?=$get?>';         
+         $("#"+target).find("a").click();
+         $("#"+target).addClass("active");    
+    }
+</script>
+
 <!-- container -->
 <section class="container-warp">
 <script language="javascript" type="text/javascript" src="https://stdpay.inicis.com/stdjs/INIStdPay.js" charset="UTF-8"></script>
 <script src="/assets/js/order.js"></script>
+ 	
     <!-- sub-title -->  
-    <div class="sub-content">
+    <div class="sub-content t-1">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>신청하기</h2>	
+            <h2>서비스 신청하기</h2>	
         </div>    
     </div>    
-    <!-- //sub-title -->  
+	<!-- //sub-title -->  
 	
 	
     <!-- body-content -->  
@@ -136,95 +175,65 @@
 						
                         <li class="col-xs-3">  
 							
-							
-                            <!-- cart -->
-                            <div class="cart">
-                                <table class="table">
-								<caption class="table_title">결제 금액 계산</caption>
-								<thead>
-								<tr>
-									<th>항목</th>
-									<th>비용</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr class="table-success">
-									<td>웹호스팅</td>
-									<td>360,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td><span class="not">ㄴ</span> 5% 할인</td>
-									<td class="color02">-18,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td>설치비</td>
-									<td>30,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td>트래픽</td>
-									<td>960,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td><span class="not">ㄴ</span> 5% 할인</td>
-									<td class="color02">-48,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td>웹메일</td>
-									<td>60,000원</td>
-								</tr>  
-								<tr class="table-success">
-									<td><span class="not">ㄴ</span> 5% 할인</td>
-									<td class="color02">-48,000원</td>
-								</tr>  
-
-								<tr class="table-success">                                     
-									<td colspan="2">결제 예상 금액<br/><span class="total_price">1000원</span></td>
-								</tr> 
-								</tbody>
-                                </table>  
-								
-								<div class="btnAgree">
+							<!-- cart -->
+                            <div class="col-xs-12 cart-new">
+								<h4>주문 요약</h4>								
+								<ul class="cart-total">
+									<li>
+										<div class="row">
+											<div class="col-xs-5 col-lg-8"><p>LINUX 보급형</p></div>
+											<div class="col-xs-7 col-lg-4 text-right"><p>₩194,040</p></div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5 col-lg-8"><p>₩5,390/월</p></div>
+											<div class="col-xs-7 col-lg-4 text-right"><p>36 개월</p></div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-xs-5 col-lg-8"><p>아웃룩</p></div>
+											<div class="col-xs-7 col-lg-4 text-right"><p>₩4,040</p></div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5 col-lg-8"><p>₩4,040/년</p></div>
+											<div class="col-xs-7 col-lg-4 text-right"><p>12 개월</p></div>
+										</div>
+									</li>
+								</ul>
+								<div class="row cart-price">
+									<div class="col-xs-5">
+										<div><p>합계</p></div>
+									</div>
+									<div class="col-xs-7 text-right">
+										<p id="totalPrice">₩198,080</p>
+									</div>
+								</div>
+								<div class="cart-Agree">
 									<p>결제할 서비스 내용을 확인하였으며 구매에 동의하시겠습니까?</p>
 									<label class="chkcontainer chk_l">
 										<input type="checkbox" name="check2" checked="checked">
-										<span class="check-text"></span>동의합니다.										
+										<span class="check-text"></span>동의합니다.		
 									</label>       
 									<span>(전자상거래법 제8조 2항)</span>
 								</div>
-                                
-								
-                                <div class="btnBox">
-                                    <!-- 
-                                    <button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">
-                                        다음 단계 <span class="lnr lnr-chevron-right"></span>
-                                    </button>
-                                    -->  
-                                    <!-- button type="button" id="tabStep01" class="btn btn-danger mb12 cart_btnext" onclick="winOpenDomainPage('http://211.202.2.224/inicis_sample/stdpay/INIStdPaySample/INIStdPayBill.php');">
+								<div class="cart-btn">
+                                    <!--button type="button" id="tabStep01" class="btn btn-primary mb12 cart_btnext" onclick="tabNextStep();">다음 단계 <span class="lnr lnr-chevron-right"></span>
+                                    </button-->   
+                              
+									
+									<button  id="pay_go" class="btn btn-danger mb12 cart_btnext" >
                                         결제하기 <span class="lnr lnr-chevron-right"></span>
-                                    </button -->           
-                                    
-                                    <button  id="pay_go" class="btn btn-danger mb12 cart_btnext">
-                                        결제하기 <span class="lnr lnr-chevron-right"></span>
-                                    </button>           
-                                    <!--
-                                    <button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();">
-                                        <span class="lnr lnr-chevron-left"></span> 이전단계 
-                                    </button>                 
-                                    -->
-                                    <!--
+                                    </button> 		
+									
+                                    <!--button type="button" id="tabStep01" class="btn btn-default mb12 cart_btprev" onclick="tabBackStep();"><span class="lnr lnr-chevron-left"></span> 이전단계 
+                                    </button>                  
+
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 메일로 받기</a>
                                     <a href="" class="btn btn-success mb12" onclick="winOpenHostingPage('print');return false;">견적서 바로 출력</a> 
-                                    <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a> 
-                                    -->
-                                </div>   
-                            </div>
-							<!-- //cart -->
-                            <!--<a href="javascript:;" id="pay_go" class="btn btn-danger mb12 cart_btnext">결제하기</a>-->
-							
-
-                            
-							
-							
+                                    <a href="" class="btn btn-success" onclick="winOpenHostingPage('print');return false;">견적서 결제 확인 출력</a--> 
+                                </div> 							
+							</div>
+							<!-- //cart -->							
                         </li>    
 						
 						

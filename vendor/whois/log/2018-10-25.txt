@@ -1,0 +1,126 @@
+[06:39:28]  params
+[06:39:28]  Array
+(
+    [arr_domain_name] => blueweb
+    [arr_domain_type] => .com
+)
+
+[06:39:28]  send-data
+[06:39:28]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 265
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"blueweb","arr_domain_type":".com"}}
+
+
+[06:39:28]  receive-data
+[06:39:28]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[07:12:07]  params
+[07:12:07]  Array
+(
+    [arr_domain_name] => blueweb
+    [arr_domain_type] => .com
+)
+
+[07:12:07]  send-data
+[07:12:07]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 265
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"blueweb","arr_domain_type":".com"}}
+
+
+[07:12:07]  receive-data
+[07:12:07]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[07:12:25]  params
+[07:12:25]  Array
+(
+    [arr_domain_name] => blueweb
+    [arr_domain_type] => .com
+)
+
+[07:12:25]  send-data
+[07:12:25]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 265
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"blueweb","arr_domain_type":".com"}}
+
+
+[07:12:25]  receive-data
+[07:12:25]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[07:13:37]  params
+[07:13:37]  Array
+(
+    [arr_domain_name] => bluewebu
+    [arr_domain_type] => .com
+)
+
+[07:13:38]  send-data
+[07:13:38]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 266
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"bluewebu","arr_domain_type":".com"}}
+
+
+[07:13:38]  receive-data
+[07:13:38]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[07:13:52]  params
+[07:13:52]  Array
+(
+    [arr_domain_name] => bluewebu
+    [arr_domain_type] => .com
+)
+
+[07:13:52]  send-data
+[07:13:52]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 266
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"bluewebu","arr_domain_type":".com"}}
+
+
+[07:13:52]  receive-data
+[07:13:52]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[07:13:56]  params
+[07:13:56]  Array
+(
+    [arr_domain_name] => bluewebu
+    [arr_domain_type] => .com
+)
+
+[07:13:56]  send-data
+[07:13:56]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 266
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"bluewebu","arr_domain_type":".com"}}
+
+
+[07:13:56]  receive-data
+[07:13:56]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}
+[09:15:31]  params
+[09:15:31]  Array
+(
+    [arr_domain_name] => bluewebu
+    [arr_domain_type] => .com
+)
+
+[09:15:32]  send-data
+[09:15:32]  POST /ws/ws.WhoisAPIVer1.JSON.php HTTP/1.0
+Host: api1.whois.co.kr:80
+Content-type: application/x-www-form-urlencoded
+Content-length: 266
+
+{"operationMode":"TEST","methodName":"queryDomain","inputTable":{"reseller":"testreseller","reseller_pwd":"d735e91f6e7a1e314debcc44bc41de85c28f073d1ba15368ca96c969b2e761d1","PayMethod":"!Deposit;","flag":"","arr_domain_name":"bluewebu","arr_domain_type":".com"}}
+
+
+[09:15:32]  receive-data
+[09:15:32]  {"code":1000,"msg":"Command completed successfully","value":null,"result":[{"code":2101,"msg":"un support domain type","value":null}]}

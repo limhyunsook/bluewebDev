@@ -3,13 +3,13 @@
 		
 	
     <!-- sub-title -->  
-    <div class="sub-content">
+    <div class="sub-content t-1">
         <div class="wrapper"> 
             <h5>원하는 호스팅 365일 언제나 블루웹</h5>			
-            <h2>신청하기</h2>	
+            <h2>서비스 신청하기</h2>	
         </div>    
     </div>    
-    <!-- //sub-title -->  
+	<!-- //sub-title -->  
 	
 	
     <!-- body-content -->  

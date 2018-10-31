@@ -2,6 +2,9 @@
 <footer class="footer">		
 <div class="container sitemap">	
     <ul class="row wrapper">
+		<li class="col-xs-2">
+			<a href="#"><img src="http://localhost/assets/images/blueweb_logo_bottom.png"></a>               
+        </li>
         <li class="col-xs-2">
             <p>
                 <a href="#">호스팅</a>
@@ -10,13 +13,7 @@
 				<li><a href="#">웹호스팅</a></li>
 				<li><a href="#">웹에이전시 호스팅</a></li>
 				<li><a href="#">워드프레스 호스팅 <span class="badge badge-warning">event</span></a></li>
-				<li><a href="#">DB 호스팅</a></li>
-				<li><a href="#">SMS 호스팅</a></li>
-				<li><a href="#">이미지 호스팅</a></li>
-				<li><a href="#">동영상 호스팅</a></li>
-				<li><a href="#">이전 대행</a></li>
-				<li><a href="#">간편제작</a></li>
-				<li><a href="#">SSL 호스팅</a></li>
+				<li><a href="#">DB 호스팅</a></li>	
             </ul>
         </li>
         <li class="col-xs-2">
@@ -28,8 +25,6 @@
                 <li><a href="#">1분설치 서버</a></li>
                 <li><a href="#">VPN</a></li>
                 <li><a href="#">백업</a></li>
-                <li><a href="#">모니터링</a></li>
-                <li><a href="#">랙</a></li>
             </ul>          
         </li>
         <li class="col-xs-2">
@@ -51,28 +46,7 @@
                 <li><a href="#">원격관제</a></li>
                 <li><a href="#">파견관제</a></li>
                 <li><a href="#">모의해킹</a></li>
-                <li><a href="#">취약점진단 <span class="badge badge-primary">update</span></a></li>
-                <li><a href="#">침해사고분석</a></li>
-                <li><a href="#">SSL</a></li>                   
-                <li><a href="#">방화벽</a></li>     
-				<li><a href="#">웹 방화벽</a></li>   
-				<li><a href="#">이메일 보안</a></li>   
-				<li><a href="#">DB 암호화</a></li>   
-				<li><a href="#">문서 중앙화</a></li>   
-				<li><a href="#">랜섬웨어 차단 <span class="badge badge-warning">event</span></a></li>   
-				<li><a href="#">개인정보보호</a></li>   
-				<li><a href="#">유해 사이트 차단</a></li>   
-            </ul>
-        </li>
-        <li class="col-xs-2">
-            <p>
-                <a href="#">솔루션</a>
-            </p>
-            <ul>
-                <li><a href="#">홈페이지자동구축 <span class="badge badge-danger">new</span></a></li>
-                <li><a href="#">쿠킹엠 7일무료체험</a></li>
-                <li><a href="#">상공회의소 회원 무료</a></li>
-                <li><a href="#">홈페이지제작센터</a></li> 
+                <li><a href="#">취약점진단 <span class="badge badge-primary">update</span></a></li> 
             </ul>
         </li>
 		<li class="col-xs-2">
@@ -84,15 +58,23 @@
 				<li><a href="#">cloud HPC</a></li>
 				<li><a href="#">cloud DB</a></li>
 				<li><a href="#">cloud CDN</a></li> 
-				<li><a href="#">Nas <span class="badge badge-primary">update</span></a></li> 
-				<li><a href="#">웹방화벽(WAF) </a></li>    
-				<li><a href="#">모니터링(Sycros)</a></li>    
-				<li><a href="#">백업(backup)</a></li>    
+				<li><a href="#">Nas <span class="badge badge-warning">event</span></a></li>    
             </ul>
         </li>
     </ul>
+	<div class="stats">
+		<ul class="row wrapper">
+			<div>
+				<h2>시작 할 준비 되었나요?</h2>
+				<h3>5000만명 이상 사용자들과 함께 사용해보세요~</h3>
+			</div>	
+			<a class="btn btn-primary" href="/index.html">지금 가입하세요!</a>
+		</ul>
+	</div>
 </div>
 
+
+	
 <div class="address">			
     <ul class="row col-m-1 wrapper">
 		<li><a href="http://ir.blueweb.co.kr/" target="_blink">회사소개</a></li>
@@ -105,7 +87,7 @@
 		<li>서울시 강남구 언주로 430(역삼동,윤익빌딩10층) (주)블루웹</li>	
 		<li>대표이사 : 장봉근</li>
 		<li>사업자번호 : 106-81-85951</li>
-		<li>통신판매업 신고번호 : 강남 3315호</li><Br/>				
+		<li>통신판매업 신고번호 : 강남 3315호</li>			
 		<li>TEL : 1588-2120</li>
 		<li>FAX : 02-567-3400</li>
 		<li>EMAIL : <a href="mailto:master@blueweb.co.kr">master@blueweb.co.kr</a></li>

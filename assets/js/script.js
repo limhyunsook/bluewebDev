@@ -185,27 +185,29 @@ $(function(){
 
 
 
+// --------------------------  워드프레스 슬라이드 stop play 버튼 -------------------------- //
 
 
 
 
 
+/*
+
+$(function () {
+    $('#homeCarousel').carousel({
+        interval:3000,
+        pause: "false"
+    });
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+});
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
